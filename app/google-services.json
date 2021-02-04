@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "54988071011",
+    "project_id": "pdelicia-2f8bb",
+    "storage_bucket": "pdelicia-2f8bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:54988071011:android:daa01e0294e938ef4b1856",
+        "android_client_info": {
+          "package_name": "com.example.pdelicia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "54988071011-08ljfnu2ujkupa1v67ukauv154kk96d7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pdelicia",
+            "certificate_hash": "17b9b11b31059fcb0be98e688180a4d0e10f5432"
+          }
+        },
+        {
+          "client_id": "54988071011-11p259gpul8buvgknvejsr8618tdqcq7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0Kbd21-DgyT7x5MS1FB80j4bWS8Osxbc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "54988071011-11p259gpul8buvgknvejsr8618tdqcq7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
