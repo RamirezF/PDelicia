@@ -152,6 +152,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     // ****************************************************************************************************
 
+
+        // Locales
+
         // Prueba 1
         marker = new MarkerOptions();
         marker.position(pb1);
