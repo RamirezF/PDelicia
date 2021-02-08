@@ -6,6 +6,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -20,7 +21,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.example.pdelicia.MainActivity;
 import com.example.pdelicia.R;
+import com.example.pdelicia.activities.PrincipalActivity;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
@@ -35,6 +38,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class MapFragment extends Fragment implements OnMapReadyCallback, View.OnClickListener {
 
+    private static final int MY_PERMISSION_ACCESS_FINE_LOCATION = 1;
     private View rootView;
     private MapView mapView;
     private GoogleMap gMap;
@@ -86,6 +90,33 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         pizzeriaDelicia(googleMap);
     }
 
+    private MapFragment getMapFragment() {
+        return this;
+    }
+
+    private void getMap() {
+        if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+            mMap.setMyLocationEnabled(true);
+        }
+        mMap.getUiSettings().setZoomControlsEnabled(true);
+        mMap.getUiSettings().setMyLocationButtonEnabled (true);
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
+        switch (requestCode) {
+            case MY_PERMISSION_ACCESS_FINE_LOCATION: {
+                // Si el usuario acepta los permisos
+                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    getMap();
+                } else {
+                    // Si el usuario no brinda los permisos                                                                                 ********************************
+                    Toast.makeText(getActivity(), "Permiso denegado", Toast.LENGTH_SHORT).show();
+                }
+                return;
+            }
+        }
+    }
 
 
     // Para vel el GPS si está ACTIVADO O NO
@@ -130,6 +161,31 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
 
     public void pizzeriaDelicia(GoogleMap googleMap) {
         mMap = googleMap;
+
+        //**********************************************************************************************************************************************************
+        // A partir de las versión 6 en adelante cambia las políticas sobre los permisos
+        // Hay que verificar los permisos e informar al usuario si va a brindar los accesos correspondientes
+
+        // Validamos la versión
+        if( Build.VERSION.SDK_INT >= 23) {
+            // Validamos si ACCESS_FINE_LOCATION tiene permisos otorgados por el usuario
+            if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                // Informamos al usuario sobre que permisos se le van a solicitar.
+                ActivityCompat.requestPermissions(getActivity(), new String[] {  Manifest.permission.ACCESS_FINE_LOCATION  }, MY_PERMISSION_ACCESS_FINE_LOCATION);
+                return;
+            } else {
+                // Esta parte se ejecuta cuando los permisos son otorgados por el usuario
+                //pizzeriaDelicia(googleMap);
+                getMap();
+            }
+        } else {
+            // Esta bloque se ejecuta cuando una versión de android es inferior a la 6 o API 23, obtiene la información sobre los permisos
+            // del AndroidManifest.xml
+            //pizzeriaDelicia(googleMap);
+            getMap();
+        }
+        //**********************************************************************************************************************************************************
+
 
 
 
@@ -606,18 +662,8 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         mMap.animateCamera(CameraUpdateFactory.newCameraPosition(camera));
         //mMap.moveCamera(CameraUpdateFactory.newLatLng(pizzeria));
 
-        if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
-            return;
-        }
-        mMap.setMyLocationEnabled(true);
-        mMap.getUiSettings().setMyLocationButtonEnabled(true);
     }
 
 }
+
+
