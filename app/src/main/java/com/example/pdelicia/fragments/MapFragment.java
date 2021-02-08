@@ -241,7 +241,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local01);
         marker.title("Prueba de Frisco 1");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo01));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local02
@@ -249,7 +249,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local02);
         marker.title("Prueba de Frisco 2");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo02));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local03
@@ -257,7 +257,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local03);
         marker.title("Prueba de Frisco 3");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo03));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local04
@@ -265,7 +265,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local04);
         marker.title("Prueba de Frisco 4");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo04));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local05
@@ -273,7 +273,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local05);
         marker.title("Prueba de Frisco 5");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo01));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local06
@@ -281,7 +281,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local06);
         marker.title("Prueba de Frisco 6");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo02));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local07
@@ -289,7 +289,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local07);
         marker.title("Prueba de Frisco 7");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo03));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local08
@@ -297,7 +297,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local08);
         marker.title("Prueba de Frisco 8");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo04));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local09
@@ -305,7 +305,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local09);
         marker.title("Prueba de Frisco 9");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo01));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local10
@@ -313,7 +313,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local10);
         marker.title("Prueba de Frisco 10");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo02));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local11
@@ -321,7 +321,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local11);
         marker.title("Prueba de Frisco 11");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo03));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local12
@@ -329,7 +329,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local12);
         marker.title("Prueba de Frisco 12");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo04));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local13
@@ -337,7 +337,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local13);
         marker.title("Prueba de Frisco 13");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo01));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local14
@@ -345,7 +345,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local14);
         marker.title("Prueba de Frisco 14");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo02));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local15
@@ -353,7 +353,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local15);
         marker.title("Prueba de Frisco 15");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo03));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local16
@@ -361,7 +361,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local16);
         marker.title("Prueba de Frisco 16");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo04));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local17
@@ -369,7 +369,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local17);
         marker.title("Prueba de Frisco 17");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo01));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local18
@@ -377,7 +377,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local18);
         marker.title("Prueba de Frisco 18");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo02));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local19
@@ -385,7 +385,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local19);
         marker.title("Prueba de Frisco 19");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo03));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local20
@@ -393,7 +393,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local20);
         marker.title("Prueba de Frisco 20");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo04));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local21
@@ -401,7 +401,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local21);
         marker.title("Prueba de Frisco 21");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo01));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local22
@@ -409,7 +409,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local22);
         marker.title("Prueba de Frisco 22");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo02));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local23
@@ -417,7 +417,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local23);
         marker.title("Prueba de Frisco 23");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo03));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local24
@@ -425,7 +425,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local24);
         marker.title("Prueba de Frisco 24");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo04));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local25
@@ -433,7 +433,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local25);
         marker.title("Prueba de Frisco 25");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo01));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local26
@@ -441,7 +441,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local26);
         marker.title("Prueba de Frisco 26");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo02));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local27
@@ -449,7 +449,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local27);
         marker.title("Prueba de Frisco 27");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo03));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local28
@@ -457,7 +457,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local28);
         marker.title("Prueba de Frisco 28");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo04));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local29
@@ -465,7 +465,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local29);
         marker.title("Prueba de Frisco 29");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo01));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local30
@@ -473,7 +473,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local30);
         marker.title("Prueba de Frisco 30");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo02));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local31
@@ -481,7 +481,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local31);
         marker.title("Prueba de Frisco 31");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo03));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local32
@@ -489,7 +489,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local32);
         marker.title("Prueba de Frisco 32");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo04));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local33
@@ -497,7 +497,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local33);
         marker.title("Prueba de Frisco 33");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo01));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local34
@@ -505,7 +505,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local34);
         marker.title("Prueba de Frisco 34");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo02));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local35
@@ -513,7 +513,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local35);
         marker.title("Prueba de Frisco 35");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo03));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local36
@@ -521,7 +521,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local36);
         marker.title("Prueba de Frisco 36");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo04));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local37
@@ -529,7 +529,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local37);
         marker.title("Prueba de Frisco 37");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo01));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local38
@@ -537,7 +537,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local38);
         marker.title("Prueba de Frisco 38");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo02));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local39
@@ -545,7 +545,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local39);
         marker.title("Prueba de Frisco 39");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo03));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local40
@@ -553,7 +553,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local40);
         marker.title("Prueba de Frisco 40");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo04));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local41
@@ -561,7 +561,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local41);
         marker.title("Prueba de Frisco 41");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo01));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local42
@@ -569,7 +569,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local42);
         marker.title("Prueba de Frisco 42");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo02));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local43
@@ -577,7 +577,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local43);
         marker.title("Prueba de Frisco 43");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo03));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local44
@@ -585,7 +585,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local44);
         marker.title("Prueba de Frisco 44");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo04));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local45
@@ -593,7 +593,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker.position(local45);
         marker.title("Prueba de Frisco 45");
         marker.snippet("Funciona papu :'v");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.logo01));
+        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // **********************************************************************************************************
