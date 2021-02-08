@@ -1,46 +1,137 @@
-package com.example.pdelicia;
+package com.example.pdelicia.fragments;
 
-import androidx.fragment.app.FragmentActivity;
-
+import android.Manifest;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+import androidx.fragment.app.Fragment;
+
+import android.provider.Settings;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Toast;
+
+import com.example.pdelicia.R;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.OnMapReadyCallback;
-import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.CameraPosition;
-import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polygon;
 import com.google.android.gms.maps.model.PolygonOptions;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
+public class MapFragment extends Fragment implements OnMapReadyCallback, View.OnClickListener {
 
+    private View rootView;
+    private MapView mapView;
+    private GoogleMap gMap;
     private GoogleMap mMap;
     private MarkerOptions marker;
+    private FloatingActionButton btn_frisco;
+
+
+    public MapFragment() {
+        // Required empty public constructor
+    }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_maps);
-        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
-        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.map);
-        mapFragment.getMapAsync(this);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        rootView = inflater.inflate(R.layout.fragment_map, container, false);
+
+        btn_frisco = (FloatingActionButton) rootView.findViewById(R.id.btn_frisco);
+
+        btn_frisco.setOnClickListener(this);
+
+        return rootView;
+    }
+
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        mapView = (MapView) rootView.findViewById(R.id.map);
+        if (mapView != null) {
+            mapView.onCreate(null);
+            mapView.onResume();
+            mapView.getMapAsync(this);
+        }
+
+
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
     }
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
-
-
+        gMap = googleMap;
         pizzeriaDelicia(googleMap);
+    }
+
+
+
+    // Para vel el GPS si está ACTIVADO O NO
+    private boolean isGPSEnable()
+    {
+        try {
+            int gpsSignal = Settings.Secure.getInt(getActivity().getContentResolver(), Settings.Secure.LOCATION_MODE);                                    // Para el GPS
+            if(gpsSignal == 0) {
+                return false;
+            } else {
+                return true;
+            }
+        } catch (Settings.SettingNotFoundException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    private void showInfoAlert()
+    {
+        new AlertDialog.Builder(getContext())
+                .setTitle("GPS Signal")
+                .setMessage("You don't have GPS signal enable. Would you like to enable GPS signal now?")
+                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        // GPS no está activado
+                        Intent intent = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
+                        startActivity(intent);
+                    }
+                }).setNegativeButton("CANCEL",null)
+                .show();
+    }
+
+    @Override
+    public void onClick(View v) {
+        if (!this.isGPSEnable())
+        {
+            showInfoAlert();
+        }
     }
 
     public void pizzeriaDelicia(GoogleMap googleMap) {
         mMap = googleMap;
+
+
 
         // Locales
         final LatLng local01 = new LatLng(-12.2751075,-76.8717649);
@@ -463,7 +554,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .add(poli2)
                 .add(poli3)
                 .add(poli4)
-                .fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(10);
+                .fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
 
         Polygon actores = mMap.addPolygon(laland);
 
@@ -479,7 +570,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .add(poli6)
                 .add(poli7)
                 .add(poli8)
-                .fillColor(0x330fff00).strokeColor(Color.GREEN).strokeWidth(10);
+                .fillColor(0x330fff00).strokeColor(Color.GREEN).strokeWidth(3);
 
         Polygon actoress = mMap.addPolygon(laland1);
 
@@ -497,15 +588,15 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .add(poli11)
                 .add(poli12)
                 .add(poli13)
-                .fillColor(0x330013ff).strokeColor(Color.BLUE).strokeWidth(10);
+                .fillColor(0x330013ff).strokeColor(Color.BLUE).strokeWidth(3);
 
         Polygon actoresss = mMap.addPolygon(laland2);
 
 
         // Posición de Cámara principal
         CameraPosition camera = new CameraPosition.Builder()
-                .target(local10)
-                .zoom(13)
+                .target(local21)
+                .zoom(11)
                 .bearing(90)
                 .tilt(30)
                 .build();
@@ -514,12 +605,19 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         mMap.animateCamera(CameraUpdateFactory.newCameraPosition(camera));
         //mMap.moveCamera(CameraUpdateFactory.newLatLng(pizzeria));
+
+        if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return;
+        }
+        mMap.setMyLocationEnabled(true);
+        mMap.getUiSettings().setMyLocationButtonEnabled(true);
     }
 
-    public void prueba01(GoogleMap googleMap)
-    {
-        mMap = googleMap;
-        LatLng Lima = new LatLng(-11.9559148, -77.068);
-        mMap.addMarker(new MarkerOptions().position(Lima).title("Hola desde Lima"));
-    }
 }

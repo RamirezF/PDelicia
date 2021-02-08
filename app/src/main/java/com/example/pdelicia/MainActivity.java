@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 
+import com.example.pdelicia.activities.PrincipalActivity;
+
 import java.util.Timer;
 import java.util.TimerTask;
 
