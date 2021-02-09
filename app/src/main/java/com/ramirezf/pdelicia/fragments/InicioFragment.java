@@ -1,4 +1,4 @@
-package com.example.pdelicia.fragments;
+package com.ramirezf.pdelicia.fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,8 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import com.example.pdelicia.R;
-import com.example.pdelicia.activities.LoginActivity;
+import com.ramirezf.pdelicia.R;
+import com.ramirezf.pdelicia.activities.LoginActivity;
 
 /**
  * A simple {@link Fragment} subclass.

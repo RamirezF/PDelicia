@@ -1,4 +1,4 @@
-package com.example.pdelicia.activities;
+package com.ramirezf.pdelicia.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,11 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.pdelicia.R;
-import com.google.android.gms.auth.api.signin.GoogleSignIn;
-import com.google.android.gms.auth.api.signin.GoogleSignInClient;
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
-import com.google.android.gms.common.api.GoogleApiClient;
+import com.ramirezf.pdelicia.R;
 
 public class LoginActivity extends AppCompatActivity {
     private Button btn_login;

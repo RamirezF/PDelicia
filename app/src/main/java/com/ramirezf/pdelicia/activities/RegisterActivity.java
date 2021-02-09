@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.example.pdelicia.R;
+import com.ramirezf.pdelicia.R;
 
 public class RegisterActivity extends AppCompatActivity {
 

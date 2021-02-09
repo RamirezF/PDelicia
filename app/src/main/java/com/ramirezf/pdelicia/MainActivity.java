@@ -1,4 +1,4 @@
-package com.example.pdelicia;
+package com.ramirezf.pdelicia;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.example.pdelicia.activities.PrincipalActivity;
+import com.ramirezf.pdelicia.activities.PrincipalActivity;
 
 import java.util.Timer;
 import java.util.TimerTask;

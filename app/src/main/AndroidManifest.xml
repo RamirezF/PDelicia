@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.pdelicia">
+    package="com.ramirezf.pdelicia">
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -34,11 +34,11 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".activities.MapsActivity"
+            android:name="com.ramirezf.pdelicia.activities.MapsActivity"
             android:label="@string/title_activity_maps" />
-        <activity android:name=".activities.LoginActivity" />
-        <activity android:name=".activities.PrincipalActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name="com.ramirezf.pdelicia.activities.LoginActivity" />
+        <activity android:name="com.ramirezf.pdelicia.activities.PrincipalActivity" />
+        <activity android:name="com.ramirezf.pdelicia.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,19 +1,16 @@
-package com.example.pdelicia.activities;
+package com.ramirezf.pdelicia.activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 
-import com.example.pdelicia.R;
-import com.example.pdelicia.fragments.InicioFragment;
-import com.example.pdelicia.fragments.MapFragment;
+import com.ramirezf.pdelicia.R;
+import com.ramirezf.pdelicia.fragments.InicioFragment;
+import com.ramirezf.pdelicia.fragments.MapFragment;
 
 public class PrincipalActivity extends AppCompatActivity {
     Fragment currentFragment;

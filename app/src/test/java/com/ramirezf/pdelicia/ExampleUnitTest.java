@@ -1,4 +1,4 @@
-package com.example.pdelicia;
+package com.ramirezf.pdelicia;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.example.pdelicia;
+package com.ramirezf.pdelicia;
 
 import android.content.Context;
 
