@@ -1,46 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/loginbg"
     tools:context=".activities.LoginActivity">
 
     <ImageView
         android:id="@+id/deli_img"
-        android:layout_width="350dp"
+        android:layout_width="320dp"
         android:layout_height="200dp"
         android:src="@drawable/login00"
         android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/txt_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="36dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/deli_img" />
+
 
     <EditText
         android:id="@+id/email_txt"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:text="Ingrese correo"
-        app:layout_constraintTop_toBottomOf="@+id/deli_img"
-        android:gravity="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="50dp"
+        android:layout_below="@+id/txt_login"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="50dp"
-        android:layout_marginLeft="50dp"/>
+        android:background="@drawable/edit_round"
+        android:drawableLeft="@drawable/ic_user"
+        android:gravity="center"
+        android:hint="Username"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="10dp"
+        android:textSize="18dp" />
     <EditText
         android:id="@+id/password_txt"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:text="Contraseña"
-        app:layout_constraintTop_toBottomOf="@+id/email_txt"
+        android:hint="Password"
+        android:paddingLeft="15dp"
+        android:paddingRight="30dp"
+        android:textSize="18dp"
+        android:background="@drawable/edit_round"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:inputType="textPassword"
         android:gravity="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:drawableLeft="@drawable/ic_lock"
+        android:layout_below="@+id/email_txt"
         android:layout_marginTop="10dp"
         android:layout_marginRight="50dp"
         android:layout_marginLeft="50dp"/>
 
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password_txt"
+            android:layout_marginTop="10dp"
+            android:paddingTop="5dp"
+            android:textSize="20dp"
+            android:paddingBottom="5dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_login"
+            android:text="Ingresar"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/txt_o"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/btn_login"
+            android:text="O"
+            android:layout_marginTop="10dp"
+            android:textSize="36dp"
+            android:layout_marginBottom="10dp" />
+    <TextView
+        android:id="@+id/login_google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_o"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="  Sign in with Google"
+        android:textColor="@color/black"
+        android:padding="5dp"
+        android:background="@drawable/bg_google"
+        android:drawableLeft="@drawable/ic_google"
+        android:textSize="24dp"/>
+
+    <TextView
+        android:id="@+id/login_fb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_google"
+        android:layout_centerHorizontal="true"
+        android:text="  Sign in with Facebook"
+        android:drawableLeft="@drawable/ic_fb"
+        android:padding="5dp"
+        android:background="@drawable/bg_fb"
+        android:textSize="24dp"/>
+
+</RelativeLayout>
