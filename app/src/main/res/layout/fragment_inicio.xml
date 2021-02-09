@@ -21,8 +21,12 @@
         android:layout_below="@+id/principal_txt"
         android:layout_marginTop="20dp"
         android:text="Go to Login"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
         android:layout_centerHorizontal="true"
+        android:forceDarkAllowed="true"
+        android:background="@drawable/bg_login"
         android:textSize="24dp"
-        android:background="@drawable/bg_login" />
+         />
 
 </RelativeLayout>
