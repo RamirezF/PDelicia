@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -14,8 +14,10 @@
         android:layout_height="200dp"
         android:src="@drawable/login00"
         android:layout_marginTop="20dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
 
     <TextView
         android:id="@+id/txt_login"
@@ -25,31 +27,37 @@
         android:textColor="@color/white"
         android:text="Login"
         android:textSize="36dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/deli_img" />
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/deli_img"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
 
 
     <EditText
         android:id="@+id/user_txt"
-        android:layout_width="350dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txt_login"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_marginRight="50dp"
         android:background="@drawable/edit_round"
         android:drawableLeft="@drawable/ic_user"
-        android:gravity="center"
         android:hint="Username"
         android:paddingLeft="15dp"
         android:paddingTop="10dp"
         android:textColor="@color/white"
         android:paddingRight="30dp"
         android:paddingBottom="10dp"
-        android:textSize="18dp" />
+        android:textSize="18dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_login"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center"
+        />
     <EditText
         android:id="@+id/pass_txt"
-        android:layout_width="350dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:hint="Password"
         android:paddingLeft="15dp"
@@ -62,10 +70,13 @@
         android:inputType="textPassword"
         android:gravity="center"
         android:drawableLeft="@drawable/ic_lock"
-        android:layout_below="@+id/user_txt"
         android:layout_marginTop="10dp"
         android:layout_marginRight="50dp"
-        android:layout_marginLeft="50dp"/>
+        android:layout_marginLeft="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_txt"
+        />
 
         <Button
             android:id="@+id/btn_login"
@@ -77,33 +88,40 @@
             android:textSize="20dp"
             android:layout_centerVertical="true"
             android:paddingBottom="5dp"
-            android:layout_centerHorizontal="true"
             android:background="@drawable/bg_login"
-            android:text="Ingresar"/>
-    
-        <TextView
-            android:id="@+id/btn_register"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Regístrate"
-            android:textSize="16dp"
-            android:textStyle="italic"
-            android:layout_below="@+id/btn_login"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="60dp" />
+            android:text="Ingresar"
+            app:layout_constraintTop_toBottomOf="@+id/pass_txt"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+    <TextView
+        android:id="@+id/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login"
+        android:text="Regístrate"
+        android:textSize="16dp"
+        android:textStyle="italic"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login"
+        app:layout_constraintStart_toStartOf="@+id/btn_login" />
 
         <TextView
             android:id="@+id/txt_o"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_below="@+id/btn_login"
             android:text="O"
             android:textStyle="bold"
             android:textColor="@color/white"
             android:layout_marginTop="20dp"
             android:textSize="36dp"
-            android:layout_marginBottom="10dp" />
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_google"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
     <TextView
         android:id="@+id/btn_google"
         android:layout_width="wrap_content"
@@ -111,30 +129,38 @@
         android:layout_below="@+id/txt_o"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="20dp"
-        android:text=" Iniciar con Google"
-        android:textColor="@color/black"
-        android:paddingRight="10dp"
-        android:paddingLeft="10dp"
-        android:paddingTop="5dp"
-        android:paddingBottom="5dp"
         android:background="@drawable/bg_google"
         android:drawableLeft="@drawable/ic_google"
-        android:textSize="24dp"/>
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:text=" Iniciar con Google"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_fb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" /> "/>
 
     <TextView
         android:id="@+id/btn_fb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btn_google"
-        android:layout_centerHorizontal="true"
-        android:textColor="@color/white"
-        android:text=" Iniciar con Facebook"
+        android:background="@drawable/bg_fb"
         android:drawableLeft="@drawable/ic_fb"
-        android:paddingRight="10dp"
         android:paddingLeft="5dp"
         android:paddingTop="5dp"
+        android:paddingRight="10dp"
         android:paddingBottom="5dp"
-        android:background="@drawable/bg_fb"
-        android:textSize="24dp"/>
+        android:text=" Iniciar con Facebook"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="20dp"
+        />
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
