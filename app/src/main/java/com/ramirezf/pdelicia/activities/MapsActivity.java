@@ -469,17 +469,76 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         // Polígono 2
 
-        final LatLng poli5 = new LatLng(-12.070713334650542,-77.03154087066652);
-        final LatLng poli6 = new LatLng(-12.067775663761807,-77.00961112976076);
-        final LatLng poli7 = new LatLng(-12.078225232272883,-77.01046943664552);
-        final LatLng poli8 = new LatLng(-12.08334495235437,-77.03261375427248);
+        final LatLng p01 = new LatLng(-12.024076387091215, -76.97699645338558);
+        final LatLng p02 = new LatLng(-12.025680557676722, -76.97724008138084);
+        final LatLng p03 = new LatLng(-12.026128210136523, -76.96978114416606);
+        final LatLng p04 = new LatLng(-12.020127632211087, -76.9525941634469);
+        final LatLng p05 = new LatLng(-12.019997757697451, -76.9523290899433);
+        final LatLng p06 = new LatLng(-12.019003644168126, -76.95208180289056);
+        final LatLng p07 = new LatLng(-12.019133117127284, -76.95283462984997);
+        final LatLng p08 = new LatLng(-12.01884946857254, -76.9533054419027);
+        final LatLng p09 = new LatLng(-12.0188811292306, -76.95615582226341);
+        final LatLng p10 = new LatLng(-12.017781622890613, -76.95641072902673);
+        final LatLng p11 = new LatLng(-12.017715192358535, -76.95754560806326);
+        final LatLng p12 = new LatLng(-12.015522244760904, -76.95995373807278);
+        final LatLng p13 = new LatLng(-12.006785957705485, -76.95469928275062);
+        final LatLng p14 = new LatLng(-12.003427485742813, -76.9557830022685);
+        final LatLng p15 = new LatLng(-12.006353363145884, -76.95701236506174);
+        final LatLng p16 = new LatLng(-12.00709832193052, -76.96047108097797);
+        final LatLng p17 = new LatLng(-12.006678579660223, -76.96422608692784);
+        final LatLng p18 = new LatLng(-12.009315172996113, -76.96694836786398);
+        final LatLng p19 = new LatLng(-12.012755272311644, -76.96811580162259);
+        final LatLng p20 = new LatLng(-12.013510677273741, -76.96894190739138);
+        final LatLng p21 = new LatLng(-12.01753737784867, -76.9692837399887);
+        final LatLng p22 = new LatLng(-12.016640269794266, -76.97206800064413);
+        final LatLng p23 = new LatLng(-12.018466023211136, -76.97558144972099);
+        final LatLng p24 = new LatLng(-12.021249867287713, -76.97747694527088);
+        final LatLng p25 = new LatLng(-12.021655941560219, -76.97960204711829);
+        final LatLng p26 = new LatLng(-12.022820510992632, -76.98160800226827);
+        final LatLng p27 = new LatLng(-12.020931562240207, -76.98411854459803);
+        final LatLng p28 = new LatLng(-12.021068017226103, -76.98625190042196);
+        final LatLng p29 = new LatLng(-12.019982037722558, -76.99055043720492);
+        final LatLng p30 = new LatLng(-12.021146738211709, -76.99094236506174);
+        final LatLng p31 = new LatLng(-12.022288452063679, -76.99152515039287);
+        final LatLng p32 = new LatLng(-12.026532067024165, -76.99130646196787);
+        final LatLng p33 = new LatLng(-12.026434921639837, -76.98815682500786);
+
 
         PolygonOptions laland1 = new PolygonOptions()
-                .add(poli5)
-                .add(poli6)
-                .add(poli7)
-                .add(poli8)
-                .fillColor(0x330fff00).strokeColor(Color.GREEN).strokeWidth(10);
+                .add(p01)
+                .add(p02)
+                .add(p03)
+                .add(p04)
+                .add(p05)
+                .add(p06)
+                .add(p07)
+                .add(p08)
+                .add(p09)
+                .add(p10)
+                .add(p11)
+                .add(p12)
+                .add(p13)
+                .add(p14)
+                .add(p15)
+                .add(p16)
+                .add(p17)
+                .add(p18)
+                .add(p19)
+                .add(p20)
+                .add(p21)
+                .add(p22)
+                .add(p23)
+                .add(p24)
+                .add(p25)
+                .add(p26)
+                .add(p27)
+                .add(p28)
+                .add(p29)
+                .add(p30)
+                .add(p31)
+                .add(p32)
+                .add(p33)
+                .fillColor(0x330fff00).strokeColor(Color.BLUE).strokeWidth(10);
 
         Polygon actoress = mMap.addPolygon(laland1);
 
