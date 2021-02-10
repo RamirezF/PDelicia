@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/loginbg"
+    android:background="@drawable/background"
     tools:context=".activities.LoginActivity">
 
     <ImageView
@@ -29,14 +29,14 @@
         android:text="Login"
         android:textSize="36dp"
         android:layout_marginTop="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/user_txt"
+        app:layout_constraintBottom_toTopOf="@+id/email_txt"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         />
 
 
     <EditText
-        android:id="@+id/user_txt"
+        android:id="@+id/email_txt"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
@@ -44,7 +44,7 @@
         android:layout_marginRight="50dp"
         android:background="@drawable/edit_round"
         android:drawableLeft="@drawable/ic_user"
-        android:hint="*Username"
+        android:hint="*Email"
         android:paddingLeft="15dp"
         android:paddingTop="10dp"
         android:textColor="@color/white"
@@ -76,7 +76,7 @@
         android:layout_marginLeft="50dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/user_txt"
+        app:layout_constraintTop_toBottomOf="@+id/email_txt"
         />
 
         <Button
@@ -89,7 +89,7 @@
             android:textSize="20dp"
             android:layout_centerVertical="true"
             android:paddingBottom="5dp"
-            android:background="@drawable/bg_login"
+            android:background="@drawable/btn_orange"
             android:text="Ingresar"
             app:layout_constraintTop_toBottomOf="@+id/pass_txt"
             app:layout_constraintLeft_toLeftOf="parent"

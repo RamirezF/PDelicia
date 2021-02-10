@@ -4,6 +4,7 @@
 
     <item android:title="Principal"
         android:id="@+id/menu_inicio"
+        android:icon="@drawable/ic_home_24"
         app:showAsAction="always"/>
 
     <item android:title="Ubicación"

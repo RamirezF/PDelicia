@@ -2,6 +2,7 @@ package com.ramirezf.pdelicia.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -18,7 +19,7 @@ public class LoginActivity extends AppCompatActivity {
     private TextView btn_register;
     private TextView btn_google;
     private  TextView btn_fb;
-    private EditText user_txt;
+    private EditText email_txt;
     private EditText pass_txt;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +31,8 @@ public class LoginActivity extends AppCompatActivity {
         getSupportActionBar().hide();
 
         setContentView(R.layout.activity_login);
-        
-        user_txt = (EditText) findViewById(R.id.user_txt);
+
+        email_txt = (EditText) findViewById(R.id.email_txt);
         pass_txt = (EditText) findViewById(R.id.pass_txt); 
         btn_login = (Button) findViewById(R.id.btn_login);
         btn_register = (TextView) findViewById(R.id.btn_register);
@@ -42,7 +43,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(LoginActivity.this, "Click en Login Principal", Toast.LENGTH_SHORT).show();
-                Toast.makeText(LoginActivity.this, "Usuario: "+ user_txt.getText().toString(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(LoginActivity.this, "Usuario: "+ email_txt.getText().toString(), Toast.LENGTH_SHORT).show();
                 Toast.makeText(LoginActivity.this, "Clave: "+ pass_txt.getText().toString(), Toast.LENGTH_SHORT).show();
             }
         });
@@ -50,7 +51,9 @@ public class LoginActivity extends AppCompatActivity {
         btn_register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(LoginActivity.this, "Click en Registrar", Toast.LENGTH_SHORT).show();
+                Intent gotoRegister = new Intent(LoginActivity.this, RegisterActivity.class);
+                startActivity(gotoRegister);
+                finish();
             }
         });
 

@@ -19,16 +19,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat">
-        <activity android:name="com.ramirezf.pdelicia.activities.RegisterActivity" android:screenOrientation="portrait"></activity>
         <!-- android:theme="@style/Theme.AppCompat.NoActionBar" -->
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity
-            android:name="com.ramirezf.pdelicia.activities.MapsActivity"
-            android:label="@string/title_activity_maps" />
+        <activity android:name="com.ramirezf.pdelicia.activities.MapsActivity" android:label="@string/title_activity_maps" />
+
+        <activity android:name="com.ramirezf.pdelicia.activities.RegisterActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
         <activity android:name="com.ramirezf.pdelicia.activities.LoginActivity" android:screenOrientation="portrait"/>
         <activity android:name="com.ramirezf.pdelicia.activities.PrincipalActivity" android:screenOrientation="portrait" />
         <activity android:name="com.ramirezf.pdelicia.MainActivity" android:screenOrientation="portrait">
