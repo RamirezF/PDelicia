@@ -3344,7 +3344,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         CameraPosition camera = new CameraPosition.Builder()
                 .target(local21)
                 .zoom(11)
-                .bearing(90)
+                .bearing(345)
                 .tilt(30)
                 .build();
 
