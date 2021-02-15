@@ -26,8 +26,7 @@
         android:paddingRight="40dp"
         android:layout_centerHorizontal="true"
         android:forceDarkAllowed="true"
-        android:background="@drawable/btn_red"
-        android:textSize="24dp"
-         />
+        android:background="@drawable/btn_blue"
+        android:textSize="24dp" />
 
 </RelativeLayout>

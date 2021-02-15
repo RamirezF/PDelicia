@@ -10,7 +10,7 @@
 
     <ImageView
         android:id="@+id/deli_img"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:src="@drawable/login00"
         android:layout_marginTop="20dp"
@@ -34,11 +34,9 @@
 
     <EditText
         android:id="@+id/email_txt"
-        android:layout_width="300dp"
+        android:layout_width="250dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="50dp"
         android:layout_marginTop="20dp"
-        android:layout_marginRight="50dp"
         android:background="@drawable/edit_round"
         android:drawableLeft="@drawable/ic_user"
         android:hint="*Email"
@@ -55,7 +53,7 @@
 
     <EditText
         android:id="@+id/pass_txt"
-        android:layout_width="300dp"
+        android:layout_width="250dp"
         android:layout_height="40dp"
         android:hint="*Password"
         android:paddingLeft="15dp"
@@ -77,12 +75,13 @@
 
         <Button
             android:id="@+id/btn_login"
-            android:layout_width="300dp"
+            android:layout_width="250dp"
             android:layout_height="40dp"
             android:layout_below="@+id/pass_txt"
             android:layout_marginTop="10dp"
             android:paddingTop="5dp"
-            android:textSize="20dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
             android:layout_centerVertical="true"
             android:paddingBottom="5dp"
             android:background="@drawable/btn_green"
@@ -98,7 +97,7 @@
         android:layout_below="@+id/btn_login"
         android:layout_marginTop="10dp"
         android:text="Regístrate"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="11dp"
         android:textStyle="italic"
         android:layout_marginBottom="15dp"
@@ -122,8 +121,28 @@
             app:layout_constraintStart_toStartOf="parent"/>
 
     <TextView
+        android:id="@+id/btn_fb"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/btn_google"
+        android:background="@drawable/bg_fb"
+        android:drawableLeft="@drawable/ic_fb"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:text=" Iniciar con Facebook"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_google"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
         android:id="@+id/btn_google"
-        android:layout_width="300dp"
+        android:layout_width="250dp"
         android:layout_height="40dp"
         android:layout_below="@+id/txt_o"
         android:layout_centerHorizontal="true"
@@ -141,25 +160,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginBottom="50dp" />
-
-    <TextView
-        android:id="@+id/btn_fb"
-        android:layout_width="300dp"
-        android:layout_height="40dp"
-        android:layout_below="@+id/btn_google"
-        android:background="@drawable/bg_fb"
-        android:drawableLeft="@drawable/ic_fb"
-        android:paddingLeft="5dp"
-        android:paddingTop="5dp"
-        android:paddingRight="10dp"
-        android:paddingBottom="5dp"
-        android:text=" Iniciar con Facebook"
-        android:gravity="center"
-        android:textColor="@color/white"
-        android:textSize="20dp"
-        android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_google"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

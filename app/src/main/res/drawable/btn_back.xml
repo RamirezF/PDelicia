@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <gradient
-        android:startColor="#5e0202"
-        android:centerColor="#ee2b2b"
-        android:endColor="#5e0202" />
-    <corners android:radius="50dp"/>
-</shape>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/ic_button_red_pressed" android:state_pressed="true"/> <!-- pressed -->
+    <item android:drawable="@drawable/ic_button_red_pressed" android:state_focused="true"/> <!-- focused -->
+    <item android:drawable="@drawable/ic_button_red_pressed" android:state_selected="true"/> <!-- selected -->
+    <item android:drawable="@drawable/ic_button_red_default"/> <!-- default -->
+
+</selector>
