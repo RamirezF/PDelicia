@@ -19,6 +19,9 @@ public class PrincipalActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
 
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.mipmap.ic_launcher);
+
         if(savedInstanceState == null)
         {
             currentFragment = new InicioFragment();
