@@ -262,40 +262,40 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         // Local05
         marker = new MarkerOptions();
         marker.position(local05);
-        marker.title("Prueba de Frisco 5");
-        marker.snippet("Funciona papu :'v");
+        marker.title("La Delicia - SAN JUAN DE LURIGANCHO - Jr. Killke");
+        marker.snippet("Telf: 948 351 555 / 951 679 738");
         marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local06
         marker = new MarkerOptions();
         marker.position(local06);
-        marker.title("Prueba de Frisco 6");
-        marker.snippet("Funciona papu :'v");
+        marker.title("La Delicia - ATE - Las Garzas");
+        marker.snippet("Telf: 01 308 6822 / 914 396 071");
         marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local07
         marker = new MarkerOptions();
         marker.position(local07);
-        marker.title("Prueba de Frisco 7");
-        marker.snippet("Funciona papu :'v");
+        marker.title("La Delicia - ATE - Santa Rosa de Valle");
+        marker.snippet("Telf: 918 749 455");
         marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local08
         marker = new MarkerOptions();
         marker.position(local08);
-        marker.title("Prueba de Frisco 8");
-        marker.snippet("Funciona papu :'v");
+        marker.title("La Delicia - COMAS - Boulevard España");
+        marker.snippet("Telf: 01 789 5894 / 947 352 794");
         marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
         // Local09
         marker = new MarkerOptions();
         marker.position(local09);
-        marker.title("Prueba de Frisco 9");
-        marker.snippet("Funciona papu :'v");
+        marker.title("La Delicia - San Martín de Porres - Vipol");
+        marker.snippet("Telf: 01 380 2198 / 940 318 565");
         marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
@@ -439,8 +439,8 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         // Local27
         marker = new MarkerOptions();
         marker.position(local27);
-        marker.title("Prueba de Frisco 27");
-        marker.snippet("Funciona papu :'v");
+        marker.title("La Delicia - ATE - Priale");
+        marker.snippet("Telf: 01 505 6300 / 921 414 161");
         marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
@@ -620,7 +620,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         marker = new MarkerOptions();
         marker.position(local49);
         marker.title("La Delicia - SANTA CLARA - Priale");
-        marker.snippet("Telf: Muy pronto...");
+        marker.snippet("Telf: 01 505 6300 / 921 414 161");
         marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
 
