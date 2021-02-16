@@ -43,21 +43,18 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
     private GoogleMap mMap;
     private MarkerOptions marker;
     private FloatingActionButton btn_frisco;
-
     public MapFragment() {
         // Required empty public constructor
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         rootView = inflater.inflate(R.layout.fragment_map, container, false);
         btn_frisco = (FloatingActionButton) rootView.findViewById(R.id.btn_frisco);
         btn_frisco.setOnClickListener(this);
         return rootView;
     }
-
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
@@ -68,8 +65,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
             mapView.onResume();
             mapView.getMapAsync(this);
         }
-
-
     }
 
     @Override
@@ -115,7 +110,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
             }
         }
     }
-
 
     // Para vel el GPS si está ACTIVADO O NO
     private boolean isGPSEnable() {
@@ -182,57 +176,56 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
     public void pizzeriaFrisco(GoogleMap googleMap) {
         mMap = googleMap;
         // Locales
-        final LatLng local01 = new LatLng(-12.275135117790825, -76.87049838784992);             //      Jr. Castilla N° 280 LURÍN
-        final LatLng local02 = new LatLng(-12.015347929575498, -77.09403878938531);              //      Urb. Chávez Mz L lt 29 2da Etapa (Dominicos)
-        final LatLng local03 = new LatLng(-11.890411417756997, -77.06855592068621);              //     Asoc. de Vivienda Cruz de Motupe Mz. J Lt. 25 (Paradero Establo)
-        final LatLng local04 = new LatLng(-11.979748861746241, -76.90595133991687);              //     LURIGANCHO, CHOSICA - Cajamarquilla
-        final LatLng local05 = new LatLng(-12.0164722,-76.9869109);              //             SAN JUAN DE LURIGANCHO - Jr Killke                                      Excel Datos
-        final LatLng local06 = new LatLng(-12.0402778,-76.9201054);              //             ATE - Las Garzas de Ate                                                 Excel Datos
-        final LatLng local07 = new LatLng(-12.0338611,-76.9154109);              //             ATE - Santa Rosa de Valle                                               Excel Datos
-        final LatLng local08 = new LatLng(-11.9559444,-77.054022);              //              COMAS - Boulevar España                                                 Excel Datos
-        final LatLng local09 = new LatLng(-11.9643333,-77.0943276);              //             SAN MARTÍN DE PORRES - Vipol de Naranjal                                Excel Datos
-        final LatLng local10 = new LatLng(-12.074031542415241, -77.00847702886605);              // LA VICTORIA - Apolo
-        final LatLng local11 = new LatLng(-12.081047339313274, -77.01725123347701);              // LA VICTORIA - Gral ANtonio de la Guerra
-        final LatLng local12 = new LatLng(-11.992188774968882, -76.82175781998149);              // CHACLACAYO - Huascata
-        final LatLng local13 = new LatLng(-11.985258248696661, -76.83210924267368);              //      LURIGANCHO - ÑAÑA
-        final LatLng local14 = new LatLng(-11.992164615421363, -76.91830868751566);              // HUACHIPA - Nievería
-        final LatLng local15 = new LatLng(-12.017001396291684, -76.91662882841742);              // HUACHIPA - Santa María
-        final LatLng local16 = new LatLng(-12.024919177128233, -76.9199059743698);              // ATE - Calle Nueva
-        final LatLng local17 = new LatLng(-12.035328570906081, -76.90462357686629);              // ATE - Residencial Las Américas
-        final LatLng local18 = new LatLng(-12.034059405920985, -76.92924131164027);              // ATE - Arco los Ángeles
-        final LatLng local19 = new LatLng(-12.029721529865595, -76.92684393237471);              //   ATE - Asoc. El Porvenir - (H. Solidaridad)
-        final LatLng local20 = new LatLng(-12.043440758816804, -76.97970122806369);              // SANTA ANITA - Universal
-        final LatLng local21 = new LatLng(-12.03057827906478, -76.96170461848178);              // EL AGUSTINO - Las Praderas de S. A.
-        final LatLng local22 = new LatLng(-11.97497287349915, -76.76823011678594);              //  CHACLACAYO - Nicolas Ayllón
-        final LatLng local23 = new LatLng(-11.92580746725925, -76.68585551121954);              // CHOSICA
-        final LatLng local24 = new LatLng(-12.024076387091215, -76.97699645338558);              // CAMPOY
-        final LatLng local25 = new LatLng(-12.00315408863745, -76.87487700950041);              //                                                     CARAPONGO   1
-        final LatLng local26 = new LatLng(-12.010114660998658, -76.85282366809392);              // ATE - Gloria Grande
-        final LatLng local27 = new LatLng(-12.0453056,-76.8929665);              // ATE - Priale                                                                        Excel Datos
-        final LatLng local28 = new LatLng(-12.020449767580827, -76.89039976296671);              // ATE - Santa Clara, San Martín
-        final LatLng local29 = new LatLng(-12.015921297550893, -76.88288248419425);              // ATE - Santa Clara, Bolívar
-        final LatLng local30 = new LatLng(-12.045854831823023, -76.97387102281945);              // SANTA ANITA BOLOGNESI
-        final LatLng local31 = new LatLng(-12.051906396849326, -76.97883616342347);              // SANTA ANITA - Puente Azul
-        final LatLng local32 = new LatLng(-12.04726976832986, -76.98244111026835);              // SANTA ANITA - Nocheto
-        final LatLng local33 = new LatLng(-12.003282293082178, -77.00293845767071);              // SAN JUAN DE LURIGANCHO - Las Flores
-        final LatLng local34 = new LatLng(-11.971012634513713, -77.00517139076717);              //     SAN JUAN DE LURIGANCHO - Cto Grande
-        final LatLng local35 = new LatLng(-12.005677310855603, -77.09932629978633);              // CALLAO - Los Nardos
-        final LatLng local36 = new LatLng(-11.99662035205114, -77.11391887911988);              // SAN MARTÍN DE PORRES - Entrada Cond. CIudad Nueva
-        final LatLng local37 = new LatLng(-12.020471494738635, -76.90037925330297);              // ATE - La Cruz
-        final LatLng local38 = new LatLng(-12.054457497997973, -76.95934561012335);              // ATE - Jr. La Unión
-        final LatLng local39 = new LatLng(-12.068269868255348, -76.97521800017546);              //  ATE - Salamanca
-        final LatLng local40 = new LatLng(-12.027909999467138, -76.95202636459305);              //      ATE - Santa Elvira
-        final LatLng local41 = new LatLng(-12.051782245648587, -76.96447327134028);              // SANTA ANITA - Flamencos
-        final LatLng local42 = new LatLng(-12.041308492240882, -77.00232400017546);              // Ancash El AGUSTINO
-        final LatLng local43 = new LatLng(-12.04028729136067, -76.99746481907955);              // AGUSTINO CATALAN // Riva Aguero
-        final LatLng local44 = new LatLng(-12.111582623977457, -76.87288711684407);              //     Manchay 3 Marías
-        final LatLng local45 = new LatLng(-12.095092801112484, -76.88471465091841);              //  MANCHAY - Portada 3
-
-        // NUEVOS
-        final LatLng local46 = new LatLng(-12.0496294,-76.998208);                              // NUEVA SEDE AGUSTINO
-        final LatLng local47 = new LatLng(-12.00092513861642, -76.85345509253041);              // CARAPONGO 2 Gisela
-        final LatLng local48 = new LatLng(-12.029922654926871, -76.88703332946335);             // MANYLSA
-        final LatLng local49 = new LatLng(-12.045278114790346, -76.8907195014362);             // SANTA CLARA - PRIALE
+        final LatLng local01 = new LatLng(-12.275135117790825, -76.87049838784992);          //     Jr. Castilla N° 280 LURÍN
+        final LatLng local02 = new LatLng(-12.015347929575498, -77.09403878938531);          //     Urb. Chávez Mz L lt 29 2da Etapa (Dominicos)
+        final LatLng local03 = new LatLng(-11.890411417756997, -77.06855592068621);          //     Asoc. de Vivienda Cruz de Motupe Mz. J Lt. 25 (Paradero Establo)
+        final LatLng local04 = new LatLng(-11.979748861746241, -76.90595133991687);          //     LURIGANCHO, CHOSICA - Cajamarquilla
+        final LatLng local05 = new LatLng(-12.0164722,-76.9869109);                          //     SAN JUAN DE LURIGANCHO - Jr Killke                                      Excel Datos
+        final LatLng local06 = new LatLng(-12.0402778,-76.9201054);                          //     ATE - Las Garzas de Ate                                                 Excel Datos
+        final LatLng local07 = new LatLng(-12.0338611,-76.9154109);                          //     ATE - Santa Rosa de Valle                                               Excel Datos
+        final LatLng local08 = new LatLng(-11.9559444,-77.054022);                           //     COMAS - Boulevar España                                                 Excel Datos
+        final LatLng local09 = new LatLng(-11.9643333,-77.0943276);                          //     SAN MARTÍN DE PORRES - Vipol de Naranjal                                Excel Datos
+        final LatLng local10 = new LatLng(-12.074031542415241, -77.00847702886605);          //     LA VICTORIA - Apolo
+        final LatLng local11 = new LatLng(-12.081047339313274, -77.01725123347701);          //     LA VICTORIA - Gral ANtonio de la Guerra
+        final LatLng local12 = new LatLng(-11.992188774968882, -76.82175781998149);          //     CHACLACAYO - Huascata
+        final LatLng local13 = new LatLng(-11.985258248696661, -76.83210924267368);          //     LURIGANCHO - ÑAÑA
+        final LatLng local14 = new LatLng(-11.992164615421363, -76.91830868751566);          //     HUACHIPA - Nievería
+        final LatLng local15 = new LatLng(-12.017001396291684, -76.91662882841742);          //     HUACHIPA - Santa María
+        final LatLng local16 = new LatLng(-12.024919177128233, -76.9199059743698);           //     ATE - Calle Nueva
+        final LatLng local17 = new LatLng(-12.035328570906081, -76.90462357686629);          //     ATE - Residencial Las Américas
+        final LatLng local18 = new LatLng(-12.034059405920985, -76.92924131164027);          //     ATE - Arco los Ángeles
+        final LatLng local19 = new LatLng(-12.029721529865595, -76.92684393237471);          //     ATE - Asoc. El Porvenir - (H. Solidaridad)
+        final LatLng local20 = new LatLng(-12.043440758816804, -76.97970122806369);          //     SANTA ANITA - Universal
+        final LatLng local21 = new LatLng(-12.03057827906478, -76.96170461848178);           //     EL AGUSTINO - Las Praderas de S. A.
+        final LatLng local22 = new LatLng(-11.97497287349915, -76.76823011678594);           //     CHACLACAYO - Nicolas Ayllón
+        final LatLng local23 = new LatLng(-11.92580746725925, -76.68585551121954);           //     CHOSICA
+        final LatLng local24 = new LatLng(-12.024076387091215, -76.97699645338558);          //     CAMPOY
+        final LatLng local25 = new LatLng(-12.00315408863745, -76.87487700950041);           //     CARAPONGO   1
+        final LatLng local26 = new LatLng(-12.010114660998658, -76.85282366809392);          //     ATE - Gloria Grande
+        final LatLng local27 = new LatLng(-12.0453056,-76.8929665);                          //     ATE - Priale                                                                        Excel Datos
+        final LatLng local28 = new LatLng(-12.020449767580827, -76.89039976296671);          //     ATE - Santa Clara, San Martín
+        final LatLng local29 = new LatLng(-12.015921297550893, -76.88288248419425);          //     ATE - Santa Clara, Bolívar
+        final LatLng local30 = new LatLng(-12.045854831823023, -76.97387102281945);          //     SANTA ANITA BOLOGNESI
+        final LatLng local31 = new LatLng(-12.051906396849326, -76.97883616342347);          //     SANTA ANITA - Puente Azul
+        final LatLng local32 = new LatLng(-12.04726976832986, -76.98244111026835);           //     SANTA ANITA - Nocheto
+        final LatLng local33 = new LatLng(-12.003282293082178, -77.00293845767071);          //     SAN JUAN DE LURIGANCHO - Las Flores
+        final LatLng local34 = new LatLng(-11.971012634513713, -77.00517139076717);          //     SAN JUAN DE LURIGANCHO - Cto Grande
+        final LatLng local35 = new LatLng(-12.005677310855603, -77.09932629978633);          //     CALLAO - Los Nardos
+        final LatLng local36 = new LatLng(-11.99662035205114, -77.11391887911988);           //     SAN MARTÍN DE PORRES - Entrada Cond. CIudad Nueva
+        final LatLng local37 = new LatLng(-12.020471494738635, -76.90037925330297);          //     ATE - La Cruz
+        final LatLng local38 = new LatLng(-12.054457497997973, -76.95934561012335);          //     ATE - Jr. La Unión
+        final LatLng local39 = new LatLng(-12.068269868255348, -76.97521800017546);          //     ATE - Salamanca
+        final LatLng local40 = new LatLng(-12.027909999467138, -76.95202636459305);          //     ATE - Santa Elvira
+        final LatLng local41 = new LatLng(-12.051782245648587, -76.96447327134028);          //     SANTA ANITA - Flamencos
+        final LatLng local42 = new LatLng(-12.041308492240882, -77.00232400017546);          //     Ancash El AGUSTINO
+        final LatLng local43 = new LatLng(-12.04028729136067, -76.99746481907955);           //     AGUSTINO CATALAN // Riva Aguero
+        final LatLng local44 = new LatLng(-12.111582623977457, -76.87288711684407);          //     Manchay 3 Marías
+        final LatLng local45 = new LatLng(-12.095092801112484, -76.88471465091841);          //     MANCHAY - Portada 3
+       // NUEVOS
+        final LatLng local46 = new LatLng(-12.0496294,-76.998208);                           //     NUEVA SEDE AGUSTINO
+        final LatLng local47 = new LatLng(-12.00092513861642, -76.85345509253041);           //     CARAPONGO 2 Gisela
+        final LatLng local48 = new LatLng(-12.029922654926871, -76.88703332946335);          //     MANYLSA
+        final LatLng local49 = new LatLng(-12.045278114790346, -76.8907195014362);           //     SANTA CLARA - PRIALE
 
         // Local01
         marker = new MarkerOptions();
@@ -666,7 +659,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         final LatLng p2432 = new LatLng(-12.026532067024165, -76.99130646196787);
         final LatLng p2433 = new LatLng(-12.026434921639837, -76.98815682500786);
 
-
         PolygonOptions laland1 = new PolygonOptions()
                 //.add(p2401)  Local
                 .add(p2402)
@@ -706,7 +698,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         Polygon actoress = mMap.addPolygon(laland1);
 
         // Polígono Local 22 (quitando los 3 primeros puntos)       CHACLACAYO
-
         final LatLng p2501 = new LatLng(-11.97497287349915, -76.76823011678594);
         final LatLng p2502 = new LatLng(-11.96753472342126, -76.77154857153107);
         final LatLng p2503 = new LatLng(-11.967971551638978, -76.76393572055413);
@@ -758,7 +749,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         final LatLng p2549 = new LatLng(-11.968685245679806, -76.77131200064427);
         final LatLng p2550 = new LatLng(-11.9679720066187, -76.76390927180907);
         final LatLng p2551 = new LatLng(-11.96347405804547, -76.75189288640472);
-
 
         PolygonOptions laland2 = new PolygonOptions()
                 //.add(p2501)
@@ -817,7 +807,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         Polygon actoresss = mMap.addPolygon(laland2);
 
         // Polígono Local 23 (Completo) CHOSICA
-
         final LatLng cho_01 = new LatLng(-11.924422076093817, -76.68757473871402);
         final LatLng cho_02 = new LatLng(-11.924276552200546, -76.68703757858921);
         final LatLng cho_03 = new LatLng(-11.901017757473127, -76.66686963575795);
@@ -972,7 +961,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         final LatLng angel_14 = new LatLng(-12.028074605590405, -76.92319100226814);
         final LatLng angel_15 = new LatLng(-12.02460708172612, -76.92470754779639);
 
-
         PolygonOptions angeles_Loc = new PolygonOptions()
                 //.add(angel_01)
                 .add(angel_02)
@@ -994,7 +982,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         Polygon angelesLoc = mMap.addPolygon(angeles_Loc);
 
         // Polígono Local 41 (Completo)         FLAMENCOS
-
         final LatLng flame_01 = new LatLng(-12.051782245648587, -76.96447327134028);
         final LatLng flame_02 = new LatLng(-12.057398083492135, -76.97139719124321);
         final LatLng flame_03 = new LatLng(-12.05577040577797, -76.97417345993821);
@@ -1038,7 +1025,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         Polygon flamencoLoc = mMap.addPolygon(flamenco_Loc);
 
         // Polígono Local 38 LA UNIÓN
-
         final LatLng ang_01 = new LatLng(-12.054457497997973, -76.95934561012335);
         final LatLng ang_02 = new LatLng(-12.043142046842314, -76.93034669989883);
         final LatLng ang_03 = new LatLng(-12.044660777139523, -76.93388335254564);
@@ -1057,7 +1043,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         final LatLng ang_16 = new LatLng(-12.058498007250853, -76.97306191760863);
         final LatLng ang_17 = new LatLng(-12.043019079006905, -76.9363116292571);
         final LatLng ang_18 = new LatLng(-12.037927005656563, -76.93157900226804);
-
 
         PolygonOptions ang_loc = new PolygonOptions()
                 //.add(ang_01)
@@ -1083,7 +1068,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         Polygon angLoc = mMap.addPolygon(ang_loc);
 
         // Polígono Local 42 ANCASH - AGUSTINO (Completo) // POR DEFINIR
-
         final LatLng ancash_01 = new LatLng(-12.041308492240882, -77.00232400017546);
         final LatLng ancash_02 = new LatLng(-12.034385902580455, -77.00856874195499);
         final LatLng ancash_03 = new LatLng(-12.037657670350827, -77.00597446395366);
@@ -1099,7 +1083,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         final LatLng ancash_13 = new LatLng(-12.03496351240612, -76.98972891760886);
         final LatLng ancash_14 = new LatLng(-12.029274606385608, -76.99632200226823);
         final LatLng ancash_15 = new LatLng(-12.032740977689643, -77.00621335809225);
-
 
         PolygonOptions ancash_loc = new PolygonOptions()
                 //.add(ancash_01)
@@ -1120,7 +1103,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                 .fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
 
         // Polígono Local 44 MANCHAY (Completo)
-
         final LatLng mancha_01 = new LatLng(-12.111582623977457, -76.87288711684407);
         final LatLng mancha_02 = new LatLng(-12.08799779555258, -76.8839142102076);
         final LatLng mancha_03 = new LatLng(-12.086546967788802, -76.88148795717468);
@@ -1146,7 +1128,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         final LatLng mancha_23 = new LatLng(-12.095810771359249, -76.8843761660856);
         final LatLng mancha_24 = new LatLng(-12.095652873140649, -76.88705185884754);
         final LatLng mancha_25 = new LatLng(-12.090675795662847, -76.88325673442002);
-
 
         PolygonOptions manchay_Loc = new PolygonOptions()
                 //.add(mancha_01)
@@ -1179,7 +1160,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         Polygon manchayLoc = mMap.addPolygon(manchay_Loc);
 
         // Polígono Local 43 EL AGUSTINO - CATALAN HERMES
-
         final LatLng aleg_01 = new LatLng(-12.041775741038883, -77.00456354791474);
         final LatLng aleg_02 = new LatLng(-12.046870469134223, -77.00303154459759);
         final LatLng aleg_03 = new LatLng(-12.049512989225867, -77.00674309953604);
@@ -1220,7 +1200,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         Polygon elagusLoc = mMap.addPolygon(elagus_Loc);
 
         // Polígono Local 39 SALAMANCA (Completo)
-
         final LatLng sala_01 = new LatLng(-12.068269868255348, -76.97521800017546);
         final LatLng sala_02 = new LatLng(-12.058753933554762, -76.97348010254304);
         final LatLng sala_03 = new LatLng(-12.062793363993048, -76.97177653450352);
@@ -1252,7 +1231,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         Polygon salaLoc = mMap.addPolygon(sala_Loc);
 
         // Polígono Local 42 SALAMANCA (Completo)                                                       POR VERSE
-
         final LatLng elvi_01 = new LatLng(-12.027909999467138, -76.95202636459305);
         final LatLng elvi_02 = new LatLng(-12.035003456562647, -76.95547673080877);
         final LatLng elvi_03 = new LatLng(-12.029047484726977, -76.93496000226811);
@@ -1284,7 +1262,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         Polygon elviLoc = mMap.addPolygon(elvi_Loc);
 
         // Polígono Sin Local - NUEVO HERMES
-
         final LatLng agus_01 = new LatLng(-12.0496294,-76.998208);
         final LatLng agus_02 = new LatLng(-12.046635065876885, -76.99932462896246);
         final LatLng agus_03 = new LatLng(-12.049419323960938, -77.00141015584246);
@@ -1313,10 +1290,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
 
         Polygon agusLoc = mMap.addPolygon(agus_Loc);
 
-        // Gisela
-
         // Polígono Local 35 - CALLAO Nardos
-
         final LatLng callao_01 = new LatLng(-12.021732155791804, -77.1059505868092);
         final LatLng callao_02 = new LatLng(-12.01970940520341, -77.10146505805001);
         final LatLng callao_03 = new LatLng(-12.01674113399767, -77.09821339711239);
@@ -1358,7 +1332,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         Polygon callaoLoc = mMap.addPolygon(callao_Loc);
 
         // CARAPONGO 1 Gisela - Datos
-
         final LatLng carapongo_01 = new LatLng(-11.998797991494099, -76.85792481576293);
         final LatLng carapongo_02 = new LatLng(-11.998797991494099, -76.85792481576293);
         final LatLng carapongo_03 = new LatLng(-12.007408504918383, -76.86995274342482);
@@ -1394,7 +1367,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         final LatLng carapongo_33 = new LatLng(-11.998682760713182, -76.8635901136992);
         final LatLng carapongo_34 = new LatLng(-11.999574247829049, -76.86055211188848);
         final LatLng carapongo_35 = new LatLng(-11.998682760750292, -76.85785841712101);
-
 
         PolygonOptions carap_Loc = new PolygonOptions()
                 .add(carapongo_01)
@@ -1477,7 +1449,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         final LatLng carapongo2_38 = new LatLng(-11.997789617343962, -76.8498116173542);
         final LatLng carapongo2_39 = new LatLng(-11.99766958776695, -76.84755024610122);
 
-
         PolygonOptions carap2_Loc = new PolygonOptions()
                 .add(carapongo2_01)
                 .add(carapongo2_02)
@@ -1523,7 +1494,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         Polygon carap2Loc = mMap.addPolygon(carap2_Loc);
 
         // Local 26 ATE - Gloria Grande Gisela
-
         final LatLng gg_01 = new LatLng(-12.010081490462554, -76.87764242865113);
         final LatLng gg_02 = new LatLng(-12.017668540169357, -76.87540010186878);
         final LatLng gg_03 = new LatLng(-12.016776574474246, -76.87343672503123);
@@ -1637,7 +1607,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         Polygon ggLoc = mMap.addPolygon(ggp_Loc);
 
         // LOCAL NUEVO MANYLSA
-
         final LatLng manylsa_01 = new LatLng(-12.028630629924388, -76.88586295541057);
         final LatLng manylsa_02 = new LatLng(-12.028842324543634, -76.88529551143684);
         final LatLng manylsa_03 = new LatLng(-12.028293060157297, -76.8848743174653);
@@ -1666,7 +1635,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         final LatLng manylsa_26 = new LatLng(-12.033760319518398, -76.87832008634373);
         final LatLng manylsa_27 = new LatLng(-12.033372047295565, -76.88107741220158);
         final LatLng manylsa_28 = new LatLng(-12.0340436027019, -76.88148510997276);
-        final LatLng manylsa_29 = new LatLng(-12.035008961331007, -76.8824507150773); // DUPLICARON LA LINEA
+        final LatLng manylsa_29 = new LatLng(-12.035008961331007, -76.8824507150773);
         final LatLng manylsa_30 = new LatLng(-12.035197842397757, -76.88060474281272);
         final LatLng manylsa_31 = new LatLng(-12.03544442766121, -76.88004147794578);
         final LatLng manylsa_32 = new LatLng(-12.035900874455514, -76.88019168097019);
@@ -2058,7 +2027,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         final LatLng nocheto_64 = new LatLng(-12.043935004760781, -76.98449953494904);
         final LatLng nocheto_65 = new LatLng(-12.044329209085577, -76.98477561052958);
 
-
         PolygonOptions nocheto_Loc = new PolygonOptions()
                 .add(nocheto_02)
                 .add(nocheto_03)
@@ -2129,7 +2097,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         Polygon nochetoLoc = mMap.addPolygon(nocheto_Loc);
 
         // Local 29  ATE SANTA CLARA - BOLIVAR y San Martín
-
         final LatLng staclara_01 = new LatLng(-12.008926657830354, -76.87022609361198);
         final LatLng staclara_02 = new LatLng(-12.010101980923618, -76.86994713233814);
         final LatLng staclara_03 = new LatLng(-12.010553215290669, -76.86945359820861);
@@ -2362,7 +2329,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                 .add(claraM_23)
                 .add(claraM_24)
                 .add(claraM_25)
-
                 .fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
 
         Polygon claraMLoc = mMap.addPolygon(claraM_Loc);
@@ -2430,7 +2396,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                 .add(ppiedra_28)
                 .add(ppiedra_29)
                 .add(ppiedra_30)
-
                 .fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
 
         Polygon ppiedraLoc = mMap.addPolygon(ppiedra_Loc);
@@ -2618,8 +2583,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                 .add(lurin_88)
                 .add(lurin_89)
                 .add(lurin_90)
-
-
                 .fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
 
         Polygon lurinLoc = mMap.addPolygon(lurin_Loc);
@@ -2841,7 +2804,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                 .add(huascata_105)
                 .add(huascata_106)
                 .add(huascata_107)
-
                 .fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
 
         Polygon huascataLoc = mMap.addPolygon(huascata_Loc);
@@ -3146,7 +3108,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                 .add(ñaña_146)
                 .add(ñaña_147)
                 .add(ñaña_148)
-
                 .fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
 
         Polygon ñañaLoc = mMap.addPolygon(ñaña_Loc);
@@ -3347,7 +3308,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                 .add(stmar_44)
                 .add(stmar_45)
                 .add(stmar_46)
-
                 .fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
 
         Polygon stmarLoc = mMap.addPolygon(stmar_Loc);
@@ -3472,7 +3432,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         Polygon americaLoc = mMap.addPolygon(america_Loc);
 
         // Calle Nueva ATE
-
         final LatLng cn_01 = new LatLng(-12.03141427328969, -76.93149242335625);
         final LatLng cn_02 = new LatLng(-12.033386466607137, -76.93103251657723);
         final LatLng cn_03 = new LatLng(-12.033549109357345, -76.92993817526552);
@@ -3516,7 +3475,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         final LatLng cn_41 = new LatLng(-12.028883462464902, -76.93444085808365);
         final LatLng cn_42 = new LatLng(-12.028200834961554, -76.93221044700617);
         final LatLng cn_43 = new LatLng(-12.031272645123757, -76.93157318663194);
-
 
         PolygonOptions cn_Loc = new PolygonOptions()
                 .add(cn_01)
@@ -3812,7 +3770,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         final LatLng dominic_33 = new LatLng(-12.033432167408314, -77.10011938939213);
         final LatLng dominic_34 = new LatLng(-12.035402542134804, -77.09949470087422);
 
-
         PolygonOptions dominic_Loc = new PolygonOptions()
                 .add(dominic_01)
                 .add(dominic_02)
@@ -3848,7 +3805,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                 .add(dominic_32)
                 .add(dominic_33)
                 .add(dominic_34)
-
                 .fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
         Polygon dominicLoc = mMap.addPolygon(dominic_Loc);
 
@@ -4144,8 +4100,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                 .add(cantg_118)
                 .add(cantg_119)
                 .add(cantg_120)
-
-
                 .fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
         Polygon cantogLoc = mMap.addPolygon(cantog_Loc);
 
@@ -4269,8 +4223,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                 .add(lavic_56)
                 .add(lavic_57)
                 .add(lavic_58)
-
-
                 .fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
         Polygon lavicLoc = mMap.addPolygon(lavic_Loc);
 
@@ -4294,7 +4246,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                 .add(pino_06)
                 .add(pino_07)
                 .add(pino_08)
-
                 .fillColor(0xBBFFFFFF).strokeColor(Color.RED).strokeWidth(3); // Sin color
         Polygon pinoLoc = mMap.addPolygon(pino_Loc);
 
@@ -4305,25 +4256,15 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                 .bearing(345)
                 .tilt(30)
                 .build();
-
 /*
         final LatLng carapongo_01 = new LatLng();
-
         PolygonOptions carap_Loc = new PolygonOptions()
                 .add(carapongo_01)
                 .fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
-
         Polygon carapLoc = mMap.addPolygon(carap_Loc);
-
 */
-
-
         mMap.animateCamera(CameraUpdateFactory.newCameraPosition(camera));
-        //mMap.moveCamera(CameraUpdateFactory.newLatLng(pizzeria));
-
     }
-
-
 }
 
 
