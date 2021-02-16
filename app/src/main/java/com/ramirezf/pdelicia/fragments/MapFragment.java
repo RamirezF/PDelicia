@@ -180,7 +180,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         final LatLng local02 = new LatLng(-12.015347929575498, -77.09403878938531);          //     Urb. Chávez Mz L lt 29 2da Etapa (Dominicos)
         final LatLng local03 = new LatLng(-11.890411417756997, -77.06855592068621);          //     Asoc. de Vivienda Cruz de Motupe Mz. J Lt. 25 (Paradero Establo)
         final LatLng local04 = new LatLng(-11.979748861746241, -76.90595133991687);          //     LURIGANCHO, CHOSICA - Cajamarquilla
-        final LatLng local05 = new LatLng(-12.0164722,-76.9869109);                          //     SAN JUAN DE LURIGANCHO - Jr Killke                                      Excel Datos
+        final LatLng local05 = new LatLng(-12.016473502097616, -76.98471346472935);                          //     SAN JUAN DE LURIGANCHO - Jr Killke                                      Excel Datos
         final LatLng local06 = new LatLng(-12.0402778,-76.9201054);                          //     ATE - Las Garzas de Ate                                                 Excel Datos
         final LatLng local07 = new LatLng(-12.0338611,-76.9154109);                          //     ATE - Santa Rosa de Valle                                               Excel Datos
         final LatLng local08 = new LatLng(-11.9559444,-77.054022);                           //     COMAS - Boulevar España                                                 Excel Datos
@@ -225,7 +225,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         final LatLng local46 = new LatLng(-12.0496294,-76.998208);                           //     NUEVA SEDE AGUSTINO
         final LatLng local47 = new LatLng(-12.00092513861642, -76.85345509253041);           //     CARAPONGO 2 Gisela
         final LatLng local48 = new LatLng(-12.029922654926871, -76.88703332946335);          //     MANYLSA
-        final LatLng local49 = new LatLng(-12.045278114790346, -76.8907195014362);           //     SANTA CLARA - PRIALE
+        final LatLng local49 = new LatLng(-12.045278114790346, -76.8907195014362);           //     ATE - Priale
 
         // Local01
         marker = new MarkerOptions();
@@ -262,7 +262,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         // Local05
         marker = new MarkerOptions();
         marker.position(local05);
-        marker.title("La Delicia - SAN JUAN DE LURIGANCHO - Jr. Killke");
+        marker.title("La Delicia - SAN JUAN DE LURIGANCHO - Mangomarca");
         marker.snippet("Telf: 948 351 555 / 951 679 738");
         marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
@@ -619,7 +619,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         // Local49                                                                                SIN TELÉFONO NI CELULAR
         marker = new MarkerOptions();
         marker.position(local49);
-        marker.title("La Delicia - SANTA CLARA - Priale");
+        marker.title("La Delicia - ATE - Priale");
         marker.snippet("Telf: 01 505 6300 / 921 414 161");
         marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         mMap.addMarker(marker);
@@ -4101,7 +4101,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                 .add(cantg_119)
                 .add(cantg_120)
                 .fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
-        Polygon cantogLoc = mMap.addPolygon(cantog_Loc);
+        Polygon cantogLoc = mMap.addPolygon(cantog_Loc);                                                  //Muestra Canto Grande Rojo
 
         // LA VICTORIA - Gral Antonio de la Guerra
         final LatLng lavic_01 = new LatLng(-12.082827951334718, -76.98497214949519);
@@ -4226,6 +4226,766 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                 .fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
         Polygon lavicLoc = mMap.addPolygon(lavic_Loc);
 
+        // Local 49 Priale ATE 16/02/2021
+        final LatLng pria_01 = new LatLng(-12.034964014128443, -76.88565770559275);
+        final LatLng pria_02 = new LatLng(-12.036286131651273, -76.88668230944735);
+        final LatLng pria_03 = new LatLng(-12.03660092057418, -76.8867198603711);
+        final LatLng pria_04 = new LatLng(-12.03678979375092, -76.88690761498987);
+        final LatLng pria_05 = new LatLng(-12.036417293747297, -76.88743869234013);
+        final LatLng pria_06 = new LatLng(-12.036774054324592, -76.88799659177877);
+        final LatLng pria_07 = new LatLng(-12.037109828571841, -76.88825408390943);
+        final LatLng pria_08 = new LatLng(-12.037806976311415, -76.88765806712381);
+        final LatLng pria_09 = new LatLng(-12.0389716868916, -76.88922959807468);
+        final LatLng pria_10 = new LatLng(-12.038698876827027, -76.89091403035623);
+        final LatLng pria_11 = new LatLng(-12.039874076370918, -76.891654319996);
+        final LatLng pria_12 = new LatLng(-12.040734487118149, -76.89150411630096);
+        final LatLng pria_13 = new LatLng(-12.040986314116385, -76.89062435180155);
+        final LatLng pria_14 = new LatLng(-12.041196169767893, -76.89015228304577);
+        final LatLng pria_15 = new LatLng(-12.041668344384323, -76.89034540208223);
+        final LatLng pria_16 = new LatLng(-12.042413329350167, -76.89036685980692);
+        final LatLng pria_17 = new LatLng(-12.04483713929054, -76.88931543391163);
+        final LatLng pria_18 = new LatLng(-12.04501551407183, -76.88909012823031);
+        final LatLng pria_19 = new LatLng(-12.045571622846465, -76.8875880912801);
+        final LatLng pria_20 = new LatLng(-12.046434561204316, -76.88660135412162);
+        final LatLng pria_21 = new LatLng(-12.046390044980106, -76.88346057117577);
+        final LatLng pria_22 = new LatLng(-12.048185526834876, -76.8825501993074);
+        final LatLng pria_23 = new LatLng(-12.048942296581219, -76.88327849680209);
+        final LatLng pria_24 = new LatLng(-12.048793910524589, -76.88408265861915);
+        final LatLng pria_25 = new LatLng(-12.047770044498339, -76.88723861442948);
+        final LatLng pria_26 = new LatLng(-12.047859076481725, -76.8881641591623);
+        final LatLng pria_27 = new LatLng(-12.048526815477858, -76.88846761648553);
+        final LatLng pria_28 = new LatLng(-12.050114543606648, -76.88828554211184);
+        final LatLng pria_29 = new LatLng(-12.051405493235087, -76.8875420717289);
+        final LatLng pria_30 = new LatLng(-12.05247571203115, -76.8867159828821);
+        final LatLng pria_31 = new LatLng(-12.052601620053416, -76.89047107525764);
+        final LatLng pria_32 = new LatLng(-12.05134253717238, -76.89197311220785);
+        final LatLng pria_33 = new LatLng(-12.05014640296397, -76.89120063606202);
+        final LatLng pria_34 = new LatLng(-12.048928223871789, -76.89041927194629);
+        final LatLng pria_35 = new LatLng(-12.046603336122384, -76.89192824840642);
+        final LatLng pria_36 = new LatLng(-12.044048365446766, -76.89357457768516);
+        final LatLng pria_37 = new LatLng(-12.041860191498198, -76.89380914550418);
+        final LatLng pria_38 = new LatLng(-12.040660217508647, -76.89507220305013);
+        final LatLng pria_39 = new LatLng(-12.039407297834263, -76.89512633408529);
+        final LatLng pria_40 = new LatLng(-12.037907315838998, -76.89400762595582);
+        final LatLng pria_41 = new LatLng(-12.036350600061393, -76.89379128030666);
+        final LatLng pria_42 = new LatLng(-12.035658063299115, -76.89313682134977);
+        final LatLng pria_43 = new LatLng(-12.034713720245843, -76.89296514173749);
+        final LatLng pria_44 = new LatLng(-12.034293998652535, -76.89267546318281);
+        final LatLng pria_45 = new LatLng(-12.033542571683281, -76.89272531746079);
+        final LatLng pria_46 = new LatLng(-12.033204467277386, -76.89240535550721);
+        final LatLng pria_47 = new LatLng(-12.032160851327081, -76.89182895569353);
+        final LatLng pria_48 = new LatLng(-12.032638288381504, -76.89073997875956);
+        final LatLng pria_49 = new LatLng(-12.033031779818373, -76.88968318847672);
+        final LatLng pria_50 = new LatLng(-12.033330832931295, -76.88816505814658);
+        final LatLng pria_51 = new LatLng(-12.033540694561918, -76.88747841268362);
+        final LatLng pria_52 = new LatLng(-12.034967749323657, -76.88564914615962);
+
+        PolygonOptions pria_Loc = new PolygonOptions()
+                .add(pria_01)
+                .add(pria_02)
+                .add(pria_03)
+                .add(pria_04)
+                .add(pria_05)
+                .add(pria_06)
+                .add(pria_07)
+                .add(pria_08)
+                .add(pria_09)
+                .add(pria_10)
+                .add(pria_11)
+                .add(pria_12)
+                .add(pria_13)
+                .add(pria_14)
+                .add(pria_15)
+                .add(pria_16)
+                .add(pria_17)
+                .add(pria_18)
+                .add(pria_19)
+                .add(pria_20)
+                .add(pria_21)
+                .add(pria_22)
+                .add(pria_23)
+                .add(pria_24)
+                .add(pria_25)
+                .add(pria_26)
+                .add(pria_27)
+                .add(pria_28)
+                .add(pria_29)
+                .add(pria_30)
+                .add(pria_31)
+                .add(pria_32)
+                .add(pria_33)
+                .add(pria_34)
+                .add(pria_35)
+                .add(pria_36)
+                .add(pria_37)
+                .add(pria_38)
+                .add(pria_39)
+                .add(pria_40)
+                .add(pria_41)
+                .add(pria_42)
+                .add(pria_43)
+                .add(pria_44)
+                .add(pria_45)
+                .add(pria_46)
+                .add(pria_47)
+                .add(pria_48)
+                .add(pria_49)
+                .add(pria_50)
+                .add(pria_51)
+                .add(pria_52)
+                .fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
+        Polygon priaLoc = mMap.addPolygon(pria_Loc);
+
+        // San Juan de lurigancho - Metro Ascienda 16/02/2021
+        final LatLng metro_01 = new LatLng(-11.992142415615255, -77.00052451197908);
+        final LatLng metro_02 = new LatLng(-11.992639587005876, -76.99843686756175);
+        final LatLng metro_03 = new LatLng(-11.99389894464779, -76.9983724945496);
+        final LatLng metro_04 = new LatLng(-11.995074339807985, -76.9966344232215);
+        final LatLng metro_05 = new LatLng(-11.995662035498336, -76.99599069305233);
+        final LatLng metro_06 = new LatLng(-11.996795444960213, -76.99446719840195);
+        final LatLng metro_07 = new LatLng(-11.997697971291611, -76.99431699470694);
+        final LatLng metro_08 = new LatLng(-11.998516539072494, -76.99461740209698);
+        final LatLng metro_09 = new LatLng(-11.999335104367924, -76.99429553703622);
+        final LatLng metro_10 = new LatLng(-12.00172781949242, -76.99427407950287);
+        final LatLng metro_11 = new LatLng(-12.003473134879737, -76.99098077436187);
+        final LatLng metro_12 = new LatLng(-12.006649113789683, -76.98870484469097);
+        final LatLng metro_13 = new LatLng(-12.008993971388719, -76.98706617532791);
+        final LatLng metro_14 = new LatLng(-12.01062645520629, -76.9889779565567);
+        final LatLng metro_15 = new LatLng(-12.010893587967743, -76.99064697164872);
+        final LatLng metro_16 = new LatLng(-12.010418685097523, -76.99377258173007);
+        final LatLng metro_17 = new LatLng(-12.011754347310177, -76.99334774147326);
+        final LatLng metro_18 = new LatLng(-12.01273382870418, -76.99019178566294);
+        final LatLng metro_19 = new LatLng(-12.016023197387657, -76.9888813054311);
+        final LatLng metro_20 = new LatLng(-12.017020472444136, -76.98985791671065);
+        final LatLng metro_21 = new LatLng(-12.019979704831128, -76.9905552775021);
+        final LatLng metro_22 = new LatLng(-12.019308113183742, -76.99558710153694);
+        final LatLng metro_23 = new LatLng(-12.019822300696942, -76.99818347969374);
+        final LatLng metro_24 = new LatLng(-12.020567346199401, -76.99789380153923);
+        final LatLng metro_25 = new LatLng(-12.022388079360493, -76.99732897485485);
+        final LatLng metro_26 = new LatLng(-12.022891779615893, -76.99890614217811);
+        final LatLng metro_27 = new LatLng(-12.022178221142545, -77.00492501896782);
+        final LatLng metro_28 = new LatLng(-12.022618948655722, -77.0052683416993);
+        final LatLng metro_29 = new LatLng(-12.022535000613644, -77.0057618681258);
+        final LatLng metro_30 = new LatLng(-12.021936870055592, -77.00645924242411);
+        final LatLng metro_31 = new LatLng(-12.023223797891312, -77.00788312797208);
+        final LatLng metro_32 = new LatLng(-12.020915222379747, -77.01047950612887);
+        final LatLng metro_33 = new LatLng(-12.020642358513916, -77.01362305205572);
+        final LatLng metro_34 = new LatLng(-12.019404113140803, -77.01398783245793);
+        final LatLng metro_35 = new LatLng(-12.01881646927521, -77.01399856129329);
+        final LatLng metro_36 = new LatLng(-12.016707236905216, -77.01315098329718);
+        final LatLng metro_37 = new LatLng(-12.01645538716777, -77.0126789145414);
+        final LatLng metro_38 = new LatLng(-12.01603563708173, -77.0121853881149);
+        final LatLng metro_39 = new LatLng(-12.015626380069678, -77.01222830337501);
+        final LatLng metro_40 = new LatLng(-12.015154159722599, -77.01257162610648);
+        final LatLng metro_41 = new LatLng(-12.01471341998464, -77.01267891446007);
+        final LatLng metro_42 = new LatLng(-12.014482556024408, -77.0129578641794);
+        final LatLng metro_43 = new LatLng(-12.014440580737649, -77.01335483108767);
+        final LatLng metro_44 = new LatLng(-12.014083790535901, -77.01356940779483);
+        final LatLng metro_45 = new LatLng(-12.012688106675075, -77.01351576361805);
+        final LatLng metro_46 = new LatLng(-12.012058472490137, -77.01335483108767);
+        final LatLng metro_47 = new LatLng(-12.011433263741171, -77.01410669098945);
+        final LatLng metro_48 = new LatLng(-12.010444938503282, -77.0148103944465);
+        final LatLng metro_49 = new LatLng(-12.010286100180325, -77.015676491009);
+        final LatLng metro_50 = new LatLng(-12.01277455647652, -77.01876196001301);
+        final LatLng metro_51 = new LatLng(-12.012951041865353, -77.0204400221029);
+        final LatLng metro_52 = new LatLng(-12.012100985802412, -77.02024688412884);
+        final LatLng metro_53 = new LatLng(-12.011901601368404, -77.01982845954984);
+        final LatLng metro_54 = new LatLng(-12.011167025863992, -77.01942076380621);
+        final LatLng metro_55 = new LatLng(-12.010789243395758, -77.01987137489128);
+        final LatLng metro_56 = new LatLng(-12.010559573438208, -77.01915856419386);
+        final LatLng metro_57 = new LatLng(-12.010693139885232, -77.01867303253073);
+        final LatLng metro_58 = new LatLng(-12.010218236634923, -77.01811163643673);
+        final LatLng metro_59 = new LatLng(-12.00961415133414, -77.01786783365736);
+        final LatLng metro_60 = new LatLng(-12.009015132168727, -77.01846749760254);
+        final LatLng metro_61 = new LatLng(-12.00837867284576, -77.01728092851953);
+        final LatLng metro_62 = new LatLng(-12.007920868413521, -77.01993793462897);
+        final LatLng metro_63 = new LatLng(-12.005961867056584, -77.02033242910525);
+        final LatLng metro_64 = new LatLng(-12.003706029601691, -77.01917929144894);
+        final LatLng metro_65 = new LatLng(-12.003049621444482, -77.02030191808922);
+        final LatLng metro_66 = new LatLng(-12.002131862426621, -77.02050039855145);
+        final LatLng metro_67 = new LatLng(-12.002184810147225, -77.02145671350591);
+        final LatLng metro_68 = new LatLng(-12.001494616904186, -77.0215630616788);
+        final LatLng metro_69 = new LatLng(-12.000767626642917, -77.0203289711555);
+        final LatLng metro_70 = new LatLng(-12.000886356691938, -77.01935790782925);
+        final LatLng metro_71 = new LatLng(-11.99877889054757, -77.01950963647396);
+        final LatLng metro_72 = new LatLng(-11.997184197440744, -77.02035184569118);
+        final LatLng metro_73 = new LatLng(-11.99554278281804, -77.0195398801638);
+        final LatLng metro_74 = new LatLng(-11.99543688475735, -77.02284187330842);
+        final LatLng metro_75 = new LatLng(-11.994713246860776, -77.02278774222967);
+        final LatLng metro_76 = new LatLng(-11.993954307505598, -77.02150664106426);
+        final LatLng metro_77 = new LatLng(-11.993283615087186, -77.02193968935379);
+        final LatLng metro_78 = new LatLng(-11.992017728533558, -77.02117062482395);
+        final LatLng metro_79 = new LatLng(-11.992017691474766, -77.02212546954833);
+        final LatLng metro_80 = new LatLng(-11.98924707754698, -77.02224352018075);
+        final LatLng metro_81 = new LatLng(-11.988620771405213, -77.01947830723392);
+        final LatLng metro_82 = new LatLng(-11.988542851283874, -77.01937968354748);
+        final LatLng metro_83 = new LatLng(-11.988579956111767, -77.01879173504916);
+        final LatLng metro_84 = new LatLng(-11.989229289784712, -77.01712271981373);
+        final LatLng metro_85 = new LatLng(-11.98909942317731, -77.01547646401843);
+        final LatLng metro_86 = new LatLng(-11.990194011204759, -77.01534749461983);
+        final LatLng metro_87 = new LatLng(-11.989745045129299, -77.01305639193377);
+        final LatLng metro_88 = new LatLng(-11.989453641496498, -77.01137426792233);
+        final LatLng metro_89 = new LatLng(-11.990057091569506, -77.01049718557275);
+        final LatLng metro_90 = new LatLng(-11.990193523572128, -77.00965765411893);
+        final LatLng metro_91 = new LatLng(-11.990120060195364, -77.00855526628582);
+        final LatLng metro_92 = new LatLng(-11.989962638602947, -77.0074072807899);
+        final LatLng metro_93 = new LatLng(-11.989970509684818, -77.00605276524085);
+        final LatLng metro_94 = new LatLng(-11.990398171455306, -77.00496378839077);
+        final LatLng metro_95 = new LatLng(-11.992137672131387, -77.00060251655225);
+
+        PolygonOptions metro_Loc = new PolygonOptions()
+                .add(metro_01)
+                .add(metro_02)
+                .add(metro_03)
+                .add(metro_04)
+                .add(metro_05)
+                .add(metro_06)
+                .add(metro_07)
+                .add(metro_08)
+                .add(metro_09)
+                .add(metro_10)
+                .add(metro_11)
+                .add(metro_12)
+                .add(metro_13)
+                .add(metro_14)
+                .add(metro_15)
+                .add(metro_16)
+                .add(metro_17)
+                .add(metro_18)
+                .add(metro_19)
+                .add(metro_20)
+                .add(metro_21)
+                .add(metro_22)
+                .add(metro_23)
+                .add(metro_24)
+                .add(metro_25)
+                .add(metro_26)
+                .add(metro_27)
+                .add(metro_28)
+                .add(metro_29)
+                .add(metro_30)
+                .add(metro_31)
+                .add(metro_32)
+                .add(metro_33)
+                .add(metro_34)
+                .add(metro_35)
+                .add(metro_36)
+                .add(metro_37)
+                .add(metro_38)
+                .add(metro_39)
+                .add(metro_40)
+                .add(metro_41)
+                .add(metro_42)
+                .add(metro_43)
+                .add(metro_44)
+                .add(metro_45)
+                .add(metro_46)
+                .add(metro_47)
+                .add(metro_48)
+                .add(metro_49)
+                .add(metro_50)
+                .add(metro_51)
+                .add(metro_52)
+                .add(metro_53)
+                .add(metro_54)
+                .add(metro_55)
+                .add(metro_56)
+                .add(metro_57)
+                .add(metro_58)
+                .add(metro_59)
+                .add(metro_60)
+                .add(metro_61)
+                .add(metro_62)
+                .add(metro_63)
+                .add(metro_64)
+                .add(metro_65)
+                .add(metro_66)
+                .add(metro_67)
+                .add(metro_68)
+                .add(metro_69)
+                .add(metro_70)
+                .add(metro_71)
+                .add(metro_72)
+                .add(metro_73)
+                .add(metro_74)
+                .add(metro_75)
+                .add(metro_76)
+                .add(metro_77)
+                .add(metro_78)
+                .add(metro_79)
+                .add(metro_80)
+                .add(metro_81)
+                .add(metro_82)
+                .add(metro_83)
+                .add(metro_84)
+                .add(metro_85)
+                .add(metro_86)
+                .add(metro_87)
+                .add(metro_88)
+                .add(metro_89)
+                .add(metro_90)
+                .add(metro_91)
+                .add(metro_92)
+                .add(metro_93)
+                .add(metro_94)
+                .add(metro_95)
+                .fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
+        Polygon metroLoc = mMap.addPolygon(metro_Loc);
+
+        //Cto Grande 16/02/2021
+        final LatLng cantg02_01 = new LatLng(-11.990091185199853, -77.01536974742201);
+        final LatLng cantg02_02 = new LatLng(-11.989471993014334, -77.01133570512386);
+        final LatLng cantg02_03 = new LatLng(-11.989692383617662, -77.01078853441888);
+        final LatLng cantg02_04 = new LatLng(-11.990049206116922, -77.01037010975016);
+        final LatLng cantg02_05 = new LatLng(-11.99019613289046, -77.00915775132238);
+        final LatLng cantg02_06 = new LatLng(-11.99019613289046, -77.00906119170531);
+        final LatLng cantg02_07 = new LatLng(-11.990028216572938, -77.00775227379157);
+        final LatLng cantg02_08 = new LatLng(-11.989923268821416, -77.00645408471317);
+        final LatLng cantg02_09 = new LatLng(-11.990269596255738, -77.00526318387271);
+        final LatLng cantg02_10 = new LatLng(-11.99061592324184, -77.00444779230415);
+        final LatLng cantg02_11 = new LatLng(-11.992118468964984, -77.00040058719021);
+        final LatLng cantg02_12 = new LatLng(-11.99119556448689, -76.9998416944998);
+        final LatLng cantg02_13 = new LatLng(-11.990376974484425, -76.99954128710976);
+        final LatLng cantg02_14 = new LatLng(-11.989925699446607, -76.99931598156724);
+        final LatLng cantg02_15 = new LatLng(-11.988674753222577, -76.99817007641684);
+        final LatLng cantg02_16 = new LatLng(-11.98945182320046, -76.99777191984265);
+        final LatLng cantg02_17 = new LatLng(-11.989808646012584, -76.99741250385814);
+        final LatLng cantg02_18 = new LatLng(-11.990013294177178, -76.99704235903828);
+        final LatLng cantg02_19 = new LatLng(-11.989924088586053, -76.99681168907806);
+        final LatLng cantg02_20 = new LatLng(-11.989587672457157, -76.9965195895935);
+        final LatLng cantg02_21 = new LatLng(-11.98976608383237, -76.99601533433163);
+        final LatLng cantg02_22 = new LatLng(-11.989824807018165, -76.99570150734797);
+        final LatLng cantg02_23 = new LatLng(-11.987031511019563, -76.99476297769799);
+        final LatLng cantg02_24 = new LatLng(-11.986704981563257, -76.99506069839137);
+        final LatLng cantg02_25 = new LatLng(-11.985698915301787, -76.9944833005993);
+        final LatLng cantg02_26 = new LatLng(-11.984943854651183, -76.99386902530387);
+        final LatLng cantg02_27 = new LatLng(-11.984770687576573, -76.99397363144861);
+        final LatLng cantg02_28 = new LatLng(-11.983931088063835, -76.99337281666851);
+        final LatLng cantg02_29 = new LatLng(-11.983836632939028, -76.9933835454867);
+        final LatLng cantg02_30 = new LatLng(-11.98366608890921, -76.9936678596237);
+        final LatLng cantg02_31 = new LatLng(-11.982284221581487, -76.99279156830237);
+        final LatLng cantg02_32 = new LatLng(-11.978950623081731, -76.99186935057095);
+        final LatLng cantg02_33 = new LatLng(-11.979158417421758, -76.98948721067526);
+        final LatLng cantg02_34 = new LatLng(-11.979856011575231, -76.98851614728258);
+        final LatLng cantg02_35 = new LatLng(-11.97853503387091, -76.98801544269253);
+        final LatLng cantg02_36 = new LatLng(-11.978356923986345, -76.98833407283453);
+        final LatLng cantg02_37 = new LatLng(-11.977317542124243, -76.98785428279922);
+        final LatLng cantg02_38 = new LatLng(-11.975949596599166, -76.98770091153294);
+        final LatLng cantg02_39 = new LatLng(-11.975843690840895, -76.98724981950845);
+        final LatLng cantg02_40 = new LatLng(-11.974660597159685, -76.9871515766897);
+        final LatLng cantg02_41 = new LatLng(-11.973159755003726, -76.98649711773284);
+        final LatLng cantg02_42 = new LatLng(-11.971921291529826, -76.98706574602576);
+        final LatLng cantg02_43 = new LatLng(-11.971973768909484, -76.98883600385994);
+        final LatLng cantg02_44 = new LatLng(-11.971354535180058, -76.98956556466433);
+        final LatLng cantg02_45 = new LatLng(-11.968124551248845, -76.98701657552832);
+        final LatLng cantg02_46 = new LatLng(-11.968376446103974, -76.9855145383608);
+        final LatLng cantg02_47 = new LatLng(-11.966272431506194, -76.98394137931234);
+        final LatLng cantg02_48 = new LatLng(-11.967331521813911, -76.98219951877626);
+        final LatLng cantg02_49 = new LatLng(-11.966413641337258, -76.98162212106791);
+        final LatLng cantg02_50 = new LatLng(-11.965884093490729, -76.98218147509787);
+        final LatLng cantg02_51 = new LatLng(-11.964295443727764, -76.98126124750019);
+        final LatLng cantg02_52 = new LatLng(-11.963642329450995, -76.98221756245464);
+        final LatLng cantg02_53 = new LatLng(-11.962412294429548, -76.98137204788449);
+        final LatLng cantg02_54 = new LatLng(-11.962622208406422, -76.98095357835932);
+        final LatLng cantg02_55 = new LatLng(-11.962968570839019, -76.9811681550665);
+        final LatLng cantg02_56 = new LatLng(-11.96552953990609, -76.97752035104455);
+        final LatLng cantg02_57 = new LatLng(-11.965770941476944, -76.97689807859375);
+        final LatLng cantg02_58 = new LatLng(-11.96593887287737, -76.97637236566118);
+        final LatLng cantg02_59 = new LatLng(-11.965592514255523, -76.97463429416347);
+        final LatLng cantg02_60 = new LatLng(-11.966075317069212, -76.97394764870052);
+        final LatLng cantg02_61 = new LatLng(-11.966390188004908, -76.97174823745199);
+        final LatLng cantg02_62 = new LatLng(-11.966218308882356, -76.97142551741267);
+        final LatLng cantg02_63 = new LatLng(-11.965375340370468, -76.97083097881973);
+        final LatLng cantg02_64 = new LatLng(-11.964963447317638, -76.97148805739796);
+        final LatLng cantg02_65 = new LatLng(-11.965631213011525, -76.97195375386603);
+        final LatLng cantg02_66 = new LatLng(-11.965437748352766, -76.97354222555832);
+        final LatLng cantg02_67 = new LatLng(-11.965037884226351, -76.97425130934552);
+        final LatLng cantg02_68 = new LatLng(-11.96512411923444, -76.97482988627446);
+        final LatLng cantg02_69 = new LatLng(-11.965348788122885, -76.97627163160769);
+        final LatLng cantg02_70 = new LatLng(-11.965042988765147, -76.97719026573648);
+        final LatLng cantg02_71 = new LatLng(-11.958596158430455, -76.98704644496546);
+        final LatLng cantg02_72 = new LatLng(-11.95590140790285, -76.9919255717829);
+        final LatLng cantg02_73 = new LatLng(-11.956509999977365, -76.99808575531395);
+        final LatLng cantg02_74 = new LatLng(-11.960422610979371, -76.99954660384684);
+        final LatLng cantg02_75 = new LatLng(-11.964536981681883, -77.00182111700593);
+        final LatLng cantg02_76 = new LatLng(-11.963571369698254, -77.00349481532189);
+        final LatLng cantg02_77 = new LatLng(-11.963548609148601, -77.00352762334359);
+        final LatLng cantg02_78 = new LatLng(-11.964671958238458, -77.00442073985768);
+        final LatLng cantg02_79 = new LatLng(-11.964160210898514, -77.00530109756444);
+        final LatLng cantg02_80 = new LatLng(-11.964245220847092, -77.0053835113053);
+        final LatLng cantg02_81 = new LatLng(-11.964052258302374, -77.00567179573028);
+        final LatLng cantg02_82 = new LatLng(-11.964453026510464, -77.00592973442632);
+        final LatLng cantg02_83 = new LatLng(-11.964104209770266, -77.00646078468286);
+        final LatLng cantg02_84 = new LatLng(-11.963799922459204, -77.00623319171578);
+        final LatLng cantg02_85 = new LatLng(-11.963629224549418, -77.00652147614075);
+        final LatLng cantg02_86 = new LatLng(-11.96381476575061, -77.00668837764995);
+        final LatLng cantg02_87 = new LatLng(-11.96310970850873, -77.00785668821436);
+        final LatLng cantg02_88 = new LatLng(-11.963759135676964, -77.00829943269954);
+        final LatLng cantg02_89 = new LatLng(-11.962885417178448, -77.00966462512204);
+        final LatLng cantg02_90 = new LatLng(-11.963521983824286, -77.01012394226397);
+        final LatLng cantg02_91 = new LatLng(-11.963671763987344, -77.0100729070346);
+        final LatLng cantg02_92 = new LatLng(-11.964345773694301, -77.01040463602554);
+        final LatLng cantg02_93 = new LatLng(-11.963422130336179, -77.01189741648481);
+        final LatLng cantg02_94 = new LatLng(-11.964046214031967, -77.01240776877859);
+        final LatLng cantg02_95 = new LatLng(-11.9644705901245, -77.01276501541678);
+        final LatLng cantg02_96 = new LatLng(-11.964445626843514, -77.01365813193087);
+        final LatLng cantg02_97 = new LatLng(-11.964383218630944, -77.0139005492704);
+        final LatLng cantg02_98 = new LatLng(-11.965781159139883, -77.01478090697715);
+        final LatLng cantg02_99 = new LatLng(-11.96683520258675, -77.0143427637304);
+        final LatLng cantg02_100 = new LatLng(-11.96682986287596, -77.01438278542598);
+        final LatLng cantg02_101 = new LatLng(-11.967251880975773, -77.01425753506943);
+        final LatLng cantg02_102 = new LatLng(-11.96741981145623, -77.01397858535012);
+        final LatLng cantg02_103 = new LatLng(-11.967681397975767, -77.0136106384003);
+        final LatLng cantg02_104 = new LatLng(-11.967500416285825, -77.01322149477629);
+        final LatLng cantg02_105 = new LatLng(-11.967806212874457, -77.01283235111352);
+        final LatLng cantg02_106 = new LatLng(-11.968161934999262, -77.01289614512814);
+        final LatLng cantg02_107 = new LatLng(-11.968711119098934, -77.01254527792618);
+        final LatLng cantg02_108 = new LatLng(-11.969322709169342, -77.01270476301796);
+        final LatLng cantg02_109 = new LatLng(-11.969578357126933, -77.01305147379284);
+        final LatLng cantg02_110 = new LatLng(-11.970469749888705, -77.0130965829888);
+        final LatLng cantg02_111 = new LatLng(-11.971579385188534, -77.01196337793807);
+        final LatLng cantg02_112 = new LatLng(-11.973909338852394, -77.01360535267119);
+        final LatLng cantg02_113 = new LatLng(-11.974156453971524, -77.01310012967639);
+        final LatLng cantg02_114 = new LatLng(-11.975480281155011, -77.01055597085777);
+        final LatLng cantg02_115 = new LatLng(-11.976292225261526, -77.01061010189291);
+        final LatLng cantg02_116 = new LatLng(-11.976662894585658, -77.00990639843586);
+        final LatLng cantg02_117 = new LatLng(-11.979045756737232, -77.01149424235426);
+        final LatLng cantg02_118 = new LatLng(-11.978039661939393, -77.01311817349625);
+        final LatLng cantg02_119 = new LatLng(-11.976645243709147, -77.01344295970719);
+        final LatLng cantg02_120 = new LatLng(-11.97622162155523, -77.01438123098326);
+        final LatLng cantg02_121 = new LatLng(-11.978533884394189, -77.0159871183596);
+        final LatLng cantg02_122 = new LatLng(-11.977881160401033, -77.01702735020322);
+        final LatLng cantg02_123 = new LatLng(-11.977608283912113, -77.01755306302853);
+        final LatLng cantg02_124 = new LatLng(-11.978636817041897, -77.01817533547934);
+        final LatLng cantg02_125 = new LatLng(-11.981814126959222, -77.01317789439375);
+        final LatLng cantg02_126 = new LatLng(-11.984235398879644, -77.01453032820729);
+        final LatLng cantg02_127 = new LatLng(-11.98508408696566, -77.01542344472138);
+        final LatLng cantg02_128 = new LatLng(-11.987006106083456, -77.01588276186249);
+        final LatLng cantg02_129 = new LatLng(-11.990196519456312, -77.0153517257748);
+
+        PolygonOptions cantog02_Loc = new PolygonOptions()
+                .add(cantg02_01)
+                .add(cantg02_02)
+                .add(cantg02_03)
+                .add(cantg02_04)
+                .add(cantg02_05)
+                .add(cantg02_06)
+                .add(cantg02_07)
+                .add(cantg02_08)
+                .add(cantg02_09)
+                .add(cantg02_10)
+                .add(cantg02_11)
+                .add(cantg02_12)
+                .add(cantg02_13)
+                .add(cantg02_14)
+                .add(cantg02_15)
+                .add(cantg02_16)
+                .add(cantg02_17)
+                .add(cantg02_18)
+                .add(cantg02_19)
+                .add(cantg02_20)
+                .add(cantg02_21)
+                .add(cantg02_22)
+                .add(cantg02_23)
+                .add(cantg02_24)
+                .add(cantg02_25)
+                .add(cantg02_26)
+                .add(cantg02_27)
+                .add(cantg02_28)
+                .add(cantg02_29)
+                .add(cantg02_30)
+                .add(cantg02_31)
+                .add(cantg02_32)
+                .add(cantg02_33)
+                .add(cantg02_34)
+                .add(cantg02_35)
+                .add(cantg02_36)
+                .add(cantg02_37)
+                .add(cantg02_38)
+                .add(cantg02_39)
+                .add(cantg02_40)
+                .add(cantg02_41)
+                .add(cantg02_42)
+                .add(cantg02_43)
+                .add(cantg02_44)
+                .add(cantg02_45)
+                .add(cantg02_46)
+                .add(cantg02_47)
+                .add(cantg02_48)
+                .add(cantg02_49)
+                .add(cantg02_50)
+                .add(cantg02_51)
+                .add(cantg02_52)
+                .add(cantg02_53)
+                .add(cantg02_54)
+                .add(cantg02_55)
+                .add(cantg02_56)
+                .add(cantg02_57)
+                .add(cantg02_58)
+                .add(cantg02_59)
+                .add(cantg02_60)
+                .add(cantg02_61)
+                .add(cantg02_62)
+                .add(cantg02_63)
+                .add(cantg02_64)
+                .add(cantg02_65)
+                .add(cantg02_66)
+                .add(cantg02_67)
+                .add(cantg02_68)
+                .add(cantg02_69)
+                .add(cantg02_70)
+                .add(cantg02_71)
+                .add(cantg02_72)
+                .add(cantg02_73)
+                .add(cantg02_74)
+                .add(cantg02_75)
+                .add(cantg02_76)
+                .add(cantg02_77)
+                .add(cantg02_78)
+                .add(cantg02_79)
+                .add(cantg02_80)
+                .add(cantg02_81)
+                .add(cantg02_82)
+                .add(cantg02_83)
+                .add(cantg02_84)
+                .add(cantg02_85)
+                .add(cantg02_86)
+                .add(cantg02_87)
+                .add(cantg02_88)
+                .add(cantg02_89)
+                .add(cantg02_90)
+                .add(cantg02_91)
+                .add(cantg02_92)
+                .add(cantg02_93)
+                .add(cantg02_94)
+                .add(cantg02_95)
+                .add(cantg02_96)
+                .add(cantg02_97)
+                .add(cantg02_98)
+                .add(cantg02_99)
+                .add(cantg02_100)
+                .add(cantg02_101)
+                .add(cantg02_102)
+                .add(cantg02_103)
+                .add(cantg02_104)
+                .add(cantg02_105)
+                .add(cantg02_106)
+                .add(cantg02_107)
+                .add(cantg02_108)
+                .add(cantg02_109)
+                .add(cantg02_110)
+                .add(cantg02_111)
+                .add(cantg02_112)
+                .add(cantg02_113)
+                .add(cantg02_114)
+                .add(cantg02_115)
+                .add(cantg02_116)
+                .add(cantg02_117)
+                .add(cantg02_118)
+                .add(cantg02_119)
+                .add(cantg02_120)
+                .add(cantg02_121)
+                .add(cantg02_122)
+                .add(cantg02_123)
+                .add(cantg02_124)
+                .add(cantg02_125)
+                .add(cantg02_126)
+                .add(cantg02_127)
+                .add(cantg02_128)
+                .add(cantg02_129)
+                .fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
+        //Polygon cantog02Loc = mMap.addPolygon(cantog02_Loc);                                          LAPSUS DEL IMBÉCIL DEL CLIENTE
+
+        // Local SAN JUAN DE LURIGANCHO - MANGOMARCA
+        final LatLng mgm_01 = new LatLng(-12.018153568570716, -76.98177799758687);
+        final LatLng mgm_02 = new LatLng(-12.01456769255247, -76.97995671597273);
+        final LatLng mgm_03 = new LatLng(-12.014850067240598, -76.97931616530929);
+        final LatLng mgm_04 = new LatLng(-12.01403823922017, -76.97908159749026);
+        final LatLng mgm_05 = new LatLng(-12.013870578723122, -76.9771058147117);
+        final LatLng mgm_06 = new LatLng(-12.013209478436716, -76.97721309158061);
+        final LatLng mgm_07 = new LatLng(-12.012590339365747, -76.97833961929327);
+        final LatLng mgm_08 = new LatLng(-12.011037238416307, -76.97803921191934);
+        final LatLng mgm_09 = new LatLng(-12.010732913545084, -76.97705215906845);
+        final LatLng mgm_10 = new LatLng(-12.00779458675515, -76.9737154912719);
+        final LatLng mgm_11 = new LatLng(-12.007269882169682, -76.97369403360118);
+        final LatLng mgm_12 = new LatLng(-12.006766164806143, -76.97447723858237);
+        final LatLng mgm_13 = new LatLng(-12.007889033471983, -76.97557157978895);
+        final LatLng mgm_14 = new LatLng(-12.008455713083123, -76.97676248062176);
+        final LatLng mgm_15 = new LatLng(-12.008833498824565, -76.97836107709021);
+        final LatLng mgm_16 = new LatLng(-12.008329784384896, -76.97944468946143);
+        final LatLng mgm_17 = new LatLng(-12.00837176062418, -76.97985238520506);
+        final LatLng mgm_18 = new LatLng(-12.008906957101653, -76.98020643677191);
+        final LatLng mgm_19 = new LatLng(-12.009169307927678, -76.98057121717409);
+        final LatLng mgm_20 = new LatLng(-12.009631044760845, -76.98071069203375);
+        final LatLng mgm_21 = new LatLng(-12.009859077882362, -76.98134658486232);
+        final LatLng mgm_22 = new LatLng(-12.008144573497411, -76.98354174094095);
+        final LatLng mgm_23 = new LatLng(-12.009153767710968, -76.98495352607992);
+        final LatLng mgm_24 = new LatLng(-12.009746546795176, -76.98513852878641);
+        final LatLng mgm_25 = new LatLng(-12.011200410000104, -76.98513214942231);
+        final LatLng mgm_26 = new LatLng(-12.011400081583117, -76.985546810661);
+        final LatLng mgm_27 = new LatLng(-12.011063135700907, -76.98633785671635);
+        final LatLng mgm_28 = new LatLng(-12.01146247892245, -76.98659303286323);
+        final LatLng mgm_29 = new LatLng(-12.011780705140913, -76.9864654448077);
+        final LatLng mgm_30 = new LatLng(-12.01235475930593, -76.98587853966991);
+        final LatLng mgm_31 = new LatLng(-12.012613707264963, -76.98618475108744);
+        final LatLng mgm_32 = new LatLng(-12.013622644503872, -76.98680975427796);
+        final LatLng mgm_33 = new LatLng(-12.014871410280245, -76.98894479251433);
+        final LatLng mgm_34 = new LatLng(-12.015228199438171, -76.9895241496237);
+        final LatLng mgm_35 = new LatLng(-12.015920780849255, -76.99050042722288);
+        final LatLng mgm_36 = new LatLng(-12.016623862219783, -76.98965284924213);
+        final LatLng mgm_37 = new LatLng(-12.017809651934124, -76.99007127382113);
+        final LatLng mgm_38 = new LatLng(-12.017222004587046, -76.99234578691716);
+        final LatLng mgm_39 = new LatLng(-12.016634355937695, -76.9934508572283);
+        final LatLng mgm_40 = new LatLng(-12.016823243137283, -76.99523184389784);
+        final LatLng mgm_41 = new LatLng(-12.016686824617542, -76.99822518896292);
+        final LatLng mgm_42 = new LatLng(-12.017957740606677, -77.0020066566918);
+        final LatLng mgm_43 = new LatLng(-12.017910234135346, -77.00238738560314);
+        final LatLng mgm_44 = new LatLng(-12.017485942097466, -77.00401094392983);
+        final LatLng mgm_45 = new LatLng(-12.01728939482712, -77.00537613631565);
+        final LatLng mgm_46 = new LatLng(-12.01865898315617, -77.00769823938735);
+        final LatLng mgm_47 = new LatLng(-12.018289885537444, -77.00817898206445);
+        final LatLng mgm_48 = new LatLng(-12.018095755453492, -77.00867518322006);
+        final LatLng mgm_49 = new LatLng(-12.017725143086185, -77.01223880970129);
+        final LatLng mgm_50 = new LatLng(-12.017329036789757, -77.01365873419475);
+        final LatLng mgm_51 = new LatLng(-12.017708828964313, -77.0139832026806);
+        final LatLng mgm_52 = new LatLng(-12.017827551545583, -77.01548531626341);
+        final LatLng mgm_53 = new LatLng(-12.018373262845207, -77.01682640764534);
+        final LatLng mgm_54 = new LatLng(-12.01911831232677, -77.01708389969394);
+        final LatLng mgm_55 = new LatLng(-12.019747930037529, -77.01592518543877);
+        final LatLng mgm_56 = new LatLng(-12.020062738321172, -77.01631142351168);
+        final LatLng mgm_57 = new LatLng(-12.02081827669927, -77.01655818672494);
+        final LatLng mgm_58 = new LatLng(-12.021059628789635, -77.01604320262771);
+        final LatLng mgm_59 = new LatLng(-12.02090222527699, -77.01494886142113);
+        final LatLng mgm_60 = new LatLng(-12.020681860204611, -77.01465918286644);
+        final LatLng mgm_61 = new LatLng(-12.021101603071505, -77.01358629928572);
+        final LatLng mgm_62 = new LatLng(-12.02177317870447, -77.01410128725888);
+        final LatLng mgm_63 = new LatLng(-12.02355707401415, -77.01407982958817);
+        final LatLng mgm_64 = new LatLng(-12.025361944288447, -77.01354338782023);
+        final LatLng mgm_65 = new LatLng(-12.025152076309565, -77.01101138258026);
+        final LatLng mgm_66 = new LatLng(-12.02571871957241, -77.010195991093);
+        final LatLng mgm_67 = new LatLng(-12.02878276994357, -77.01174094342248);
+        final LatLng mgm_68 = new LatLng(-12.031028318879686, -77.01240613121472);
+        final LatLng mgm_69 = new LatLng(-12.03209803778218, -77.01205761143447);
+        final LatLng mgm_70 = new LatLng(-12.030351040801303, -77.01019482556221);
+        final LatLng mgm_71 = new LatLng(-12.029801982156384, -77.00853617995398);
+        final LatLng mgm_72 = new LatLng(-12.02885360567609, -77.00432577353037);
+        final LatLng mgm_73 = new LatLng(-12.02663239503921, -76.99616013683007);
+        final LatLng mgm_74 = new LatLng(-12.026357862103316, -76.98952555632087);
+        final LatLng mgm_75 = new LatLng(-12.02620811675303, -76.98753518237517);
+        final LatLng mgm_76 = new LatLng(-12.024735616332261, -76.97954816828256);
+        final LatLng mgm_77 = new LatLng(-12.024011842001622, -76.97765986479563);
+        final LatLng mgm_78 = new LatLng(-12.02421150408045, -76.97602673745557);
+        final LatLng mgm_79 = new LatLng(-12.022480078067174, -76.97597008690578);
+        final LatLng mgm_80 = new LatLng(-12.021332011701404, -76.97693975626393);
+        final LatLng mgm_81 = new LatLng(-12.02129457467223, -76.97877702452149);
+        final LatLng mgm_82 = new LatLng(-12.02075797668148, -76.98055049874235);
+        final LatLng mgm_83 = new LatLng(-12.021893566514134, -76.98098429819204);
+        final LatLng mgm_84 = new LatLng(-12.022866925430627, -76.98086946894598);
+        final LatLng mgm_85 = new LatLng(-12.022829488615022, -76.98134154481771);
+        final LatLng mgm_86 = new LatLng(-12.023840280807836, -76.98211983206572);
+        final LatLng mgm_87 = new LatLng(-12.023029151571402, -76.98266846078153);
+        final LatLng mgm_88 = new LatLng(-12.022492557040131, -76.98419951766283);
+        final LatLng mgm_89 = new LatLng(-12.022130667100777, -76.98520746344303);
+        final LatLng mgm_90 = new LatLng(-12.021481759783706, -76.98518194582832);
+        final LatLng mgm_91 = new LatLng(-12.02119474258656, -76.98405917078203);
+        final LatLng mgm_92 = new LatLng(-12.020608228201938, -76.98303846615117);
+
+        PolygonOptions mgm_Loc = new PolygonOptions()
+                .add(mgm_01)
+                .add(mgm_02)
+                .add(mgm_03)
+                .add(mgm_04)
+                .add(mgm_05)
+                .add(mgm_06)
+                .add(mgm_07)
+                .add(mgm_08)
+                .add(mgm_09)
+                .add(mgm_10)
+                .add(mgm_11)
+                .add(mgm_12)
+                .add(mgm_13)
+                .add(mgm_14)
+                .add(mgm_15)
+                .add(mgm_16)
+                .add(mgm_17)
+                .add(mgm_18)
+                .add(mgm_19)
+                .add(mgm_20)
+                .add(mgm_21)
+                .add(mgm_22)
+                .add(mgm_23)
+                .add(mgm_24)
+                .add(mgm_25)
+                .add(mgm_26)
+                .add(mgm_27)
+                .add(mgm_28)
+                .add(mgm_29)
+                .add(mgm_30)
+                .add(mgm_31)
+                .add(mgm_32)
+                .add(mgm_33)
+                .add(mgm_34)
+                .add(mgm_35)
+                .add(mgm_36)
+                .add(mgm_37)
+                .add(mgm_38)
+                .add(mgm_39)
+                .add(mgm_40)
+                .add(mgm_41)
+                .add(mgm_42)
+                .add(mgm_43)
+                .add(mgm_44)
+                .add(mgm_45)
+                .add(mgm_46)
+                .add(mgm_47)
+                .add(mgm_48)
+                .add(mgm_49)
+                .add(mgm_50)
+                .add(mgm_51)
+                .add(mgm_52)
+                .add(mgm_53)
+                .add(mgm_54)
+                .add(mgm_55)
+                .add(mgm_56)
+                .add(mgm_57)
+                .add(mgm_58)
+                .add(mgm_59)
+                .add(mgm_60)
+                .add(mgm_61)
+                .add(mgm_62)
+                .add(mgm_63)
+                .add(mgm_64)
+                .add(mgm_65)
+                .add(mgm_66)
+                .add(mgm_67)
+                .add(mgm_68)
+                .add(mgm_69)
+                .add(mgm_70)
+                .add(mgm_71)
+                .add(mgm_72)
+                .add(mgm_73)
+                .add(mgm_74)
+                .add(mgm_75)
+                .add(mgm_76)
+                .add(mgm_77)
+                .add(mgm_78)
+                .add(mgm_79)
+                .add(mgm_80)
+                .add(mgm_81)
+                .add(mgm_82)
+                .add(mgm_83)
+                .add(mgm_84)
+                .add(mgm_85)
+                .add(mgm_86)
+                .add(mgm_87)
+                .add(mgm_88)
+                .add(mgm_89)
+                .add(mgm_90)
+                .add(mgm_91)
+                .add(mgm_92)
+
+                .fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
+        Polygon mgmLoc = mMap.addPolygon(mgm_Loc);
 
         // TRANSPARENCIA EN LA VICTORIA                                                                 ****************************************
         final LatLng pino_01 = new LatLng(-12.071806852930909, -77.00277266060264);
