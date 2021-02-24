@@ -7696,5 +7696,4 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         local30Loc.setTag("local30");
         mMap.addPolygon(sam_Loc);
     }
-
 }
