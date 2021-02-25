@@ -38,6 +38,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 // implementar LocationListener // para la localización
 public class MapFragment extends Fragment implements OnMapReadyCallback, View.OnClickListener {
     int color_Red = 0x33FF0000;
+    float widthStoke = 0;
     private static final int MY_PERMISSION_ACCESS_FINE_LOCATION = 1;
     private View rootView;
     private MapView mapView;
@@ -77,6 +78,24 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
     private MarkerOptions local28;
     private MarkerOptions local29;
     private MarkerOptions local30;
+    private MarkerOptions local31;
+    private MarkerOptions local32;
+    private MarkerOptions local33;
+    private MarkerOptions local34;
+    private MarkerOptions local35;
+    private MarkerOptions local36;
+    private MarkerOptions local37;
+    private MarkerOptions local38;
+    private MarkerOptions local39;
+    private MarkerOptions local40;
+    private MarkerOptions local41;
+    private MarkerOptions local42;
+    private MarkerOptions local43;
+    private MarkerOptions local44;
+    private MarkerOptions local45;
+    private MarkerOptions local46;
+    private MarkerOptions local47;
+    private MarkerOptions local48;
 
 
     // Marker
@@ -110,6 +129,24 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
     private Marker local28_marker;
     private Marker local29_marker;
     private Marker local30_marker;
+    private Marker local31_marker;
+    private Marker local32_marker;
+    private Marker local33_marker;
+    private Marker local34_marker;
+    private Marker local35_marker;
+    private Marker local36_marker;
+    private Marker local37_marker;
+    private Marker local38_marker;
+    private Marker local39_marker;
+    private Marker local40_marker;
+    private Marker local41_marker;
+    private Marker local42_marker;
+    private Marker local43_marker;
+    private Marker local44_marker;
+    private Marker local45_marker;
+    private Marker local46_marker;
+    private Marker local47_marker;
+    private Marker local48_marker;
     // Polygon
     private Polygon choLoc;
     private Polygon campoyLoc;
@@ -141,6 +178,24 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
     private Polygon local28Loc;
     private Polygon local29Loc;
     private Polygon local30Loc;
+    private Polygon local31Loc;
+    private Polygon local32Loc;
+    private Polygon local33Loc;
+    private Polygon local34Loc;
+    private Polygon local35Loc;
+    private Polygon local36Loc;
+    private Polygon local37Loc;
+    private Polygon local38Loc;
+    private Polygon local39Loc;
+    private Polygon local40Loc;
+    private Polygon local41Loc;
+    private Polygon local42Loc;
+    private Polygon local43Loc;
+    private Polygon local44Loc;
+    private Polygon local45Loc;
+    private Polygon local46Loc;
+    private Polygon local47Loc;
+    private Polygon local48Loc;
     public MapFragment() {
         // Required empty public constructor
     }
@@ -207,6 +262,24 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         local28Map(googleMap);
         local29Map(googleMap);
         local30Map(googleMap);
+        local31Map(googleMap);
+        local32Map(googleMap);
+        local33Map(googleMap);
+        local34Map(googleMap);
+        local35Map(googleMap);
+        local36Map(googleMap);
+        local37Map(googleMap);
+        local38Map(googleMap);
+        local39Map(googleMap);
+        local40Map(googleMap);
+        local41Map(googleMap);
+        local42Map(googleMap);
+        local43Map(googleMap);
+        local44Map(googleMap);
+        local45Map(googleMap);
+        local46Map(googleMap);
+        local47Map(googleMap);
+        local48Map(googleMap);
     }
 
     private MapFragment getMapFragment() {
@@ -340,7 +413,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         final LatLng local28 = new LatLng(-12.020449767580827, -76.89039976296671);          //     ATE - Santa Clara, San Martín
         final LatLng local29 = new LatLng(-12.015921297550893, -76.88288248419425);          //     ATE - Santa Clara, Bolívar
         final LatLng local30 = new LatLng(-12.045854831823023, -76.97387102281945);          //     SANTA ANITA BOLOGNESI
-        */
+
         final LatLng local31 = new LatLng(-12.051906396849326, -76.97883616342347);          //     SANTA ANITA - Puente Azul
         final LatLng local32 = new LatLng(-12.04726976832986, -76.98244111026835);           //     SANTA ANITA - Nocheto
         final LatLng local33 = new LatLng(-12.003282293082178, -77.00293845767071);          //     SAN JUAN DE LURIGANCHO - Las Flores
@@ -351,6 +424,9 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         final LatLng local38 = new LatLng(-12.054457497997973, -76.95934561012335);          //     ATE - Jr. La Unión
         final LatLng local39 = new LatLng(-12.068269868255348, -76.97521800017546);          //     ATE - Salamanca
         final LatLng local40 = new LatLng(-12.027909999467138, -76.95202636459305);          //     ATE - Santa Elvira
+        */
+
+        /*
         final LatLng local41 = new LatLng(-12.051782245648587, -76.96447327134028);          //     SANTA ANITA - Flamencos
         final LatLng local42 = new LatLng(-12.041308492240882, -77.00232400017546);          //     Ancash El AGUSTINO
         final LatLng local43 = new LatLng(-12.04028729136067, -76.99746481907955);           //     AGUSTINO CATALAN // Riva Aguero
@@ -360,161 +436,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         final LatLng local46 = new LatLng(-12.0496294,-76.998208);                           //     NUEVA SEDE AGUSTINO
         final LatLng local47 = new LatLng(-12.00092513861642, -76.85345509253041);           //     CARAPONGO 2 Gisela
         final LatLng local48 = new LatLng(-12.029922654926871, -76.88703332946335);          //     MANYLSA
-        final LatLng local49 = new LatLng(-12.045278114790346, -76.8907195014362);           //     ATE - Priale
-
-
-
-
-
-        // Local31
-        marker = new MarkerOptions();
-        marker.position(local31);
-        marker.title("La Delicia - SANTA ANITA - Puente Azul");
-        marker.snippet("Telf: 01 704 6539 / 912 578 562");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
-        mMap.addMarker(marker);
-
-        // Local32
-        marker = new MarkerOptions();
-        marker.position(local32);
-        marker.title("La Delicia - SANTA ANITA - Nocheto");
-        marker.snippet("Telef: 01 496 8357 / 957 432 579");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
-        mMap.addMarker(marker);
-
-        // Local33
-        marker = new MarkerOptions();
-        marker.position(local33);
-        marker.title("La Delicia - SAN JUAN DE LURIGANCHO - Las Flores");
-        marker.snippet("Telf: 01 633 7460 / 912 465 143");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
-        mMap.addMarker(marker);
-
-        // Local34
-        marker = new MarkerOptions();
-        marker.position(local34);
-        marker.title("La Delicia - SAN JUAN DE LURIGANCHO - Cto Grande");
-        marker.snippet("Telf: 01 763 5657 / 940 117 088");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
-        mMap.addMarker(marker);
-
-        // Local35
-        marker = new MarkerOptions();
-        marker.position(local35);
-        marker.title("La Delicia - CALLAO - Los Nardos");
-        marker.snippet("Tel: 01 777 1448 / 912 095 642");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
-        mMap.addMarker(marker);
-
-        // Local36
-        marker = new MarkerOptions();
-        marker.position(local36);
-        marker.title("La Delicia - SAN MARTÍN DE PORRES - Entrada Ciudad Nueva");
-        marker.snippet("Telf: 01 312 9179 / 950 184 389");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
-        mMap.addMarker(marker);
-
-        // Local37
-        marker = new MarkerOptions();
-        marker.position(local37);
-        marker.title("La Delicia - ATE - La Cruz");
-        marker.snippet("Telf: Muy pronto...");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
-        mMap.addMarker(marker);
-
-        // Local38
-        marker = new MarkerOptions();
-        marker.position(local38);
-        marker.title("La Delicia - ATE - Jr. La Unión");
-        marker.snippet("Telf: 01 3483 321 / 942 321 386");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
-        mMap.addMarker(marker);
-
-        // Local39
-        marker = new MarkerOptions();
-        marker.position(local39);
-        marker.title("La Delicia - ATE - Salamanca");
-        marker.snippet("Telf: 01 775 7351 / 951 788 322");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
-        mMap.addMarker(marker);
-
-        // Local40
-        marker = new MarkerOptions();
-        marker.position(local40);
-        marker.title("La Delicia - Santa Elvira");
-        marker.snippet("Telf: 01 774 7545 / 973 030 881");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
-        mMap.addMarker(marker);
-
-        // Local41
-        marker = new MarkerOptions();
-        marker.position(local41);
-        marker.title("La Delicia - Santa Anita - Flamencos");
-        marker.snippet("Telf: 01 362 8106 / 978 740 659");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
-        mMap.addMarker(marker);
-
-        // Local42
-        marker = new MarkerOptions();
-        marker.position(local42);
-        marker.title("La Delicia - EL AGUSTINO - Ancash");
-        marker.snippet("Telf: 01 281 9505 / 924 282 452");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
-        mMap.addMarker(marker);
-
-        // Local43
-        marker = new MarkerOptions();
-        marker.position(local43);
-        marker.title("La Delicia - EL AGUSTINO - Catalan");
-        marker.snippet("Telf: 01 684 2912 / 991 708 177");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
-        mMap.addMarker(marker);
-
-        // Local44
-        marker = new MarkerOptions();
-        marker.position(local44);
-        marker.title("La Delicia - Manchay - 3 Marías");
-        marker.snippet("Telf: 01 691 9034 / 963 792 745");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
-        mMap.addMarker(marker);
-
-        // Local45
-        marker = new MarkerOptions();
-        marker.position(local45);
-        marker.title("La Delicia - MANCHAY - Portada 3");
-        marker.snippet("Telf: 01 405 4839 / 993 600 986");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
-        mMap.addMarker(marker);
-
-        // Locales Nuevos                                                                                                                   NUEVOS
-
-        // Local46
-        marker = new MarkerOptions();
-        marker.position(local46);
-        marker.title("La Delicia - El AGUSTINO - Nuevo!!");
-        marker.snippet("Muy Pronto");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
-        mMap.addMarker(marker);
-
-        // Local47
-        marker = new MarkerOptions();
-        marker.position(local47);
-        marker.title("La Delicia - CARAPONGO - Nuevo Horizonte");
-        marker.snippet("Telf: 983 435 046");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
-        mMap.addMarker(marker);
-
-        // Local48                                                                                      SIN TELÉFONO NI CELULAR
-        marker = new MarkerOptions();
-        marker.position(local48);
-        marker.title("La Delicia - MANYLSA");
-        marker.snippet("Telf: (Muy Pronto)");
-        marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
-        mMap.addMarker(marker);
-
-
-
-
+        //final LatLng local49 = new LatLng(-12.045278114790346, -76.8907195014362);           //     ATE - Priale
 
 
 
@@ -555,1390 +477,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
 
         Polygon angelesLoc = mMap.addPolygon(angeles_Loc);
 
-
-
-        // Polígono Local 38 LA UNIÓN
-        final LatLng ang_01 = new LatLng(-12.054457497997973, -76.95934561012335);
-        final LatLng ang_02 = new LatLng(-12.043142046842314, -76.93034669989883);
-        final LatLng ang_03 = new LatLng(-12.044660777139523, -76.93388335254564);
-        final LatLng ang_04 = new LatLng(-12.04670149042901, -76.93413590739132);
-        final LatLng ang_05 = new LatLng(-12.047199506922626, -76.93581490693873);
-        final LatLng ang_06 = new LatLng(-12.062029315154364, -76.9335047276725);
-        final LatLng ang_07 = new LatLng(-12.068829008137858, -76.93342618864094);
-        final LatLng ang_08 = new LatLng(-12.069940941379725, -76.9369772734326);
-        final LatLng ang_09 = new LatLng(-12.075598585587823, -76.935186829004);
-        final LatLng ang_10 = new LatLng(-12.07531497433156, -76.93692510411395);
-        final LatLng ang_11 = new LatLng(-12.079496482720511, -76.95055145993804);
-        final LatLng ang_12 = new LatLng(-12.07693899144209, -76.95401981576207);
-        final LatLng ang_13 = new LatLng(-12.062642975332285, -76.96079500226779);
-        final LatLng ang_14 = new LatLng(-12.067568057483987, -76.97137881576222);
-        final LatLng ang_15 = new LatLng(-12.063230007618063, -76.97118435809192);
-        final LatLng ang_16 = new LatLng(-12.058498007250853, -76.97306191760863);
-        final LatLng ang_17 = new LatLng(-12.043019079006905, -76.9363116292571);
-        final LatLng ang_18 = new LatLng(-12.037927005656563, -76.93157900226804);
-
-        PolygonOptions ang_loc = new PolygonOptions()
-                //.add(ang_01)
-                .add(ang_02)
-                .add(ang_03)
-                .add(ang_04)
-                .add(ang_05)
-                .add(ang_06)
-                .add(ang_07)
-                .add(ang_08)
-                .add(ang_09)
-                .add(ang_10)
-                .add(ang_11)
-                .add(ang_12)
-                .add(ang_13)
-                .add(ang_14)
-                .add(ang_15)
-                .add(ang_16)
-                .add(ang_17)
-                .add(ang_18)
-                .fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
-
-        Polygon angLoc = mMap.addPolygon(ang_loc);
-
-        // Polígono Local 42 ANCASH - AGUSTINO (Completo) // POR DEFINIR
-        final LatLng ancash_01 = new LatLng(-12.041308492240882, -77.00232400017546);
-        final LatLng ancash_02 = new LatLng(-12.034385902580455, -77.00856874195499);
-        final LatLng ancash_03 = new LatLng(-12.037657670350827, -77.00597446395366);
-        final LatLng ancash_04 = new LatLng(-12.038246846800497, -77.0056358775319);
-        final LatLng ancash_05 = new LatLng(-12.041510116965846, -77.0049170455009);
-        final LatLng ancash_06 = new LatLng(-12.04461306864287, -77.01235604820732);
-        final LatLng ancash_07 = new LatLng(-12.054328642802865, -77.01314587384859);
-        final LatLng ancash_08 = new LatLng(-12.049906085254614, -77.00947630812212);
-        final LatLng ancash_09 = new LatLng(-12.04183747635384, -77.00473899128498);
-        final LatLng ancash_10 = new LatLng(-12.040147005828427, -76.99728327343287);
-        final LatLng ancash_11 = new LatLng(-12.04028296272633, -76.99550181576254);
-        final LatLng ancash_12 = new LatLng(-12.039359570139412, -76.98853835809219);
-        final LatLng ancash_13 = new LatLng(-12.03496351240612, -76.98972891760886);
-        final LatLng ancash_14 = new LatLng(-12.029274606385608, -76.99632200226823);
-        final LatLng ancash_15 = new LatLng(-12.032740977689643, -77.00621335809225);
-
-        PolygonOptions ancash_loc = new PolygonOptions()
-                //.add(ancash_01)
-                .add(ancash_02)
-                .add(ancash_03)
-                .add(ancash_04)
-                .add(ancash_05)
-                .add(ancash_06)
-                .add(ancash_07)
-                .add(ancash_08)
-                .add(ancash_09)
-                .add(ancash_10)
-                .add(ancash_11)
-                .add(ancash_12)
-                .add(ancash_13)
-                .add(ancash_14)
-                .add(ancash_15)
-                .fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
-
-        // Polígono Local 44 MANCHAY (Completo)
-        final LatLng mancha_01 = new LatLng(-12.111582623977457, -76.87288711684407);
-        final LatLng mancha_02 = new LatLng(-12.08799779555258, -76.8839142102076);
-        final LatLng mancha_03 = new LatLng(-12.086546967788802, -76.88148795717468);
-        final LatLng mancha_04 = new LatLng(-12.086150496608404, -76.87854807995328);
-        final LatLng mancha_05 = new LatLng(-12.088258973308388, -76.8729118157619);
-        final LatLng mancha_06 = new LatLng(-12.098923483359876, -76.87546389495925);
-        final LatLng mancha_07 = new LatLng(-12.109573971620971, -76.86840581576172);
-        final LatLng mancha_08 = new LatLng(-12.112914302954518, -76.86755719276978);
-        final LatLng mancha_09 = new LatLng(-12.114969481304831, -76.87065918877276);
-        final LatLng mancha_10 = new LatLng(-12.11686799141542, -76.8701230869265);
-        final LatLng mancha_11 = new LatLng(-12.120947872164592, -76.8710064042176);
-        final LatLng mancha_12 = new LatLng(-12.128133187766341, -76.86971894374324);
-        final LatLng mancha_13 = new LatLng(-12.14880678572276, -76.86821821985669);
-        final LatLng mancha_14 = new LatLng(-12.161859015303078, -76.86353408692597);
-        final LatLng mancha_15 = new LatLng(-12.17097430175206, -76.86065746325474);
-        final LatLng mancha_16 = new LatLng(-12.17354401621761, -76.86186981576104);
-        final LatLng mancha_17 = new LatLng(-12.170984966743339, -76.86632218877212);
-        final LatLng mancha_18 = new LatLng(-12.152778526194236, -76.87533808692598);
-        final LatLng mancha_19 = new LatLng(-12.123960606556846, -76.87511773110235);
-        final LatLng mancha_20 = new LatLng(-12.112257111514218, -76.8764712734321);
-        final LatLng mancha_21 = new LatLng(-12.103788010770709, -76.87916881576182);
-        final LatLng mancha_22 = new LatLng(-12.097232824582292, -76.88361402493157);
-        final LatLng mancha_23 = new LatLng(-12.095810771359249, -76.8843761660856);
-        final LatLng mancha_24 = new LatLng(-12.095652873140649, -76.88705185884754);
-        final LatLng mancha_25 = new LatLng(-12.090675795662847, -76.88325673442002);
-
-        PolygonOptions manchay_Loc = new PolygonOptions()
-                //.add(mancha_01)
-                .add(mancha_02)
-                .add(mancha_03)
-                .add(mancha_04)
-                .add(mancha_05)
-                .add(mancha_06)
-                .add(mancha_07)
-                .add(mancha_08)
-                .add(mancha_09)
-                .add(mancha_10)
-                .add(mancha_11)
-                .add(mancha_12)
-                .add(mancha_13)
-                .add(mancha_14)
-                .add(mancha_15)
-                .add(mancha_16)
-                .add(mancha_17)
-                .add(mancha_18)
-                .add(mancha_19)
-                .add(mancha_20)
-                .add(mancha_21)
-                .add(mancha_22)
-                .add(mancha_23)
-                .add(mancha_24)
-                .add(mancha_25)
-                .fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
-
-        Polygon manchayLoc = mMap.addPolygon(manchay_Loc);
-
-        // Polígono Local 43 EL AGUSTINO - CATALAN HERMES
-        final LatLng aleg_01 = new LatLng(-12.041775741038883, -77.00456354791474);
-        final LatLng aleg_02 = new LatLng(-12.046870469134223, -77.00303154459759);
-        final LatLng aleg_03 = new LatLng(-12.049512989225867, -77.00674309953604);
-        final LatLng aleg_04 = new LatLng(-12.04649572500712, -77.0084233511182);
-        final LatLng aleg_05 = new LatLng(-12.046858012751715, -77.00921218714964);
-        final LatLng aleg_06 = new LatLng(-12.050148311201234, -77.00952814869667);
-        final LatLng aleg_07 = new LatLng(-12.055055960454094, -77.01327610394213);
-        final LatLng aleg_08 = new LatLng(-12.059367959729364, -77.00763300226787);
-        final LatLng aleg_09 = new LatLng(-12.05494205354007, -77.00421900226797);
-        final LatLng aleg_10 = new LatLng(-12.055445604053824, -77.00286270477072);
-        final LatLng aleg_11 = new LatLng(-12.05398303834571, -77.00158698812801);
-        final LatLng aleg_12 = new LatLng(-12.053710490153835, -77.00211808530331);
-        final LatLng aleg_13 = new LatLng(-12.051176259282464, -77.00047072947919);
-        final LatLng aleg_14 = new LatLng(-12.04939804312453, -77.00132872947924);
-        final LatLng aleg_15 = new LatLng(-12.044053035470128, -76.99767581576246);
-        final LatLng aleg_16 = new LatLng(-12.04032440380598, -76.99746120635113);
-
-        PolygonOptions elagus_Loc = new PolygonOptions()
-                .add(aleg_01)
-                .add(aleg_01)
-                .add(aleg_02)
-                .add(aleg_03)
-                .add(aleg_04)
-                .add(aleg_05)
-                .add(aleg_06)
-                .add(aleg_07)
-                .add(aleg_08)
-                .add(aleg_09)
-                .add(aleg_10)
-                .add(aleg_11)
-                .add(aleg_12)
-                .add(aleg_13)
-                .add(aleg_14)
-                .add(aleg_15)
-                .add(aleg_16)
-                .fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
-
-        Polygon elagusLoc = mMap.addPolygon(elagus_Loc);
-
-        // Polígono Local 39 SALAMANCA (Completo)
-        final LatLng sala_01 = new LatLng(-12.068269868255348, -76.97521800017546);
-        final LatLng sala_02 = new LatLng(-12.058753933554762, -76.97348010254304);
-        final LatLng sala_03 = new LatLng(-12.062793363993048, -76.97177653450352);
-        final LatLng sala_04 = new LatLng(-12.066947925381278, -76.97147307724426);
-        final LatLng sala_05 = new LatLng(-12.079144158611552, -76.97638908464236);
-        final LatLng sala_06 = new LatLng(-12.084811805385504, -76.98182096958317);
-        final LatLng sala_07 = new LatLng(-12.08475245906298, -76.98394517089426);
-        final LatLng sala_08 = new LatLng(-12.083565527001868, -76.9842182824276);
-        final LatLng sala_09 = new LatLng(-12.063653957065663, -76.99972494908177);
-        final LatLng sala_10 = new LatLng(-12.064069191125226, -76.98921621903983);
-        final LatLng sala_11 = new LatLng(-12.062919140416263, -76.98191677678123);
-        final LatLng sala_12 = new LatLng(-12.060609452725004, -76.97852487258645);
-
-        PolygonOptions sala_Loc = new PolygonOptions()
-                //.add(sala_01)
-                .add(sala_02)
-                .add(sala_03)
-                .add(sala_04)
-                .add(sala_05)
-                .add(sala_06)
-                .add(sala_07)
-                .add(sala_08)
-                .add(sala_09)
-                .add(sala_10)
-                .add(sala_11)
-                .add(sala_12)
-                .fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
-
-        Polygon salaLoc = mMap.addPolygon(sala_Loc);
-
-        // Polígono Local 42 SALAMANCA (Completo)                                                       POR VERSE
-        final LatLng elvi_01 = new LatLng(-12.027909999467138, -76.95202636459305);
-        final LatLng elvi_02 = new LatLng(-12.035003456562647, -76.95547673080877);
-        final LatLng elvi_03 = new LatLng(-12.029047484726977, -76.93496000226811);
-        final LatLng elvi_04 = new LatLng(-12.028291969462838, -76.93219392662256);
-        final LatLng elvi_05 = new LatLng(-12.027957180216235, -76.93122653092138);
-        final LatLng elvi_06 = new LatLng(-12.02763601034588, -76.9269647597932);
-        final LatLng elvi_07 = new LatLng(-12.023961498026267, -76.92688273110346);
-        final LatLng elvi_08 = new LatLng(-12.023083671062363, -76.93632615653854);
-        final LatLng elvi_09 = new LatLng(-12.022813921789039, -76.94189082500793);
-        final LatLng elvi_10 = new LatLng(-12.023779928521716, -76.95334980477965);
-        final LatLng elvi_11 = new LatLng(-12.025135034483437, -76.95250813364501);
-        final LatLng elvi_12 = new LatLng(-12.029811552483014, -76.95750700226816);
-
-        PolygonOptions elvi_Loc = new PolygonOptions()
-                //.add(elvi_01)
-                .add(elvi_02)
-                .add(elvi_03)
-                .add(elvi_04)
-                .add(elvi_05)
-                .add(elvi_06)
-                .add(elvi_07)
-                .add(elvi_08)
-                .add(elvi_09)
-                .add(elvi_10)
-                .add(elvi_11)
-                .add(elvi_12)
-                .fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
-
-        Polygon elviLoc = mMap.addPolygon(elvi_Loc);
-
-        // Polígono Sin Local - NUEVO HERMES
-        final LatLng agus_01 = new LatLng(-12.0496294,-76.998208);
-        final LatLng agus_02 = new LatLng(-12.046635065876885, -76.99932462896246);
-        final LatLng agus_03 = new LatLng(-12.049419323960938, -77.00141015584246);
-        final LatLng agus_04 = new LatLng(-12.049860766766463, -77.0008373650617);
-        final LatLng agus_05 = new LatLng(-12.049782012989503, -77.00034917835282);
-        final LatLng agus_06 = new LatLng(-12.051348736437692, -76.99973208530334);
-        final LatLng agus_07 = new LatLng(-12.051737244047942, -76.99792927180889);
-        final LatLng agus_08 = new LatLng(-12.05091873646299, -76.99688363622643);
-        final LatLng agus_09 = new LatLng(-12.05046196753363, -76.99685727180888);
-        final LatLng agus_10 = new LatLng(-12.050310013021006, -76.99642281413848);
-        final LatLng agus_11 = new LatLng(-12.04760246051124, -76.99700263622645);
-
-        PolygonOptions agus_Loc = new PolygonOptions()
-                //.add(agus_01)
-                .add(agus_02)
-                .add(agus_03)
-                .add(agus_04)
-                .add(agus_05)
-                .add(agus_06)
-                .add(agus_07)
-                .add(agus_08)
-                .add(agus_09)
-                .add(agus_10)
-                .add(agus_11)
-                .fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
-
-        Polygon agusLoc = mMap.addPolygon(agus_Loc);
-
-        // Polígono Local 35 - CALLAO Nardos
-        final LatLng callao_01 = new LatLng(-12.021732155791804, -77.1059505868092);
-        final LatLng callao_02 = new LatLng(-12.01970940520341, -77.10146505805001);
-        final LatLng callao_03 = new LatLng(-12.01674113399767, -77.09821339711239);
-        final LatLng callao_04 = new LatLng(-12.013349025089894, -77.0951640897863);
-        final LatLng callao_05 = new LatLng(-12.012265349717092, -77.09253879860057);
-        final LatLng callao_06 = new LatLng(-12.011605734651669, -77.09008203833514);
-        final LatLng callao_07 = new LatLng(-12.006964709971003, -77.08408479209633);
-        final LatLng callao_08 = new LatLng(-12.00656422824638, -77.08283232968165);
-        final LatLng callao_09 = new LatLng(-12.006297100545137, -77.08221922733289);
-        final LatLng callao_10 = new LatLng(-11.99665371059509, -77.0845581538364);
-        final LatLng callao_11 = new LatLng(-11.995446931833058, -77.08410561523864);
-        final LatLng callao_12 = new LatLng(-11.99154103977366, -77.0818026591946);
-        final LatLng callao_13 = new LatLng(-11.990810304176605, -77.09283768143331);
-        final LatLng callao_14 = new LatLng(-11.989041070262639, -77.10549890427043);
-        final LatLng callao_15 = new LatLng(-12.00087138351484, -77.11670675544639);
-        final LatLng callao_16 = new LatLng(-12.001768432144637, -77.11607517145042);
-        final LatLng callao_17 = new LatLng(-12.002703378549747, -77.11559727055084);
-
-        PolygonOptions callao_Loc = new PolygonOptions()
-                .add(callao_01)
-                .add(callao_02)
-                .add(callao_03)
-                .add(callao_04)
-                .add(callao_05)
-                .add(callao_06)
-                .add(callao_07)
-                .add(callao_08)
-                .add(callao_09)
-                .add(callao_10)
-                .add(callao_11)
-                .add(callao_12)
-                .add(callao_13)
-                .add(callao_14)
-                .add(callao_15)
-                .add(callao_16)
-                .add(callao_17)
-                .fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
-
-        Polygon callaoLoc = mMap.addPolygon(callao_Loc);
-
-
-
-        // CARAPONGO 2, Gisela
-        final LatLng carapongo2_01 = new LatLng(-11.997274463955959, -76.84553025624646);
-        final LatLng carapongo2_02 = new LatLng(-11.999415331649484, -76.84233306336351);
-        final LatLng carapongo2_03 = new LatLng(-12.0028364869597, -76.84759019261297);
-        final LatLng carapongo2_04 = new LatLng(-12.003560590943417, -76.85000418071405);
-        final LatLng carapongo2_05 = new LatLng(-12.004777448025795, -76.85227203280877);
-        final LatLng carapongo2_06 = new LatLng(-12.00610521240137, -76.86185894753069);
-        final LatLng carapongo2_07 = new LatLng(-12.007400930287577, -76.86978305115346);
-        final LatLng carapongo2_08 = new LatLng(-12.007330254927748, -76.87214342230914);
-        final LatLng carapongo2_09 = new LatLng(-12.006474260828123, -76.87249658442109);
-        final LatLng carapongo2_10 = new LatLng(-11.999633126566474, -76.87257848268733);
-        final LatLng carapongo2_11 = new LatLng(-11.998453836503788, -76.87335008706829);
-        final LatLng carapongo2_12 = new LatLng(-11.995749311906605, -76.87442711806158);
-        final LatLng carapongo2_13 = new LatLng(-11.992981863222766, -76.87326971164612);
-        final LatLng carapongo2_14 = new LatLng(-11.992227099546495, -76.87253025763172);
-        final LatLng carapongo2_15 = new LatLng(-11.992368617889262, -76.87166220280132);
-        final LatLng carapongo2_16 = new LatLng(-11.991582403934313, -76.87140500137006);
-        final LatLng carapongo2_17 = new LatLng(-11.991110674461407, -76.87082629814981);
-        final LatLng carapongo2_18 = new LatLng(-11.99016721304091, -76.87061732198691);
-        final LatLng carapongo2_19 = new LatLng(-11.990387354272555, -76.86891336234774);
-        final LatLng carapongo2_20 = new LatLng(-11.98483659397718, -76.86737015376033);
-        final LatLng carapongo2_21 = new LatLng(-11.984066082815907, -76.86487851489527);
-        final LatLng carapongo2_22 = new LatLng(-11.98645623271611, -76.86483028962691);
-        final LatLng carapongo2_23 = new LatLng(-11.989097952714147, -76.86483028962691);
-        final LatLng carapongo2_24 = new LatLng(-11.989428165916353, -76.86370503321604);
-        final LatLng carapongo2_25 = new LatLng(-11.995466278666617, -76.86439626193297);
-        final LatLng carapongo2_26 = new LatLng(-11.998768314372684, -76.86306202933798);
-        final LatLng carapongo2_27 = new LatLng(-11.998768314393, -76.85796622549685);
-        final LatLng carapongo2_28 = new LatLng(-11.998752590501407, -76.85627834078731);
-        final LatLng carapongo2_29 = new LatLng(-11.996221033235178, -76.85640694155447);
-        final LatLng carapongo2_30 = new LatLng(-11.995637650331442, -76.8562538964633);
-        final LatLng carapongo2_31 = new LatLng(-11.995097512503328, -76.85563158111849);
-        final LatLng carapongo2_32 = new LatLng(-11.995046070748993, -76.85418535531717);
-        final LatLng carapongo2_33 = new LatLng(-11.99216531684564, -76.85464990057456);
-        final LatLng carapongo2_34 = new LatLng(-11.988521461977726, -76.85396623004445);
-        final LatLng carapongo2_35 = new LatLng(-11.98847859280471, -76.85311602457337);
-        final LatLng carapongo2_36 = new LatLng(-11.992456823046075, -76.85122278352438);
-        final LatLng carapongo2_37 = new LatLng(-11.995371868382172, -76.85066182294054);
-        final LatLng carapongo2_38 = new LatLng(-11.997789617343962, -76.8498116173542);
-        final LatLng carapongo2_39 = new LatLng(-11.99766958776695, -76.84755024610122);
-
-        PolygonOptions carap2_Loc = new PolygonOptions()
-                .add(carapongo2_01)
-                .add(carapongo2_02)
-                .add(carapongo2_03)
-                .add(carapongo2_04)
-                .add(carapongo2_05)
-                .add(carapongo2_06)
-                .add(carapongo2_07)
-                .add(carapongo2_08)
-                .add(carapongo2_09)
-                .add(carapongo2_10)
-                .add(carapongo2_11)
-                .add(carapongo2_12)
-                .add(carapongo2_13)
-                .add(carapongo2_14)
-                .add(carapongo2_15)
-                .add(carapongo2_16)
-                .add(carapongo2_17)
-                .add(carapongo2_18)
-                .add(carapongo2_19)
-                .add(carapongo2_20)
-                .add(carapongo2_21)
-                .add(carapongo2_22)
-                .add(carapongo2_23)
-                .add(carapongo2_24)
-                .add(carapongo2_25)
-                .add(carapongo2_26)
-                .add(carapongo2_27)
-                .add(carapongo2_28)
-                .add(carapongo2_29)
-                .add(carapongo2_30)
-                .add(carapongo2_31)
-                .add(carapongo2_32)
-                .add(carapongo2_33)
-                .add(carapongo2_34)
-                .add(carapongo2_35)
-                .add(carapongo2_36)
-                .add(carapongo2_37)
-                .add(carapongo2_38)
-                .add(carapongo2_39)
-                .fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
-
-        Polygon carap2Loc = mMap.addPolygon(carap2_Loc);
-
-        // LOCAL NUEVO MANYLSA
-        final LatLng manylsa_01 = new LatLng(-12.028630629924388, -76.88586295541057);
-        final LatLng manylsa_02 = new LatLng(-12.028842324543634, -76.88529551143684);
-        final LatLng manylsa_03 = new LatLng(-12.028293060157297, -76.8848743174653);
-        final LatLng manylsa_04 = new LatLng(-12.029431619856743, -76.88240562024322);
-        final LatLng manylsa_05 = new LatLng(-12.0320184688722, -76.87746176933494);
-        final LatLng manylsa_06 = new LatLng(-12.032847420766503, -76.87345991136819);
-        final LatLng manylsa_07 = new LatLng(-12.032217824431628, -76.8698764850235);
-        final LatLng manylsa_08 = new LatLng(-12.031441311207834, -76.8681491398362);
-        final LatLng manylsa_09 = new LatLng(-12.03005621363736, -76.86423313692647);
-        final LatLng manylsa_10 = new LatLng(-12.030769740628063, -76.86362158143395);
-        final LatLng manylsa_11 = new LatLng(-12.03129441120386, -76.86438332658271);
-        final LatLng manylsa_12 = new LatLng(-12.031850565187199, -76.86603556786798);
-        final LatLng manylsa_13 = new LatLng(-12.032312268192593, -76.8669046030767);
-        final LatLng manylsa_14 = new LatLng(-12.032784459373683, -76.86672221008413);
-        final LatLng manylsa_15 = new LatLng(-12.03319368455237, -76.86532744844226);
-        final LatLng manylsa_16 = new LatLng(-12.03359241451311, -76.86485537582922);
-        final LatLng manylsa_17 = new LatLng(-12.034201021536923, -76.86530598412526);
-        final LatLng manylsa_18 = new LatLng(-12.033980673586315, -76.8666471034874);
-        final LatLng manylsa_19 = new LatLng(-12.03348749916313, -76.86842810150523);
-        final LatLng manylsa_20 = new LatLng(-12.033844263153881, -76.86942589001285);
-        final LatLng manylsa_21 = new LatLng(-12.034694205046895, -76.87012327733736);
-        final LatLng manylsa_22 = new LatLng(-12.034736175212553, -76.87054170768353);
-        final LatLng manylsa_23 = new LatLng(-12.034201021025373, -76.87092794420923);
-        final LatLng manylsa_24 = new LatLng(-12.0345053261408, -76.87164675472447);
-        final LatLng manylsa_25 = new LatLng(-12.033781304358694, -76.87528382665019);
-        final LatLng manylsa_26 = new LatLng(-12.033760319518398, -76.87832008634373);
-        final LatLng manylsa_27 = new LatLng(-12.033372047295565, -76.88107741220158);
-        final LatLng manylsa_28 = new LatLng(-12.0340436027019, -76.88148510997276);
-        final LatLng manylsa_29 = new LatLng(-12.035008961331007, -76.8824507150773);
-        final LatLng manylsa_30 = new LatLng(-12.035197842397757, -76.88060474281272);
-        final LatLng manylsa_31 = new LatLng(-12.03544442766121, -76.88004147794578);
-        final LatLng manylsa_32 = new LatLng(-12.035900874455514, -76.88019168097019);
-        final LatLng manylsa_33 = new LatLng(-12.036425521812209, -76.87890422467025);
-        final LatLng manylsa_34 = new LatLng(-12.036441255783089, -76.87793863022137);
-        final LatLng manylsa_35 = new LatLng(-12.036902944422147, -76.87778842346431);
-        final LatLng manylsa_36 = new LatLng(-12.03712329690823, -76.87787425296679);
-        final LatLng manylsa_37 = new LatLng(-12.03742234758575, -76.87816929502499);
-        final LatLng manylsa_38 = new LatLng(-12.037679425060096, -76.8782551244833);
-        final LatLng manylsa_39 = new LatLng(-12.038036180723736, -76.87748264068927);
-        final LatLng manylsa_40 = new LatLng(-12.037838274035956, -76.87711111948053);
-        final LatLng manylsa_41 = new LatLng(-12.038068940115464, -76.87625614948604);
-        final LatLng manylsa_42 = new LatLng(-12.037232754793905, -76.87416295166075);
-        final LatLng manylsa_43 = new LatLng(-12.037275997279304, -76.87357331577769);
-        final LatLng manylsa_44 = new LatLng(-12.038948331171335, -76.87307210228573);
-        final LatLng manylsa_45 = new LatLng(-12.03972683224697, -76.87290993908012);
-        final LatLng manylsa_46 = new LatLng(-12.040015167601116, -76.87248388538572);
-        final LatLng manylsa_47 = new LatLng(-12.04050533082131, -76.87242491653338);
-        final LatLng manylsa_48 = new LatLng(-12.04092341552307, -76.8727344713516);
-        final LatLng manylsa_49 = new LatLng(-12.041298244964624, -76.872616539835);
-        final LatLng manylsa_50 = new LatLng(-12.04187490146458, -76.87211533965399);
-        final LatLng manylsa_51 = new LatLng(-12.043403072937279, -76.8736631285731);
-        final LatLng manylsa_52 = new LatLng(-12.04405181724125, -76.87344200662133);
-        final LatLng manylsa_53 = new LatLng(-12.044642889947362, -76.87249856807135);
-        final LatLng manylsa_54 = new LatLng(-12.044974473575536, -76.87266071594027);
-        final LatLng manylsa_55 = new LatLng(-12.045594391596158, -76.87302923683549);
-        final LatLng manylsa_56 = new LatLng(-12.045046920024745, -76.87403134749893);
-        final LatLng manylsa_57 = new LatLng(-12.044623558229501, -76.87439537302632);
-        final LatLng manylsa_58 = new LatLng(-12.044315658716398, -76.87459214314205);
-        final LatLng manylsa_59 = new LatLng(-12.043411204243467, -76.8752709957274);
-        final LatLng manylsa_60 = new LatLng(-12.042968598758243, -76.87529067255386);
-        final LatLng manylsa_61 = new LatLng(-12.042402779414175, -76.87497265649594);
-        final LatLng manylsa_62 = new LatLng(-12.041820432734752, -76.87570221565974);
-        final LatLng manylsa_63 = new LatLng(-12.041453185986974, -76.87602944349035);
-        final LatLng manylsa_64 = new LatLng(-12.04136399516769, -76.87652833275284);
-        final LatLng manylsa_65 = new LatLng(-12.042339819501011, -76.87657661651255);
-        final LatLng manylsa_66 = new LatLng(-12.042586397852977, -76.87672145730477);
-        final LatLng manylsa_67 = new LatLng(-12.04252868511372, -76.87714524725158);
-        final LatLng manylsa_68 = new LatLng(-12.041783699990859, -76.87721498001771);
-        final LatLng manylsa_69 = new LatLng(-12.041673530516352, -76.87764413426584);
-        final LatLng manylsa_70 = new LatLng(-12.041169878459646, -76.8779123579094);
-        final LatLng manylsa_71 = new LatLng(-12.04130628580865, -76.8783039600735);
-        final LatLng manylsa_72 = new LatLng(-12.04165779415364, -76.87856681595427);
-        final LatLng manylsa_73 = new LatLng(-12.041946345674354, -76.87896378320464);
-        final LatLng manylsa_74 = new LatLng(-12.042276867795618, -76.87945194688638);
-        final LatLng manylsa_75 = new LatLng(-12.042596897705897, -76.87941976087447);
-        final LatLng manylsa_76 = new LatLng(-12.042675592305677, -76.88009031725757);
-        final LatLng manylsa_77 = new LatLng(-12.042449997750516, -76.87993474715877);
-        final LatLng manylsa_78 = new LatLng(-12.042072257376176, -76.88001521217352);
-        final LatLng manylsa_79 = new LatLng(-12.042355558104878, -76.88102373060404);
-        final LatLng manylsa_80 = new LatLng(-12.04207749846124, -76.8811202884117);
-        final LatLng manylsa_81 = new LatLng(-12.041893878351308, -76.88047118858879);
-        final LatLng manylsa_82 = new LatLng(-12.04153187890022, -76.88016004950588);
-        final LatLng manylsa_83 = new LatLng(-12.041416459411444, -76.87987573452853);
-        final LatLng manylsa_84 = new LatLng(-12.041280053886254, -76.87969870827065);
-        final LatLng manylsa_85 = new LatLng(-12.040912803063454, -76.88054628517177);
-        final LatLng manylsa_86 = new LatLng(-12.04060326023928, -76.88125438785258);
-        final LatLng manylsa_87 = new LatLng(-12.03953300166399, -76.8820215008735);
-        final LatLng manylsa_88 = new LatLng(-12.038488961835709, -76.88186057063182);
-        final LatLng manylsa_89 = new LatLng(-12.036867805936144, -76.88249356933937);
-        final LatLng manylsa_90 = new LatLng(-12.035939621658542, -76.88366781765625);
-        final LatLng manylsa_91 = new LatLng(-12.03515059624073, -76.88562566498764);
-        final LatLng manylsa_92 = new LatLng(-12.033702554499826, -76.88743887722435);
-        final LatLng manylsa_93 = new LatLng(-12.033177899394696, -76.89001379736852);
-        final LatLng manylsa_94 = new LatLng(-12.032548312598443, -76.89166604149212);
-        final LatLng manylsa_95 = new LatLng(-12.032275510229823, -76.89204153849664);
-        final LatLng manylsa_96 = new LatLng(-12.030050940443097, -76.89282475150439);
-        final LatLng manylsa_97 = new LatLng(-12.029820089057548, -76.89338265254422);
-        final LatLng manylsa_98 = new LatLng(-12.028539914519458, -76.89382253363546);
-        final LatLng manylsa_99 = new LatLng(-12.0266930887399, -76.89356503941585);
-        final LatLng manylsa_100 = new LatLng(-12.023744442422258, -76.89408002497608);
-        final LatLng manylsa_101 = new LatLng(-12.022789526976146, -76.88631235382117);
-        final LatLng manylsa_102 = new LatLng(-12.02719154322837, -76.88597125041774);
-        final LatLng manylsa_103 = new LatLng(-12.027991926257592, -76.88589704753069);
-
-        PolygonOptions maylsa_Loc = new PolygonOptions()
-                .add(manylsa_01)
-                .add(manylsa_02)
-                .add(manylsa_03)
-                .add(manylsa_04)
-                .add(manylsa_05)
-                .add(manylsa_06)
-                .add(manylsa_07)
-                .add(manylsa_08)
-                .add(manylsa_09)
-                .add(manylsa_10)
-                .add(manylsa_11)
-                .add(manylsa_12)
-                .add(manylsa_13)
-                .add(manylsa_14)
-                .add(manylsa_15)
-                .add(manylsa_16)
-                .add(manylsa_17)
-                .add(manylsa_18)
-                .add(manylsa_19)
-                .add(manylsa_20)
-                .add(manylsa_21)
-                .add(manylsa_22)
-                .add(manylsa_23)
-                .add(manylsa_24)
-                .add(manylsa_25)
-                .add(manylsa_26)
-                .add(manylsa_27)
-                .add(manylsa_28)
-                .add(manylsa_29)
-                .add(manylsa_30)
-                .add(manylsa_31)
-                .add(manylsa_32)
-                .add(manylsa_33)
-                .add(manylsa_34)
-                .add(manylsa_35)
-                .add(manylsa_36)
-                .add(manylsa_37)
-                .add(manylsa_38)
-                .add(manylsa_39)
-                .add(manylsa_40)
-                .add(manylsa_41)
-                .add(manylsa_42)
-                .add(manylsa_43)
-                .add(manylsa_44)
-                .add(manylsa_45)
-                .add(manylsa_46)
-                .add(manylsa_47)
-                .add(manylsa_48)
-                .add(manylsa_49)
-                .add(manylsa_50)
-                .add(manylsa_51)
-                .add(manylsa_52)
-                .add(manylsa_53)
-                .add(manylsa_54)
-                .add(manylsa_55)
-                .add(manylsa_56)
-                .add(manylsa_57)
-                .add(manylsa_58)
-                .add(manylsa_59)
-                .add(manylsa_60)
-                .add(manylsa_61)
-                .add(manylsa_62)
-                .add(manylsa_63)
-                .add(manylsa_64)
-                .add(manylsa_65)
-                .add(manylsa_66)
-                .add(manylsa_67)
-                .add(manylsa_68)
-                .add(manylsa_69)
-                .add(manylsa_70)
-                .add(manylsa_71)
-                .add(manylsa_72)
-                .add(manylsa_73)
-                .add(manylsa_74)
-                .add(manylsa_75)
-                .add(manylsa_76)
-                .add(manylsa_77)
-                .add(manylsa_78)
-                .add(manylsa_79)
-                .add(manylsa_80)
-                .add(manylsa_81)
-                .add(manylsa_82)
-                .add(manylsa_83)
-                .add(manylsa_84)
-                .add(manylsa_85)
-                .add(manylsa_86)
-                .add(manylsa_87)
-                .add(manylsa_88)
-                .add(manylsa_89)
-                .add(manylsa_90)
-                .add(manylsa_91)
-                .add(manylsa_92)
-                .add(manylsa_93)
-                .add(manylsa_94)
-                .add(manylsa_95)
-                .add(manylsa_96)
-                .add(manylsa_97)
-                .add(manylsa_98)
-                .add(manylsa_99)
-                .add(manylsa_100)
-                .add(manylsa_101)
-                .add(manylsa_102)
-                .add(manylsa_103)
-                .fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
-
-        Polygon manylsaLoc = mMap.addPolygon(maylsa_Loc);
-
-        // Local 36 SAN MARTÍN DE PORRES Gisela
-        final LatLng smp_01 = new LatLng(-12.000724162725806, -77.11679193341334);
-        final LatLng smp_02 = new LatLng(-11.989139967249699, -77.10534598546704);
-        final LatLng smp_03 = new LatLng(-11.990841372861045, -77.09275738505411);
-        final LatLng smp_04 = new LatLng(-11.991302935559574, -77.08187845918411);
-        final LatLng smp_05 = new LatLng(-11.989197728914505, -77.0811119290146);
-        final LatLng smp_06 = new LatLng(-11.983545228469474, -77.07825219840333);
-        final LatLng smp_07 = new LatLng(-11.981158402646752, -77.07779454038649);
-        final LatLng smp_08 = new LatLng(-11.97809546466799, -77.07675889115396);
-        final LatLng smp_09 = new LatLng(-11.976658253414973, -77.08318968963981);
-        final LatLng smp_10 = new LatLng(-11.976069200078557, -77.0850924254656);
-        final LatLng smp_11 = new LatLng(-11.975244537593465, -77.08624850992244);
-        final LatLng smp_12 = new LatLng(-11.974278506500445, -77.08716373609582);
-        final LatLng smp_13 = new LatLng(-11.974141897083282, -77.08792510199945);
-        final LatLng smp_14 = new LatLng(-11.97381653612469, -77.08847226929639);
-        final LatLng smp_15 = new LatLng(-11.972233228042104, -77.09360711515959);
-        final LatLng smp_16 = new LatLng(-11.970187985192306, -77.09602774023594);
-        final LatLng smp_17 = new LatLng(-11.968348113469338, -77.09683151789552);
-        final LatLng smp_18 = new LatLng(-11.97238959264832, -77.10228093509598);
-        final LatLng smp_19 = new LatLng(-11.977516037422971, -77.10838948528875);
-        final LatLng smp_20 = new LatLng(-11.976305178985426, -77.1098362426789);
-        final LatLng smp_21 = new LatLng(-11.977893415248078, -77.11129912300635);
-        final LatLng smp_22 = new LatLng(-11.976871221602758, -77.11377471642218);
-        final LatLng smp_23 = new LatLng(-11.975298777102497, -77.11580010828564);
-        final LatLng smp_24 = new LatLng(-11.972814123316812, -77.1185810851522);
-        final LatLng smp_25 = new LatLng(-11.968992869733933, -77.12023677917844);
-        final LatLng smp_26 = new LatLng(-11.967357396183473, -77.12158707935914);
-        final LatLng smp_27 = new LatLng(-11.966508227225013, -77.12239084734962);
-        final LatLng smp_28 = new LatLng(-11.96756179155663, -77.12557371906412);
-        final LatLng smp_29 = new LatLng(-11.970154571409608, -77.12511116164066);
-        final LatLng smp_30 = new LatLng(-11.973009770474826, -77.12499329907091);
-        final LatLng smp_31 = new LatLng(-11.980796570308248, -77.12502291988275);
-        final LatLng smp_32 = new LatLng(-11.994177852024677, -77.12581899965227);
-        final LatLng smp_33 = new LatLng(-11.996263630053326, -77.12583377906134);
-        final LatLng smp_34 = new LatLng(-11.997559467944152, -77.12477403465616);
-        final LatLng smp_35 = new LatLng(-11.999868499071736, -77.11884889737078);
-
-        PolygonOptions smp_Loc = new PolygonOptions()
-                .add(smp_01)
-                .add(smp_02)
-                .add(smp_03)
-                .add(smp_04)
-                .add(smp_05)
-                .add(smp_06)
-                .add(smp_07)
-                .add(smp_08)
-                .add(smp_09)
-                .add(smp_10)
-                .add(smp_11)
-                .add(smp_12)
-                .add(smp_13)
-                .add(smp_14)
-                .add(smp_15)
-                .add(smp_16)
-                .add(smp_17)
-                .add(smp_18)
-                .add(smp_19)
-                .add(smp_20)
-                .add(smp_21)
-                .add(smp_22)
-                .add(smp_23)
-                .add(smp_24)
-                .add(smp_25)
-                .add(smp_26)
-                .add(smp_27)
-                .add(smp_28)
-                .add(smp_29)
-                .add(smp_30)
-                .add(smp_31)
-                .add(smp_32)
-                .add(smp_33)
-                .add(smp_34)
-                .add(smp_35)
-
-                .fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
-
-        Polygon smpLoc = mMap.addPolygon(smp_Loc);
-
-
-
-        // SANTA ANITA - NOCHETO, Gisela
-        final LatLng nocheto_02 = new LatLng(-12.04780134563665, -76.98061156955562);
-        final LatLng nocheto_03 = new LatLng(-12.048725735380161, -76.98151074483393);
-        final LatLng nocheto_04 = new LatLng(-12.047760426136945, -76.98281429701437);
-        final LatLng nocheto_05 = new LatLng(-12.04819411949768, -76.98326607720908);
-        final LatLng nocheto_06 = new LatLng(-12.047011625001058, -76.98445608931497);
-        final LatLng nocheto_07 = new LatLng(-12.046992929301307, -76.98465203511775);
-        final LatLng nocheto_08 = new LatLng(-12.046422711570832, -76.98493400490324);
-        final LatLng nocheto_09 = new LatLng(-12.046240431861397, -76.98572733979344);
-        final LatLng nocheto_10 = new LatLng(-12.045716951370565, -76.98671185018685);
-        final LatLng nocheto_11 = new LatLng(-12.045580168830243, -76.98692854735351);
-        final LatLng nocheto_12 = new LatLng(-12.045394129737764, -76.98704059880095);
-        final LatLng nocheto_13 = new LatLng(-12.045121443692375, -76.98711356332402);
-        final LatLng nocheto_14 = new LatLng(-12.044925210108696, -76.98708489862516);
-        final LatLng nocheto_15 = new LatLng(-12.044800333921161, -76.98733506066907);
-        final LatLng nocheto_16 = new LatLng(-12.044132628723052, -76.98695460426961);
-        final LatLng nocheto_17 = new LatLng(-12.043964429242527, -76.98726209596119);
-        final LatLng nocheto_18 = new LatLng(-12.044425706403722, -76.98753310234434);
-        final LatLng nocheto_19 = new LatLng(-12.043537616274337, -76.98952164201006);
-        final LatLng nocheto_20 = new LatLng(-12.042622704928743, -76.989662356883);
-        final LatLng nocheto_21 = new LatLng(-12.042707566562227, -76.99035054490037);
-        final LatLng nocheto_22 = new LatLng(-12.043435156102127, -76.99020429806866);
-        final LatLng nocheto_23 = new LatLng(-12.04352863625666, -76.99031421865253);
-        final LatLng nocheto_24 = new LatLng(-12.04376233805309, -76.99137997439496);
-        final LatLng nocheto_25 = new LatLng(-12.043776359825294, -76.99225934270187);
-        final LatLng nocheto_26 = new LatLng(-12.042519059222851, -76.99243138950804);
-        final LatLng nocheto_27 = new LatLng(-12.042299379311737, -76.99315782038313);
-        final LatLng nocheto_28 = new LatLng(-12.04019200161387, -76.99381839405514);
-        final LatLng nocheto_29 = new LatLng(-12.040449070635674, -76.99529515438243);
-        final LatLng nocheto_30 = new LatLng(-12.040425702662152, -76.9956631455236);
-        final LatLng nocheto_31 = new LatLng(-12.040143520399315, -76.99674983895008);
-        final LatLng nocheto_32 = new LatLng(-12.040156011998773, -76.99717561356555);
-        final LatLng nocheto_33 = new LatLng(-12.04022596181032, -76.99739298768813);
-        final LatLng nocheto_34 = new LatLng(-12.035476515075857, -76.99726183939029);
-        final LatLng nocheto_35 = new LatLng(-12.034584986658666, -76.99756861111956);
-        final LatLng nocheto_36 = new LatLng(-12.030607374721296, -76.99943554937924);
-        final LatLng nocheto_37 = new LatLng(-12.030156383591022, -76.9992557031738);
-        final LatLng nocheto_38 = new LatLng(-12.029487440582372, -76.99771466170749);
-        final LatLng nocheto_39 = new LatLng(-12.029306552772685, -76.99697035873048);
-        final LatLng nocheto_40 = new LatLng(-12.029677136219274, -76.9955618126342);
-        final LatLng nocheto_41 = new LatLng(-12.030221870465873, -76.99459977972141);
-        final LatLng nocheto_42 = new LatLng(-12.030941141743957, -76.99393677741672);
-        final LatLng nocheto_43 = new LatLng(-12.031713672579347, -76.99379500331483);
-        final LatLng nocheto_44 = new LatLng(-12.03256543793873, -76.99360259442963);
-        final LatLng nocheto_45 = new LatLng(-12.032931895390647, -76.99343043887258);
-        final LatLng nocheto_46 = new LatLng(-12.033238926879584, -76.99300511352399);
-        final LatLng nocheto_47 = new LatLng(-12.033308254741094, -76.9923975061403);
-        final LatLng nocheto_48 = new LatLng(-12.033308253736141, -76.99217471671638);
-        final LatLng nocheto_49 = new LatLng(-12.032555517433273, -76.99065570577905);
-        final LatLng nocheto_50 = new LatLng(-12.031842419253344, -76.98759748068916);
-        final LatLng nocheto_51 = new LatLng(-12.033813356200874, -76.98602784783166);
-        final LatLng nocheto_52 = new LatLng(-12.034566067481196, -76.98563290508531);
-        final LatLng nocheto_53 = new LatLng(-12.037121333858098, -76.98765824998698);
-        final LatLng nocheto_54 = new LatLng(-12.036913344500082, -76.98835699740029);
-        final LatLng nocheto_55 = new LatLng(-12.03944958850212, -76.98781652313765);
-        final LatLng nocheto_56 = new LatLng(-12.039598161569748, -76.98661144638864);
-        final LatLng nocheto_57 = new LatLng(-12.03988538468407, -76.98509244673588);
-        final LatLng nocheto_58 = new LatLng(-12.040222118944545, -76.98394813356043);
-        final LatLng nocheto_59 = new LatLng(-12.0409055546365, -76.98425658082418);
-        final LatLng nocheto_60 = new LatLng(-12.04127816215036, -76.98425658160096);
-        final LatLng nocheto_61 = new LatLng(-12.042676788909528, -76.98342281936945);
-        final LatLng nocheto_62 = new LatLng(-12.043319398637678, -76.9831909134257);
-        final LatLng nocheto_63 = new LatLng(-12.043416600909485, -76.98317434914765);
-        final LatLng nocheto_64 = new LatLng(-12.043935004760781, -76.98449953494904);
-        final LatLng nocheto_65 = new LatLng(-12.044329209085577, -76.98477561052958);
-
-        PolygonOptions nocheto_Loc = new PolygonOptions()
-                .add(nocheto_02)
-                .add(nocheto_03)
-                .add(nocheto_04)
-                .add(nocheto_05)
-                .add(nocheto_06)
-                .add(nocheto_07)
-                .add(nocheto_08)
-                .add(nocheto_09)
-                .add(nocheto_10)
-                .add(nocheto_11)
-                .add(nocheto_12)
-                .add(nocheto_13)
-                .add(nocheto_14)
-                .add(nocheto_15)
-                .add(nocheto_16)
-                .add(nocheto_17)
-                .add(nocheto_18)
-                .add(nocheto_19)
-                .add(nocheto_20)
-                .add(nocheto_21)
-                .add(nocheto_22)
-                .add(nocheto_23)
-                .add(nocheto_24)
-                .add(nocheto_25)
-                .add(nocheto_26)
-                .add(nocheto_27)
-                .add(nocheto_28)
-                .add(nocheto_29)
-                .add(nocheto_30)
-                .add(nocheto_31)
-                .add(nocheto_32)
-                .add(nocheto_33)
-                .add(nocheto_34)
-                .add(nocheto_35)
-                .add(nocheto_36)
-                .add(nocheto_37)
-                .add(nocheto_38)
-                .add(nocheto_39)
-                .add(nocheto_40)
-                .add(nocheto_41)
-                .add(nocheto_42)
-                .add(nocheto_43)
-                .add(nocheto_44)
-                .add(nocheto_45)
-                .add(nocheto_46)
-                .add(nocheto_47)
-                .add(nocheto_48)
-                .add(nocheto_49)
-                .add(nocheto_50)
-                .add(nocheto_51)
-                .add(nocheto_52)
-                .add(nocheto_53)
-                .add(nocheto_54)
-                .add(nocheto_55)
-                .add(nocheto_56)
-                .add(nocheto_57)
-                .add(nocheto_58)
-                .add(nocheto_59)
-                .add(nocheto_60)
-                .add(nocheto_61)
-                .add(nocheto_62)
-                .add(nocheto_63)
-                .add(nocheto_64)
-                .add(nocheto_65)
-                .fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
-
-        Polygon nochetoLoc = mMap.addPolygon(nocheto_Loc);
-
-
-
-        // ATE SANTA CLARA San Martín Gisela
-        final LatLng claraM_01 = new LatLng(-12.050679619799253, -76.97737144942185);
-        final LatLng claraM_02 = new LatLng(-12.0517801349853, -76.9764962029882);
-        final LatLng claraM_03 = new LatLng(-12.05265831566437, -76.9759164996238);
-        final LatLng claraM_04 = new LatLng(-12.056193252200249, -76.97456384901702);
-        final LatLng claraM_05 = new LatLng(-12.059005625228739, -76.97538226359077);
-        final LatLng claraM_06 = new LatLng(-12.059783752305597, -76.97658716495755);
-        final LatLng claraM_07 = new LatLng(-12.056893551388981, -76.9779966352104);
-        final LatLng claraM_08 = new LatLng(-12.056238822590982, -76.98061799426571);
-        final LatLng claraM_09 = new LatLng(-12.055316173734465, -76.98120907274266);
-        final LatLng claraM_10 = new LatLng(-12.055293936563086, -76.98250489991601);
-        final LatLng claraM_11 = new LatLng(-12.055538491758485, -76.98286864395145);
-        final LatLng claraM_12 = new LatLng(-12.054337924961844, -76.98427812829676);
-        final LatLng claraM_13 = new LatLng(-12.052414770909667, -76.98664242078735);
-        final LatLng claraM_14 = new LatLng(-12.05173671358506, -76.98496010433125);
-        final LatLng claraM_15 = new LatLng(-12.052236965127255, -76.98360745658691);
-        final LatLng claraM_16 = new LatLng(-12.052359254664786, -76.98247077753831);
-        final LatLng claraM_17 = new LatLng(-12.052403726403979, -76.98082259552157);
-        final LatLng claraM_18 = new LatLng(-12.05273721278283, -76.98075439510941);
-        final LatLng claraM_19 = new LatLng(-12.052659398573065, -76.97993598714491);
-        final LatLng claraM_20 = new LatLng(-12.051947956491873, -76.97899254780862);
-        final LatLng claraM_21 = new LatLng(-12.050202696018802, -76.98104993305914);
-        final LatLng claraM_22 = new LatLng(-12.05068194255239, -76.98168758969307);
-        final LatLng claraM_23 = new LatLng(-12.050028069909983, -76.9826254956139);
-        final LatLng claraM_24 = new LatLng(-12.049692050327488, -76.98319195189076);
-        final LatLng claraM_25 = new LatLng(-12.047488666686341, -76.98096040803132);
-
-
-        PolygonOptions claraM_Loc = new PolygonOptions()
-                .add(claraM_01)
-                .add(claraM_02)
-                .add(claraM_03)
-                .add(claraM_04)
-                .add(claraM_05)
-                .add(claraM_06)
-                .add(claraM_07)
-                .add(claraM_08)
-                .add(claraM_09)
-                .add(claraM_10)
-                .add(claraM_11)
-                .add(claraM_12)
-                .add(claraM_13)
-                .add(claraM_14)
-                .add(claraM_15)
-                .add(claraM_16)
-                .add(claraM_17)
-                .add(claraM_18)
-                .add(claraM_19)
-                .add(claraM_20)
-                .add(claraM_21)
-                .add(claraM_22)
-                .add(claraM_23)
-                .add(claraM_24)
-                .add(claraM_25)
-                .fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
-
-        Polygon claraMLoc = mMap.addPolygon(claraM_Loc);
-
-
-
-
-
-
-
-        // Local 37 ATE - La Cruz
-        final LatLng lacruz_01 = new LatLng(-12.018037796083133, -76.89525813562176);
-        final LatLng lacruz_02 = new LatLng(-12.01724734525544, -76.89295271618059);
-        final LatLng lacruz_03 = new LatLng(-12.015403096635843, -76.89364739783618);
-        final LatLng lacruz_04 = new LatLng(-12.016320810443075, -76.89724711177378);
-        final LatLng lacruz_05 = new LatLng(-12.016091382286747, -76.89852821293918);
-        final LatLng lacruz_06 = new LatLng(-12.015500162672097, -76.899673986555);
-        final LatLng lacruz_07 = new LatLng(-12.015050128955039, -76.90020627513871);
-        final LatLng lacruz_08 = new LatLng(-12.015014832166212, -76.90087389144827);
-        final LatLng lacruz_09 = new LatLng(-12.017776792310267, -76.90561937910192);
-        final LatLng lacruz_10 = new LatLng(-12.019003340578138, -76.9055201388708);
-        final LatLng lacruz_11 = new LatLng(-12.019938690176549, -76.9080913630408);
-        final LatLng lacruz_12 = new LatLng(-12.020591668157785, -76.91018442973356);
-        final LatLng lacruz_13 = new LatLng(-12.022506472870305, -76.90948974819351);
-        final LatLng lacruz_14 = new LatLng(-12.022338817727402, -76.90901159070094);
-        final LatLng lacruz_15 = new LatLng(-12.025480128767928, -76.90787483890901);
-        final LatLng lacruz_16 = new LatLng(-12.025233060698005, -76.90678319635431);
-        final LatLng lacruz_17 = new LatLng(-12.026865470553012, -76.90657569405286);
-        final LatLng lacruz_18 = new LatLng(-12.02693670761465, -76.90687166621413);
-        final LatLng lacruz_19 = new LatLng(-12.028480044146592, -76.90650751746679);
-        final LatLng lacruz_20 = new LatLng(-12.02656810454802, -76.89339762712034);
-        final LatLng lacruz_21 = new LatLng(-12.018255937569364, -76.89518395134536);
-
-
-        PolygonOptions lacruz_Loc = new PolygonOptions()
-                .add(lacruz_01)
-                .add(lacruz_02)
-                .add(lacruz_03)
-                .add(lacruz_04)
-                .add(lacruz_05)
-                .add(lacruz_06)
-                .add(lacruz_07)
-                .add(lacruz_08)
-                .add(lacruz_09)
-                .add(lacruz_10)
-                .add(lacruz_11)
-                .add(lacruz_12)
-                .add(lacruz_13)
-                .add(lacruz_14)
-                .add(lacruz_15)
-                .add(lacruz_16)
-                .add(lacruz_17)
-                .add(lacruz_18)
-                .add(lacruz_19)
-                .add(lacruz_20)
-                .add(lacruz_21)
-                .fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
-        Polygon lacruzLoc = mMap.addPolygon(lacruz_Loc);
-
-        // Local 34 SAN JUAN DE LURIGANCHO - PRIALE
-        final LatLng cantg_01 = new LatLng(-11.990091185199853, -77.01536974742201);
-        final LatLng cantg_02 = new LatLng(-11.989471993014334, -77.01133570512386);
-        final LatLng cantg_03 = new LatLng(-11.989692383617662, -77.01078853441888);
-        final LatLng cantg_04 = new LatLng(-11.990049206116922, -77.01037010975016);
-        final LatLng cantg_05 = new LatLng(-11.99019613289046, -77.00915775132238);
-        final LatLng cantg_06 = new LatLng(-11.99019613289046, -77.00906119170531);
-        final LatLng cantg_07 = new LatLng(-11.990028216572938, -77.00775227379157);
-        final LatLng cantg_08 = new LatLng(-11.989923268821416, -77.00645408471317);
-        final LatLng cantg_09 = new LatLng(-11.990269596255738, -77.00526318387271);
-        final LatLng cantg_10 = new LatLng(-11.99061592324184, -77.00444779230415);
-        final LatLng cantg_11 = new LatLng(-11.992118468964984, -77.00040058719021);
-        final LatLng cantg_12 = new LatLng(-11.99119556448689, -76.9998416944998);
-        final LatLng cantg_13 = new LatLng(-11.990376974484425, -76.99954128710976);
-        final LatLng cantg_14 = new LatLng(-11.989925699446607, -76.99931598156724);
-        final LatLng cantg_15 = new LatLng(-11.988674753222577, -76.99817007641684);
-        final LatLng cantg_16 = new LatLng(-11.98945182320046, -76.99777191984265);
-        final LatLng cantg_17 = new LatLng(-11.989808646012584, -76.99741250385814);
-        final LatLng cantg_18 = new LatLng(-11.990013294177178, -76.99704235903828);
-        final LatLng cantg_19 = new LatLng(-11.989924088586053, -76.99681168907806);
-        final LatLng cantg_20 = new LatLng(-11.989587672457157, -76.9965195895935);
-        final LatLng cantg_21 = new LatLng(-11.98976608383237, -76.99601533433163);
-        final LatLng cantg_22 = new LatLng(-11.989824807018165, -76.99570150734797);
-        final LatLng cantg_23 = new LatLng(-11.987031511019563, -76.99476297769799);
-        final LatLng cantg_24 = new LatLng(-11.986704981563257, -76.99506069839137);
-        final LatLng cantg_25 = new LatLng(-11.985698915301787, -76.9944833005993);
-        final LatLng cantg_26 = new LatLng(-11.984943854651183, -76.99386902530387);
-        final LatLng cantg_27 = new LatLng(-11.984770687576573, -76.99397363144861);
-        final LatLng cantg_28 = new LatLng(-11.983931088063835, -76.99337281666851);
-        final LatLng cantg_29 = new LatLng(-11.983836632939028, -76.9933835454867);
-        final LatLng cantg_30 = new LatLng(-11.98366608890921, -76.9936678596237);
-        final LatLng cantg_31 = new LatLng(-11.982284221581487, -76.99279156830237);
-        final LatLng cantg_32 = new LatLng(-11.978950623081731, -76.99186935057095);
-        final LatLng cantg_33 = new LatLng(-11.979158417421758, -76.98948721067526);
-        final LatLng cantg_34 = new LatLng(-11.979856011575231, -76.98851614728258);
-        final LatLng cantg_35 = new LatLng(-11.97853503387091, -76.98801544269253);
-        final LatLng cantg_36 = new LatLng(-11.978356923986345, -76.98833407283453);
-        final LatLng cantg_37 = new LatLng(-11.977317542124243, -76.98785428279922);
-        final LatLng cantg_38 = new LatLng(-11.975949596599166, -76.98770091153294);
-        final LatLng cantg_39 = new LatLng(-11.975843690840895, -76.98724981950845);
-        final LatLng cantg_40 = new LatLng(-11.974660597159685, -76.9871515766897);
-        final LatLng cantg_41 = new LatLng(-11.973159755003726, -76.98649711773284);
-        final LatLng cantg_42 = new LatLng(-11.971921291529826, -76.98706574602576);
-        final LatLng cantg_43 = new LatLng(-11.971973768909484, -76.98883600385994);
-        final LatLng cantg_44 = new LatLng(-11.971354535180058, -76.98956556466433);
-        final LatLng cantg_45 = new LatLng(-11.968124551248845, -76.98701657552832);
-        final LatLng cantg_46 = new LatLng(-11.968376446103974, -76.9855145383608);
-        final LatLng cantg_47 = new LatLng(-11.966272431506194, -76.98394137931234);
-        final LatLng cantg_48 = new LatLng(-11.967331521813911, -76.98219951877626);
-        final LatLng cantg_49 = new LatLng(-11.966413641337258, -76.98162212106791);
-        final LatLng cantg_50 = new LatLng(-11.965884093490729, -76.98218147509787);
-        final LatLng cantg_51 = new LatLng(-11.964295443727764, -76.98126124750019);
-        final LatLng cantg_52 = new LatLng(-11.963642329450995, -76.98221756245464);
-        final LatLng cantg_53 = new LatLng(-11.962412294429548, -76.98137204788449);
-        final LatLng cantg_54 = new LatLng(-11.962622208406422, -76.98095357835932);
-        final LatLng cantg_55 = new LatLng(-11.962968570839019, -76.9811681550665);
-        final LatLng cantg_56 = new LatLng(-11.96552953990609, -76.97752035104455);
-        final LatLng cantg_57 = new LatLng(-11.965770941476944, -76.97689807859375);
-        final LatLng cantg_58 = new LatLng(-11.96593887287737, -76.97637236566118);
-        final LatLng cantg_59 = new LatLng(-11.965592514255523, -76.97463429416347);
-        final LatLng cantg_60 = new LatLng(-11.966075317069212, -76.97394764870052);
-        final LatLng cantg_61 = new LatLng(-11.966390188004908, -76.97174823745199);
-        final LatLng cantg_62 = new LatLng(-11.966218308882356, -76.97142551741267);
-        final LatLng cantg_63 = new LatLng(-11.965375340370468, -76.97083097881973);
-        final LatLng cantg_64 = new LatLng(-11.964963447317638, -76.97148805739796);
-        final LatLng cantg_65 = new LatLng(-11.965631213011525, -76.97195375386603);
-        final LatLng cantg_66 = new LatLng(-11.965437748352766, -76.97354222555832);
-        final LatLng cantg_67 = new LatLng(-11.965037884226351, -76.97425130934552);
-        final LatLng cantg_68 = new LatLng(-11.96512411923444, -76.97482988627446);
-        final LatLng cantg_69 = new LatLng(-11.965348788122885, -76.97627163160769);
-        final LatLng cantg_70 = new LatLng(-11.965042988765147, -76.97719026573648);
-        final LatLng cantg_71 = new LatLng(-11.958596158430455, -76.98704644496546);
-        final LatLng cantg_72 = new LatLng(-11.95590140790285, -76.9919255717829);
-        final LatLng cantg_73 = new LatLng(-11.956509999977365, -76.99808575531395);
-        final LatLng cantg_74 = new LatLng(-11.956750327389575, -76.99933071873153);
-        final LatLng cantg_75 = new LatLng(-11.960056567953558, -77.00144429938055);
-        final LatLng cantg_76 = new LatLng(-11.958177788601816, -77.00462003464672);
-        final LatLng cantg_77 = new LatLng(-11.95886002844537, -77.00523157838482);
-        final LatLng cantg_78 = new LatLng(-11.961394706770582, -77.00680446392661);
-        final LatLng cantg_79 = new LatLng(-11.963759135676964, -77.00829943269954);
-        final LatLng cantg_80 = new LatLng(-11.962885417178448, -77.00966462512204);
-        final LatLng cantg_81 = new LatLng(-11.963521983824286, -77.01012394226397);
-        final LatLng cantg_82 = new LatLng(-11.963671763987344, -77.0100729070346);
-        final LatLng cantg_83 = new LatLng(-11.964345773694301, -77.01040463602554);
-        final LatLng cantg_84 = new LatLng(-11.963422130336179, -77.01189741648481);
-        final LatLng cantg_85 = new LatLng(-11.964046214031967, -77.01240776877859);
-        final LatLng cantg_86 = new LatLng(-11.9644705901245, -77.01276501541678);
-        final LatLng cantg_87 = new LatLng(-11.964445626843514, -77.01365813193087);
-        final LatLng cantg_88 = new LatLng(-11.964383218630944, -77.0139005492704);
-        final LatLng cantg_89 = new LatLng(-11.965781159139883, -77.01478090697715);
-        final LatLng cantg_90 = new LatLng(-11.96683520258675, -77.0143427637304);
-        final LatLng cantg_91 = new LatLng(-11.96682986287596, -77.01438278542598);
-        final LatLng cantg_92 = new LatLng(-11.967251880975773, -77.01425753506943);
-        final LatLng cantg_93 = new LatLng(-11.96741981145623, -77.01397858535012);
-        final LatLng cantg_94 = new LatLng(-11.967681397975767, -77.0136106384003);
-        final LatLng cantg_95 = new LatLng(-11.967500416285825, -77.01322149477629);
-        final LatLng cantg_96 = new LatLng(-11.967806212874457, -77.01283235111352);
-        final LatLng cantg_97 = new LatLng(-11.968161934999262, -77.01289614512814);
-        final LatLng cantg_98 = new LatLng(-11.968711119098934, -77.01254527792618);
-        final LatLng cantg_99 = new LatLng(-11.969322709169342, -77.01270476301796);
-        final LatLng cantg_100 = new LatLng(-11.969578357126933, -77.01305147379284);
-        final LatLng cantg_101 = new LatLng(-11.970469749888705, -77.0130965829888);
-        final LatLng cantg_102 = new LatLng(-11.971579385188534, -77.01196337793807);
-        final LatLng cantg_103 = new LatLng(-11.973909338852394, -77.01360535267119);
-        final LatLng cantg_104 = new LatLng(-11.974156453971524, -77.01310012967639);
-        final LatLng cantg_105 = new LatLng(-11.975480281155011, -77.01055597085777);
-        final LatLng cantg_106 = new LatLng(-11.976292225261526, -77.01061010189291);
-        final LatLng cantg_107 = new LatLng(-11.976662894585658, -77.00990639843586);
-        final LatLng cantg_108 = new LatLng(-11.979045756737232, -77.01149424235426);
-        final LatLng cantg_109 = new LatLng(-11.978039661939393, -77.01311817349625);
-        final LatLng cantg_110 = new LatLng(-11.976645243709147, -77.01344295970719);
-        final LatLng cantg_111 = new LatLng(-11.97622162155523, -77.01438123098326);
-        final LatLng cantg_112 = new LatLng(-11.978533884394189, -77.0159871183596);
-        final LatLng cantg_113 = new LatLng(-11.977881160401033, -77.01702735020322);
-        final LatLng cantg_114 = new LatLng(-11.977608283912113, -77.01755306302853);
-        final LatLng cantg_115 = new LatLng(-11.978636817041897, -77.01817533547934);
-        final LatLng cantg_116 = new LatLng(-11.981814126959222, -77.01317789439375);
-        final LatLng cantg_117 = new LatLng(-11.984235398879644, -77.01453032820729);
-        final LatLng cantg_118 = new LatLng(-11.98508408696566, -77.01542344472138);
-        final LatLng cantg_119 = new LatLng(-11.987006106083456, -77.01588276186249);
-        final LatLng cantg_120 = new LatLng(-11.990196519456312, -77.0153517257748);
-
-        PolygonOptions cantog_Loc = new PolygonOptions()
-                .add(cantg_01)
-                .add(cantg_02)
-                .add(cantg_03)
-                .add(cantg_04)
-                .add(cantg_05)
-                .add(cantg_06)
-                .add(cantg_07)
-                .add(cantg_08)
-                .add(cantg_09)
-                .add(cantg_10)
-                .add(cantg_11)
-                .add(cantg_12)
-                .add(cantg_13)
-                .add(cantg_14)
-                .add(cantg_15)
-                .add(cantg_16)
-                .add(cantg_17)
-                .add(cantg_18)
-                .add(cantg_19)
-                .add(cantg_20)
-                .add(cantg_21)
-                .add(cantg_22)
-                .add(cantg_23)
-                .add(cantg_24)
-                .add(cantg_25)
-                .add(cantg_26)
-                .add(cantg_27)
-                .add(cantg_28)
-                .add(cantg_29)
-                .add(cantg_30)
-                .add(cantg_31)
-                .add(cantg_32)
-                .add(cantg_33)
-                .add(cantg_34)
-                .add(cantg_35)
-                .add(cantg_36)
-                .add(cantg_37)
-                .add(cantg_38)
-                .add(cantg_39)
-                .add(cantg_40)
-                .add(cantg_41)
-                .add(cantg_42)
-                .add(cantg_43)
-                .add(cantg_44)
-                .add(cantg_45)
-                .add(cantg_46)
-                .add(cantg_47)
-                .add(cantg_48)
-                .add(cantg_49)
-                .add(cantg_50)
-                .add(cantg_51)
-                .add(cantg_52)
-                .add(cantg_53)
-                .add(cantg_54)
-                .add(cantg_55)
-                .add(cantg_56)
-                .add(cantg_57)
-                .add(cantg_58)
-                .add(cantg_59)
-                .add(cantg_60)
-                .add(cantg_61)
-                .add(cantg_62)
-                .add(cantg_63)
-                .add(cantg_64)
-                .add(cantg_65)
-                .add(cantg_66)
-                .add(cantg_67)
-                .add(cantg_68)
-                .add(cantg_69)
-                .add(cantg_70)
-                .add(cantg_71)
-                .add(cantg_72)
-                .add(cantg_73)
-                .add(cantg_74)
-                .add(cantg_75)
-                .add(cantg_76)
-                .add(cantg_77)
-                .add(cantg_78)
-                .add(cantg_79)
-                .add(cantg_80)
-                .add(cantg_81)
-                .add(cantg_82)
-                .add(cantg_83)
-                .add(cantg_84)
-                .add(cantg_85)
-                .add(cantg_86)
-                .add(cantg_87)
-                .add(cantg_88)
-                .add(cantg_89)
-                .add(cantg_90)
-                .add(cantg_91)
-                .add(cantg_92)
-                .add(cantg_93)
-                .add(cantg_94)
-                .add(cantg_95)
-                .add(cantg_96)
-                .add(cantg_97)
-                .add(cantg_98)
-                .add(cantg_99)
-                .add(cantg_100)
-                .add(cantg_101)
-                .add(cantg_102)
-                .add(cantg_103)
-                .add(cantg_104)
-                .add(cantg_105)
-                .add(cantg_106)
-                .add(cantg_107)
-                .add(cantg_108)
-                .add(cantg_109)
-                .add(cantg_110)
-                .add(cantg_111)
-                .add(cantg_112)
-                .add(cantg_113)
-                .add(cantg_114)
-                .add(cantg_115)
-                .add(cantg_116)
-                .add(cantg_117)
-                .add(cantg_118)
-                .add(cantg_119)
-                .add(cantg_120)
-                .fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
-        Polygon cantogLoc = mMap.addPolygon(cantog_Loc);                                                  //Muestra Canto Grande Rojo
-
-
-
-
-
-        // San Juan de lurigancho - Metro Ascienda 16/02/2021
-        final LatLng metro_01 = new LatLng(-11.992142415615255, -77.00052451197908);
-        final LatLng metro_02 = new LatLng(-11.992639587005876, -76.99843686756175);
-        final LatLng metro_03 = new LatLng(-11.99389894464779, -76.9983724945496);
-        final LatLng metro_04 = new LatLng(-11.995074339807985, -76.9966344232215);
-        final LatLng metro_05 = new LatLng(-11.995662035498336, -76.99599069305233);
-        final LatLng metro_06 = new LatLng(-11.996795444960213, -76.99446719840195);
-        final LatLng metro_07 = new LatLng(-11.997697971291611, -76.99431699470694);
-        final LatLng metro_08 = new LatLng(-11.998516539072494, -76.99461740209698);
-        final LatLng metro_09 = new LatLng(-11.999335104367924, -76.99429553703622);
-        final LatLng metro_10 = new LatLng(-12.00172781949242, -76.99427407950287);
-        final LatLng metro_11 = new LatLng(-12.003473134879737, -76.99098077436187);
-        final LatLng metro_12 = new LatLng(-12.006649113789683, -76.98870484469097);
-        final LatLng metro_13 = new LatLng(-12.008993971388719, -76.98706617532791);
-        final LatLng metro_14 = new LatLng(-12.01062645520629, -76.9889779565567);
-        final LatLng metro_15 = new LatLng(-12.010893587967743, -76.99064697164872);
-        final LatLng metro_16 = new LatLng(-12.010418685097523, -76.99377258173007);
-        final LatLng metro_17 = new LatLng(-12.011754347310177, -76.99334774147326);
-        final LatLng metro_18 = new LatLng(-12.01273382870418, -76.99019178566294);
-        final LatLng metro_19 = new LatLng(-12.016023197387657, -76.9888813054311);
-        final LatLng metro_20 = new LatLng(-12.017020472444136, -76.98985791671065);
-        final LatLng metro_21 = new LatLng(-12.019979704831128, -76.9905552775021);
-        final LatLng metro_22 = new LatLng(-12.019308113183742, -76.99558710153694);
-        final LatLng metro_23 = new LatLng(-12.019822300696942, -76.99818347969374);
-        final LatLng metro_24 = new LatLng(-12.020567346199401, -76.99789380153923);
-        final LatLng metro_25 = new LatLng(-12.022388079360493, -76.99732897485485);
-        final LatLng metro_26 = new LatLng(-12.022891779615893, -76.99890614217811);
-        final LatLng metro_27 = new LatLng(-12.022178221142545, -77.00492501896782);
-        final LatLng metro_28 = new LatLng(-12.022618948655722, -77.0052683416993);
-        final LatLng metro_29 = new LatLng(-12.022535000613644, -77.0057618681258);
-        final LatLng metro_30 = new LatLng(-12.021936870055592, -77.00645924242411);
-        final LatLng metro_31 = new LatLng(-12.023223797891312, -77.00788312797208);
-        final LatLng metro_32 = new LatLng(-12.020915222379747, -77.01047950612887);
-        final LatLng metro_33 = new LatLng(-12.020642358513916, -77.01362305205572);
-        final LatLng metro_34 = new LatLng(-12.019404113140803, -77.01398783245793);
-        final LatLng metro_35 = new LatLng(-12.01881646927521, -77.01399856129329);
-        final LatLng metro_36 = new LatLng(-12.016707236905216, -77.01315098329718);
-        final LatLng metro_37 = new LatLng(-12.01645538716777, -77.0126789145414);
-        final LatLng metro_38 = new LatLng(-12.01603563708173, -77.0121853881149);
-        final LatLng metro_39 = new LatLng(-12.015626380069678, -77.01222830337501);
-        final LatLng metro_40 = new LatLng(-12.015154159722599, -77.01257162610648);
-        final LatLng metro_41 = new LatLng(-12.01471341998464, -77.01267891446007);
-        final LatLng metro_42 = new LatLng(-12.014482556024408, -77.0129578641794);
-        final LatLng metro_43 = new LatLng(-12.014440580737649, -77.01335483108767);
-        final LatLng metro_44 = new LatLng(-12.014083790535901, -77.01356940779483);
-        final LatLng metro_45 = new LatLng(-12.012688106675075, -77.01351576361805);
-        final LatLng metro_46 = new LatLng(-12.012058472490137, -77.01335483108767);
-        final LatLng metro_47 = new LatLng(-12.011433263741171, -77.01410669098945);
-        final LatLng metro_48 = new LatLng(-12.010444938503282, -77.0148103944465);
-        final LatLng metro_49 = new LatLng(-12.010286100180325, -77.015676491009);
-        final LatLng metro_50 = new LatLng(-12.01277455647652, -77.01876196001301);
-        final LatLng metro_51 = new LatLng(-12.012951041865353, -77.0204400221029);
-        final LatLng metro_52 = new LatLng(-12.012100985802412, -77.02024688412884);
-        final LatLng metro_53 = new LatLng(-12.011901601368404, -77.01982845954984);
-        final LatLng metro_54 = new LatLng(-12.011167025863992, -77.01942076380621);
-        final LatLng metro_55 = new LatLng(-12.010789243395758, -77.01987137489128);
-        final LatLng metro_56 = new LatLng(-12.010559573438208, -77.01915856419386);
-        final LatLng metro_57 = new LatLng(-12.010693139885232, -77.01867303253073);
-        final LatLng metro_58 = new LatLng(-12.010218236634923, -77.01811163643673);
-        final LatLng metro_59 = new LatLng(-12.00961415133414, -77.01786783365736);
-        final LatLng metro_60 = new LatLng(-12.009015132168727, -77.01846749760254);
-        final LatLng metro_61 = new LatLng(-12.00837867284576, -77.01728092851953);
-        final LatLng metro_62 = new LatLng(-12.007920868413521, -77.01993793462897);
-        final LatLng metro_63 = new LatLng(-12.005961867056584, -77.02033242910525);
-        final LatLng metro_64 = new LatLng(-12.003706029601691, -77.01917929144894);
-        final LatLng metro_65 = new LatLng(-12.003049621444482, -77.02030191808922);
-        final LatLng metro_66 = new LatLng(-12.002131862426621, -77.02050039855145);
-        final LatLng metro_67 = new LatLng(-12.002184810147225, -77.02145671350591);
-        final LatLng metro_68 = new LatLng(-12.001494616904186, -77.0215630616788);
-        final LatLng metro_69 = new LatLng(-12.000767626642917, -77.0203289711555);
-        final LatLng metro_70 = new LatLng(-12.000886356691938, -77.01935790782925);
-        final LatLng metro_71 = new LatLng(-11.99877889054757, -77.01950963647396);
-        final LatLng metro_72 = new LatLng(-11.997184197440744, -77.02035184569118);
-        final LatLng metro_73 = new LatLng(-11.99554278281804, -77.0195398801638);
-        final LatLng metro_74 = new LatLng(-11.99543688475735, -77.02284187330842);
-        final LatLng metro_75 = new LatLng(-11.994713246860776, -77.02278774222967);
-        final LatLng metro_76 = new LatLng(-11.993954307505598, -77.02150664106426);
-        final LatLng metro_77 = new LatLng(-11.993283615087186, -77.02193968935379);
-        final LatLng metro_78 = new LatLng(-11.992017728533558, -77.02117062482395);
-        final LatLng metro_79 = new LatLng(-11.992017691474766, -77.02212546954833);
-        final LatLng metro_80 = new LatLng(-11.98924707754698, -77.02224352018075);
-        final LatLng metro_81 = new LatLng(-11.988620771405213, -77.01947830723392);
-        final LatLng metro_82 = new LatLng(-11.988542851283874, -77.01937968354748);
-        final LatLng metro_83 = new LatLng(-11.988579956111767, -77.01879173504916);
-        final LatLng metro_84 = new LatLng(-11.989229289784712, -77.01712271981373);
-        final LatLng metro_85 = new LatLng(-11.98909942317731, -77.01547646401843);
-        final LatLng metro_86 = new LatLng(-11.990194011204759, -77.01534749461983);
-        final LatLng metro_87 = new LatLng(-11.989745045129299, -77.01305639193377);
-        final LatLng metro_88 = new LatLng(-11.989453641496498, -77.01137426792233);
-        final LatLng metro_89 = new LatLng(-11.990057091569506, -77.01049718557275);
-        final LatLng metro_90 = new LatLng(-11.990193523572128, -77.00965765411893);
-        final LatLng metro_91 = new LatLng(-11.990120060195364, -77.00855526628582);
-        final LatLng metro_92 = new LatLng(-11.989962638602947, -77.0074072807899);
-        final LatLng metro_93 = new LatLng(-11.989970509684818, -77.00605276524085);
-        final LatLng metro_94 = new LatLng(-11.990398171455306, -77.00496378839077);
-        final LatLng metro_95 = new LatLng(-11.992137672131387, -77.00060251655225);
-
-        PolygonOptions metro_Loc = new PolygonOptions()
-                .add(metro_01)
-                .add(metro_02)
-                .add(metro_03)
-                .add(metro_04)
-                .add(metro_05)
-                .add(metro_06)
-                .add(metro_07)
-                .add(metro_08)
-                .add(metro_09)
-                .add(metro_10)
-                .add(metro_11)
-                .add(metro_12)
-                .add(metro_13)
-                .add(metro_14)
-                .add(metro_15)
-                .add(metro_16)
-                .add(metro_17)
-                .add(metro_18)
-                .add(metro_19)
-                .add(metro_20)
-                .add(metro_21)
-                .add(metro_22)
-                .add(metro_23)
-                .add(metro_24)
-                .add(metro_25)
-                .add(metro_26)
-                .add(metro_27)
-                .add(metro_28)
-                .add(metro_29)
-                .add(metro_30)
-                .add(metro_31)
-                .add(metro_32)
-                .add(metro_33)
-                .add(metro_34)
-                .add(metro_35)
-                .add(metro_36)
-                .add(metro_37)
-                .add(metro_38)
-                .add(metro_39)
-                .add(metro_40)
-                .add(metro_41)
-                .add(metro_42)
-                .add(metro_43)
-                .add(metro_44)
-                .add(metro_45)
-                .add(metro_46)
-                .add(metro_47)
-                .add(metro_48)
-                .add(metro_49)
-                .add(metro_50)
-                .add(metro_51)
-                .add(metro_52)
-                .add(metro_53)
-                .add(metro_54)
-                .add(metro_55)
-                .add(metro_56)
-                .add(metro_57)
-                .add(metro_58)
-                .add(metro_59)
-                .add(metro_60)
-                .add(metro_61)
-                .add(metro_62)
-                .add(metro_63)
-                .add(metro_64)
-                .add(metro_65)
-                .add(metro_66)
-                .add(metro_67)
-                .add(metro_68)
-                .add(metro_69)
-                .add(metro_70)
-                .add(metro_71)
-                .add(metro_72)
-                .add(metro_73)
-                .add(metro_74)
-                .add(metro_75)
-                .add(metro_76)
-                .add(metro_77)
-                .add(metro_78)
-                .add(metro_79)
-                .add(metro_80)
-                .add(metro_81)
-                .add(metro_82)
-                .add(metro_83)
-                .add(metro_84)
-                .add(metro_85)
-                .add(metro_86)
-                .add(metro_87)
-                .add(metro_88)
-                .add(metro_89)
-                .add(metro_90)
-                .add(metro_91)
-                .add(metro_92)
-                .add(metro_93)
-                .add(metro_94)
-                .add(metro_95)
-                .fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
-        Polygon metroLoc = mMap.addPolygon(metro_Loc);
 
         //Cto Grande 16/02/2021
         final LatLng cantg02_01 = new LatLng(-11.990091185199853, -77.01536974742201);
@@ -2204,7 +742,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                 .fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
         //Polygon cantog02Loc = mMap.addPolygon(cantog02_Loc);                                          LAPSUS DEL IMBÉCIL DEL CLIENTE
 
-
+*/
 
         // TRANSPARENCIA EN LA VICTORIA                                                                 ****************************************
         final LatLng pino_01 = new LatLng(-12.071806852930909, -77.00277266060264);
@@ -2225,7 +763,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                 .add(pino_06)
                 .add(pino_07)
                 .add(pino_08)
-                .fillColor(0xBBFFFFFF).strokeColor(Color.RED).strokeWidth(3); // Sin color
+                .fillColor(0xFF000000).strokeColor(Color.BLACK).strokeWidth(3); // Sin color
         Polygon pinoLoc = mMap.addPolygon(pino_Loc);
 
 /*
@@ -2247,7 +785,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         CameraUpdate zoom = CameraUpdateFactory.zoomTo(15);
         cmarker = new MarkerOptions();
         cmarker.position(chosica);
-        cmarker.title("La Delicia - CHOSICA");
+        cmarker.title("La Delicia - CHOSICA\nTelf: 962 096 927 / 922 150 517");
         cmarker.snippet("Telf: 962 096 927 / 922 150 517");
         cmarker.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));            // android.R.drawable.star_on
         chosica_marker = mMap.addMarker(cmarker);
@@ -2348,7 +886,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                 .add(cho_44)
                 .add(cho_45)
                 .add(cho_46)
-                .add(cho_47);
+                .add(cho_47).strokeWidth(widthStoke);
         //.fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
 
         choLoc = mMap.addPolygon(cho_loc);
@@ -2362,7 +900,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
             public boolean onMarkerClick(Marker marker) {
 
                 if(marker.equals(chosica_marker)){
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
                     campoyLoc.setFillColor(0x0000FF);
                     campoyLoc.setStrokeColor(0x0000FF);
                     choLoc.setFillColor(color_Red);
@@ -2423,10 +961,45 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     //local29Loc.setStrokeColor(0x0000FF);
                     local30Loc.setFillColor(0x0000FF);
                     local30Loc.setStrokeColor(0x0000FF);
-
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
                     return true;
                 }else if(marker.equals(campoy_marker)){
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(color_Red);
@@ -2487,9 +1060,45 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     //local29Loc.setStrokeColor(0x0000FF);
                     local30Loc.setFillColor(0x0000FF);
                     local30Loc.setStrokeColor(0x0000FF);
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
                     return true;
                 }else if(marker.equals(local01_marker)){
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -2550,10 +1159,46 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     //local29Loc.setStrokeColor(0x0000FF);
                     local30Loc.setFillColor(0x0000FF);
                     local30Loc.setStrokeColor(0x0000FF);
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
                     return true;
                 }else if (marker.equals(local02_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -2614,10 +1259,46 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     //local29Loc.setStrokeColor(0x0000FF);
                     local30Loc.setFillColor(0x0000FF);
                     local30Loc.setStrokeColor(0x0000FF);
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
                     return true;
                 }else if (marker.equals(local03_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -2678,10 +1359,46 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     //local29Loc.setStrokeColor(0x0000FF);
                     local30Loc.setFillColor(0x0000FF);
                     local30Loc.setStrokeColor(0x0000FF);
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
                     return true;
                 }else if (marker.equals(local04_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -2742,10 +1459,46 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     //local29Loc.setStrokeColor(0x0000FF);
                     local30Loc.setFillColor(0x0000FF);
                     local30Loc.setStrokeColor(0x0000FF);
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
                     return true;
                 }else if (marker.equals(local05_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -2806,10 +1559,46 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     //local29Loc.setStrokeColor(0x0000FF);
                     local30Loc.setFillColor(0x0000FF);
                     local30Loc.setStrokeColor(0x0000FF);
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
                     return true;
                 }else if (marker.equals(local06_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -2826,16 +1615,16 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     local05Loc.setStrokeColor(0x0000FF);
                     //local06Loc.setFillColor(color_Red);
                     //local06Loc.setStrokeColor(color_Red);
-                    local07Loc.setFillColor(0x0000FF);
-                    local07Loc.setStrokeColor(0x0000FF);
+                    //local07Loc.setFillColor(0x0000FF);
+                    //local07Loc.setStrokeColor(0x0000FF);
                     local08Loc.setFillColor(0x0000FF);
                     local08Loc.setStrokeColor(0x0000FF);
                     local09Loc.setFillColor(0x0000FF);
                     local09Loc.setStrokeColor(0x0000FF);
                     local10Loc.setFillColor(0x0000FF);
                     local10Loc.setStrokeColor(0x0000FF);
-                    local11Loc.setFillColor(0x0000FF);
-                    local11Loc.setStrokeColor(0x0000FF);
+                    //local11Loc.setFillColor(0x0000FF);
+                    //local11Loc.setStrokeColor(0x0000FF);
                     local12Loc.setFillColor(0x0000FF);
                     local12Loc.setStrokeColor(0x0000FF);
                     local13Loc.setFillColor(0x0000FF);
@@ -2870,10 +1659,46 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     //local29Loc.setStrokeColor(0x0000FF);
                     local30Loc.setFillColor(0x0000FF);
                     local30Loc.setStrokeColor(0x0000FF);
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
                     return true;
                 }else if (marker.equals(local07_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -2898,8 +1723,8 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     local09Loc.setStrokeColor(0x0000FF);
                     local10Loc.setFillColor(0x0000FF);
                     local10Loc.setStrokeColor(0x0000FF);
-                    local11Loc.setFillColor(0x0000FF);
-                    local11Loc.setStrokeColor(0x0000FF);
+                    //local11Loc.setFillColor(0x0000FF);
+                    //local11Loc.setStrokeColor(0x0000FF);
                     local12Loc.setFillColor(0x0000FF);
                     local12Loc.setStrokeColor(0x0000FF);
                     local13Loc.setFillColor(0x0000FF);
@@ -2934,10 +1759,46 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     //local29Loc.setStrokeColor(0x0000FF);
                     local30Loc.setFillColor(0x0000FF);
                     local30Loc.setStrokeColor(0x0000FF);
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
                     return true;
                 }else if (marker.equals(local08_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -2998,10 +1859,46 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     //local29Loc.setStrokeColor(0x0000FF);
                     local30Loc.setFillColor(0x0000FF);
                     local30Loc.setStrokeColor(0x0000FF);
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
                     return true;
                 }else if (marker.equals(local09_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -3062,10 +1959,46 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     //local29Loc.setStrokeColor(0x0000FF);
                     local30Loc.setFillColor(0x0000FF);
                     local30Loc.setStrokeColor(0x0000FF);
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
                     return true;
                 }else if (marker.equals(local10_marker) || marker.equals(local11_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -3126,10 +2059,46 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     //local29Loc.setStrokeColor(0x0000FF);
                     local30Loc.setFillColor(0x0000FF);
                     local30Loc.setStrokeColor(0x0000FF);
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
                     return true;
                 }else if (marker.equals(local11_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -3190,10 +2159,46 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     //local29Loc.setStrokeColor(0x0000FF);
                     local30Loc.setFillColor(0x0000FF);
                     local30Loc.setStrokeColor(0x0000FF);
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
                     return true;
                 }else if (marker.equals(local12_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -3254,10 +2259,46 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     //local29Loc.setStrokeColor(0x0000FF);
                     local30Loc.setFillColor(0x0000FF);
                     local30Loc.setStrokeColor(0x0000FF);
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
                     return true;
                 }else if (marker.equals(local13_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -3318,10 +2359,46 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     //local29Loc.setStrokeColor(0x0000FF);
                     local30Loc.setFillColor(0x0000FF);
                     local30Loc.setStrokeColor(0x0000FF);
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
                     return true;
                 }else if (marker.equals(local14_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -3382,10 +2459,46 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     //local29Loc.setStrokeColor(0x0000FF);
                     local30Loc.setFillColor(0x0000FF);
                     local30Loc.setStrokeColor(0x0000FF);
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
                     return true;
                 }else if (marker.equals(local15_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -3446,10 +2559,46 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     //local29Loc.setStrokeColor(0x0000FF);
                     local30Loc.setFillColor(0x0000FF);
                     local30Loc.setStrokeColor(0x0000FF);
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
                     return true;
                 }else if (marker.equals(local16_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -3510,10 +2659,46 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     //local29Loc.setStrokeColor(0x0000FF);
                     local30Loc.setFillColor(0x0000FF);
                     local30Loc.setStrokeColor(0x0000FF);
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
                     return true;
                 }else if (marker.equals(local17_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -3574,10 +2759,46 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     //local29Loc.setStrokeColor(0x0000FF);
                     local30Loc.setFillColor(0x0000FF);
                     local30Loc.setStrokeColor(0x0000FF);
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
                     return true;
                 }else if (marker.equals(local18_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -3638,10 +2859,46 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     //local29Loc.setStrokeColor(0x0000FF);
                     local30Loc.setFillColor(0x0000FF);
                     local30Loc.setStrokeColor(0x0000FF);
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
                     return true;
                 }else if (marker.equals(local19_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -3680,8 +2937,8 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     local16Loc.setStrokeColor(0x0000FF);
                     local17Loc.setFillColor(0x0000FF);
                     local17Loc.setStrokeColor(0x0000FF);
-                    local18Loc.setFillColor(0x0000FF);
-                    local18Loc.setStrokeColor(0x0000FF);
+                    local18Loc.setFillColor(color_Red);
+                    local18Loc.setStrokeColor(color_Red);
                     //local19Loc.setFillColor(color_Red);
                     //local19Loc.setStrokeColor(color_Red);
                     local20Loc.setFillColor(0x0000FF);
@@ -3702,10 +2959,46 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     //local29Loc.setStrokeColor(0x0000FF);
                     local30Loc.setFillColor(0x0000FF);
                     local30Loc.setStrokeColor(0x0000FF);
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
                     return true;
-                }else if (marker.equals(local20_marker) || marker.equals(local21_marker))
+                }else if (marker.equals(local20_marker) || marker.equals(local21_marker) || marker.equals(local41_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -3766,10 +3059,46 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     //local29Loc.setStrokeColor(0x0000FF);
                     local30Loc.setFillColor(0x0000FF);
                     local30Loc.setStrokeColor(0x0000FF);
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
                     return true;
                 }else if (marker.equals(local21_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -3830,10 +3159,46 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     //local29Loc.setStrokeColor(0x0000FF);
                     local30Loc.setFillColor(0x0000FF);
                     local30Loc.setStrokeColor(0x0000FF);
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
                     return true;
                 }else if (marker.equals(local22_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -3894,10 +3259,46 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     //local29Loc.setStrokeColor(0x0000FF);
                     local30Loc.setFillColor(0x0000FF);
                     local30Loc.setStrokeColor(0x0000FF);
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
                     return true;
                 }else if (marker.equals(local25_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -3958,10 +3359,46 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     //local29Loc.setStrokeColor(0x0000FF);
                     local30Loc.setFillColor(0x0000FF);
                     local30Loc.setStrokeColor(0x0000FF);
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
                     return true;
                 }else if (marker.equals(local26_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -4022,10 +3459,46 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     //local29Loc.setStrokeColor(0x0000FF);
                     local30Loc.setFillColor(0x0000FF);
                     local30Loc.setStrokeColor(0x0000FF);
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
                     return true;
                 }else if (marker.equals(local27_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -4086,10 +3559,46 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     //local29Loc.setStrokeColor(0x0000FF);
                     local30Loc.setFillColor(0x0000FF);
                     local30Loc.setStrokeColor(0x0000FF);
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
                     return true;
                 }else if (marker.equals(local28_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -4150,10 +3659,46 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     //local29Loc.setStrokeColor(0x0000FF);
                     local30Loc.setFillColor(0x0000FF);
                     local30Loc.setStrokeColor(0x0000FF);
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
                     return true;
                 }else if (marker.equals(local29_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -4214,10 +3759,46 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     //local29Loc.setStrokeColor(color_Red);
                     local30Loc.setFillColor(0x0000FF);
                     local30Loc.setStrokeColor(0x0000FF);
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
                     return true;
                 }else if (marker.equals(local30_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -4278,9 +3859,1644 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     //local29Loc.setStrokeColor(0x0000FF);
                     local30Loc.setFillColor(color_Red);
                     local30Loc.setStrokeColor(color_Red);
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
+                    return true;
+                }else if (marker.equals(local31_marker))
+                {
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    choLoc.setFillColor(0x0000FF);
+                    choLoc.setStrokeColor(0x0000FF);
+                    campoyLoc.setFillColor(0x0000FF);
+                    campoyLoc.setStrokeColor(0x0000FF);
+                    local01Loc.setFillColor(0x0000FF);
+                    local01Loc.setStrokeColor(0x0000FF);
+                    local02Loc.setFillColor(0x0000FF);
+                    local02Loc.setStrokeColor(0x0000FF);
+                    local03Loc.setFillColor(0x0000FF);
+                    local03Loc.setStrokeColor(0x0000FF);
+                    local04Loc.setFillColor(0x0000FF);
+                    local04Loc.setStrokeColor(0x0000FF);
+                    local05Loc.setFillColor(0x0000FF);
+                    local05Loc.setStrokeColor(0x0000FF);
+                    //local06Loc.setFillColor(0x0000FF);
+                    //local06Loc.setStrokeColor(0x0000FF);
+                    //local07Loc.setFillColor(0x0000FF);
+                    //local07Loc.setStrokeColor(0x0000FF);
+                    local08Loc.setFillColor(0x0000FF);
+                    local08Loc.setStrokeColor(0x0000FF);
+                    local09Loc.setFillColor(0x0000FF);
+                    local09Loc.setStrokeColor(0x0000FF);
+                    local10Loc.setFillColor(0x0000FF);
+                    local10Loc.setStrokeColor(0x0000FF);
+                    //local11Loc.setFillColor(0x0000FF);
+                    //local11Loc.setStrokeColor(0x0000FF);
+                    local12Loc.setFillColor(0x0000FF);
+                    local12Loc.setStrokeColor(0x0000FF);
+                    local13Loc.setFillColor(0x0000FF);
+                    local13Loc.setStrokeColor(0x0000FF);
+                    local14Loc.setFillColor(0x0000FF);
+                    local14Loc.setStrokeColor(0x0000FF);
+                    local15Loc.setFillColor(0x0000FF);
+                    local15Loc.setStrokeColor(0x0000FF);
+                    local16Loc.setFillColor(0x0000FF);
+                    local16Loc.setStrokeColor(0x0000FF);
+                    local17Loc.setFillColor(0x0000FF);
+                    local17Loc.setStrokeColor(0x0000FF);
+                    local18Loc.setFillColor(0x0000FF);
+                    local18Loc.setStrokeColor(0x0000FF);
+                    //local19Loc.setFillColor(0x0000FF);
+                    //local19Loc.setStrokeColor(0x0000FF);
+                    local20Loc.setFillColor(0x0000FF);
+                    local20Loc.setStrokeColor(0x0000FF);
+                    //local21Loc.setFillColor(0x0000FF);
+                    //local21Loc.setStrokeColor(0x0000FF);
+                    local22Loc.setFillColor(0x0000FF);
+                    local22Loc.setStrokeColor(0x0000FF);
+                    local25Loc.setFillColor(0x0000FF);
+                    local25Loc.setStrokeColor(0x0000FF);
+                    local26Loc.setFillColor(0x0000FF);
+                    local26Loc.setStrokeColor(0x0000FF);
+                    local27Loc.setFillColor(0x0000FF);
+                    local27Loc.setStrokeColor(0x0000FF);
+                    local28Loc.setFillColor(0x0000FF);
+                    local28Loc.setStrokeColor(0x0000FF);
+                    //local29Loc.setFillColor(0x0000FF);
+                    //local29Loc.setStrokeColor(0x0000FF);
+                    local30Loc.setFillColor(0x0000FF);
+                    local30Loc.setStrokeColor(0x0000FF);
+                    local31Loc.setFillColor(color_Red);
+                    local31Loc.setStrokeColor(color_Red);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
+                    return true;
+                }else if (marker.equals(local32_marker))
+                {
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    choLoc.setFillColor(0x0000FF);
+                    choLoc.setStrokeColor(0x0000FF);
+                    campoyLoc.setFillColor(0x0000FF);
+                    campoyLoc.setStrokeColor(0x0000FF);
+                    local01Loc.setFillColor(0x0000FF);
+                    local01Loc.setStrokeColor(0x0000FF);
+                    local02Loc.setFillColor(0x0000FF);
+                    local02Loc.setStrokeColor(0x0000FF);
+                    local03Loc.setFillColor(0x0000FF);
+                    local03Loc.setStrokeColor(0x0000FF);
+                    local04Loc.setFillColor(0x0000FF);
+                    local04Loc.setStrokeColor(0x0000FF);
+                    local05Loc.setFillColor(0x0000FF);
+                    local05Loc.setStrokeColor(0x0000FF);
+                    //local06Loc.setFillColor(0x0000FF);
+                    //local06Loc.setStrokeColor(0x0000FF);
+                    //local07Loc.setFillColor(0x0000FF);
+                    //local07Loc.setStrokeColor(0x0000FF);
+                    local08Loc.setFillColor(0x0000FF);
+                    local08Loc.setStrokeColor(0x0000FF);
+                    local09Loc.setFillColor(0x0000FF);
+                    local09Loc.setStrokeColor(0x0000FF);
+                    local10Loc.setFillColor(0x0000FF);
+                    local10Loc.setStrokeColor(0x0000FF);
+                    //local11Loc.setFillColor(0x0000FF);
+                    //local11Loc.setStrokeColor(0x0000FF);
+                    local12Loc.setFillColor(0x0000FF);
+                    local12Loc.setStrokeColor(0x0000FF);
+                    local13Loc.setFillColor(0x0000FF);
+                    local13Loc.setStrokeColor(0x0000FF);
+                    local14Loc.setFillColor(0x0000FF);
+                    local14Loc.setStrokeColor(0x0000FF);
+                    local15Loc.setFillColor(0x0000FF);
+                    local15Loc.setStrokeColor(0x0000FF);
+                    local16Loc.setFillColor(0x0000FF);
+                    local16Loc.setStrokeColor(0x0000FF);
+                    local17Loc.setFillColor(0x0000FF);
+                    local17Loc.setStrokeColor(0x0000FF);
+                    local18Loc.setFillColor(0x0000FF);
+                    local18Loc.setStrokeColor(0x0000FF);
+                    //local19Loc.setFillColor(0x0000FF);
+                    //local19Loc.setStrokeColor(0x0000FF);
+                    local20Loc.setFillColor(0x0000FF);
+                    local20Loc.setStrokeColor(0x0000FF);
+                    //local21Loc.setFillColor(0x0000FF);
+                    //local21Loc.setStrokeColor(0x0000FF);
+                    local22Loc.setFillColor(0x0000FF);
+                    local22Loc.setStrokeColor(0x0000FF);
+                    local25Loc.setFillColor(0x0000FF);
+                    local25Loc.setStrokeColor(0x0000FF);
+                    local26Loc.setFillColor(0x0000FF);
+                    local26Loc.setStrokeColor(0x0000FF);
+                    local27Loc.setFillColor(0x0000FF);
+                    local27Loc.setStrokeColor(0x0000FF);
+                    local28Loc.setFillColor(0x0000FF);
+                    local28Loc.setStrokeColor(0x0000FF);
+                    //local29Loc.setFillColor(0x0000FF);
+                    //local29Loc.setStrokeColor(0x0000FF);
+                    local30Loc.setFillColor(0x0000FF);
+                    local30Loc.setStrokeColor(0x0000FF);
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(color_Red);
+                    local32Loc.setStrokeColor(color_Red);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
+                    return true;
+                }else if (marker.equals(local33_marker))
+                {
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    choLoc.setFillColor(0x0000FF);
+                    choLoc.setStrokeColor(0x0000FF);
+                    campoyLoc.setFillColor(0x0000FF);
+                    campoyLoc.setStrokeColor(0x0000FF);
+                    local01Loc.setFillColor(0x0000FF);
+                    local01Loc.setStrokeColor(0x0000FF);
+                    local02Loc.setFillColor(0x0000FF);
+                    local02Loc.setStrokeColor(0x0000FF);
+                    local03Loc.setFillColor(0x0000FF);
+                    local03Loc.setStrokeColor(0x0000FF);
+                    local04Loc.setFillColor(0x0000FF);
+                    local04Loc.setStrokeColor(0x0000FF);
+                    local05Loc.setFillColor(0x0000FF);
+                    local05Loc.setStrokeColor(0x0000FF);
+                    //local06Loc.setFillColor(0x0000FF);
+                    //local06Loc.setStrokeColor(0x0000FF);
+                    //local07Loc.setFillColor(0x0000FF);
+                    //local07Loc.setStrokeColor(0x0000FF);
+                    local08Loc.setFillColor(0x0000FF);
+                    local08Loc.setStrokeColor(0x0000FF);
+                    local09Loc.setFillColor(0x0000FF);
+                    local09Loc.setStrokeColor(0x0000FF);
+                    local10Loc.setFillColor(0x0000FF);
+                    local10Loc.setStrokeColor(0x0000FF);
+                    //local11Loc.setFillColor(0x0000FF);
+                    //local11Loc.setStrokeColor(0x0000FF);
+                    local12Loc.setFillColor(0x0000FF);
+                    local12Loc.setStrokeColor(0x0000FF);
+                    local13Loc.setFillColor(0x0000FF);
+                    local13Loc.setStrokeColor(0x0000FF);
+                    local14Loc.setFillColor(0x0000FF);
+                    local14Loc.setStrokeColor(0x0000FF);
+                    local15Loc.setFillColor(0x0000FF);
+                    local15Loc.setStrokeColor(0x0000FF);
+                    local16Loc.setFillColor(0x0000FF);
+                    local16Loc.setStrokeColor(0x0000FF);
+                    local17Loc.setFillColor(0x0000FF);
+                    local17Loc.setStrokeColor(0x0000FF);
+                    local18Loc.setFillColor(0x0000FF);
+                    local18Loc.setStrokeColor(0x0000FF);
+                    //local19Loc.setFillColor(0x0000FF);
+                    //local19Loc.setStrokeColor(0x0000FF);
+                    local20Loc.setFillColor(0x0000FF);
+                    local20Loc.setStrokeColor(0x0000FF);
+                    //local21Loc.setFillColor(0x0000FF);
+                    //local21Loc.setStrokeColor(0x0000FF);
+                    local22Loc.setFillColor(0x0000FF);
+                    local22Loc.setStrokeColor(0x0000FF);
+                    local25Loc.setFillColor(0x0000FF);
+                    local25Loc.setStrokeColor(0x0000FF);
+                    local26Loc.setFillColor(0x0000FF);
+                    local26Loc.setStrokeColor(0x0000FF);
+                    local27Loc.setFillColor(0x0000FF);
+                    local27Loc.setStrokeColor(0x0000FF);
+                    local28Loc.setFillColor(0x0000FF);
+                    local28Loc.setStrokeColor(0x0000FF);
+                    //local29Loc.setFillColor(0x0000FF);
+                    //local29Loc.setStrokeColor(0x0000FF);
+                    local30Loc.setFillColor(0x0000FF);
+                    local30Loc.setStrokeColor(0x0000FF);
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(color_Red);
+                    local33Loc.setStrokeColor(color_Red);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
+                    return true;
+                }else if (marker.equals(local34_marker))
+                {
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    choLoc.setFillColor(0x0000FF);
+                    choLoc.setStrokeColor(0x0000FF);
+                    campoyLoc.setFillColor(0x0000FF);
+                    campoyLoc.setStrokeColor(0x0000FF);
+                    local01Loc.setFillColor(0x0000FF);
+                    local01Loc.setStrokeColor(0x0000FF);
+                    local02Loc.setFillColor(0x0000FF);
+                    local02Loc.setStrokeColor(0x0000FF);
+                    local03Loc.setFillColor(0x0000FF);
+                    local03Loc.setStrokeColor(0x0000FF);
+                    local04Loc.setFillColor(0x0000FF);
+                    local04Loc.setStrokeColor(0x0000FF);
+                    local05Loc.setFillColor(0x0000FF);
+                    local05Loc.setStrokeColor(0x0000FF);
+                    //local06Loc.setFillColor(0x0000FF);
+                    //local06Loc.setStrokeColor(0x0000FF);
+                    //local07Loc.setFillColor(0x0000FF);
+                    //local07Loc.setStrokeColor(0x0000FF);
+                    local08Loc.setFillColor(0x0000FF);
+                    local08Loc.setStrokeColor(0x0000FF);
+                    local09Loc.setFillColor(0x0000FF);
+                    local09Loc.setStrokeColor(0x0000FF);
+                    local10Loc.setFillColor(0x0000FF);
+                    local10Loc.setStrokeColor(0x0000FF);
+                    //local11Loc.setFillColor(0x0000FF);
+                    //local11Loc.setStrokeColor(0x0000FF);
+                    local12Loc.setFillColor(0x0000FF);
+                    local12Loc.setStrokeColor(0x0000FF);
+                    local13Loc.setFillColor(0x0000FF);
+                    local13Loc.setStrokeColor(0x0000FF);
+                    local14Loc.setFillColor(0x0000FF);
+                    local14Loc.setStrokeColor(0x0000FF);
+                    local15Loc.setFillColor(0x0000FF);
+                    local15Loc.setStrokeColor(0x0000FF);
+                    local16Loc.setFillColor(0x0000FF);
+                    local16Loc.setStrokeColor(0x0000FF);
+                    local17Loc.setFillColor(0x0000FF);
+                    local17Loc.setStrokeColor(0x0000FF);
+                    local18Loc.setFillColor(0x0000FF);
+                    local18Loc.setStrokeColor(0x0000FF);
+                    //local19Loc.setFillColor(0x0000FF);
+                    //local19Loc.setStrokeColor(0x0000FF);
+                    local20Loc.setFillColor(0x0000FF);
+                    local20Loc.setStrokeColor(0x0000FF);
+                    //local21Loc.setFillColor(0x0000FF);
+                    //local21Loc.setStrokeColor(0x0000FF);
+                    local22Loc.setFillColor(0x0000FF);
+                    local22Loc.setStrokeColor(0x0000FF);
+                    local25Loc.setFillColor(0x0000FF);
+                    local25Loc.setStrokeColor(0x0000FF);
+                    local26Loc.setFillColor(0x0000FF);
+                    local26Loc.setStrokeColor(0x0000FF);
+                    local27Loc.setFillColor(0x0000FF);
+                    local27Loc.setStrokeColor(0x0000FF);
+                    local28Loc.setFillColor(0x0000FF);
+                    local28Loc.setStrokeColor(0x0000FF);
+                    //local29Loc.setFillColor(0x0000FF);
+                    //local29Loc.setStrokeColor(0x0000FF);
+                    local30Loc.setFillColor(0x0000FF);
+                    local30Loc.setStrokeColor(0x0000FF);
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(color_Red);
+                    local34Loc.setStrokeColor(color_Red);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
+                    return true;
+                }else if (marker.equals(local35_marker))
+                {
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    choLoc.setFillColor(0x0000FF);
+                    choLoc.setStrokeColor(0x0000FF);
+                    campoyLoc.setFillColor(0x0000FF);
+                    campoyLoc.setStrokeColor(0x0000FF);
+                    local01Loc.setFillColor(0x0000FF);
+                    local01Loc.setStrokeColor(0x0000FF);
+                    local02Loc.setFillColor(0x0000FF);
+                    local02Loc.setStrokeColor(0x0000FF);
+                    local03Loc.setFillColor(0x0000FF);
+                    local03Loc.setStrokeColor(0x0000FF);
+                    local04Loc.setFillColor(0x0000FF);
+                    local04Loc.setStrokeColor(0x0000FF);
+                    local05Loc.setFillColor(0x0000FF);
+                    local05Loc.setStrokeColor(0x0000FF);
+                    //local06Loc.setFillColor(0x0000FF);
+                    //local06Loc.setStrokeColor(0x0000FF);
+                    //local07Loc.setFillColor(0x0000FF);
+                    //local07Loc.setStrokeColor(0x0000FF);
+                    local08Loc.setFillColor(0x0000FF);
+                    local08Loc.setStrokeColor(0x0000FF);
+                    local09Loc.setFillColor(0x0000FF);
+                    local09Loc.setStrokeColor(0x0000FF);
+                    local10Loc.setFillColor(0x0000FF);
+                    local10Loc.setStrokeColor(0x0000FF);
+                    //local11Loc.setFillColor(0x0000FF);
+                    //local11Loc.setStrokeColor(0x0000FF);
+                    local12Loc.setFillColor(0x0000FF);
+                    local12Loc.setStrokeColor(0x0000FF);
+                    local13Loc.setFillColor(0x0000FF);
+                    local13Loc.setStrokeColor(0x0000FF);
+                    local14Loc.setFillColor(0x0000FF);
+                    local14Loc.setStrokeColor(0x0000FF);
+                    local15Loc.setFillColor(0x0000FF);
+                    local15Loc.setStrokeColor(0x0000FF);
+                    local16Loc.setFillColor(0x0000FF);
+                    local16Loc.setStrokeColor(0x0000FF);
+                    local17Loc.setFillColor(0x0000FF);
+                    local17Loc.setStrokeColor(0x0000FF);
+                    local18Loc.setFillColor(0x0000FF);
+                    local18Loc.setStrokeColor(0x0000FF);
+                    //local19Loc.setFillColor(0x0000FF);
+                    //local19Loc.setStrokeColor(0x0000FF);
+                    local20Loc.setFillColor(0x0000FF);
+                    local20Loc.setStrokeColor(0x0000FF);
+                    //local21Loc.setFillColor(0x0000FF);
+                    //local21Loc.setStrokeColor(0x0000FF);
+                    local22Loc.setFillColor(0x0000FF);
+                    local22Loc.setStrokeColor(0x0000FF);
+                    local25Loc.setFillColor(0x0000FF);
+                    local25Loc.setStrokeColor(0x0000FF);
+                    local26Loc.setFillColor(0x0000FF);
+                    local26Loc.setStrokeColor(0x0000FF);
+                    local27Loc.setFillColor(0x0000FF);
+                    local27Loc.setStrokeColor(0x0000FF);
+                    local28Loc.setFillColor(0x0000FF);
+                    local28Loc.setStrokeColor(0x0000FF);
+                    //local29Loc.setFillColor(0x0000FF);
+                    //local29Loc.setStrokeColor(0x0000FF);
+                    local30Loc.setFillColor(0x0000FF);
+                    local30Loc.setStrokeColor(0x0000FF);
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(color_Red);
+                    local35Loc.setStrokeColor(color_Red);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
+                    return true;
+                }else if (marker.equals(local36_marker))
+                {
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    choLoc.setFillColor(0x0000FF);
+                    choLoc.setStrokeColor(0x0000FF);
+                    campoyLoc.setFillColor(0x0000FF);
+                    campoyLoc.setStrokeColor(0x0000FF);
+                    local01Loc.setFillColor(0x0000FF);
+                    local01Loc.setStrokeColor(0x0000FF);
+                    local02Loc.setFillColor(0x0000FF);
+                    local02Loc.setStrokeColor(0x0000FF);
+                    local03Loc.setFillColor(0x0000FF);
+                    local03Loc.setStrokeColor(0x0000FF);
+                    local04Loc.setFillColor(0x0000FF);
+                    local04Loc.setStrokeColor(0x0000FF);
+                    local05Loc.setFillColor(0x0000FF);
+                    local05Loc.setStrokeColor(0x0000FF);
+                    //local06Loc.setFillColor(0x0000FF);
+                    //local06Loc.setStrokeColor(0x0000FF);
+                    //local07Loc.setFillColor(0x0000FF);
+                    //local07Loc.setStrokeColor(0x0000FF);
+                    local08Loc.setFillColor(0x0000FF);
+                    local08Loc.setStrokeColor(0x0000FF);
+                    local09Loc.setFillColor(0x0000FF);
+                    local09Loc.setStrokeColor(0x0000FF);
+                    local10Loc.setFillColor(0x0000FF);
+                    local10Loc.setStrokeColor(0x0000FF);
+                    //local11Loc.setFillColor(0x0000FF);
+                    //local11Loc.setStrokeColor(0x0000FF);
+                    local12Loc.setFillColor(0x0000FF);
+                    local12Loc.setStrokeColor(0x0000FF);
+                    local13Loc.setFillColor(0x0000FF);
+                    local13Loc.setStrokeColor(0x0000FF);
+                    local14Loc.setFillColor(0x0000FF);
+                    local14Loc.setStrokeColor(0x0000FF);
+                    local15Loc.setFillColor(0x0000FF);
+                    local15Loc.setStrokeColor(0x0000FF);
+                    local16Loc.setFillColor(0x0000FF);
+                    local16Loc.setStrokeColor(0x0000FF);
+                    local17Loc.setFillColor(0x0000FF);
+                    local17Loc.setStrokeColor(0x0000FF);
+                    local18Loc.setFillColor(0x0000FF);
+                    local18Loc.setStrokeColor(0x0000FF);
+                    //local19Loc.setFillColor(0x0000FF);
+                    //local19Loc.setStrokeColor(0x0000FF);
+                    local20Loc.setFillColor(0x0000FF);
+                    local20Loc.setStrokeColor(0x0000FF);
+                    //local21Loc.setFillColor(0x0000FF);
+                    //local21Loc.setStrokeColor(0x0000FF);
+                    local22Loc.setFillColor(0x0000FF);
+                    local22Loc.setStrokeColor(0x0000FF);
+                    local25Loc.setFillColor(0x0000FF);
+                    local25Loc.setStrokeColor(0x0000FF);
+                    local26Loc.setFillColor(0x0000FF);
+                    local26Loc.setStrokeColor(0x0000FF);
+                    local27Loc.setFillColor(0x0000FF);
+                    local27Loc.setStrokeColor(0x0000FF);
+                    local28Loc.setFillColor(0x0000FF);
+                    local28Loc.setStrokeColor(0x0000FF);
+                    //local29Loc.setFillColor(0x0000FF);
+                    //local29Loc.setStrokeColor(0x0000FF);
+                    local30Loc.setFillColor(0x0000FF);
+                    local30Loc.setStrokeColor(0x0000FF);
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(color_Red);
+                    local36Loc.setStrokeColor(color_Red);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
+                    return true;
+                }else if (marker.equals(local37_marker))
+                {
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    choLoc.setFillColor(0x0000FF);
+                    choLoc.setStrokeColor(0x0000FF);
+                    campoyLoc.setFillColor(0x0000FF);
+                    campoyLoc.setStrokeColor(0x0000FF);
+                    local01Loc.setFillColor(0x0000FF);
+                    local01Loc.setStrokeColor(0x0000FF);
+                    local02Loc.setFillColor(0x0000FF);
+                    local02Loc.setStrokeColor(0x0000FF);
+                    local03Loc.setFillColor(0x0000FF);
+                    local03Loc.setStrokeColor(0x0000FF);
+                    local04Loc.setFillColor(0x0000FF);
+                    local04Loc.setStrokeColor(0x0000FF);
+                    local05Loc.setFillColor(0x0000FF);
+                    local05Loc.setStrokeColor(0x0000FF);
+                    //local06Loc.setFillColor(0x0000FF);
+                    //local06Loc.setStrokeColor(0x0000FF);
+                    //local07Loc.setFillColor(0x0000FF);
+                    //local07Loc.setStrokeColor(0x0000FF);
+                    local08Loc.setFillColor(0x0000FF);
+                    local08Loc.setStrokeColor(0x0000FF);
+                    local09Loc.setFillColor(0x0000FF);
+                    local09Loc.setStrokeColor(0x0000FF);
+                    local10Loc.setFillColor(0x0000FF);
+                    local10Loc.setStrokeColor(0x0000FF);
+                    //local11Loc.setFillColor(0x0000FF);
+                    //local11Loc.setStrokeColor(0x0000FF);
+                    local12Loc.setFillColor(0x0000FF);
+                    local12Loc.setStrokeColor(0x0000FF);
+                    local13Loc.setFillColor(0x0000FF);
+                    local13Loc.setStrokeColor(0x0000FF);
+                    local14Loc.setFillColor(0x0000FF);
+                    local14Loc.setStrokeColor(0x0000FF);
+                    local15Loc.setFillColor(0x0000FF);
+                    local15Loc.setStrokeColor(0x0000FF);
+                    local16Loc.setFillColor(0x0000FF);
+                    local16Loc.setStrokeColor(0x0000FF);
+                    local17Loc.setFillColor(0x0000FF);
+                    local17Loc.setStrokeColor(0x0000FF);
+                    local18Loc.setFillColor(0x0000FF);
+                    local18Loc.setStrokeColor(0x0000FF);
+                    //local19Loc.setFillColor(0x0000FF);
+                    //local19Loc.setStrokeColor(0x0000FF);
+                    local20Loc.setFillColor(0x0000FF);
+                    local20Loc.setStrokeColor(0x0000FF);
+                    //local21Loc.setFillColor(0x0000FF);
+                    //local21Loc.setStrokeColor(0x0000FF);
+                    local22Loc.setFillColor(0x0000FF);
+                    local22Loc.setStrokeColor(0x0000FF);
+                    local25Loc.setFillColor(0x0000FF);
+                    local25Loc.setStrokeColor(0x0000FF);
+                    local26Loc.setFillColor(0x0000FF);
+                    local26Loc.setStrokeColor(0x0000FF);
+                    local27Loc.setFillColor(0x0000FF);
+                    local27Loc.setStrokeColor(0x0000FF);
+                    local28Loc.setFillColor(0x0000FF);
+                    local28Loc.setStrokeColor(0x0000FF);
+                    //local29Loc.setFillColor(0x0000FF);
+                    //local29Loc.setStrokeColor(0x0000FF);
+                    local30Loc.setFillColor(0x0000FF);
+                    local30Loc.setStrokeColor(0x0000FF);
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(color_Red);
+                    local37Loc.setStrokeColor(color_Red);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
+                    return true;
+                }else if (marker.equals(local38_marker))
+                {
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    choLoc.setFillColor(0x0000FF);
+                    choLoc.setStrokeColor(0x0000FF);
+                    campoyLoc.setFillColor(0x0000FF);
+                    campoyLoc.setStrokeColor(0x0000FF);
+                    local01Loc.setFillColor(0x0000FF);
+                    local01Loc.setStrokeColor(0x0000FF);
+                    local02Loc.setFillColor(0x0000FF);
+                    local02Loc.setStrokeColor(0x0000FF);
+                    local03Loc.setFillColor(0x0000FF);
+                    local03Loc.setStrokeColor(0x0000FF);
+                    local04Loc.setFillColor(0x0000FF);
+                    local04Loc.setStrokeColor(0x0000FF);
+                    local05Loc.setFillColor(0x0000FF);
+                    local05Loc.setStrokeColor(0x0000FF);
+                    //local06Loc.setFillColor(0x0000FF);
+                    //local06Loc.setStrokeColor(0x0000FF);
+                    //local07Loc.setFillColor(0x0000FF);
+                    //local07Loc.setStrokeColor(0x0000FF);
+                    local08Loc.setFillColor(0x0000FF);
+                    local08Loc.setStrokeColor(0x0000FF);
+                    local09Loc.setFillColor(0x0000FF);
+                    local09Loc.setStrokeColor(0x0000FF);
+                    local10Loc.setFillColor(0x0000FF);
+                    local10Loc.setStrokeColor(0x0000FF);
+                    //local11Loc.setFillColor(0x0000FF);
+                    //local11Loc.setStrokeColor(0x0000FF);
+                    local12Loc.setFillColor(0x0000FF);
+                    local12Loc.setStrokeColor(0x0000FF);
+                    local13Loc.setFillColor(0x0000FF);
+                    local13Loc.setStrokeColor(0x0000FF);
+                    local14Loc.setFillColor(0x0000FF);
+                    local14Loc.setStrokeColor(0x0000FF);
+                    local15Loc.setFillColor(0x0000FF);
+                    local15Loc.setStrokeColor(0x0000FF);
+                    local16Loc.setFillColor(0x0000FF);
+                    local16Loc.setStrokeColor(0x0000FF);
+                    local17Loc.setFillColor(0x0000FF);
+                    local17Loc.setStrokeColor(0x0000FF);
+                    local18Loc.setFillColor(0x0000FF);
+                    local18Loc.setStrokeColor(0x0000FF);
+                    //local19Loc.setFillColor(0x0000FF);
+                    //local19Loc.setStrokeColor(0x0000FF);
+                    local20Loc.setFillColor(0x0000FF);
+                    local20Loc.setStrokeColor(0x0000FF);
+                    //local21Loc.setFillColor(0x0000FF);
+                    //local21Loc.setStrokeColor(0x0000FF);
+                    local22Loc.setFillColor(0x0000FF);
+                    local22Loc.setStrokeColor(0x0000FF);
+                    local25Loc.setFillColor(0x0000FF);
+                    local25Loc.setStrokeColor(0x0000FF);
+                    local26Loc.setFillColor(0x0000FF);
+                    local26Loc.setStrokeColor(0x0000FF);
+                    local27Loc.setFillColor(0x0000FF);
+                    local27Loc.setStrokeColor(0x0000FF);
+                    local28Loc.setFillColor(0x0000FF);
+                    local28Loc.setStrokeColor(0x0000FF);
+                    //local29Loc.setFillColor(0x0000FF);
+                    //local29Loc.setStrokeColor(0x0000FF);
+                    local30Loc.setFillColor(0x0000FF);
+                    local30Loc.setStrokeColor(0x0000FF);
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(color_Red);
+                    local38Loc.setStrokeColor(color_Red);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
+                    return true;
+                }else if (marker.equals(local39_marker))
+                {
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    choLoc.setFillColor(0x0000FF);
+                    choLoc.setStrokeColor(0x0000FF);
+                    campoyLoc.setFillColor(0x0000FF);
+                    campoyLoc.setStrokeColor(0x0000FF);
+                    local01Loc.setFillColor(0x0000FF);
+                    local01Loc.setStrokeColor(0x0000FF);
+                    local02Loc.setFillColor(0x0000FF);
+                    local02Loc.setStrokeColor(0x0000FF);
+                    local03Loc.setFillColor(0x0000FF);
+                    local03Loc.setStrokeColor(0x0000FF);
+                    local04Loc.setFillColor(0x0000FF);
+                    local04Loc.setStrokeColor(0x0000FF);
+                    local05Loc.setFillColor(0x0000FF);
+                    local05Loc.setStrokeColor(0x0000FF);
+                    //local06Loc.setFillColor(0x0000FF);
+                    //local06Loc.setStrokeColor(0x0000FF);
+                    //local07Loc.setFillColor(0x0000FF);
+                    //local07Loc.setStrokeColor(0x0000FF);
+                    local08Loc.setFillColor(0x0000FF);
+                    local08Loc.setStrokeColor(0x0000FF);
+                    local09Loc.setFillColor(0x0000FF);
+                    local09Loc.setStrokeColor(0x0000FF);
+                    local10Loc.setFillColor(0x0000FF);
+                    local10Loc.setStrokeColor(0x0000FF);
+                    //local11Loc.setFillColor(0x0000FF);
+                    //local11Loc.setStrokeColor(0x0000FF);
+                    local12Loc.setFillColor(0x0000FF);
+                    local12Loc.setStrokeColor(0x0000FF);
+                    local13Loc.setFillColor(0x0000FF);
+                    local13Loc.setStrokeColor(0x0000FF);
+                    local14Loc.setFillColor(0x0000FF);
+                    local14Loc.setStrokeColor(0x0000FF);
+                    local15Loc.setFillColor(0x0000FF);
+                    local15Loc.setStrokeColor(0x0000FF);
+                    local16Loc.setFillColor(0x0000FF);
+                    local16Loc.setStrokeColor(0x0000FF);
+                    local17Loc.setFillColor(0x0000FF);
+                    local17Loc.setStrokeColor(0x0000FF);
+                    local18Loc.setFillColor(0x0000FF);
+                    local18Loc.setStrokeColor(0x0000FF);
+                    //local19Loc.setFillColor(0x0000FF);
+                    //local19Loc.setStrokeColor(0x0000FF);
+                    local20Loc.setFillColor(0x0000FF);
+                    local20Loc.setStrokeColor(0x0000FF);
+                    //local21Loc.setFillColor(0x0000FF);
+                    //local21Loc.setStrokeColor(0x0000FF);
+                    local22Loc.setFillColor(0x0000FF);
+                    local22Loc.setStrokeColor(0x0000FF);
+                    local25Loc.setFillColor(0x0000FF);
+                    local25Loc.setStrokeColor(0x0000FF);
+                    local26Loc.setFillColor(0x0000FF);
+                    local26Loc.setStrokeColor(0x0000FF);
+                    local27Loc.setFillColor(0x0000FF);
+                    local27Loc.setStrokeColor(0x0000FF);
+                    local28Loc.setFillColor(0x0000FF);
+                    local28Loc.setStrokeColor(0x0000FF);
+                    //local29Loc.setFillColor(0x0000FF);
+                    //local29Loc.setStrokeColor(0x0000FF);
+                    local30Loc.setFillColor(0x0000FF);
+                    local30Loc.setStrokeColor(0x0000FF);
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(color_Red);
+                    local39Loc.setStrokeColor(color_Red);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
+                    return true;
+                }else if (marker.equals(local40_marker))
+                {
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    choLoc.setFillColor(0x0000FF);
+                    choLoc.setStrokeColor(0x0000FF);
+                    campoyLoc.setFillColor(0x0000FF);
+                    campoyLoc.setStrokeColor(0x0000FF);
+                    local01Loc.setFillColor(0x0000FF);
+                    local01Loc.setStrokeColor(0x0000FF);
+                    local02Loc.setFillColor(0x0000FF);
+                    local02Loc.setStrokeColor(0x0000FF);
+                    local03Loc.setFillColor(0x0000FF);
+                    local03Loc.setStrokeColor(0x0000FF);
+                    local04Loc.setFillColor(0x0000FF);
+                    local04Loc.setStrokeColor(0x0000FF);
+                    local05Loc.setFillColor(0x0000FF);
+                    local05Loc.setStrokeColor(0x0000FF);
+                    //local06Loc.setFillColor(0x0000FF);
+                    //local06Loc.setStrokeColor(0x0000FF);
+                    //local07Loc.setFillColor(0x0000FF);
+                    //local07Loc.setStrokeColor(0x0000FF);
+                    local08Loc.setFillColor(0x0000FF);
+                    local08Loc.setStrokeColor(0x0000FF);
+                    local09Loc.setFillColor(0x0000FF);
+                    local09Loc.setStrokeColor(0x0000FF);
+                    local10Loc.setFillColor(0x0000FF);
+                    local10Loc.setStrokeColor(0x0000FF);
+                    //local11Loc.setFillColor(0x0000FF);
+                    //local11Loc.setStrokeColor(0x0000FF);
+                    local12Loc.setFillColor(0x0000FF);
+                    local12Loc.setStrokeColor(0x0000FF);
+                    local13Loc.setFillColor(0x0000FF);
+                    local13Loc.setStrokeColor(0x0000FF);
+                    local14Loc.setFillColor(0x0000FF);
+                    local14Loc.setStrokeColor(0x0000FF);
+                    local15Loc.setFillColor(0x0000FF);
+                    local15Loc.setStrokeColor(0x0000FF);
+                    local16Loc.setFillColor(0x0000FF);
+                    local16Loc.setStrokeColor(0x0000FF);
+                    local17Loc.setFillColor(0x0000FF);
+                    local17Loc.setStrokeColor(0x0000FF);
+                    local18Loc.setFillColor(0x0000FF);
+                    local18Loc.setStrokeColor(0x0000FF);
+                    //local19Loc.setFillColor(0x0000FF);
+                    //local19Loc.setStrokeColor(0x0000FF);
+                    local20Loc.setFillColor(0x0000FF);
+                    local20Loc.setStrokeColor(0x0000FF);
+                    //local21Loc.setFillColor(0x0000FF);
+                    //local21Loc.setStrokeColor(0x0000FF);
+                    local22Loc.setFillColor(0x0000FF);
+                    local22Loc.setStrokeColor(0x0000FF);
+                    local25Loc.setFillColor(0x0000FF);
+                    local25Loc.setStrokeColor(0x0000FF);
+                    local26Loc.setFillColor(0x0000FF);
+                    local26Loc.setStrokeColor(0x0000FF);
+                    local27Loc.setFillColor(0x0000FF);
+                    local27Loc.setStrokeColor(0x0000FF);
+                    local28Loc.setFillColor(0x0000FF);
+                    local28Loc.setStrokeColor(0x0000FF);
+                    //local29Loc.setFillColor(0x0000FF);
+                    //local29Loc.setStrokeColor(0x0000FF);
+                    local30Loc.setFillColor(0x0000FF);
+                    local30Loc.setStrokeColor(0x0000FF);
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(color_Red);
+                    local40Loc.setStrokeColor(color_Red);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
+                    return true;
+                }else if (marker.equals(local42_marker))
+                {
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    choLoc.setFillColor(0x0000FF);
+                    choLoc.setStrokeColor(0x0000FF);
+                    campoyLoc.setFillColor(0x0000FF);
+                    campoyLoc.setStrokeColor(0x0000FF);
+                    local01Loc.setFillColor(0x0000FF);
+                    local01Loc.setStrokeColor(0x0000FF);
+                    local02Loc.setFillColor(0x0000FF);
+                    local02Loc.setStrokeColor(0x0000FF);
+                    local03Loc.setFillColor(0x0000FF);
+                    local03Loc.setStrokeColor(0x0000FF);
+                    local04Loc.setFillColor(0x0000FF);
+                    local04Loc.setStrokeColor(0x0000FF);
+                    local05Loc.setFillColor(0x0000FF);
+                    local05Loc.setStrokeColor(0x0000FF);
+                    //local06Loc.setFillColor(0x0000FF);
+                    //local06Loc.setStrokeColor(0x0000FF);
+                    //local07Loc.setFillColor(0x0000FF);
+                    //local07Loc.setStrokeColor(0x0000FF);
+                    local08Loc.setFillColor(0x0000FF);
+                    local08Loc.setStrokeColor(0x0000FF);
+                    local09Loc.setFillColor(0x0000FF);
+                    local09Loc.setStrokeColor(0x0000FF);
+                    local10Loc.setFillColor(0x0000FF);
+                    local10Loc.setStrokeColor(0x0000FF);
+                    //local11Loc.setFillColor(0x0000FF);
+                    //local11Loc.setStrokeColor(0x0000FF);
+                    local12Loc.setFillColor(0x0000FF);
+                    local12Loc.setStrokeColor(0x0000FF);
+                    local13Loc.setFillColor(0x0000FF);
+                    local13Loc.setStrokeColor(0x0000FF);
+                    local14Loc.setFillColor(0x0000FF);
+                    local14Loc.setStrokeColor(0x0000FF);
+                    local15Loc.setFillColor(0x0000FF);
+                    local15Loc.setStrokeColor(0x0000FF);
+                    local16Loc.setFillColor(0x0000FF);
+                    local16Loc.setStrokeColor(0x0000FF);
+                    local17Loc.setFillColor(0x0000FF);
+                    local17Loc.setStrokeColor(0x0000FF);
+                    local18Loc.setFillColor(0x0000FF);
+                    local18Loc.setStrokeColor(0x0000FF);
+                    //local19Loc.setFillColor(0x0000FF);
+                    //local19Loc.setStrokeColor(0x0000FF);
+                    local20Loc.setFillColor(0x0000FF);
+                    local20Loc.setStrokeColor(0x0000FF);
+                    //local21Loc.setFillColor(0x0000FF);
+                    //local21Loc.setStrokeColor(0x0000FF);
+                    local22Loc.setFillColor(0x0000FF);
+                    local22Loc.setStrokeColor(0x0000FF);
+                    local25Loc.setFillColor(0x0000FF);
+                    local25Loc.setStrokeColor(0x0000FF);
+                    local26Loc.setFillColor(0x0000FF);
+                    local26Loc.setStrokeColor(0x0000FF);
+                    local27Loc.setFillColor(0x0000FF);
+                    local27Loc.setStrokeColor(0x0000FF);
+                    local28Loc.setFillColor(0x0000FF);
+                    local28Loc.setStrokeColor(0x0000FF);
+                    //local29Loc.setFillColor(0x0000FF);
+                    //local29Loc.setStrokeColor(0x0000FF);
+                    local30Loc.setFillColor(0x0000FF);
+                    local30Loc.setStrokeColor(0x0000FF);
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(color_Red);
+                    local42Loc.setStrokeColor(color_Red);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
+                    return true;
+                }else if (marker.equals(local43_marker))
+                {
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    choLoc.setFillColor(0x0000FF);
+                    choLoc.setStrokeColor(0x0000FF);
+                    campoyLoc.setFillColor(0x0000FF);
+                    campoyLoc.setStrokeColor(0x0000FF);
+                    local01Loc.setFillColor(0x0000FF);
+                    local01Loc.setStrokeColor(0x0000FF);
+                    local02Loc.setFillColor(0x0000FF);
+                    local02Loc.setStrokeColor(0x0000FF);
+                    local03Loc.setFillColor(0x0000FF);
+                    local03Loc.setStrokeColor(0x0000FF);
+                    local04Loc.setFillColor(0x0000FF);
+                    local04Loc.setStrokeColor(0x0000FF);
+                    local05Loc.setFillColor(0x0000FF);
+                    local05Loc.setStrokeColor(0x0000FF);
+                    //local06Loc.setFillColor(0x0000FF);
+                    //local06Loc.setStrokeColor(0x0000FF);
+                    //local07Loc.setFillColor(0x0000FF);
+                    //local07Loc.setStrokeColor(0x0000FF);
+                    local08Loc.setFillColor(0x0000FF);
+                    local08Loc.setStrokeColor(0x0000FF);
+                    local09Loc.setFillColor(0x0000FF);
+                    local09Loc.setStrokeColor(0x0000FF);
+                    local10Loc.setFillColor(0x0000FF);
+                    local10Loc.setStrokeColor(0x0000FF);
+                    //local11Loc.setFillColor(0x0000FF);
+                    //local11Loc.setStrokeColor(0x0000FF);
+                    local12Loc.setFillColor(0x0000FF);
+                    local12Loc.setStrokeColor(0x0000FF);
+                    local13Loc.setFillColor(0x0000FF);
+                    local13Loc.setStrokeColor(0x0000FF);
+                    local14Loc.setFillColor(0x0000FF);
+                    local14Loc.setStrokeColor(0x0000FF);
+                    local15Loc.setFillColor(0x0000FF);
+                    local15Loc.setStrokeColor(0x0000FF);
+                    local16Loc.setFillColor(0x0000FF);
+                    local16Loc.setStrokeColor(0x0000FF);
+                    local17Loc.setFillColor(0x0000FF);
+                    local17Loc.setStrokeColor(0x0000FF);
+                    local18Loc.setFillColor(0x0000FF);
+                    local18Loc.setStrokeColor(0x0000FF);
+                    //local19Loc.setFillColor(0x0000FF);
+                    //local19Loc.setStrokeColor(0x0000FF);
+                    local20Loc.setFillColor(0x0000FF);
+                    local20Loc.setStrokeColor(0x0000FF);
+                    //local21Loc.setFillColor(0x0000FF);
+                    //local21Loc.setStrokeColor(0x0000FF);
+                    local22Loc.setFillColor(0x0000FF);
+                    local22Loc.setStrokeColor(0x0000FF);
+                    local25Loc.setFillColor(0x0000FF);
+                    local25Loc.setStrokeColor(0x0000FF);
+                    local26Loc.setFillColor(0x0000FF);
+                    local26Loc.setStrokeColor(0x0000FF);
+                    local27Loc.setFillColor(0x0000FF);
+                    local27Loc.setStrokeColor(0x0000FF);
+                    local28Loc.setFillColor(0x0000FF);
+                    local28Loc.setStrokeColor(0x0000FF);
+                    //local29Loc.setFillColor(0x0000FF);
+                    //local29Loc.setStrokeColor(0x0000FF);
+                    local30Loc.setFillColor(0x0000FF);
+                    local30Loc.setStrokeColor(0x0000FF);
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(color_Red);
+                    local43Loc.setStrokeColor(color_Red);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
+                    return true;
+                }else if (marker.equals(local44_marker) || marker.equals(local45_marker))
+                {
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    choLoc.setFillColor(0x0000FF);
+                    choLoc.setStrokeColor(0x0000FF);
+                    campoyLoc.setFillColor(0x0000FF);
+                    campoyLoc.setStrokeColor(0x0000FF);
+                    local01Loc.setFillColor(0x0000FF);
+                    local01Loc.setStrokeColor(0x0000FF);
+                    local02Loc.setFillColor(0x0000FF);
+                    local02Loc.setStrokeColor(0x0000FF);
+                    local03Loc.setFillColor(0x0000FF);
+                    local03Loc.setStrokeColor(0x0000FF);
+                    local04Loc.setFillColor(0x0000FF);
+                    local04Loc.setStrokeColor(0x0000FF);
+                    local05Loc.setFillColor(0x0000FF);
+                    local05Loc.setStrokeColor(0x0000FF);
+                    //local06Loc.setFillColor(0x0000FF);
+                    //local06Loc.setStrokeColor(0x0000FF);
+                    //local07Loc.setFillColor(0x0000FF);
+                    //local07Loc.setStrokeColor(0x0000FF);
+                    local08Loc.setFillColor(0x0000FF);
+                    local08Loc.setStrokeColor(0x0000FF);
+                    local09Loc.setFillColor(0x0000FF);
+                    local09Loc.setStrokeColor(0x0000FF);
+                    local10Loc.setFillColor(0x0000FF);
+                    local10Loc.setStrokeColor(0x0000FF);
+                    //local11Loc.setFillColor(0x0000FF);
+                    //local11Loc.setStrokeColor(0x0000FF);
+                    local12Loc.setFillColor(0x0000FF);
+                    local12Loc.setStrokeColor(0x0000FF);
+                    local13Loc.setFillColor(0x0000FF);
+                    local13Loc.setStrokeColor(0x0000FF);
+                    local14Loc.setFillColor(0x0000FF);
+                    local14Loc.setStrokeColor(0x0000FF);
+                    local15Loc.setFillColor(0x0000FF);
+                    local15Loc.setStrokeColor(0x0000FF);
+                    local16Loc.setFillColor(0x0000FF);
+                    local16Loc.setStrokeColor(0x0000FF);
+                    local17Loc.setFillColor(0x0000FF);
+                    local17Loc.setStrokeColor(0x0000FF);
+                    local18Loc.setFillColor(0x0000FF);
+                    local18Loc.setStrokeColor(0x0000FF);
+                    //local19Loc.setFillColor(0x0000FF);
+                    //local19Loc.setStrokeColor(0x0000FF);
+                    local20Loc.setFillColor(0x0000FF);
+                    local20Loc.setStrokeColor(0x0000FF);
+                    //local21Loc.setFillColor(0x0000FF);
+                    //local21Loc.setStrokeColor(0x0000FF);
+                    local22Loc.setFillColor(0x0000FF);
+                    local22Loc.setStrokeColor(0x0000FF);
+                    local25Loc.setFillColor(0x0000FF);
+                    local25Loc.setStrokeColor(0x0000FF);
+                    local26Loc.setFillColor(0x0000FF);
+                    local26Loc.setStrokeColor(0x0000FF);
+                    local27Loc.setFillColor(0x0000FF);
+                    local27Loc.setStrokeColor(0x0000FF);
+                    local28Loc.setFillColor(0x0000FF);
+                    local28Loc.setStrokeColor(0x0000FF);
+                    //local29Loc.setFillColor(0x0000FF);
+                    //local29Loc.setStrokeColor(0x0000FF);
+                    local30Loc.setFillColor(0x0000FF);
+                    local30Loc.setStrokeColor(0x0000FF);
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(color_Red);
+                    local44Loc.setStrokeColor(color_Red);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
+                    return true;
+                }else if (marker.equals(local46_marker))
+                {
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    choLoc.setFillColor(0x0000FF);
+                    choLoc.setStrokeColor(0x0000FF);
+                    campoyLoc.setFillColor(0x0000FF);
+                    campoyLoc.setStrokeColor(0x0000FF);
+                    local01Loc.setFillColor(0x0000FF);
+                    local01Loc.setStrokeColor(0x0000FF);
+                    local02Loc.setFillColor(0x0000FF);
+                    local02Loc.setStrokeColor(0x0000FF);
+                    local03Loc.setFillColor(0x0000FF);
+                    local03Loc.setStrokeColor(0x0000FF);
+                    local04Loc.setFillColor(0x0000FF);
+                    local04Loc.setStrokeColor(0x0000FF);
+                    local05Loc.setFillColor(0x0000FF);
+                    local05Loc.setStrokeColor(0x0000FF);
+                    //local06Loc.setFillColor(0x0000FF);
+                    //local06Loc.setStrokeColor(0x0000FF);
+                    //local07Loc.setFillColor(0x0000FF);
+                    //local07Loc.setStrokeColor(0x0000FF);
+                    local08Loc.setFillColor(0x0000FF);
+                    local08Loc.setStrokeColor(0x0000FF);
+                    local09Loc.setFillColor(0x0000FF);
+                    local09Loc.setStrokeColor(0x0000FF);
+                    local10Loc.setFillColor(0x0000FF);
+                    local10Loc.setStrokeColor(0x0000FF);
+                    //local11Loc.setFillColor(0x0000FF);
+                    //local11Loc.setStrokeColor(0x0000FF);
+                    local12Loc.setFillColor(0x0000FF);
+                    local12Loc.setStrokeColor(0x0000FF);
+                    local13Loc.setFillColor(0x0000FF);
+                    local13Loc.setStrokeColor(0x0000FF);
+                    local14Loc.setFillColor(0x0000FF);
+                    local14Loc.setStrokeColor(0x0000FF);
+                    local15Loc.setFillColor(0x0000FF);
+                    local15Loc.setStrokeColor(0x0000FF);
+                    local16Loc.setFillColor(0x0000FF);
+                    local16Loc.setStrokeColor(0x0000FF);
+                    local17Loc.setFillColor(0x0000FF);
+                    local17Loc.setStrokeColor(0x0000FF);
+                    local18Loc.setFillColor(0x0000FF);
+                    local18Loc.setStrokeColor(0x0000FF);
+                    //local19Loc.setFillColor(0x0000FF);
+                    //local19Loc.setStrokeColor(0x0000FF);
+                    local20Loc.setFillColor(0x0000FF);
+                    local20Loc.setStrokeColor(0x0000FF);
+                    //local21Loc.setFillColor(0x0000FF);
+                    //local21Loc.setStrokeColor(0x0000FF);
+                    local22Loc.setFillColor(0x0000FF);
+                    local22Loc.setStrokeColor(0x0000FF);
+                    local25Loc.setFillColor(0x0000FF);
+                    local25Loc.setStrokeColor(0x0000FF);
+                    local26Loc.setFillColor(0x0000FF);
+                    local26Loc.setStrokeColor(0x0000FF);
+                    local27Loc.setFillColor(0x0000FF);
+                    local27Loc.setStrokeColor(0x0000FF);
+                    local28Loc.setFillColor(0x0000FF);
+                    local28Loc.setStrokeColor(0x0000FF);
+                    //local29Loc.setFillColor(0x0000FF);
+                    //local29Loc.setStrokeColor(0x0000FF);
+                    local30Loc.setFillColor(0x0000FF);
+                    local30Loc.setStrokeColor(0x0000FF);
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(color_Red);
+                    local46Loc.setStrokeColor(color_Red);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
+                    return true;
+                }else if (marker.equals(local47_marker))
+                {
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    choLoc.setFillColor(0x0000FF);
+                    choLoc.setStrokeColor(0x0000FF);
+                    campoyLoc.setFillColor(0x0000FF);
+                    campoyLoc.setStrokeColor(0x0000FF);
+                    local01Loc.setFillColor(0x0000FF);
+                    local01Loc.setStrokeColor(0x0000FF);
+                    local02Loc.setFillColor(0x0000FF);
+                    local02Loc.setStrokeColor(0x0000FF);
+                    local03Loc.setFillColor(0x0000FF);
+                    local03Loc.setStrokeColor(0x0000FF);
+                    local04Loc.setFillColor(0x0000FF);
+                    local04Loc.setStrokeColor(0x0000FF);
+                    local05Loc.setFillColor(0x0000FF);
+                    local05Loc.setStrokeColor(0x0000FF);
+                    //local06Loc.setFillColor(0x0000FF);
+                    //local06Loc.setStrokeColor(0x0000FF);
+                    //local07Loc.setFillColor(0x0000FF);
+                    //local07Loc.setStrokeColor(0x0000FF);
+                    local08Loc.setFillColor(0x0000FF);
+                    local08Loc.setStrokeColor(0x0000FF);
+                    local09Loc.setFillColor(0x0000FF);
+                    local09Loc.setStrokeColor(0x0000FF);
+                    local10Loc.setFillColor(0x0000FF);
+                    local10Loc.setStrokeColor(0x0000FF);
+                    //local11Loc.setFillColor(0x0000FF);
+                    //local11Loc.setStrokeColor(0x0000FF);
+                    local12Loc.setFillColor(0x0000FF);
+                    local12Loc.setStrokeColor(0x0000FF);
+                    local13Loc.setFillColor(0x0000FF);
+                    local13Loc.setStrokeColor(0x0000FF);
+                    local14Loc.setFillColor(0x0000FF);
+                    local14Loc.setStrokeColor(0x0000FF);
+                    local15Loc.setFillColor(0x0000FF);
+                    local15Loc.setStrokeColor(0x0000FF);
+                    local16Loc.setFillColor(0x0000FF);
+                    local16Loc.setStrokeColor(0x0000FF);
+                    local17Loc.setFillColor(0x0000FF);
+                    local17Loc.setStrokeColor(0x0000FF);
+                    local18Loc.setFillColor(0x0000FF);
+                    local18Loc.setStrokeColor(0x0000FF);
+                    //local19Loc.setFillColor(0x0000FF);
+                    //local19Loc.setStrokeColor(0x0000FF);
+                    local20Loc.setFillColor(0x0000FF);
+                    local20Loc.setStrokeColor(0x0000FF);
+                    //local21Loc.setFillColor(0x0000FF);
+                    //local21Loc.setStrokeColor(0x0000FF);
+                    local22Loc.setFillColor(0x0000FF);
+                    local22Loc.setStrokeColor(0x0000FF);
+                    local25Loc.setFillColor(0x0000FF);
+                    local25Loc.setStrokeColor(0x0000FF);
+                    local26Loc.setFillColor(0x0000FF);
+                    local26Loc.setStrokeColor(0x0000FF);
+                    local27Loc.setFillColor(0x0000FF);
+                    local27Loc.setStrokeColor(0x0000FF);
+                    local28Loc.setFillColor(0x0000FF);
+                    local28Loc.setStrokeColor(0x0000FF);
+                    //local29Loc.setFillColor(0x0000FF);
+                    //local29Loc.setStrokeColor(0x0000FF);
+                    local30Loc.setFillColor(0x0000FF);
+                    local30Loc.setStrokeColor(0x0000FF);
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(color_Red);
+                    local47Loc.setStrokeColor(color_Red);
+                    local48Loc.setFillColor(0x0000FF);
+                    local48Loc.setStrokeColor(0x0000FF);
+                    return true;
+                }else if (marker.equals(local48_marker))
+                {
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    choLoc.setFillColor(0x0000FF);
+                    choLoc.setStrokeColor(0x0000FF);
+                    campoyLoc.setFillColor(0x0000FF);
+                    campoyLoc.setStrokeColor(0x0000FF);
+                    local01Loc.setFillColor(0x0000FF);
+                    local01Loc.setStrokeColor(0x0000FF);
+                    local02Loc.setFillColor(0x0000FF);
+                    local02Loc.setStrokeColor(0x0000FF);
+                    local03Loc.setFillColor(0x0000FF);
+                    local03Loc.setStrokeColor(0x0000FF);
+                    local04Loc.setFillColor(0x0000FF);
+                    local04Loc.setStrokeColor(0x0000FF);
+                    local05Loc.setFillColor(0x0000FF);
+                    local05Loc.setStrokeColor(0x0000FF);
+                    //local06Loc.setFillColor(0x0000FF);
+                    //local06Loc.setStrokeColor(0x0000FF);
+                    //local07Loc.setFillColor(0x0000FF);
+                    //local07Loc.setStrokeColor(0x0000FF);
+                    local08Loc.setFillColor(0x0000FF);
+                    local08Loc.setStrokeColor(0x0000FF);
+                    local09Loc.setFillColor(0x0000FF);
+                    local09Loc.setStrokeColor(0x0000FF);
+                    local10Loc.setFillColor(0x0000FF);
+                    local10Loc.setStrokeColor(0x0000FF);
+                    //local11Loc.setFillColor(0x0000FF);
+                    //local11Loc.setStrokeColor(0x0000FF);
+                    local12Loc.setFillColor(0x0000FF);
+                    local12Loc.setStrokeColor(0x0000FF);
+                    local13Loc.setFillColor(0x0000FF);
+                    local13Loc.setStrokeColor(0x0000FF);
+                    local14Loc.setFillColor(0x0000FF);
+                    local14Loc.setStrokeColor(0x0000FF);
+                    local15Loc.setFillColor(0x0000FF);
+                    local15Loc.setStrokeColor(0x0000FF);
+                    local16Loc.setFillColor(0x0000FF);
+                    local16Loc.setStrokeColor(0x0000FF);
+                    local17Loc.setFillColor(0x0000FF);
+                    local17Loc.setStrokeColor(0x0000FF);
+                    local18Loc.setFillColor(0x0000FF);
+                    local18Loc.setStrokeColor(0x0000FF);
+                    //local19Loc.setFillColor(0x0000FF);
+                    //local19Loc.setStrokeColor(0x0000FF);
+                    local20Loc.setFillColor(0x0000FF);
+                    local20Loc.setStrokeColor(0x0000FF);
+                    //local21Loc.setFillColor(0x0000FF);
+                    //local21Loc.setStrokeColor(0x0000FF);
+                    local22Loc.setFillColor(0x0000FF);
+                    local22Loc.setStrokeColor(0x0000FF);
+                    local25Loc.setFillColor(0x0000FF);
+                    local25Loc.setStrokeColor(0x0000FF);
+                    local26Loc.setFillColor(0x0000FF);
+                    local26Loc.setStrokeColor(0x0000FF);
+                    local27Loc.setFillColor(0x0000FF);
+                    local27Loc.setStrokeColor(0x0000FF);
+                    local28Loc.setFillColor(0x0000FF);
+                    local28Loc.setStrokeColor(0x0000FF);
+                    //local29Loc.setFillColor(0x0000FF);
+                    //local29Loc.setStrokeColor(0x0000FF);
+                    local30Loc.setFillColor(0x0000FF);
+                    local30Loc.setStrokeColor(0x0000FF);
+                    local31Loc.setFillColor(0x0000FF);
+                    local31Loc.setStrokeColor(0x0000FF);
+                    local32Loc.setFillColor(0x0000FF);
+                    local32Loc.setStrokeColor(0x0000FF);
+                    local33Loc.setFillColor(0x0000FF);
+                    local33Loc.setStrokeColor(0x0000FF);
+                    local34Loc.setFillColor(0x0000FF);
+                    local34Loc.setStrokeColor(0x0000FF);
+                    local35Loc.setFillColor(0x0000FF);
+                    local35Loc.setStrokeColor(0x0000FF);
+                    local36Loc.setFillColor(0x0000FF);
+                    local36Loc.setStrokeColor(0x0000FF);
+                    local37Loc.setFillColor(0x0000FF);
+                    local37Loc.setStrokeColor(0x0000FF);
+                    local38Loc.setFillColor(0x0000FF);
+                    local38Loc.setStrokeColor(0x0000FF);
+                    local39Loc.setFillColor(0x0000FF);
+                    local39Loc.setStrokeColor(0x0000FF);
+                    local40Loc.setFillColor(0x0000FF);
+                    local40Loc.setStrokeColor(0x0000FF);
+                    //local41Loc.setFillColor(0x0000FF);
+                    //local41Loc.setStrokeColor(0x0000FF);
+                    local42Loc.setFillColor(0x0000FF);
+                    local42Loc.setStrokeColor(0x0000FF);
+                    local43Loc.setFillColor(0x0000FF);
+                    local43Loc.setStrokeColor(0x0000FF);
+                    local44Loc.setFillColor(0x0000FF);
+                    local44Loc.setStrokeColor(0x0000FF);
+                    //local45Loc.setFillColor(0x0000FF);
+                    //local45Loc.setStrokeColor(0x0000FF);
+                    local46Loc.setFillColor(0x0000FF);
+                    local46Loc.setStrokeColor(0x0000FF);
+                    local47Loc.setFillColor(0x0000FF);
+                    local47Loc.setStrokeColor(0x0000FF);
+                    local48Loc.setFillColor(color_Red);
+                    local48Loc.setStrokeColor(color_Red);
                     return true;
                 }
-
                 return false;
             }
         });
@@ -4291,7 +5507,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         final LatLng local24 = new LatLng(-12.024076387091215, -76.97699645338558);
         campoy = new MarkerOptions();
         campoy.position(local24);
-        campoy.title("La Delicia - CAMPOY");
+        campoy.title("La Delicia - CAMPOY\nTelf: 922 671 203");
         campoy.snippet("Telf: 922 671 203");
         campoy.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         campoy_marker = mMap.addMarker(campoy);
@@ -4364,7 +5580,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                 .add(p2430)
                 .add(p2431)
                 .add(p2432)
-                .add(p2433);
+                .add(p2433).strokeWidth(widthStoke);;
         //.fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
         campoyLoc = mMap.addPolygon(laland1);
         campoyLoc.setClickable(true);
@@ -4379,7 +5595,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         // Local01
         local01 = new MarkerOptions();
         local01.position(local01latlng);
-        local01.title("La Delicia - LURÍN");
+        local01.title("La Delicia - LURÍN\nTelf: 01 405 3039 / 992 395 721");
         local01.snippet("Telf: 01 405 3039 / 992 395 721");
         local01.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         local01_marker = mMap.addMarker(local01);
@@ -4566,7 +5782,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                 .add(lurin_87)
                 .add(lurin_88)
                 .add(lurin_89)
-                .add(lurin_90);
+                .add(lurin_90).strokeWidth(widthStoke);;
                 //.fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
         local01Loc = mMap.addPolygon(lurin_Loc);
         local01Loc.setClickable(true);
@@ -4581,7 +5797,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         // Local02
         local02 = new MarkerOptions();
         local02.position(local02latlng);
-        local02.title("La Delicia - CALLAO - Los Dominicos");
+        local02.title("La Delicia - CALLAO - Los Dominicos\nTelf: 01 605 1779 / 928 198 676");
         local02.snippet("Telf: 01 605 1779 / 928 198 676");
         local02.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         local02_marker = mMap.addMarker(local02);
@@ -4656,7 +5872,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                 .add(dominic_31)
                 .add(dominic_32)
                 .add(dominic_33)
-                .add(dominic_34);
+                .add(dominic_34).strokeWidth(widthStoke);;
                 //.fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
         local02Loc = mMap.addPolygon(dominic_Loc);
         local02Loc.setClickable(true);
@@ -4671,7 +5887,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         // Local03
         local03 = new MarkerOptions();
         local03.position(local03latlng);
-        local03.title("La Delicia - Puente Piedra");
+        local03.title("La Delicia - Puente Piedra\nTelf: 01 505 3775 / 976 828 169");
         local03.snippet("Telf: 01 505 3775 / 976 828 169");
         local03.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         local03_marker = mMap.addMarker(local03);
@@ -4738,7 +5954,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                 .add(ppiedra_27)
                 .add(ppiedra_28)
                 .add(ppiedra_29)
-                .add(ppiedra_30);
+                .add(ppiedra_30).strokeWidth(widthStoke);;
                 //.fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
         local03Loc = mMap.addPolygon(ppiedra_Loc);
         local03Loc.setClickable(true);
@@ -4753,7 +5969,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         // Local04
         local04 = new MarkerOptions();
         local04.position(local04latlng);
-        local04.title("La Delicia - LURIGANCHO, CHOSICA - Cajamarquilla");
+        local04.title("La Delicia - LURIGANCHO, CHOSICA - Cajamarquilla\nTelf: 926 278 456");
         local04.snippet("Telf: 926 278 456");
         local04.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         local04_marker = mMap.addMarker(local04);
@@ -4964,7 +6180,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                 .add(lucho_99)
                 .add(lucho_100)
                 .add(lucho_101)
-                .add(lucho_102);
+                .add(lucho_102).strokeWidth(widthStoke);
                 //.fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
         local04Loc = mMap.addPolygon(lucho_Loc);
         local04Loc.setClickable(true);
@@ -4978,7 +6194,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         // Local05
         local05 = new MarkerOptions();
         local05.position(local05latlng);
-        local05.title("La Delicia - SAN JUAN DE LURIGANCHO - Mangomarca");
+        local05.title("La Delicia - SAN JUAN DE LURIGANCHO - Mangomarca\nTelf: 948 351 555 / 951 679 738");
         local05.snippet("Telf: 948 351 555 / 951 679 738");
         local05.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         local05_marker = mMap.addMarker(local05);
@@ -5169,7 +6385,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                 .add(mgm_89)
                 .add(mgm_90)
                 .add(mgm_91)
-                .add(mgm_92);
+                .add(mgm_92).strokeWidth(widthStoke);
                 //.fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
 
         local05Loc = mMap.addPolygon(mgm_Loc);
@@ -5184,7 +6400,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         // Local06
         local06 = new MarkerOptions();
         local06.position(local06latlng);
-        local06.title("La Delicia - ATE - Las Garzas");
+        local06.title("La Delicia - ATE - Las Garzas\nTelf: 01 308 6822 / 914 396 071");
         local06.snippet("Telf: 01 308 6822 / 914 396 071");
         local06.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         local06_marker = mMap.addMarker(local06);
@@ -5202,7 +6418,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         // Local07
         local07 = new MarkerOptions();
         local07.position(local07latlng);
-        local07.title("La Delicia - ATE - Santa Rosa de Valle");
+        local07.title("La Delicia - ATE - Santa Rosa de Valle\nTelf: 918 749 455");
         local07.snippet("Telf: 918 749 455");
         local07.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         local07_marker = mMap.addMarker(local07);
@@ -5221,9 +6437,9 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         // Local08
         local08 = new MarkerOptions();
         local08.position(local08latlng);
-        local08.title("La Delicia - COMAS - Boulevard España");
+        local08.title("La Delicia - COMAS - Boulevard España\nTelf: 01 789 5894 / 947 352 794");
         local08.snippet("Telf: 01 789 5894 / 947 352 794");
-        local08.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
+        local08.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia)); // R.drawable.delicia
         local08_marker = mMap.addMarker(local08);
         // Local 08 Comas España
         final LatLng comaspa_01 = new LatLng(-11.976379545540649, -77.05952967531259);
@@ -5333,7 +6549,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                 .add(comaspa_50)
                 .add(comaspa_51)
                 .add(comaspa_52)
-                .add(comaspa_53);
+                .add(comaspa_53).strokeWidth(widthStoke);
                 //.fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
         local08Loc = mMap.addPolygon(loca08_Loc);
         local08Loc.setClickable(true);
@@ -5347,7 +6563,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         // Local09
         local09 = new MarkerOptions();
         local09.position(local09latlng);
-        local09.title("La Delicia - San Martín de Porres - Vipol");
+        local09.title("La Delicia - San Martín de Porres - Vipol\nTelf: 01 380 2198 / 940 318 565");
         local09.snippet("Telf: 01 380 2198 / 940 318 565");
         local09.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         local09_marker = mMap.addMarker(local09);
@@ -5479,7 +6695,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                 .add(vipol_60)
                 .add(vipol_61)
                 .add(vipol_62)
-                .add(vipol_63);
+                .add(vipol_63).strokeWidth(widthStoke);
                 //.fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
         local09Loc = mMap.addPolygon(loca09_Loc);
         local09Loc.setClickable(true);
@@ -5493,7 +6709,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         // Local10
         local10 = new MarkerOptions();
         local10.position(local10latlng);
-        local10.title("La Delicia - LA VICTORIA - Apolo");
+        local10.title("La Delicia - LA VICTORIA - Apolo\nTelf: 01 308 3871 / 924 032 730");
         local10.snippet("Telf: 01 308 3871 / 924 032 730");
         local10.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         local10_marker = mMap.addMarker(local10);
@@ -5617,7 +6833,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                 .add(lavic_55)
                 .add(lavic_56)
                 .add(lavic_57)
-                .add(lavic_58);
+                .add(lavic_58).strokeWidth(widthStoke);
                 //.fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
         local10Loc = mMap.addPolygon(lavic_Loc);
         local10Loc.setClickable(true);
@@ -5632,7 +6848,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         // Local11
         local11 = new MarkerOptions();
         local11.position(local11latlng);
-        local11.title("La Delicia - LA VICTORIA - Gral ANtonio de la Guerra");
+        local11.title("La Delicia - LA VICTORIA - Gral ANtonio de la Guerra\nTelf: 01 329 3054 / 997 035 022");
         local11.snippet("Telf: 01 329 3054 / 997 035 022");
         local11.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         local11_marker = mMap.addMarker(local11);
@@ -5756,7 +6972,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                 .add(lavic_55)
                 .add(lavic_56)
                 .add(lavic_57)
-                .add(lavic_58);
+                .add(lavic_58).strokeWidth(widthStoke);
         //.fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
         local11Loc = mMap.addPolygon(lavic_Loc);
         local11Loc.setClickable(true);
@@ -5772,7 +6988,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         // Local12
         local12 = new MarkerOptions();
         local12.position(local12latlng);
-        local12.title("La Delicia - CHACLACAYO - Huascata");
+        local12.title("La Delicia - CHACLACAYO - Huascata\nTelf: 917 698 756");
         local12.snippet("Telf: 917 698 756");
         local12.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         local12_marker = mMap.addMarker(local12);
@@ -5992,7 +7208,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                 .add(huascata_104)
                 .add(huascata_105)
                 .add(huascata_106)
-                .add(huascata_107);
+                .add(huascata_107).strokeWidth(widthStoke);
                 //.fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
         local12Loc = mMap.addPolygon(huascata_Loc);
         local12Loc.setClickable(true);
@@ -6006,7 +7222,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         // Local13
         local13 = new MarkerOptions();
         local13.position(local13latlng);
-        local13.title("La Delicia - LURIGANCHO - ÑAÑA");
+        local13.title("La Delicia - LURIGANCHO - ÑAÑA\nTelf: 902 875 197");
         local13.snippet("Telf: 902 875 197");
         local13.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         local13_marker = mMap.addMarker(local13);
@@ -6309,7 +7525,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                 .add(ñaña_145)
                 .add(ñaña_146)
                 .add(ñaña_147)
-                .add(ñaña_148);
+                .add(ñaña_148).strokeWidth(widthStoke);
                 //.fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
         local13Loc = mMap.addPolygon(ñaña_Loc);
         local13Loc.setClickable(true);
@@ -6323,7 +7539,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         // Local14
         local14 = new MarkerOptions();
         local14.position(local14latlng);
-        local14.title("La Delicia - HUACHIPA - Nievería");
+        local14.title("La Delicia - HUACHIPA - Nievería\nTelf: 902 419 266");
         local14.snippet("Telf: 902 419 266");
         local14.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         local14_marker = mMap.addMarker(local14);
@@ -6424,7 +7640,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                 .add(nieve_44)
                 .add(nieve_45)
                 .add(nieve_46)
-                .add(nieve_47);
+                .add(nieve_47).strokeWidth(widthStoke);
                 //.fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
         local14Loc = mMap.addPolygon(nieve_Loc);
         local14Loc.setClickable(true);
@@ -6438,7 +7654,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         // Local15
         local15 = new MarkerOptions();
         local15.position(local15latlng);
-        local15.title("La Delicia - HUACHIPA - Santa María");
+        local15.title("La Delicia - HUACHIPA - Santa María\nTelf: 918 488 404");
         local15.snippet("Telf: 918 488 404");
         local15.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         local15_marker = mMap.addMarker(local15);
@@ -6536,7 +7752,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                 .add(stmar_43)
                 .add(stmar_44)
                 .add(stmar_45)
-                .add(stmar_46);
+                .add(stmar_46).strokeWidth(widthStoke);
                 //.fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
         local15Loc = mMap.addPolygon(stmar_Loc);
         local15Loc.setClickable(true);
@@ -6551,7 +7767,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         // Local16
         local16 = new MarkerOptions();
         local16.position(local16latlng);
-        local16.title("La Delicia - ATE - Calle Nueva");
+        local16.title("La Delicia - ATE - Calle Nueva\nTelf: 01 721 2452");
         local16.snippet("Telf: 01 721 2452");
         local16.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         local16_marker = mMap.addMarker(local16);
@@ -6644,7 +7860,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                 .add(cn_40)
                 .add(cn_41)
                 .add(cn_42)
-                .add(cn_43);
+                .add(cn_43).strokeWidth(widthStoke);
                 //.fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
         local16Loc = mMap.addPolygon(cn_Loc);
         local16Loc.setClickable(true);
@@ -6658,7 +7874,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         // Local17
         local17 = new MarkerOptions();
         local17.position(local17latlng);
-        local17.title("La Delicia - ATE - Residencial Las Américas");
+        local17.title("La Delicia - ATE - Residencial Las Américas\nTelf: 959 775 216 / 976 406 769");
         local17.snippet("Telf: 959 775 216 / 976 406 769");
         local17.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         local17_marker = mMap.addMarker(local17);
@@ -6777,7 +7993,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                 .add(america_53)
                 .add(america_54)
                 .add(america_55)
-                .add(america_56);
+                .add(america_56).strokeWidth(widthStoke);
                 //.fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
         local17Loc = mMap.addPolygon(america_Loc);
         local17Loc.setClickable(true);
@@ -6791,7 +8007,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         // Local18
         local18 = new MarkerOptions();
         local18.position(local18latlng);
-        local18.title("ATE - Arco los Ángeles");
+        local18.title("ATE - Arco los Ángeles\nTelf: 01 698 4927 / 925 837 610");
         local18.snippet("Telf: 01 698 4927 / 925 837 610");
         local18.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         local18_marker = mMap.addMarker(local18);
@@ -6828,7 +8044,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                 .add(ate_12)
                 .add(ate_13)
                 .add(ate_14)
-                .add(ate_15);
+                .add(ate_15).strokeWidth(widthStoke);
                 //.fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
         local18Loc = mMap.addPolygon(ate_loc);
         local18Loc.setClickable(true);
@@ -6842,7 +8058,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         // Local19
         local19 = new MarkerOptions();
         local19.position(local19latlng);
-        local19.title("ATE - Asoc. El Porvenir - (H. Solidaridad)");
+        local19.title("ATE - Asoc. El Porvenir - (H. Solidaridad)\nTelf: 916 782 785");
         local19.snippet("Telf: 916 782 785");
         local19.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         local19_marker = mMap.addMarker(local19);
@@ -6861,7 +8077,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         // Local20
         local20 = new MarkerOptions();
         local20.position(local20latlng);
-        local20.title("La Delicia - SANTA ANITA - Universal");
+        local20.title("La Delicia - SANTA ANITA - Universal\nTelf: 01 744 6215 / 910 410 161");
         local20.snippet("Telf: 01 744 6215 / 910 410 161");
         local20.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         local20_marker = mMap.addMarker(local20);
@@ -6904,7 +8120,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                 .add(flame_15)
                 .add(flame_16)
                 .add(flame_17)
-                .add(flame_18);
+                .add(flame_18).strokeWidth(widthStoke);
                 //.fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
         local20Loc = mMap.addPolygon(flamenco_Loc);
         local20Loc.setClickable(true);
@@ -6929,7 +8145,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         // Local21
         local21 = new MarkerOptions();
         local21.position(local21latlng);
-        local21.title("La Delicia - EL AGUSTINO - Las Praderas de S. A.");
+        local21.title("La Delicia - EL AGUSTINO - Las Praderas de S. A.\nTelf: 01 488 6134 / 936 908 669");
         local21.snippet("Telf: 01 488 6134 / 936 908 669");
         local21.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         local21_marker = mMap.addMarker(local21);
@@ -6948,7 +8164,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         // Local22
         local22 = new MarkerOptions();
         local22.position(local22latlng);
-        local22.title("La Delicia - CHACLACAYO - Nicolas Ayllón");
+        local22.title("La Delicia - CHACLACAYO - Nicolas Ayllón\nTelef: 918 621 382");
         local22.snippet("Telef: 918 621 382");
         local22.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         local22_marker = mMap.addMarker(local22);
@@ -7054,7 +8270,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                 .add(p2546)
                 .add(p2547)
                 .add(p2548)
-                .add(p2549);
+                .add(p2549).strokeWidth(widthStoke);
                 //.add(p2550)
                 //.add(p2551)
                 //.fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
@@ -7070,7 +8286,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         // Local25
         local25 = new MarkerOptions();
         local25.position(local25latlng);
-        local25.title("La Delicia - CARAPONGO - San Antonio");
+        local25.title("La Delicia - CARAPONGO - San Antonio\nTelf: 983 435 046 /  994 104 149");
         local25.snippet("Telf: 983 435 046 /  994 104 149");
         local25.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         local25_marker = mMap.addMarker(local25);
@@ -7147,7 +8363,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                 .add(carapongo_32)
                 .add(carapongo_33)
                 .add(carapongo_34)
-                .add(carapongo_35);
+                .add(carapongo_35).strokeWidth(widthStoke);
                 //.fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
         local25Loc = mMap.addPolygon(carap_Loc);
         local25Loc.setClickable(true);
@@ -7161,7 +8377,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         // Local26
         local26 = new MarkerOptions();
         local26.position(local26latlng);
-        local26.title("La Delicia - ATE - Gloria Grande");
+        local26.title("La Delicia - ATE - Gloria Grande\nTelf: 01 766 9092 / 975 296 926");
         local26.snippet("Telf: 01 766 9092 / 975 296 926");
         local26.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         local26_marker = mMap.addMarker(local26);
@@ -7274,7 +8490,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                 .add(gg_50)
                 .add(gg_51)
                 .add(gg_52)
-                .add(gg_53);
+                .add(gg_53).strokeWidth(widthStoke);
                 //.fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
         local26Loc = mMap.addPolygon(ggp_Loc);
         local26Loc.setClickable(true);
@@ -7288,7 +8504,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         // Local49                                                                                SIN TELÉFONO NI CELULAR
         local27 = new MarkerOptions();
         local27.position(local27latlng);                           // Antes Local 49 PRIALE
-        local27.title("La Delicia - ATE - Priale");
+        local27.title("La Delicia - ATE - Priale\nTelf: 01 505 6300 / 921 414 161");
         local27.snippet("Telf: 01 505 6300 / 921 414 161");
         local27.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         local27_marker = mMap.addMarker(local27);
@@ -7399,7 +8615,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                 .add(pria_49)
                 .add(pria_50)
                 .add(pria_51)
-                .add(pria_52);
+                .add(pria_52).strokeWidth(widthStoke);
                 //.fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
         local27Loc = mMap.addPolygon(pria_Loc);
         local27Loc.setClickable(true);
@@ -7413,7 +8629,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         // Local28 comparte con Local29
         local28 = new MarkerOptions();
         local28.position(local28latlng);
-        local28.title("La Delicia - ATE - Santa Clara, San Martín");
+        local28.title("La Delicia - ATE - Santa Clara, San Martín\nTelf: 01 576 4966 / 950 736 294");
         local28.snippet("Telf: 01 576 4966 / 950 736 294");
         local28.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         local28_marker = mMap.addMarker(local28);
@@ -7592,7 +8808,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                 .add(staclara_83)
                 .add(staclara_84)
                 .add(staclara_85)
-                .add(staclara_86);
+                .add(staclara_86).strokeWidth(widthStoke);
         //.fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
         local28Loc = mMap.addPolygon(staclara_Loc);
         local28Loc.setClickable(true);
@@ -7613,7 +8829,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         // Local29
         local29 = new MarkerOptions();
         local29.position(local29latlng);
-        local29.title("La Delicia - ATE - Santa Clara, Bolívar");     // BOlivar
+        local29.title("La Delicia - ATE - Santa Clara, Bolívar\nTelf: 01 284 3510 / 996 250 790");     // Bolivar
         local29.snippet("Telf: 01 284 3510 / 996 250 790");
         local29.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         local29_marker = mMap.addMarker(local29);
@@ -7625,7 +8841,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         // Local30
         local30 = new MarkerOptions();
         local30.position(local30latlng);
-        local30.title("La Delicia - SANTA ANITA - Municipalidad de Santa Anita");
+        local30.title("La Delicia - SANTA ANITA - Municipalidad de Santa Anita\nTelf: 01 362 0609 / 912 179 990");
         local30.snippet("Telf: 01 362 0609 / 912 179 990");
         local30.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
         local30_marker = mMap.addMarker(local30);
@@ -7689,11 +8905,1634 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                 .add(sam_26)
                 .add(sam_27)
                 .add(sam_28)
-                .add(sam_29);
+                .add(sam_29).strokeWidth(widthStoke);
                 //.fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
         local30Loc = mMap.addPolygon(sam_Loc);
         local30Loc.setClickable(true);
         local30Loc.setTag("local30");
         mMap.addPolygon(sam_Loc);
+    }
+
+    public void local31Map(GoogleMap googleMap)
+    {
+        mMap = googleMap;
+        final LatLng local31latlng = new LatLng(-12.051906396849326, -76.97883616342347);          //     SANTA ANITA - Puente Azul
+        // Local31
+        local31 = new MarkerOptions();
+        local31.position(local31latlng);
+        local31.title("La Delicia - SANTA ANITA - Puente Azul\nTelf: 01 704 6539 / 912 578 562");
+        local31.snippet("Telf: 01 704 6539 / 912 578 562");
+        local31.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
+        local31_marker = mMap.addMarker(local31);
+
+        // ATE SANTA CLARA San Martín Gisela PUENTE AZUL
+        final LatLng claraM_01 = new LatLng(-12.050679619799253, -76.97737144942185);
+        final LatLng claraM_02 = new LatLng(-12.0517801349853, -76.9764962029882);
+        final LatLng claraM_03 = new LatLng(-12.05265831566437, -76.9759164996238);
+        final LatLng claraM_04 = new LatLng(-12.056193252200249, -76.97456384901702);
+        final LatLng claraM_05 = new LatLng(-12.059005625228739, -76.97538226359077);
+        final LatLng claraM_06 = new LatLng(-12.059783752305597, -76.97658716495755);
+        final LatLng claraM_07 = new LatLng(-12.056893551388981, -76.9779966352104);
+        final LatLng claraM_08 = new LatLng(-12.056238822590982, -76.98061799426571);
+        final LatLng claraM_09 = new LatLng(-12.055316173734465, -76.98120907274266);
+        final LatLng claraM_10 = new LatLng(-12.055293936563086, -76.98250489991601);
+        final LatLng claraM_11 = new LatLng(-12.055538491758485, -76.98286864395145);
+        final LatLng claraM_12 = new LatLng(-12.054337924961844, -76.98427812829676);
+        final LatLng claraM_13 = new LatLng(-12.052414770909667, -76.98664242078735);
+        final LatLng claraM_14 = new LatLng(-12.05173671358506, -76.98496010433125);
+        final LatLng claraM_15 = new LatLng(-12.052236965127255, -76.98360745658691);
+        final LatLng claraM_16 = new LatLng(-12.052359254664786, -76.98247077753831);
+        final LatLng claraM_17 = new LatLng(-12.052403726403979, -76.98082259552157);
+        final LatLng claraM_18 = new LatLng(-12.05273721278283, -76.98075439510941);
+        final LatLng claraM_19 = new LatLng(-12.052659398573065, -76.97993598714491);
+        final LatLng claraM_20 = new LatLng(-12.051947956491873, -76.97899254780862);
+        final LatLng claraM_21 = new LatLng(-12.050202696018802, -76.98104993305914);
+        final LatLng claraM_22 = new LatLng(-12.05068194255239, -76.98168758969307);
+        final LatLng claraM_23 = new LatLng(-12.050028069909983, -76.9826254956139);
+        final LatLng claraM_24 = new LatLng(-12.049692050327488, -76.98319195189076);
+        final LatLng claraM_25 = new LatLng(-12.047488666686341, -76.98096040803132);
+
+        PolygonOptions claraM_Loc = new PolygonOptions()
+                .add(claraM_01)
+                .add(claraM_02)
+                .add(claraM_03)
+                .add(claraM_04)
+                .add(claraM_05)
+                .add(claraM_06)
+                .add(claraM_07)
+                .add(claraM_08)
+                .add(claraM_09)
+                .add(claraM_10)
+                .add(claraM_11)
+                .add(claraM_12)
+                .add(claraM_13)
+                .add(claraM_14)
+                .add(claraM_15)
+                .add(claraM_16)
+                .add(claraM_17)
+                .add(claraM_18)
+                .add(claraM_19)
+                .add(claraM_20)
+                .add(claraM_21)
+                .add(claraM_22)
+                .add(claraM_23)
+                .add(claraM_24)
+                .add(claraM_25).strokeWidth(widthStoke);
+                //.fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
+        local31Loc = mMap.addPolygon(claraM_Loc);
+        local31Loc.setClickable(true);
+        local31Loc.setTag("local31");
+        mMap.addPolygon(claraM_Loc);
+    }
+    public void local32Map(GoogleMap googleMap)
+    {
+        mMap = googleMap;
+        final LatLng local32latlng = new LatLng(-12.04726976832986, -76.98244111026835);           //     SANTA ANITA - Nocheto
+        // Local32
+        local32 = new MarkerOptions();
+        local32.position(local32latlng);
+        local32.title("La Delicia - SANTA ANITA - Nocheto\nTelef: 01 496 8357 / 957 432 579");
+        local32.snippet("Telef: 01 496 8357 / 957 432 579");
+        local32.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
+        local32_marker = mMap.addMarker(local32);
+
+        // SANTA ANITA - NOCHETO, Gisela
+        final LatLng nocheto_02 = new LatLng(-12.04780134563665, -76.98061156955562);
+        final LatLng nocheto_03 = new LatLng(-12.048725735380161, -76.98151074483393);
+        final LatLng nocheto_04 = new LatLng(-12.047760426136945, -76.98281429701437);
+        final LatLng nocheto_05 = new LatLng(-12.04819411949768, -76.98326607720908);
+        final LatLng nocheto_06 = new LatLng(-12.047011625001058, -76.98445608931497);
+        final LatLng nocheto_07 = new LatLng(-12.046992929301307, -76.98465203511775);
+        final LatLng nocheto_08 = new LatLng(-12.046422711570832, -76.98493400490324);
+        final LatLng nocheto_09 = new LatLng(-12.046240431861397, -76.98572733979344);
+        final LatLng nocheto_10 = new LatLng(-12.045716951370565, -76.98671185018685);
+        final LatLng nocheto_11 = new LatLng(-12.045580168830243, -76.98692854735351);
+        final LatLng nocheto_12 = new LatLng(-12.045394129737764, -76.98704059880095);
+        final LatLng nocheto_13 = new LatLng(-12.045121443692375, -76.98711356332402);
+        final LatLng nocheto_14 = new LatLng(-12.044925210108696, -76.98708489862516);
+        final LatLng nocheto_15 = new LatLng(-12.044800333921161, -76.98733506066907);
+        final LatLng nocheto_16 = new LatLng(-12.044132628723052, -76.98695460426961);
+        final LatLng nocheto_17 = new LatLng(-12.043964429242527, -76.98726209596119);
+        final LatLng nocheto_18 = new LatLng(-12.044425706403722, -76.98753310234434);
+        final LatLng nocheto_19 = new LatLng(-12.043537616274337, -76.98952164201006);
+        final LatLng nocheto_20 = new LatLng(-12.042622704928743, -76.989662356883);
+        final LatLng nocheto_21 = new LatLng(-12.042707566562227, -76.99035054490037);
+        final LatLng nocheto_22 = new LatLng(-12.043435156102127, -76.99020429806866);
+        final LatLng nocheto_23 = new LatLng(-12.04352863625666, -76.99031421865253);
+        final LatLng nocheto_24 = new LatLng(-12.04376233805309, -76.99137997439496);
+        final LatLng nocheto_25 = new LatLng(-12.043776359825294, -76.99225934270187);
+        final LatLng nocheto_26 = new LatLng(-12.042519059222851, -76.99243138950804);
+        final LatLng nocheto_27 = new LatLng(-12.042299379311737, -76.99315782038313);
+        final LatLng nocheto_28 = new LatLng(-12.04019200161387, -76.99381839405514);
+        final LatLng nocheto_29 = new LatLng(-12.040449070635674, -76.99529515438243);
+        final LatLng nocheto_30 = new LatLng(-12.040425702662152, -76.9956631455236);
+        final LatLng nocheto_31 = new LatLng(-12.040143520399315, -76.99674983895008);
+        final LatLng nocheto_32 = new LatLng(-12.040156011998773, -76.99717561356555);
+        final LatLng nocheto_33 = new LatLng(-12.04022596181032, -76.99739298768813);
+        final LatLng nocheto_34 = new LatLng(-12.035476515075857, -76.99726183939029);
+        final LatLng nocheto_35 = new LatLng(-12.034584986658666, -76.99756861111956);
+        final LatLng nocheto_36 = new LatLng(-12.030607374721296, -76.99943554937924);
+        final LatLng nocheto_37 = new LatLng(-12.030156383591022, -76.9992557031738);
+        final LatLng nocheto_38 = new LatLng(-12.029487440582372, -76.99771466170749);
+        final LatLng nocheto_39 = new LatLng(-12.029306552772685, -76.99697035873048);
+        final LatLng nocheto_40 = new LatLng(-12.029677136219274, -76.9955618126342);
+        final LatLng nocheto_41 = new LatLng(-12.030221870465873, -76.99459977972141);
+        final LatLng nocheto_42 = new LatLng(-12.030941141743957, -76.99393677741672);
+        final LatLng nocheto_43 = new LatLng(-12.031713672579347, -76.99379500331483);
+        final LatLng nocheto_44 = new LatLng(-12.03256543793873, -76.99360259442963);
+        final LatLng nocheto_45 = new LatLng(-12.032931895390647, -76.99343043887258);
+        final LatLng nocheto_46 = new LatLng(-12.033238926879584, -76.99300511352399);
+        final LatLng nocheto_47 = new LatLng(-12.033308254741094, -76.9923975061403);
+        final LatLng nocheto_48 = new LatLng(-12.033308253736141, -76.99217471671638);
+        final LatLng nocheto_49 = new LatLng(-12.032555517433273, -76.99065570577905);
+        final LatLng nocheto_50 = new LatLng(-12.031842419253344, -76.98759748068916);
+        final LatLng nocheto_51 = new LatLng(-12.033813356200874, -76.98602784783166);
+        final LatLng nocheto_52 = new LatLng(-12.034566067481196, -76.98563290508531);
+        final LatLng nocheto_53 = new LatLng(-12.037121333858098, -76.98765824998698);
+        final LatLng nocheto_54 = new LatLng(-12.036913344500082, -76.98835699740029);
+        final LatLng nocheto_55 = new LatLng(-12.03944958850212, -76.98781652313765);
+        final LatLng nocheto_56 = new LatLng(-12.039598161569748, -76.98661144638864);
+        final LatLng nocheto_57 = new LatLng(-12.03988538468407, -76.98509244673588);
+        final LatLng nocheto_58 = new LatLng(-12.040222118944545, -76.98394813356043);
+        final LatLng nocheto_59 = new LatLng(-12.0409055546365, -76.98425658082418);
+        final LatLng nocheto_60 = new LatLng(-12.04127816215036, -76.98425658160096);
+        final LatLng nocheto_61 = new LatLng(-12.042676788909528, -76.98342281936945);
+        final LatLng nocheto_62 = new LatLng(-12.043319398637678, -76.9831909134257);
+        final LatLng nocheto_63 = new LatLng(-12.043416600909485, -76.98317434914765);
+        final LatLng nocheto_64 = new LatLng(-12.043935004760781, -76.98449953494904);
+        final LatLng nocheto_65 = new LatLng(-12.044329209085577, -76.98477561052958);
+
+        PolygonOptions nocheto_Loc = new PolygonOptions()
+                .add(nocheto_02)
+                .add(nocheto_03)
+                .add(nocheto_04)
+                .add(nocheto_05)
+                .add(nocheto_06)
+                .add(nocheto_07)
+                .add(nocheto_08)
+                .add(nocheto_09)
+                .add(nocheto_10)
+                .add(nocheto_11)
+                .add(nocheto_12)
+                .add(nocheto_13)
+                .add(nocheto_14)
+                .add(nocheto_15)
+                .add(nocheto_16)
+                .add(nocheto_17)
+                .add(nocheto_18)
+                .add(nocheto_19)
+                .add(nocheto_20)
+                .add(nocheto_21)
+                .add(nocheto_22)
+                .add(nocheto_23)
+                .add(nocheto_24)
+                .add(nocheto_25)
+                .add(nocheto_26)
+                .add(nocheto_27)
+                .add(nocheto_28)
+                .add(nocheto_29)
+                .add(nocheto_30)
+                .add(nocheto_31)
+                .add(nocheto_32)
+                .add(nocheto_33)
+                .add(nocheto_34)
+                .add(nocheto_35)
+                .add(nocheto_36)
+                .add(nocheto_37)
+                .add(nocheto_38)
+                .add(nocheto_39)
+                .add(nocheto_40)
+                .add(nocheto_41)
+                .add(nocheto_42)
+                .add(nocheto_43)
+                .add(nocheto_44)
+                .add(nocheto_45)
+                .add(nocheto_46)
+                .add(nocheto_47)
+                .add(nocheto_48)
+                .add(nocheto_49)
+                .add(nocheto_50)
+                .add(nocheto_51)
+                .add(nocheto_52)
+                .add(nocheto_53)
+                .add(nocheto_54)
+                .add(nocheto_55)
+                .add(nocheto_56)
+                .add(nocheto_57)
+                .add(nocheto_58)
+                .add(nocheto_59)
+                .add(nocheto_60)
+                .add(nocheto_61)
+                .add(nocheto_62)
+                .add(nocheto_63)
+                .add(nocheto_64)
+                .add(nocheto_65).strokeWidth(widthStoke);
+                //.fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
+        local32Loc = mMap.addPolygon(nocheto_Loc);
+        local32Loc.setClickable(true);
+        local32Loc.setTag("local32");
+        mMap.addPolygon(nocheto_Loc);
+    }
+    public void local33Map(GoogleMap googleMap)
+    {
+        mMap = googleMap;
+        final LatLng local33latlng = new LatLng(-12.003282293082178, -77.00293845767071);          // 13 de Enero    SAN JUAN DE LURIGANCHO - Las Flores
+        // Local33
+        local33 = new MarkerOptions();
+        local33.position(local33latlng);
+        local33.title("La Delicia - SAN JUAN DE LURIGANCHO - Metro Hacienda\nTelf: 01 633 7460 / 912 465 143");
+        local33.snippet("Telf: 01 633 7460 / 912 465 143");
+        local33.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
+        local33_marker = mMap.addMarker(local33);
+
+        // San Juan de lurigancho - Metro Hascienda 16/02/2021
+        final LatLng metro_01 = new LatLng(-11.992142415615255, -77.00052451197908);
+        final LatLng metro_02 = new LatLng(-11.992639587005876, -76.99843686756175);
+        final LatLng metro_03 = new LatLng(-11.99389894464779, -76.9983724945496);
+        final LatLng metro_04 = new LatLng(-11.995074339807985, -76.9966344232215);
+        final LatLng metro_05 = new LatLng(-11.995662035498336, -76.99599069305233);
+        final LatLng metro_06 = new LatLng(-11.996795444960213, -76.99446719840195);
+        final LatLng metro_07 = new LatLng(-11.997697971291611, -76.99431699470694);
+        final LatLng metro_08 = new LatLng(-11.998516539072494, -76.99461740209698);
+        final LatLng metro_09 = new LatLng(-11.999335104367924, -76.99429553703622);
+        final LatLng metro_10 = new LatLng(-12.00172781949242, -76.99427407950287);
+        final LatLng metro_11 = new LatLng(-12.003473134879737, -76.99098077436187);
+        final LatLng metro_12 = new LatLng(-12.006649113789683, -76.98870484469097);
+        final LatLng metro_13 = new LatLng(-12.008993971388719, -76.98706617532791);
+        final LatLng metro_14 = new LatLng(-12.01062645520629, -76.9889779565567);
+        final LatLng metro_15 = new LatLng(-12.010893587967743, -76.99064697164872);
+        final LatLng metro_16 = new LatLng(-12.010418685097523, -76.99377258173007);
+        final LatLng metro_17 = new LatLng(-12.011754347310177, -76.99334774147326);
+        final LatLng metro_18 = new LatLng(-12.01273382870418, -76.99019178566294);
+        final LatLng metro_19 = new LatLng(-12.016023197387657, -76.9888813054311);
+        final LatLng metro_20 = new LatLng(-12.017020472444136, -76.98985791671065);
+        final LatLng metro_21 = new LatLng(-12.019979704831128, -76.9905552775021);
+        final LatLng metro_22 = new LatLng(-12.019308113183742, -76.99558710153694);
+        final LatLng metro_23 = new LatLng(-12.019822300696942, -76.99818347969374);
+        final LatLng metro_24 = new LatLng(-12.020567346199401, -76.99789380153923);
+        final LatLng metro_25 = new LatLng(-12.022388079360493, -76.99732897485485);
+        final LatLng metro_26 = new LatLng(-12.022891779615893, -76.99890614217811);
+        final LatLng metro_27 = new LatLng(-12.022178221142545, -77.00492501896782);
+        final LatLng metro_28 = new LatLng(-12.022618948655722, -77.0052683416993);
+        final LatLng metro_29 = new LatLng(-12.022535000613644, -77.0057618681258);
+        final LatLng metro_30 = new LatLng(-12.021936870055592, -77.00645924242411);
+        final LatLng metro_31 = new LatLng(-12.023223797891312, -77.00788312797208);
+        final LatLng metro_32 = new LatLng(-12.020915222379747, -77.01047950612887);
+        final LatLng metro_33 = new LatLng(-12.020642358513916, -77.01362305205572);
+        final LatLng metro_34 = new LatLng(-12.019404113140803, -77.01398783245793);
+        final LatLng metro_35 = new LatLng(-12.01881646927521, -77.01399856129329);
+        final LatLng metro_36 = new LatLng(-12.016707236905216, -77.01315098329718);
+        final LatLng metro_37 = new LatLng(-12.01645538716777, -77.0126789145414);
+        final LatLng metro_38 = new LatLng(-12.01603563708173, -77.0121853881149);
+        final LatLng metro_39 = new LatLng(-12.015626380069678, -77.01222830337501);
+        final LatLng metro_40 = new LatLng(-12.015154159722599, -77.01257162610648);
+        final LatLng metro_41 = new LatLng(-12.01471341998464, -77.01267891446007);
+        final LatLng metro_42 = new LatLng(-12.014482556024408, -77.0129578641794);
+        final LatLng metro_43 = new LatLng(-12.014440580737649, -77.01335483108767);
+        final LatLng metro_44 = new LatLng(-12.014083790535901, -77.01356940779483);
+        final LatLng metro_45 = new LatLng(-12.012688106675075, -77.01351576361805);
+        final LatLng metro_46 = new LatLng(-12.012058472490137, -77.01335483108767);
+        final LatLng metro_47 = new LatLng(-12.011433263741171, -77.01410669098945);
+        final LatLng metro_48 = new LatLng(-12.010444938503282, -77.0148103944465);
+        final LatLng metro_49 = new LatLng(-12.010286100180325, -77.015676491009);
+        final LatLng metro_50 = new LatLng(-12.01277455647652, -77.01876196001301);
+        final LatLng metro_51 = new LatLng(-12.012951041865353, -77.0204400221029);
+        final LatLng metro_52 = new LatLng(-12.012100985802412, -77.02024688412884);
+        final LatLng metro_53 = new LatLng(-12.011901601368404, -77.01982845954984);
+        final LatLng metro_54 = new LatLng(-12.011167025863992, -77.01942076380621);
+        final LatLng metro_55 = new LatLng(-12.010789243395758, -77.01987137489128);
+        final LatLng metro_56 = new LatLng(-12.010559573438208, -77.01915856419386);
+        final LatLng metro_57 = new LatLng(-12.010693139885232, -77.01867303253073);
+        final LatLng metro_58 = new LatLng(-12.010218236634923, -77.01811163643673);
+        final LatLng metro_59 = new LatLng(-12.00961415133414, -77.01786783365736);
+        final LatLng metro_60 = new LatLng(-12.009015132168727, -77.01846749760254);
+        final LatLng metro_61 = new LatLng(-12.00837867284576, -77.01728092851953);
+        final LatLng metro_62 = new LatLng(-12.007920868413521, -77.01993793462897);
+        final LatLng metro_63 = new LatLng(-12.005961867056584, -77.02033242910525);
+        final LatLng metro_64 = new LatLng(-12.003706029601691, -77.01917929144894);
+        final LatLng metro_65 = new LatLng(-12.003049621444482, -77.02030191808922);
+        final LatLng metro_66 = new LatLng(-12.002131862426621, -77.02050039855145);
+        final LatLng metro_67 = new LatLng(-12.002184810147225, -77.02145671350591);
+        final LatLng metro_68 = new LatLng(-12.001494616904186, -77.0215630616788);
+        final LatLng metro_69 = new LatLng(-12.000767626642917, -77.0203289711555);
+        final LatLng metro_70 = new LatLng(-12.000886356691938, -77.01935790782925);
+        final LatLng metro_71 = new LatLng(-11.99877889054757, -77.01950963647396);
+        final LatLng metro_72 = new LatLng(-11.997184197440744, -77.02035184569118);
+        final LatLng metro_73 = new LatLng(-11.99554278281804, -77.0195398801638);
+        final LatLng metro_74 = new LatLng(-11.99543688475735, -77.02284187330842);
+        final LatLng metro_75 = new LatLng(-11.994713246860776, -77.02278774222967);
+        final LatLng metro_76 = new LatLng(-11.993954307505598, -77.02150664106426);
+        final LatLng metro_77 = new LatLng(-11.993283615087186, -77.02193968935379);
+        final LatLng metro_78 = new LatLng(-11.992017728533558, -77.02117062482395);
+        final LatLng metro_79 = new LatLng(-11.992017691474766, -77.02212546954833);
+        final LatLng metro_80 = new LatLng(-11.98924707754698, -77.02224352018075);
+        final LatLng metro_81 = new LatLng(-11.988620771405213, -77.01947830723392);
+        final LatLng metro_82 = new LatLng(-11.988542851283874, -77.01937968354748);
+        final LatLng metro_83 = new LatLng(-11.988579956111767, -77.01879173504916);
+        final LatLng metro_84 = new LatLng(-11.989229289784712, -77.01712271981373);
+        final LatLng metro_85 = new LatLng(-11.98909942317731, -77.01547646401843);
+        final LatLng metro_86 = new LatLng(-11.990194011204759, -77.01534749461983);
+        final LatLng metro_87 = new LatLng(-11.989745045129299, -77.01305639193377);
+        final LatLng metro_88 = new LatLng(-11.989453641496498, -77.01137426792233);
+        final LatLng metro_89 = new LatLng(-11.990057091569506, -77.01049718557275);
+        final LatLng metro_90 = new LatLng(-11.990193523572128, -77.00965765411893);
+        final LatLng metro_91 = new LatLng(-11.990120060195364, -77.00855526628582);
+        final LatLng metro_92 = new LatLng(-11.989962638602947, -77.0074072807899);
+        final LatLng metro_93 = new LatLng(-11.989970509684818, -77.00605276524085);
+        final LatLng metro_94 = new LatLng(-11.990398171455306, -77.00496378839077);
+        final LatLng metro_95 = new LatLng(-11.992137672131387, -77.00060251655225);
+
+        PolygonOptions metro_Loc = new PolygonOptions()
+                .add(metro_01)
+                .add(metro_02)
+                .add(metro_03)
+                .add(metro_04)
+                .add(metro_05)
+                .add(metro_06)
+                .add(metro_07)
+                .add(metro_08)
+                .add(metro_09)
+                .add(metro_10)
+                .add(metro_11)
+                .add(metro_12)
+                .add(metro_13)
+                .add(metro_14)
+                .add(metro_15)
+                .add(metro_16)
+                .add(metro_17)
+                .add(metro_18)
+                .add(metro_19)
+                .add(metro_20)
+                .add(metro_21)
+                .add(metro_22)
+                .add(metro_23)
+                .add(metro_24)
+                .add(metro_25)
+                .add(metro_26)
+                .add(metro_27)
+                .add(metro_28)
+                .add(metro_29)
+                .add(metro_30)
+                .add(metro_31)
+                .add(metro_32)
+                .add(metro_33)
+                .add(metro_34)
+                .add(metro_35)
+                .add(metro_36)
+                .add(metro_37)
+                .add(metro_38)
+                .add(metro_39)
+                .add(metro_40)
+                .add(metro_41)
+                .add(metro_42)
+                .add(metro_43)
+                .add(metro_44)
+                .add(metro_45)
+                .add(metro_46)
+                .add(metro_47)
+                .add(metro_48)
+                .add(metro_49)
+                .add(metro_50)
+                .add(metro_51)
+                .add(metro_52)
+                .add(metro_53)
+                .add(metro_54)
+                .add(metro_55)
+                .add(metro_56)
+                .add(metro_57)
+                .add(metro_58)
+                .add(metro_59)
+                .add(metro_60)
+                .add(metro_61)
+                .add(metro_62)
+                .add(metro_63)
+                .add(metro_64)
+                .add(metro_65)
+                .add(metro_66)
+                .add(metro_67)
+                .add(metro_68)
+                .add(metro_69)
+                .add(metro_70)
+                .add(metro_71)
+                .add(metro_72)
+                .add(metro_73)
+                .add(metro_74)
+                .add(metro_75)
+                .add(metro_76)
+                .add(metro_77)
+                .add(metro_78)
+                .add(metro_79)
+                .add(metro_80)
+                .add(metro_81)
+                .add(metro_82)
+                .add(metro_83)
+                .add(metro_84)
+                .add(metro_85)
+                .add(metro_86)
+                .add(metro_87)
+                .add(metro_88)
+                .add(metro_89)
+                .add(metro_90)
+                .add(metro_91)
+                .add(metro_92)
+                .add(metro_93)
+                .add(metro_94)
+                .add(metro_95).strokeWidth(widthStoke);
+                //.fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
+        local33Loc = mMap.addPolygon(metro_Loc);
+        local33Loc.setClickable(true);
+        local33Loc.setTag("local33");
+        mMap.addPolygon(metro_Loc);
+    }
+    public void local34Map(GoogleMap googleMap)
+    {
+        mMap = googleMap;
+        final LatLng local34latlng = new LatLng(-11.971012634513713, -77.00517139076717);          //     SAN JUAN DE LURIGANCHO - Cto Grande
+        // Local34
+        local34 = new MarkerOptions();
+        local34.position(local34latlng);
+        local34.title("La Delicia - SAN JUAN DE LURIGANCHO - Cto Grande\nTelf: 01 763 5657 / 940 117 088");
+        local34.snippet("Telf: 01 763 5657 / 940 117 088");
+        local34.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
+        local34_marker = mMap.addMarker(local34);
+
+        // Local 34 SAN JUAN DE LURIGANCHO - Canto Grande
+        final LatLng cantg_01 = new LatLng(-11.990091185199853, -77.01536974742201);
+        final LatLng cantg_02 = new LatLng(-11.989471993014334, -77.01133570512386);
+        final LatLng cantg_03 = new LatLng(-11.989692383617662, -77.01078853441888);
+        final LatLng cantg_04 = new LatLng(-11.990049206116922, -77.01037010975016);
+        final LatLng cantg_05 = new LatLng(-11.99019613289046, -77.00915775132238);
+        final LatLng cantg_06 = new LatLng(-11.99019613289046, -77.00906119170531);
+        final LatLng cantg_07 = new LatLng(-11.990028216572938, -77.00775227379157);
+        final LatLng cantg_08 = new LatLng(-11.989923268821416, -77.00645408471317);
+        final LatLng cantg_09 = new LatLng(-11.990269596255738, -77.00526318387271);
+        final LatLng cantg_10 = new LatLng(-11.99061592324184, -77.00444779230415);
+        final LatLng cantg_11 = new LatLng(-11.992118468964984, -77.00040058719021);
+        final LatLng cantg_12 = new LatLng(-11.99119556448689, -76.9998416944998);
+        final LatLng cantg_13 = new LatLng(-11.990376974484425, -76.99954128710976);
+        final LatLng cantg_14 = new LatLng(-11.989925699446607, -76.99931598156724);
+        final LatLng cantg_15 = new LatLng(-11.988674753222577, -76.99817007641684);
+        final LatLng cantg_16 = new LatLng(-11.98945182320046, -76.99777191984265);
+        final LatLng cantg_17 = new LatLng(-11.989808646012584, -76.99741250385814);
+        final LatLng cantg_18 = new LatLng(-11.990013294177178, -76.99704235903828);
+        final LatLng cantg_19 = new LatLng(-11.989924088586053, -76.99681168907806);
+        final LatLng cantg_20 = new LatLng(-11.989587672457157, -76.9965195895935);
+        final LatLng cantg_21 = new LatLng(-11.98976608383237, -76.99601533433163);
+        final LatLng cantg_22 = new LatLng(-11.989824807018165, -76.99570150734797);
+        final LatLng cantg_23 = new LatLng(-11.987031511019563, -76.99476297769799);
+        final LatLng cantg_24 = new LatLng(-11.986704981563257, -76.99506069839137);
+        final LatLng cantg_25 = new LatLng(-11.985698915301787, -76.9944833005993);
+        final LatLng cantg_26 = new LatLng(-11.984943854651183, -76.99386902530387);
+        final LatLng cantg_27 = new LatLng(-11.984770687576573, -76.99397363144861);
+        final LatLng cantg_28 = new LatLng(-11.983931088063835, -76.99337281666851);
+        final LatLng cantg_29 = new LatLng(-11.983836632939028, -76.9933835454867);
+        final LatLng cantg_30 = new LatLng(-11.98366608890921, -76.9936678596237);
+        final LatLng cantg_31 = new LatLng(-11.982284221581487, -76.99279156830237);
+        final LatLng cantg_32 = new LatLng(-11.978950623081731, -76.99186935057095);
+        final LatLng cantg_33 = new LatLng(-11.979158417421758, -76.98948721067526);
+        final LatLng cantg_34 = new LatLng(-11.979856011575231, -76.98851614728258);
+        final LatLng cantg_35 = new LatLng(-11.97853503387091, -76.98801544269253);
+        final LatLng cantg_36 = new LatLng(-11.978356923986345, -76.98833407283453);
+        final LatLng cantg_37 = new LatLng(-11.977317542124243, -76.98785428279922);
+        final LatLng cantg_38 = new LatLng(-11.975949596599166, -76.98770091153294);
+        final LatLng cantg_39 = new LatLng(-11.975843690840895, -76.98724981950845);
+        final LatLng cantg_40 = new LatLng(-11.974660597159685, -76.9871515766897);
+        final LatLng cantg_41 = new LatLng(-11.973159755003726, -76.98649711773284);
+        final LatLng cantg_42 = new LatLng(-11.971921291529826, -76.98706574602576);
+        final LatLng cantg_43 = new LatLng(-11.971973768909484, -76.98883600385994);
+        final LatLng cantg_44 = new LatLng(-11.971354535180058, -76.98956556466433);
+        final LatLng cantg_45 = new LatLng(-11.968124551248845, -76.98701657552832);
+        final LatLng cantg_46 = new LatLng(-11.968376446103974, -76.9855145383608);
+        final LatLng cantg_47 = new LatLng(-11.966272431506194, -76.98394137931234);
+        final LatLng cantg_48 = new LatLng(-11.967331521813911, -76.98219951877626);
+        final LatLng cantg_49 = new LatLng(-11.966413641337258, -76.98162212106791);
+        final LatLng cantg_50 = new LatLng(-11.965884093490729, -76.98218147509787);
+        final LatLng cantg_51 = new LatLng(-11.964295443727764, -76.98126124750019);
+        final LatLng cantg_52 = new LatLng(-11.963642329450995, -76.98221756245464);
+        final LatLng cantg_53 = new LatLng(-11.962412294429548, -76.98137204788449);
+        final LatLng cantg_54 = new LatLng(-11.962622208406422, -76.98095357835932);
+        final LatLng cantg_55 = new LatLng(-11.962968570839019, -76.9811681550665);
+        final LatLng cantg_56 = new LatLng(-11.96552953990609, -76.97752035104455);
+        final LatLng cantg_57 = new LatLng(-11.965770941476944, -76.97689807859375);
+        final LatLng cantg_58 = new LatLng(-11.96593887287737, -76.97637236566118);
+        final LatLng cantg_59 = new LatLng(-11.965592514255523, -76.97463429416347);
+        final LatLng cantg_60 = new LatLng(-11.966075317069212, -76.97394764870052);
+        final LatLng cantg_61 = new LatLng(-11.966390188004908, -76.97174823745199);
+        final LatLng cantg_62 = new LatLng(-11.966218308882356, -76.97142551741267);
+        final LatLng cantg_63 = new LatLng(-11.965375340370468, -76.97083097881973);
+        final LatLng cantg_64 = new LatLng(-11.964963447317638, -76.97148805739796);
+        final LatLng cantg_65 = new LatLng(-11.965631213011525, -76.97195375386603);
+        final LatLng cantg_66 = new LatLng(-11.965437748352766, -76.97354222555832);
+        final LatLng cantg_67 = new LatLng(-11.965037884226351, -76.97425130934552);
+        final LatLng cantg_68 = new LatLng(-11.96512411923444, -76.97482988627446);
+        final LatLng cantg_69 = new LatLng(-11.965348788122885, -76.97627163160769);
+        final LatLng cantg_70 = new LatLng(-11.965042988765147, -76.97719026573648);
+        final LatLng cantg_71 = new LatLng(-11.958596158430455, -76.98704644496546);
+        final LatLng cantg_72 = new LatLng(-11.95590140790285, -76.9919255717829);
+        final LatLng cantg_73 = new LatLng(-11.956509999977365, -76.99808575531395);
+        final LatLng cantg_74 = new LatLng(-11.956750327389575, -76.99933071873153);
+        final LatLng cantg_75 = new LatLng(-11.960056567953558, -77.00144429938055);
+        final LatLng cantg_76 = new LatLng(-11.958177788601816, -77.00462003464672);
+        final LatLng cantg_77 = new LatLng(-11.95886002844537, -77.00523157838482);
+        final LatLng cantg_78 = new LatLng(-11.961394706770582, -77.00680446392661);
+        final LatLng cantg_79 = new LatLng(-11.963759135676964, -77.00829943269954);
+        final LatLng cantg_80 = new LatLng(-11.962885417178448, -77.00966462512204);
+        final LatLng cantg_81 = new LatLng(-11.963521983824286, -77.01012394226397);
+        final LatLng cantg_82 = new LatLng(-11.963671763987344, -77.0100729070346);
+        final LatLng cantg_83 = new LatLng(-11.964345773694301, -77.01040463602554);
+        final LatLng cantg_84 = new LatLng(-11.963422130336179, -77.01189741648481);
+        final LatLng cantg_85 = new LatLng(-11.964046214031967, -77.01240776877859);
+        final LatLng cantg_86 = new LatLng(-11.9644705901245, -77.01276501541678);
+        final LatLng cantg_87 = new LatLng(-11.964445626843514, -77.01365813193087);
+        final LatLng cantg_88 = new LatLng(-11.964383218630944, -77.0139005492704);
+        final LatLng cantg_89 = new LatLng(-11.965781159139883, -77.01478090697715);
+        final LatLng cantg_90 = new LatLng(-11.96683520258675, -77.0143427637304);
+        final LatLng cantg_91 = new LatLng(-11.96682986287596, -77.01438278542598);
+        final LatLng cantg_92 = new LatLng(-11.967251880975773, -77.01425753506943);
+        final LatLng cantg_93 = new LatLng(-11.96741981145623, -77.01397858535012);
+        final LatLng cantg_94 = new LatLng(-11.967681397975767, -77.0136106384003);
+        final LatLng cantg_95 = new LatLng(-11.967500416285825, -77.01322149477629);
+        final LatLng cantg_96 = new LatLng(-11.967806212874457, -77.01283235111352);
+        final LatLng cantg_97 = new LatLng(-11.968161934999262, -77.01289614512814);
+        final LatLng cantg_98 = new LatLng(-11.968711119098934, -77.01254527792618);
+        final LatLng cantg_99 = new LatLng(-11.969322709169342, -77.01270476301796);
+        final LatLng cantg_100 = new LatLng(-11.969578357126933, -77.01305147379284);
+        final LatLng cantg_101 = new LatLng(-11.970469749888705, -77.0130965829888);
+        final LatLng cantg_102 = new LatLng(-11.971579385188534, -77.01196337793807);
+        final LatLng cantg_103 = new LatLng(-11.973909338852394, -77.01360535267119);
+        final LatLng cantg_104 = new LatLng(-11.974156453971524, -77.01310012967639);
+        final LatLng cantg_105 = new LatLng(-11.975480281155011, -77.01055597085777);
+        final LatLng cantg_106 = new LatLng(-11.976292225261526, -77.01061010189291);
+        final LatLng cantg_107 = new LatLng(-11.976662894585658, -77.00990639843586);
+        final LatLng cantg_108 = new LatLng(-11.979045756737232, -77.01149424235426);
+        final LatLng cantg_109 = new LatLng(-11.978039661939393, -77.01311817349625);
+        final LatLng cantg_110 = new LatLng(-11.976645243709147, -77.01344295970719);
+        final LatLng cantg_111 = new LatLng(-11.97622162155523, -77.01438123098326);
+        final LatLng cantg_112 = new LatLng(-11.978533884394189, -77.0159871183596);
+        final LatLng cantg_113 = new LatLng(-11.977881160401033, -77.01702735020322);
+        final LatLng cantg_114 = new LatLng(-11.977608283912113, -77.01755306302853);
+        final LatLng cantg_115 = new LatLng(-11.978636817041897, -77.01817533547934);
+        final LatLng cantg_116 = new LatLng(-11.981814126959222, -77.01317789439375);
+        final LatLng cantg_117 = new LatLng(-11.984235398879644, -77.01453032820729);
+        final LatLng cantg_118 = new LatLng(-11.98508408696566, -77.01542344472138);
+        final LatLng cantg_119 = new LatLng(-11.987006106083456, -77.01588276186249);
+        final LatLng cantg_120 = new LatLng(-11.990196519456312, -77.0153517257748);
+
+        PolygonOptions cantog_Loc = new PolygonOptions()
+                .add(cantg_01)
+                .add(cantg_02)
+                .add(cantg_03)
+                .add(cantg_04)
+                .add(cantg_05)
+                .add(cantg_06)
+                .add(cantg_07)
+                .add(cantg_08)
+                .add(cantg_09)
+                .add(cantg_10)
+                .add(cantg_11)
+                .add(cantg_12)
+                .add(cantg_13)
+                .add(cantg_14)
+                .add(cantg_15)
+                .add(cantg_16)
+                .add(cantg_17)
+                .add(cantg_18)
+                .add(cantg_19)
+                .add(cantg_20)
+                .add(cantg_21)
+                .add(cantg_22)
+                .add(cantg_23)
+                .add(cantg_24)
+                .add(cantg_25)
+                .add(cantg_26)
+                .add(cantg_27)
+                .add(cantg_28)
+                .add(cantg_29)
+                .add(cantg_30)
+                .add(cantg_31)
+                .add(cantg_32)
+                .add(cantg_33)
+                .add(cantg_34)
+                .add(cantg_35)
+                .add(cantg_36)
+                .add(cantg_37)
+                .add(cantg_38)
+                .add(cantg_39)
+                .add(cantg_40)
+                .add(cantg_41)
+                .add(cantg_42)
+                .add(cantg_43)
+                .add(cantg_44)
+                .add(cantg_45)
+                .add(cantg_46)
+                .add(cantg_47)
+                .add(cantg_48)
+                .add(cantg_49)
+                .add(cantg_50)
+                .add(cantg_51)
+                .add(cantg_52)
+                .add(cantg_53)
+                .add(cantg_54)
+                .add(cantg_55)
+                .add(cantg_56)
+                .add(cantg_57)
+                .add(cantg_58)
+                .add(cantg_59)
+                .add(cantg_60)
+                .add(cantg_61)
+                .add(cantg_62)
+                .add(cantg_63)
+                .add(cantg_64)
+                .add(cantg_65)
+                .add(cantg_66)
+                .add(cantg_67)
+                .add(cantg_68)
+                .add(cantg_69)
+                .add(cantg_70)
+                .add(cantg_71)
+                .add(cantg_72)
+                .add(cantg_73)
+                .add(cantg_74)
+                .add(cantg_75)
+                .add(cantg_76)
+                .add(cantg_77)
+                .add(cantg_78)
+                .add(cantg_79)
+                .add(cantg_80)
+                .add(cantg_81)
+                .add(cantg_82)
+                .add(cantg_83)
+                .add(cantg_84)
+                .add(cantg_85)
+                .add(cantg_86)
+                .add(cantg_87)
+                .add(cantg_88)
+                .add(cantg_89)
+                .add(cantg_90)
+                .add(cantg_91)
+                .add(cantg_92)
+                .add(cantg_93)
+                .add(cantg_94)
+                .add(cantg_95)
+                .add(cantg_96)
+                .add(cantg_97)
+                .add(cantg_98)
+                .add(cantg_99)
+                .add(cantg_100)
+                .add(cantg_101)
+                .add(cantg_102)
+                .add(cantg_103)
+                .add(cantg_104)
+                .add(cantg_105)
+                .add(cantg_106)
+                .add(cantg_107)
+                .add(cantg_108)
+                .add(cantg_109)
+                .add(cantg_110)
+                .add(cantg_111)
+                .add(cantg_112)
+                .add(cantg_113)
+                .add(cantg_114)
+                .add(cantg_115)
+                .add(cantg_116)
+                .add(cantg_117)
+                .add(cantg_118)
+                .add(cantg_119)
+                .add(cantg_120).strokeWidth(widthStoke);
+                //.fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
+        local34Loc = mMap.addPolygon(cantog_Loc);
+        local34Loc.setClickable(true);
+        local34Loc.setTag("local34");
+        mMap.addPolygon(cantog_Loc);
+    }
+    public void local35Map(GoogleMap googleMap)
+    {
+        mMap = googleMap;
+        final LatLng local35latlng = new LatLng(-12.005677310855603, -77.09932629978633);          //     CALLAO - Los Nardos
+        // Local35
+        local35 = new MarkerOptions();
+        local35.position(local35latlng);
+        local35.title("La Delicia - CALLAO - Los Nardos\nTel: 01 777 1448 / 912 095 642");
+        local35.snippet("Tel: 01 777 1448 / 912 095 642");
+        local35.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
+        local35_marker = mMap.addMarker(local35);
+
+        // Polígono Local 35 - CALLAO Nardos
+        final LatLng callao_01 = new LatLng(-12.021732155791804, -77.1059505868092);
+        final LatLng callao_02 = new LatLng(-12.01970940520341, -77.10146505805001);
+        final LatLng callao_03 = new LatLng(-12.01674113399767, -77.09821339711239);
+        final LatLng callao_04 = new LatLng(-12.013349025089894, -77.0951640897863);
+        final LatLng callao_05 = new LatLng(-12.012265349717092, -77.09253879860057);
+        final LatLng callao_06 = new LatLng(-12.011605734651669, -77.09008203833514);
+        final LatLng callao_07 = new LatLng(-12.006964709971003, -77.08408479209633);
+        final LatLng callao_08 = new LatLng(-12.00656422824638, -77.08283232968165);
+        final LatLng callao_09 = new LatLng(-12.006297100545137, -77.08221922733289);
+        final LatLng callao_10 = new LatLng(-11.99665371059509, -77.0845581538364);
+        final LatLng callao_11 = new LatLng(-11.995446931833058, -77.08410561523864);
+        final LatLng callao_12 = new LatLng(-11.99154103977366, -77.0818026591946);
+        final LatLng callao_13 = new LatLng(-11.990810304176605, -77.09283768143331);
+        final LatLng callao_14 = new LatLng(-11.989041070262639, -77.10549890427043);
+        final LatLng callao_15 = new LatLng(-12.00087138351484, -77.11670675544639);
+        final LatLng callao_16 = new LatLng(-12.001768432144637, -77.11607517145042);
+        final LatLng callao_17 = new LatLng(-12.002703378549747, -77.11559727055084);
+
+        PolygonOptions callao_Loc = new PolygonOptions()
+                .add(callao_01)
+                .add(callao_02)
+                .add(callao_03)
+                .add(callao_04)
+                .add(callao_05)
+                .add(callao_06)
+                .add(callao_07)
+                .add(callao_08)
+                .add(callao_09)
+                .add(callao_10)
+                .add(callao_11)
+                .add(callao_12)
+                .add(callao_13)
+                .add(callao_14)
+                .add(callao_15)
+                .add(callao_16)
+                .add(callao_17).strokeWidth(widthStoke);
+                //.fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
+        local35Loc = mMap.addPolygon(callao_Loc);
+        local35Loc.setClickable(true);
+        local35Loc.setTag("local35");
+        mMap.addPolygon(callao_Loc);
+    }
+    public void local36Map(GoogleMap googleMap)
+    {
+        mMap = googleMap;
+        final LatLng local36latlng = new LatLng(-11.99662035205114, -77.11391887911988);           //     SAN MARTÍN DE PORRES - Entrada Cond. CIudad Nueva
+        // Local36
+        local36 = new MarkerOptions();
+        local36.position(local36latlng);
+        local36.title("La Delicia - SAN MARTÍN DE PORRES - Entrada Ciudad Nueva\nTelf: 01 312 9179 / 950 184 389");
+        local36.snippet("Telf: 01 312 9179 / 950 184 389");
+        local36.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
+        local36_marker = mMap.addMarker(local36);
+
+        // Local 36 SAN MARTÍN DE PORRES Gisela
+        final LatLng smp_01 = new LatLng(-12.000724162725806, -77.11679193341334);
+        final LatLng smp_02 = new LatLng(-11.989139967249699, -77.10534598546704);
+        final LatLng smp_03 = new LatLng(-11.990841372861045, -77.09275738505411);
+        final LatLng smp_04 = new LatLng(-11.991302935559574, -77.08187845918411);
+        final LatLng smp_05 = new LatLng(-11.989197728914505, -77.0811119290146);
+        final LatLng smp_06 = new LatLng(-11.983545228469474, -77.07825219840333);
+        final LatLng smp_07 = new LatLng(-11.981158402646752, -77.07779454038649);
+        final LatLng smp_08 = new LatLng(-11.97809546466799, -77.07675889115396);
+        final LatLng smp_09 = new LatLng(-11.976658253414973, -77.08318968963981);
+        final LatLng smp_10 = new LatLng(-11.976069200078557, -77.0850924254656);
+        final LatLng smp_11 = new LatLng(-11.975244537593465, -77.08624850992244);
+        final LatLng smp_12 = new LatLng(-11.974278506500445, -77.08716373609582);
+        final LatLng smp_13 = new LatLng(-11.974141897083282, -77.08792510199945);
+        final LatLng smp_14 = new LatLng(-11.97381653612469, -77.08847226929639);
+        final LatLng smp_15 = new LatLng(-11.972233228042104, -77.09360711515959);
+        final LatLng smp_16 = new LatLng(-11.970187985192306, -77.09602774023594);
+        final LatLng smp_17 = new LatLng(-11.968348113469338, -77.09683151789552);
+        final LatLng smp_18 = new LatLng(-11.97238959264832, -77.10228093509598);
+        final LatLng smp_19 = new LatLng(-11.977516037422971, -77.10838948528875);
+        final LatLng smp_20 = new LatLng(-11.976305178985426, -77.1098362426789);
+        final LatLng smp_21 = new LatLng(-11.977893415248078, -77.11129912300635);
+        final LatLng smp_22 = new LatLng(-11.976871221602758, -77.11377471642218);
+        final LatLng smp_23 = new LatLng(-11.975298777102497, -77.11580010828564);
+        final LatLng smp_24 = new LatLng(-11.972814123316812, -77.1185810851522);
+        final LatLng smp_25 = new LatLng(-11.968992869733933, -77.12023677917844);
+        final LatLng smp_26 = new LatLng(-11.967357396183473, -77.12158707935914);
+        final LatLng smp_27 = new LatLng(-11.966508227225013, -77.12239084734962);
+        final LatLng smp_28 = new LatLng(-11.96756179155663, -77.12557371906412);
+        final LatLng smp_29 = new LatLng(-11.970154571409608, -77.12511116164066);
+        final LatLng smp_30 = new LatLng(-11.973009770474826, -77.12499329907091);
+        final LatLng smp_31 = new LatLng(-11.980796570308248, -77.12502291988275);
+        final LatLng smp_32 = new LatLng(-11.994177852024677, -77.12581899965227);
+        final LatLng smp_33 = new LatLng(-11.996263630053326, -77.12583377906134);
+        final LatLng smp_34 = new LatLng(-11.997559467944152, -77.12477403465616);
+        final LatLng smp_35 = new LatLng(-11.999868499071736, -77.11884889737078);
+
+        PolygonOptions smp_Loc = new PolygonOptions()
+                .add(smp_01)
+                .add(smp_02)
+                .add(smp_03)
+                .add(smp_04)
+                .add(smp_05)
+                .add(smp_06)
+                .add(smp_07)
+                .add(smp_08)
+                .add(smp_09)
+                .add(smp_10)
+                .add(smp_11)
+                .add(smp_12)
+                .add(smp_13)
+                .add(smp_14)
+                .add(smp_15)
+                .add(smp_16)
+                .add(smp_17)
+                .add(smp_18)
+                .add(smp_19)
+                .add(smp_20)
+                .add(smp_21)
+                .add(smp_22)
+                .add(smp_23)
+                .add(smp_24)
+                .add(smp_25)
+                .add(smp_26)
+                .add(smp_27)
+                .add(smp_28)
+                .add(smp_29)
+                .add(smp_30)
+                .add(smp_31)
+                .add(smp_32)
+                .add(smp_33)
+                .add(smp_34)
+                .add(smp_35).strokeWidth(widthStoke);
+                //.fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
+        local36Loc = mMap.addPolygon(smp_Loc);
+        local36Loc.setClickable(true);
+        local36Loc.setTag("local36");
+        mMap.addPolygon(smp_Loc);
+    }
+    public void local37Map(GoogleMap googleMap)
+    {
+        mMap = googleMap;
+        final LatLng local37latlng = new LatLng(-12.020471494738635, -76.90037925330297);          //     ATE - La Cruz
+        // Local37
+        local37 = new MarkerOptions();
+        local37.position(local37latlng);
+        local37.title("La Delicia - ATE - La Cruz\nTelf: Muy Pronto");
+        local37.snippet("Telf: Muy Pronto");
+        local37.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
+        local37_marker = mMap.addMarker(local37);
+
+        // Local 37 ATE - La Cruz
+        final LatLng lacruz_01 = new LatLng(-12.018037796083133, -76.89525813562176);
+        final LatLng lacruz_02 = new LatLng(-12.01724734525544, -76.89295271618059);
+        final LatLng lacruz_03 = new LatLng(-12.015403096635843, -76.89364739783618);
+        final LatLng lacruz_04 = new LatLng(-12.016320810443075, -76.89724711177378);
+        final LatLng lacruz_05 = new LatLng(-12.016091382286747, -76.89852821293918);
+        final LatLng lacruz_06 = new LatLng(-12.015500162672097, -76.899673986555);
+        final LatLng lacruz_07 = new LatLng(-12.015050128955039, -76.90020627513871);
+        final LatLng lacruz_08 = new LatLng(-12.015014832166212, -76.90087389144827);
+        final LatLng lacruz_09 = new LatLng(-12.017776792310267, -76.90561937910192);
+        final LatLng lacruz_10 = new LatLng(-12.019003340578138, -76.9055201388708);
+        final LatLng lacruz_11 = new LatLng(-12.019938690176549, -76.9080913630408);
+        final LatLng lacruz_12 = new LatLng(-12.020591668157785, -76.91018442973356);
+        final LatLng lacruz_13 = new LatLng(-12.022506472870305, -76.90948974819351);
+        final LatLng lacruz_14 = new LatLng(-12.022338817727402, -76.90901159070094);
+        final LatLng lacruz_15 = new LatLng(-12.025480128767928, -76.90787483890901);
+        final LatLng lacruz_16 = new LatLng(-12.025233060698005, -76.90678319635431);
+        final LatLng lacruz_17 = new LatLng(-12.026865470553012, -76.90657569405286);
+        final LatLng lacruz_18 = new LatLng(-12.02693670761465, -76.90687166621413);
+        final LatLng lacruz_19 = new LatLng(-12.028480044146592, -76.90650751746679);
+        final LatLng lacruz_20 = new LatLng(-12.02656810454802, -76.89339762712034);
+        final LatLng lacruz_21 = new LatLng(-12.018255937569364, -76.89518395134536);
+
+
+        PolygonOptions lacruz_Loc = new PolygonOptions()
+                .add(lacruz_01)
+                .add(lacruz_02)
+                .add(lacruz_03)
+                .add(lacruz_04)
+                .add(lacruz_05)
+                .add(lacruz_06)
+                .add(lacruz_07)
+                .add(lacruz_08)
+                .add(lacruz_09)
+                .add(lacruz_10)
+                .add(lacruz_11)
+                .add(lacruz_12)
+                .add(lacruz_13)
+                .add(lacruz_14)
+                .add(lacruz_15)
+                .add(lacruz_16)
+                .add(lacruz_17)
+                .add(lacruz_18)
+                .add(lacruz_19)
+                .add(lacruz_20)
+                .add(lacruz_21).strokeWidth(widthStoke);
+                //.fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
+        local37Loc = mMap.addPolygon(lacruz_Loc);
+        local37Loc.setClickable(true);
+        local37Loc.setTag("local37");
+        mMap.addPolygon(lacruz_Loc);
+    }
+    public void local38Map(GoogleMap googleMap)
+    {
+        mMap = googleMap;
+        final LatLng local38latlng = new LatLng(-12.054457497997973, -76.95934561012335);          //     ATE - Jr. La Unión
+        // Local38
+        local38 = new MarkerOptions();
+        local38.position(local38latlng);
+        local38.title("La Delicia - ATE - Jr. La Unión\nTelf: 01 3483 321 / 942 321 386");
+        local38.snippet("Telf: 01 3483 321 / 942 321 386");
+        local38.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
+        local38_marker = mMap.addMarker(local38);
+        // Polígono Local 38 LA UNIÓN
+        final LatLng ang_01 = new LatLng(-12.054457497997973, -76.95934561012335);
+        final LatLng ang_02 = new LatLng(-12.043142046842314, -76.93034669989883);
+        final LatLng ang_03 = new LatLng(-12.044660777139523, -76.93388335254564);
+        final LatLng ang_04 = new LatLng(-12.04670149042901, -76.93413590739132);
+        final LatLng ang_05 = new LatLng(-12.047199506922626, -76.93581490693873);
+        final LatLng ang_06 = new LatLng(-12.062029315154364, -76.9335047276725);
+        final LatLng ang_07 = new LatLng(-12.068829008137858, -76.93342618864094);
+        final LatLng ang_08 = new LatLng(-12.069940941379725, -76.9369772734326);
+        final LatLng ang_09 = new LatLng(-12.075598585587823, -76.935186829004);
+        final LatLng ang_10 = new LatLng(-12.07531497433156, -76.93692510411395);
+        final LatLng ang_11 = new LatLng(-12.079496482720511, -76.95055145993804);
+        final LatLng ang_12 = new LatLng(-12.07693899144209, -76.95401981576207);
+        final LatLng ang_13 = new LatLng(-12.062642975332285, -76.96079500226779);
+        final LatLng ang_14 = new LatLng(-12.067568057483987, -76.97137881576222);
+        final LatLng ang_15 = new LatLng(-12.063230007618063, -76.97118435809192);
+        final LatLng ang_16 = new LatLng(-12.058498007250853, -76.97306191760863);
+        final LatLng ang_17 = new LatLng(-12.043019079006905, -76.9363116292571);
+        final LatLng ang_18 = new LatLng(-12.037927005656563, -76.93157900226804);
+
+        PolygonOptions ang_loc = new PolygonOptions()
+                //.add(ang_01)
+                .add(ang_02)
+                .add(ang_03)
+                .add(ang_04)
+                .add(ang_05)
+                .add(ang_06)
+                .add(ang_07)
+                .add(ang_08)
+                .add(ang_09)
+                .add(ang_10)
+                .add(ang_11)
+                .add(ang_12)
+                .add(ang_13)
+                .add(ang_14)
+                .add(ang_15)
+                .add(ang_16)
+                .add(ang_17)
+                .add(ang_18).strokeWidth(widthStoke);
+                //.fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
+        local38Loc = mMap.addPolygon(ang_loc);
+        local38Loc.setClickable(true);
+        local38Loc.setTag("local38");
+        mMap.addPolygon(ang_loc);
+    }
+    public void local39Map(GoogleMap googleMap)
+    {
+        mMap = googleMap;
+        final LatLng local39latlng = new LatLng(-12.068269868255348, -76.97521800017546);          //     ATE - Salamanca
+        // Local39
+        local39 = new MarkerOptions();
+        local39.position(local39latlng);
+        local39.title("La Delicia - ATE - Salamanca\nTelf: 01 775 7351 / 951 788 322");
+        local39.snippet("Telf: 01 775 7351 / 951 788 322");
+        local39.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
+        local39_marker = mMap.addMarker(local39);
+
+        // Polígono Local 39 SALAMANCA (Completo)
+        final LatLng sala_01 = new LatLng(-12.068269868255348, -76.97521800017546);
+        final LatLng sala_02 = new LatLng(-12.058753933554762, -76.97348010254304);
+        final LatLng sala_03 = new LatLng(-12.062793363993048, -76.97177653450352);
+        final LatLng sala_04 = new LatLng(-12.066947925381278, -76.97147307724426);
+        final LatLng sala_05 = new LatLng(-12.079144158611552, -76.97638908464236);
+        final LatLng sala_06 = new LatLng(-12.084811805385504, -76.98182096958317);
+        final LatLng sala_07 = new LatLng(-12.08475245906298, -76.98394517089426);
+        final LatLng sala_08 = new LatLng(-12.083565527001868, -76.9842182824276);
+        final LatLng sala_09 = new LatLng(-12.063653957065663, -76.99972494908177);
+        final LatLng sala_10 = new LatLng(-12.064069191125226, -76.98921621903983);
+        final LatLng sala_11 = new LatLng(-12.062919140416263, -76.98191677678123);
+        final LatLng sala_12 = new LatLng(-12.060609452725004, -76.97852487258645);
+
+        PolygonOptions sala_Loc = new PolygonOptions()
+                //.add(sala_01)
+                .add(sala_02)
+                .add(sala_03)
+                .add(sala_04)
+                .add(sala_05)
+                .add(sala_06)
+                .add(sala_07)
+                .add(sala_08)
+                .add(sala_09)
+                .add(sala_10)
+                .add(sala_11)
+                .add(sala_12).strokeWidth(widthStoke);
+                //.fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
+        local39Loc = mMap.addPolygon(sala_Loc);
+        local39Loc.setClickable(true);
+        local39Loc.setTag("local39");
+        mMap.addPolygon(sala_Loc);
+    }
+    public void local40Map(GoogleMap googleMap)
+    {
+        mMap = googleMap;
+        final LatLng local40latlng = new LatLng(-12.027909999467138, -76.95202636459305);          //     ATE - Santa Elvira
+        // Local40
+        local40 = new MarkerOptions();
+        local40.position(local40latlng);
+        local40.title("La Delicia - ATE - Santa Elvira\nTelf: 01 774 7545 / 973 030 881");
+        local40.snippet("Telf: 01 774 7545 / 973 030 881");
+        local40.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
+        local40_marker = mMap.addMarker(local40);
+
+        // Polígono Local 40 Santa Elvira ATE (Completo)                                                       POR VERSE
+        final LatLng elvi_01 = new LatLng(-12.027909999467138, -76.95202636459305);
+        final LatLng elvi_02 = new LatLng(-12.035003456562647, -76.95547673080877);
+        final LatLng elvi_03 = new LatLng(-12.029047484726977, -76.93496000226811);
+        final LatLng elvi_04 = new LatLng(-12.028291969462838, -76.93219392662256);
+        final LatLng elvi_05 = new LatLng(-12.027957180216235, -76.93122653092138);
+        final LatLng elvi_06 = new LatLng(-12.02763601034588, -76.9269647597932);
+        final LatLng elvi_07 = new LatLng(-12.023961498026267, -76.92688273110346);
+        final LatLng elvi_08 = new LatLng(-12.023083671062363, -76.93632615653854);
+        final LatLng elvi_09 = new LatLng(-12.022813921789039, -76.94189082500793);
+        final LatLng elvi_10 = new LatLng(-12.023779928521716, -76.95334980477965);
+        final LatLng elvi_11 = new LatLng(-12.025135034483437, -76.95250813364501);
+        final LatLng elvi_12 = new LatLng(-12.029811552483014, -76.95750700226816);
+
+        PolygonOptions elvi_Loc = new PolygonOptions()
+                //.add(elvi_01)
+                .add(elvi_02)
+                .add(elvi_03)
+                .add(elvi_04)
+                .add(elvi_05)
+                .add(elvi_06)
+                .add(elvi_07)
+                .add(elvi_08)
+                .add(elvi_09)
+                .add(elvi_10)
+                .add(elvi_11)
+                .add(elvi_12).strokeWidth(widthStoke);
+                //.fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
+        local40Loc = mMap.addPolygon(elvi_Loc);
+        local40Loc.setClickable(true);
+        local40Loc.setTag("local40");
+        mMap.addPolygon(elvi_Loc);
+    }
+
+    public void local41Map(GoogleMap googleMap)
+    {
+        mMap = googleMap;
+        final LatLng local471latlng = new LatLng(-12.051782245648587, -76.96447327134028);          //     SANTA ANITA - Flamencos
+        // Local41
+        local41 = new MarkerOptions();
+        local41.position(local471latlng);
+        local41.title("La Delicia - Santa Anita - Flamencos\nTelf: 01 362 8106 / 978 740 659");
+        local41.snippet("Telf: 01 362 8106 / 978 740 659");
+        local41.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
+        local41_marker = mMap.addMarker(local41);
+
+        // Unido con local 20
+    }
+    public void local42Map(GoogleMap googleMap)
+    {
+        mMap = googleMap;
+        final LatLng local427latlng = new LatLng(-12.041308492240882, -77.00232400017546);          //     Ancash El AGUSTINO
+        // Local42
+        local42 = new MarkerOptions();
+        local42.position(local427latlng);
+        local42.title("La Delicia - EL AGUSTINO - Ancash\nTelf: 01 281 9505 / 924 282 452");
+        local42.snippet("Telf: 01 281 9505 / 924 282 452");
+        local42.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
+        local42_marker = mMap.addMarker(local42);
+
+        // Polígono Local 42 ANCASH - AGUSTINO (Completo) // POR DEFINIR
+        final LatLng ancash_01 = new LatLng(-12.041308492240882, -77.00232400017546);
+        final LatLng ancash_02 = new LatLng(-12.034385902580455, -77.00856874195499);
+        final LatLng ancash_03 = new LatLng(-12.037657670350827, -77.00597446395366);
+        final LatLng ancash_04 = new LatLng(-12.038246846800497, -77.0056358775319);
+        final LatLng ancash_05 = new LatLng(-12.041510116965846, -77.0049170455009);
+        final LatLng ancash_06 = new LatLng(-12.04461306864287, -77.01235604820732);
+        final LatLng ancash_07 = new LatLng(-12.054328642802865, -77.01314587384859);
+        final LatLng ancash_08 = new LatLng(-12.049906085254614, -77.00947630812212);
+        final LatLng ancash_09 = new LatLng(-12.04183747635384, -77.00473899128498);
+        final LatLng ancash_10 = new LatLng(-12.040147005828427, -76.99728327343287);
+        final LatLng ancash_11 = new LatLng(-12.04028296272633, -76.99550181576254);
+        final LatLng ancash_12 = new LatLng(-12.039359570139412, -76.98853835809219);
+        final LatLng ancash_13 = new LatLng(-12.03496351240612, -76.98972891760886);
+        final LatLng ancash_14 = new LatLng(-12.029274606385608, -76.99632200226823);
+        final LatLng ancash_15 = new LatLng(-12.032740977689643, -77.00621335809225);
+
+        PolygonOptions ancash_loc = new PolygonOptions()
+                //.add(ancash_01)
+                .add(ancash_02)
+                .add(ancash_03)
+                .add(ancash_04)
+                .add(ancash_05)
+                .add(ancash_06)
+                .add(ancash_07)
+                .add(ancash_08)
+                .add(ancash_09)
+                .add(ancash_10)
+                .add(ancash_11)
+                .add(ancash_12)
+                .add(ancash_13)
+                .add(ancash_14)
+                .add(ancash_15).strokeWidth(widthStoke);
+                //.fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
+        local42Loc = mMap.addPolygon(ancash_loc);
+        local42Loc.setClickable(true);
+        local42Loc.setTag("local42");
+        mMap.addPolygon(ancash_loc);
+    }
+    public void local43Map(GoogleMap googleMap)
+    {
+        mMap = googleMap;
+        final LatLng local43latlng = new LatLng(-12.04028729136067, -76.99746481907955);           //     AGUSTINO CATALAN // Riva Aguero
+        // Local43
+        local43 = new MarkerOptions();
+        local43.position(local43latlng);
+        local43.title("La Delicia - EL AGUSTINO - Catalan\nTelf: 01 684 2912 / 991 708 177");
+        local43.snippet("Telf: 01 684 2912 / 991 708 177");
+        local43.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
+        local43_marker = mMap.addMarker(local43);
+
+        // Polígono Local 43 EL AGUSTINO - CATALAN HERMES
+        final LatLng aleg_01 = new LatLng(-12.041775741038883, -77.00456354791474);
+        final LatLng aleg_02 = new LatLng(-12.046870469134223, -77.00303154459759);
+        final LatLng aleg_03 = new LatLng(-12.049512989225867, -77.00674309953604);
+        final LatLng aleg_04 = new LatLng(-12.04649572500712, -77.0084233511182);
+        final LatLng aleg_05 = new LatLng(-12.046858012751715, -77.00921218714964);
+        final LatLng aleg_06 = new LatLng(-12.050148311201234, -77.00952814869667);
+        final LatLng aleg_07 = new LatLng(-12.055055960454094, -77.01327610394213);
+        final LatLng aleg_08 = new LatLng(-12.059367959729364, -77.00763300226787);
+        final LatLng aleg_09 = new LatLng(-12.05494205354007, -77.00421900226797);
+        final LatLng aleg_10 = new LatLng(-12.055445604053824, -77.00286270477072);
+        final LatLng aleg_11 = new LatLng(-12.05398303834571, -77.00158698812801);
+        final LatLng aleg_12 = new LatLng(-12.053710490153835, -77.00211808530331);
+        final LatLng aleg_13 = new LatLng(-12.051176259282464, -77.00047072947919);
+        final LatLng aleg_14 = new LatLng(-12.04939804312453, -77.00132872947924);
+        final LatLng aleg_15 = new LatLng(-12.044053035470128, -76.99767581576246);
+        final LatLng aleg_16 = new LatLng(-12.04032440380598, -76.99746120635113);
+
+        PolygonOptions elagus_Loc = new PolygonOptions()
+                .add(aleg_01)
+                .add(aleg_01)
+                .add(aleg_02)
+                .add(aleg_03)
+                .add(aleg_04)
+                .add(aleg_05)
+                .add(aleg_06)
+                .add(aleg_07)
+                .add(aleg_08)
+                .add(aleg_09)
+                .add(aleg_10)
+                .add(aleg_11)
+                .add(aleg_12)
+                .add(aleg_13)
+                .add(aleg_14)
+                .add(aleg_15)
+                .add(aleg_16).strokeWidth(widthStoke);
+                //.fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
+        local43Loc = mMap.addPolygon(elagus_Loc);
+        local43Loc.setClickable(true);
+        local43Loc.setTag("local43");
+        mMap.addPolygon(elagus_Loc);
+    }
+    public void local44Map(GoogleMap googleMap)
+    {
+        mMap = googleMap;
+        final LatLng local44latlng = new LatLng(-12.111582623977457, -76.87288711684407);          //     Manchay 3 Marías
+        // Local44
+        local44 = new MarkerOptions();
+        local44.position(local44latlng);
+        local44.title("La Delicia - Manchay - 3 Marías\nTelf: 01 691 9034 / 963 792 745");
+        local44.snippet("Telf: 01 691 9034 / 963 792 745");
+        local44.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
+        local44_marker = mMap.addMarker(local44);
+        // Compartido con Local 45
+        // Polígono Local 44 MANCHAY (Completo)
+        final LatLng mancha_01 = new LatLng(-12.111582623977457, -76.87288711684407);
+        final LatLng mancha_02 = new LatLng(-12.08799779555258, -76.8839142102076);
+        final LatLng mancha_03 = new LatLng(-12.086546967788802, -76.88148795717468);
+        final LatLng mancha_04 = new LatLng(-12.086150496608404, -76.87854807995328);
+        final LatLng mancha_05 = new LatLng(-12.088258973308388, -76.8729118157619);
+        final LatLng mancha_06 = new LatLng(-12.098923483359876, -76.87546389495925);
+        final LatLng mancha_07 = new LatLng(-12.109573971620971, -76.86840581576172);
+        final LatLng mancha_08 = new LatLng(-12.112914302954518, -76.86755719276978);
+        final LatLng mancha_09 = new LatLng(-12.114969481304831, -76.87065918877276);
+        final LatLng mancha_10 = new LatLng(-12.11686799141542, -76.8701230869265);
+        final LatLng mancha_11 = new LatLng(-12.120947872164592, -76.8710064042176);
+        final LatLng mancha_12 = new LatLng(-12.128133187766341, -76.86971894374324);
+        final LatLng mancha_13 = new LatLng(-12.14880678572276, -76.86821821985669);
+        final LatLng mancha_14 = new LatLng(-12.161859015303078, -76.86353408692597);
+        final LatLng mancha_15 = new LatLng(-12.17097430175206, -76.86065746325474);
+        final LatLng mancha_16 = new LatLng(-12.17354401621761, -76.86186981576104);
+        final LatLng mancha_17 = new LatLng(-12.170984966743339, -76.86632218877212);
+        final LatLng mancha_18 = new LatLng(-12.152778526194236, -76.87533808692598);
+        final LatLng mancha_19 = new LatLng(-12.123960606556846, -76.87511773110235);
+        final LatLng mancha_20 = new LatLng(-12.112257111514218, -76.8764712734321);
+        final LatLng mancha_21 = new LatLng(-12.103788010770709, -76.87916881576182);
+        final LatLng mancha_22 = new LatLng(-12.097232824582292, -76.88361402493157);
+        final LatLng mancha_23 = new LatLng(-12.095810771359249, -76.8843761660856);
+        final LatLng mancha_24 = new LatLng(-12.095652873140649, -76.88705185884754);
+        final LatLng mancha_25 = new LatLng(-12.090675795662847, -76.88325673442002);
+
+        PolygonOptions manchay_Loc = new PolygonOptions()
+                //.add(mancha_01)
+                .add(mancha_02)
+                .add(mancha_03)
+                .add(mancha_04)
+                .add(mancha_05)
+                .add(mancha_06)
+                .add(mancha_07)
+                .add(mancha_08)
+                .add(mancha_09)
+                .add(mancha_10)
+                .add(mancha_11)
+                .add(mancha_12)
+                .add(mancha_13)
+                .add(mancha_14)
+                .add(mancha_15)
+                .add(mancha_16)
+                .add(mancha_17)
+                .add(mancha_18)
+                .add(mancha_19)
+                .add(mancha_20)
+                .add(mancha_21)
+                .add(mancha_22)
+                .add(mancha_23)
+                .add(mancha_24)
+                .add(mancha_25).strokeWidth(widthStoke);
+        //.fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
+        local44Loc = mMap.addPolygon(manchay_Loc);
+        local44Loc.setClickable(true);
+        local44Loc.setTag("local44");
+        mMap.addPolygon(manchay_Loc);
+    }
+    public void local45Map(GoogleMap googleMap)
+    {
+        mMap = googleMap;
+        final LatLng local45latlng = new LatLng(-12.095092801112484, -76.88471465091841);          //     MANCHAY - Portada 3
+        // Local45
+        local45 = new MarkerOptions();
+        local45.position(local45latlng);
+        local45.title("La Delicia - MANCHAY - Portada 3\nTelf: 01 405 4839 / 993 600 986");
+        local45.snippet("Telf: 01 405 4839 / 993 600 986");
+        local45.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
+        local45_marker = mMap.addMarker(local45);
+        // Comparte con Local 44
+    }
+    // NUEVOS
+    public void local46Map(GoogleMap googleMap)
+    {
+        mMap = googleMap;
+        final LatLng local46latlng = new LatLng(-12.0496294,-76.998208);                           //     NUEVA SEDE AGUSTINO
+        // Local46
+        local46 = new MarkerOptions();
+        local46.position(local46latlng);
+        local46.title("La Delicia - El AGUSTINO - Nuevo!!");
+        local46.snippet("Muy Pronto");
+        local46.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
+        local46_marker = mMap.addMarker(local46);
+
+        // Polígono Sin Local - NUEVO HERMES
+        final LatLng agus_01 = new LatLng(-12.0496294,-76.998208);
+        final LatLng agus_02 = new LatLng(-12.046635065876885, -76.99932462896246);
+        final LatLng agus_03 = new LatLng(-12.049419323960938, -77.00141015584246);
+        final LatLng agus_04 = new LatLng(-12.049860766766463, -77.0008373650617);
+        final LatLng agus_05 = new LatLng(-12.049782012989503, -77.00034917835282);
+        final LatLng agus_06 = new LatLng(-12.051348736437692, -76.99973208530334);
+        final LatLng agus_07 = new LatLng(-12.051737244047942, -76.99792927180889);
+        final LatLng agus_08 = new LatLng(-12.05091873646299, -76.99688363622643);
+        final LatLng agus_09 = new LatLng(-12.05046196753363, -76.99685727180888);
+        final LatLng agus_10 = new LatLng(-12.050310013021006, -76.99642281413848);
+        final LatLng agus_11 = new LatLng(-12.04760246051124, -76.99700263622645);
+
+        PolygonOptions agus_Loc = new PolygonOptions()
+                //.add(agus_01)
+                .add(agus_02)
+                .add(agus_03)
+                .add(agus_04)
+                .add(agus_05)
+                .add(agus_06)
+                .add(agus_07)
+                .add(agus_08)
+                .add(agus_09)
+                .add(agus_10)
+                .add(agus_11).strokeWidth(widthStoke);
+                //.fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
+        local46Loc = mMap.addPolygon(agus_Loc);
+        local46Loc.setClickable(true);
+        local46Loc.setTag("local46");
+        mMap.addPolygon(agus_Loc);
+    }
+    public void local47Map(GoogleMap googleMap)
+    {
+        mMap = googleMap;
+        final LatLng local47latlng = new LatLng(-12.00092513861642, -76.85345509253041);           //     CARAPONGO 2 Gisela
+        // Local47
+        local47 = new MarkerOptions();
+        local47.position(local47latlng);
+        local47.title("La Delicia - CARAPONGO - Nuevo Horizonte\nTelf: 983 435 046");
+        local47.snippet("Telf: 983 435 046");
+        local47.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
+        local47_marker = mMap.addMarker(local47);
+
+        // CARAPONGO 2, Gisela
+        final LatLng carapongo2_01 = new LatLng(-11.997274463955959, -76.84553025624646);
+        final LatLng carapongo2_02 = new LatLng(-11.999415331649484, -76.84233306336351);
+        final LatLng carapongo2_03 = new LatLng(-12.0028364869597, -76.84759019261297);
+        final LatLng carapongo2_04 = new LatLng(-12.003560590943417, -76.85000418071405);
+        final LatLng carapongo2_05 = new LatLng(-12.004777448025795, -76.85227203280877);
+        final LatLng carapongo2_06 = new LatLng(-12.00610521240137, -76.86185894753069);
+        final LatLng carapongo2_07 = new LatLng(-12.007400930287577, -76.86978305115346);
+        final LatLng carapongo2_08 = new LatLng(-12.007330254927748, -76.87214342230914);
+        final LatLng carapongo2_09 = new LatLng(-12.006474260828123, -76.87249658442109);
+        final LatLng carapongo2_10 = new LatLng(-11.999633126566474, -76.87257848268733);
+        final LatLng carapongo2_11 = new LatLng(-11.998453836503788, -76.87335008706829);
+        final LatLng carapongo2_12 = new LatLng(-11.995749311906605, -76.87442711806158);
+        final LatLng carapongo2_13 = new LatLng(-11.992981863222766, -76.87326971164612);
+        final LatLng carapongo2_14 = new LatLng(-11.992227099546495, -76.87253025763172);
+        final LatLng carapongo2_15 = new LatLng(-11.992368617889262, -76.87166220280132);
+        final LatLng carapongo2_16 = new LatLng(-11.991582403934313, -76.87140500137006);
+        final LatLng carapongo2_17 = new LatLng(-11.991110674461407, -76.87082629814981);
+        final LatLng carapongo2_18 = new LatLng(-11.99016721304091, -76.87061732198691);
+        final LatLng carapongo2_19 = new LatLng(-11.990387354272555, -76.86891336234774);
+        final LatLng carapongo2_20 = new LatLng(-11.98483659397718, -76.86737015376033);
+        final LatLng carapongo2_21 = new LatLng(-11.984066082815907, -76.86487851489527);
+        final LatLng carapongo2_22 = new LatLng(-11.98645623271611, -76.86483028962691);
+        final LatLng carapongo2_23 = new LatLng(-11.989097952714147, -76.86483028962691);
+        final LatLng carapongo2_24 = new LatLng(-11.989428165916353, -76.86370503321604);
+        final LatLng carapongo2_25 = new LatLng(-11.995466278666617, -76.86439626193297);
+        final LatLng carapongo2_26 = new LatLng(-11.998768314372684, -76.86306202933798);
+        final LatLng carapongo2_27 = new LatLng(-11.998768314393, -76.85796622549685);
+        final LatLng carapongo2_28 = new LatLng(-11.998752590501407, -76.85627834078731);
+        final LatLng carapongo2_29 = new LatLng(-11.996221033235178, -76.85640694155447);
+        final LatLng carapongo2_30 = new LatLng(-11.995637650331442, -76.8562538964633);
+        final LatLng carapongo2_31 = new LatLng(-11.995097512503328, -76.85563158111849);
+        final LatLng carapongo2_32 = new LatLng(-11.995046070748993, -76.85418535531717);
+        final LatLng carapongo2_33 = new LatLng(-11.99216531684564, -76.85464990057456);
+        final LatLng carapongo2_34 = new LatLng(-11.988521461977726, -76.85396623004445);
+        final LatLng carapongo2_35 = new LatLng(-11.98847859280471, -76.85311602457337);
+        final LatLng carapongo2_36 = new LatLng(-11.992456823046075, -76.85122278352438);
+        final LatLng carapongo2_37 = new LatLng(-11.995371868382172, -76.85066182294054);
+        final LatLng carapongo2_38 = new LatLng(-11.997789617343962, -76.8498116173542);
+        final LatLng carapongo2_39 = new LatLng(-11.99766958776695, -76.84755024610122);
+
+        PolygonOptions carap2_Loc = new PolygonOptions()
+                .add(carapongo2_01)
+                .add(carapongo2_02)
+                .add(carapongo2_03)
+                .add(carapongo2_04)
+                .add(carapongo2_05)
+                .add(carapongo2_06)
+                .add(carapongo2_07)
+                .add(carapongo2_08)
+                .add(carapongo2_09)
+                .add(carapongo2_10)
+                .add(carapongo2_11)
+                .add(carapongo2_12)
+                .add(carapongo2_13)
+                .add(carapongo2_14)
+                .add(carapongo2_15)
+                .add(carapongo2_16)
+                .add(carapongo2_17)
+                .add(carapongo2_18)
+                .add(carapongo2_19)
+                .add(carapongo2_20)
+                .add(carapongo2_21)
+                .add(carapongo2_22)
+                .add(carapongo2_23)
+                .add(carapongo2_24)
+                .add(carapongo2_25)
+                .add(carapongo2_26)
+                .add(carapongo2_27)
+                .add(carapongo2_28)
+                .add(carapongo2_29)
+                .add(carapongo2_30)
+                .add(carapongo2_31)
+                .add(carapongo2_32)
+                .add(carapongo2_33)
+                .add(carapongo2_34)
+                .add(carapongo2_35)
+                .add(carapongo2_36)
+                .add(carapongo2_37)
+                .add(carapongo2_38)
+                .add(carapongo2_39).strokeWidth(widthStoke);
+                //.fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
+        local47Loc = mMap.addPolygon(carap2_Loc);
+        local47Loc.setClickable(true);
+        local47Loc.setTag("local47");
+        mMap.addPolygon(carap2_Loc);
+    }
+    public void local48Map(GoogleMap googleMap)
+    {
+        mMap = googleMap;
+        final LatLng local48latlng = new LatLng(-12.029922654926871, -76.88703332946335);          //     MANYLSA
+        // Local48                                                                                      SIN TELÉFONO NI CELULAR
+        local48 = new MarkerOptions();
+        local48.position(local48latlng);
+        local48.title("La Delicia - MANYLSA\nTelf: Muy Pronto");
+        local48.snippet("Telf: Muy Pronto");
+        local48.icon(BitmapDescriptorFactory.fromResource(R.drawable.delicia));
+        local48_marker = mMap.addMarker(local48);
+
+        // LOCAL NUEVO MANYLSA
+        final LatLng manylsa_01 = new LatLng(-12.028630629924388, -76.88586295541057);
+        final LatLng manylsa_02 = new LatLng(-12.028842324543634, -76.88529551143684);
+        final LatLng manylsa_03 = new LatLng(-12.028293060157297, -76.8848743174653);
+        final LatLng manylsa_04 = new LatLng(-12.029431619856743, -76.88240562024322);
+        final LatLng manylsa_05 = new LatLng(-12.0320184688722, -76.87746176933494);
+        final LatLng manylsa_06 = new LatLng(-12.032847420766503, -76.87345991136819);
+        final LatLng manylsa_07 = new LatLng(-12.032217824431628, -76.8698764850235);
+        final LatLng manylsa_08 = new LatLng(-12.031441311207834, -76.8681491398362);
+        final LatLng manylsa_09 = new LatLng(-12.03005621363736, -76.86423313692647);
+        final LatLng manylsa_10 = new LatLng(-12.030769740628063, -76.86362158143395);
+        final LatLng manylsa_11 = new LatLng(-12.03129441120386, -76.86438332658271);
+        final LatLng manylsa_12 = new LatLng(-12.031850565187199, -76.86603556786798);
+        final LatLng manylsa_13 = new LatLng(-12.032312268192593, -76.8669046030767);
+        final LatLng manylsa_14 = new LatLng(-12.032784459373683, -76.86672221008413);
+        final LatLng manylsa_15 = new LatLng(-12.03319368455237, -76.86532744844226);
+        final LatLng manylsa_16 = new LatLng(-12.03359241451311, -76.86485537582922);
+        final LatLng manylsa_17 = new LatLng(-12.034201021536923, -76.86530598412526);
+        final LatLng manylsa_18 = new LatLng(-12.033980673586315, -76.8666471034874);
+        final LatLng manylsa_19 = new LatLng(-12.03348749916313, -76.86842810150523);
+        final LatLng manylsa_20 = new LatLng(-12.033844263153881, -76.86942589001285);
+        final LatLng manylsa_21 = new LatLng(-12.034694205046895, -76.87012327733736);
+        final LatLng manylsa_22 = new LatLng(-12.034736175212553, -76.87054170768353);
+        final LatLng manylsa_23 = new LatLng(-12.034201021025373, -76.87092794420923);
+        final LatLng manylsa_24 = new LatLng(-12.0345053261408, -76.87164675472447);
+        final LatLng manylsa_25 = new LatLng(-12.033781304358694, -76.87528382665019);
+        final LatLng manylsa_26 = new LatLng(-12.033760319518398, -76.87832008634373);
+        final LatLng manylsa_27 = new LatLng(-12.033372047295565, -76.88107741220158);
+        final LatLng manylsa_28 = new LatLng(-12.0340436027019, -76.88148510997276);
+        final LatLng manylsa_29 = new LatLng(-12.035008961331007, -76.8824507150773);
+        final LatLng manylsa_30 = new LatLng(-12.035197842397757, -76.88060474281272);
+        final LatLng manylsa_31 = new LatLng(-12.03544442766121, -76.88004147794578);
+        final LatLng manylsa_32 = new LatLng(-12.035900874455514, -76.88019168097019);
+        final LatLng manylsa_33 = new LatLng(-12.036425521812209, -76.87890422467025);
+        final LatLng manylsa_34 = new LatLng(-12.036441255783089, -76.87793863022137);
+        final LatLng manylsa_35 = new LatLng(-12.036902944422147, -76.87778842346431);
+        final LatLng manylsa_36 = new LatLng(-12.03712329690823, -76.87787425296679);
+        final LatLng manylsa_37 = new LatLng(-12.03742234758575, -76.87816929502499);
+        final LatLng manylsa_38 = new LatLng(-12.037679425060096, -76.8782551244833);
+        final LatLng manylsa_39 = new LatLng(-12.038036180723736, -76.87748264068927);
+        final LatLng manylsa_40 = new LatLng(-12.037838274035956, -76.87711111948053);
+        final LatLng manylsa_41 = new LatLng(-12.038068940115464, -76.87625614948604);
+        final LatLng manylsa_42 = new LatLng(-12.037232754793905, -76.87416295166075);
+        final LatLng manylsa_43 = new LatLng(-12.037275997279304, -76.87357331577769);
+        final LatLng manylsa_44 = new LatLng(-12.038948331171335, -76.87307210228573);
+        final LatLng manylsa_45 = new LatLng(-12.03972683224697, -76.87290993908012);
+        final LatLng manylsa_46 = new LatLng(-12.040015167601116, -76.87248388538572);
+        final LatLng manylsa_47 = new LatLng(-12.04050533082131, -76.87242491653338);
+        final LatLng manylsa_48 = new LatLng(-12.04092341552307, -76.8727344713516);
+        final LatLng manylsa_49 = new LatLng(-12.041298244964624, -76.872616539835);
+        final LatLng manylsa_50 = new LatLng(-12.04187490146458, -76.87211533965399);
+        final LatLng manylsa_51 = new LatLng(-12.043403072937279, -76.8736631285731);
+        final LatLng manylsa_52 = new LatLng(-12.04405181724125, -76.87344200662133);
+        final LatLng manylsa_53 = new LatLng(-12.044642889947362, -76.87249856807135);
+        final LatLng manylsa_54 = new LatLng(-12.044974473575536, -76.87266071594027);
+        final LatLng manylsa_55 = new LatLng(-12.045594391596158, -76.87302923683549);
+        final LatLng manylsa_56 = new LatLng(-12.045046920024745, -76.87403134749893);
+        final LatLng manylsa_57 = new LatLng(-12.044623558229501, -76.87439537302632);
+        final LatLng manylsa_58 = new LatLng(-12.044315658716398, -76.87459214314205);
+        final LatLng manylsa_59 = new LatLng(-12.043411204243467, -76.8752709957274);
+        final LatLng manylsa_60 = new LatLng(-12.042968598758243, -76.87529067255386);
+        final LatLng manylsa_61 = new LatLng(-12.042402779414175, -76.87497265649594);
+        final LatLng manylsa_62 = new LatLng(-12.041820432734752, -76.87570221565974);
+        final LatLng manylsa_63 = new LatLng(-12.041453185986974, -76.87602944349035);
+        final LatLng manylsa_64 = new LatLng(-12.04136399516769, -76.87652833275284);
+        final LatLng manylsa_65 = new LatLng(-12.042339819501011, -76.87657661651255);
+        final LatLng manylsa_66 = new LatLng(-12.042586397852977, -76.87672145730477);
+        final LatLng manylsa_67 = new LatLng(-12.04252868511372, -76.87714524725158);
+        final LatLng manylsa_68 = new LatLng(-12.041783699990859, -76.87721498001771);
+        final LatLng manylsa_69 = new LatLng(-12.041673530516352, -76.87764413426584);
+        final LatLng manylsa_70 = new LatLng(-12.041169878459646, -76.8779123579094);
+        final LatLng manylsa_71 = new LatLng(-12.04130628580865, -76.8783039600735);
+        final LatLng manylsa_72 = new LatLng(-12.04165779415364, -76.87856681595427);
+        final LatLng manylsa_73 = new LatLng(-12.041946345674354, -76.87896378320464);
+        final LatLng manylsa_74 = new LatLng(-12.042276867795618, -76.87945194688638);
+        final LatLng manylsa_75 = new LatLng(-12.042596897705897, -76.87941976087447);
+        final LatLng manylsa_76 = new LatLng(-12.042675592305677, -76.88009031725757);
+        final LatLng manylsa_77 = new LatLng(-12.042449997750516, -76.87993474715877);
+        final LatLng manylsa_78 = new LatLng(-12.042072257376176, -76.88001521217352);
+        final LatLng manylsa_79 = new LatLng(-12.042355558104878, -76.88102373060404);
+        final LatLng manylsa_80 = new LatLng(-12.04207749846124, -76.8811202884117);
+        final LatLng manylsa_81 = new LatLng(-12.041893878351308, -76.88047118858879);
+        final LatLng manylsa_82 = new LatLng(-12.04153187890022, -76.88016004950588);
+        final LatLng manylsa_83 = new LatLng(-12.041416459411444, -76.87987573452853);
+        final LatLng manylsa_84 = new LatLng(-12.041280053886254, -76.87969870827065);
+        final LatLng manylsa_85 = new LatLng(-12.040912803063454, -76.88054628517177);
+        final LatLng manylsa_86 = new LatLng(-12.04060326023928, -76.88125438785258);
+        final LatLng manylsa_87 = new LatLng(-12.03953300166399, -76.8820215008735);
+        final LatLng manylsa_88 = new LatLng(-12.038488961835709, -76.88186057063182);
+        final LatLng manylsa_89 = new LatLng(-12.036867805936144, -76.88249356933937);
+        final LatLng manylsa_90 = new LatLng(-12.035939621658542, -76.88366781765625);
+        final LatLng manylsa_91 = new LatLng(-12.03515059624073, -76.88562566498764);
+        final LatLng manylsa_92 = new LatLng(-12.033702554499826, -76.88743887722435);
+        final LatLng manylsa_93 = new LatLng(-12.033177899394696, -76.89001379736852);
+        final LatLng manylsa_94 = new LatLng(-12.032548312598443, -76.89166604149212);
+        final LatLng manylsa_95 = new LatLng(-12.032275510229823, -76.89204153849664);
+        final LatLng manylsa_96 = new LatLng(-12.030050940443097, -76.89282475150439);
+        final LatLng manylsa_97 = new LatLng(-12.029820089057548, -76.89338265254422);
+        final LatLng manylsa_98 = new LatLng(-12.028539914519458, -76.89382253363546);
+        final LatLng manylsa_99 = new LatLng(-12.0266930887399, -76.89356503941585);
+        final LatLng manylsa_100 = new LatLng(-12.023744442422258, -76.89408002497608);
+        final LatLng manylsa_101 = new LatLng(-12.022789526976146, -76.88631235382117);
+        final LatLng manylsa_102 = new LatLng(-12.02719154322837, -76.88597125041774);
+        final LatLng manylsa_103 = new LatLng(-12.027991926257592, -76.88589704753069);
+
+        PolygonOptions maylsa_Loc = new PolygonOptions()
+                .add(manylsa_01)
+                .add(manylsa_02)
+                .add(manylsa_03)
+                .add(manylsa_04)
+                .add(manylsa_05)
+                .add(manylsa_06)
+                .add(manylsa_07)
+                .add(manylsa_08)
+                .add(manylsa_09)
+                .add(manylsa_10)
+                .add(manylsa_11)
+                .add(manylsa_12)
+                .add(manylsa_13)
+                .add(manylsa_14)
+                .add(manylsa_15)
+                .add(manylsa_16)
+                .add(manylsa_17)
+                .add(manylsa_18)
+                .add(manylsa_19)
+                .add(manylsa_20)
+                .add(manylsa_21)
+                .add(manylsa_22)
+                .add(manylsa_23)
+                .add(manylsa_24)
+                .add(manylsa_25)
+                .add(manylsa_26)
+                .add(manylsa_27)
+                .add(manylsa_28)
+                .add(manylsa_29)
+                .add(manylsa_30)
+                .add(manylsa_31)
+                .add(manylsa_32)
+                .add(manylsa_33)
+                .add(manylsa_34)
+                .add(manylsa_35)
+                .add(manylsa_36)
+                .add(manylsa_37)
+                .add(manylsa_38)
+                .add(manylsa_39)
+                .add(manylsa_40)
+                .add(manylsa_41)
+                .add(manylsa_42)
+                .add(manylsa_43)
+                .add(manylsa_44)
+                .add(manylsa_45)
+                .add(manylsa_46)
+                .add(manylsa_47)
+                .add(manylsa_48)
+                .add(manylsa_49)
+                .add(manylsa_50)
+                .add(manylsa_51)
+                .add(manylsa_52)
+                .add(manylsa_53)
+                .add(manylsa_54)
+                .add(manylsa_55)
+                .add(manylsa_56)
+                .add(manylsa_57)
+                .add(manylsa_58)
+                .add(manylsa_59)
+                .add(manylsa_60)
+                .add(manylsa_61)
+                .add(manylsa_62)
+                .add(manylsa_63)
+                .add(manylsa_64)
+                .add(manylsa_65)
+                .add(manylsa_66)
+                .add(manylsa_67)
+                .add(manylsa_68)
+                .add(manylsa_69)
+                .add(manylsa_70)
+                .add(manylsa_71)
+                .add(manylsa_72)
+                .add(manylsa_73)
+                .add(manylsa_74)
+                .add(manylsa_75)
+                .add(manylsa_76)
+                .add(manylsa_77)
+                .add(manylsa_78)
+                .add(manylsa_79)
+                .add(manylsa_80)
+                .add(manylsa_81)
+                .add(manylsa_82)
+                .add(manylsa_83)
+                .add(manylsa_84)
+                .add(manylsa_85)
+                .add(manylsa_86)
+                .add(manylsa_87)
+                .add(manylsa_88)
+                .add(manylsa_89)
+                .add(manylsa_90)
+                .add(manylsa_91)
+                .add(manylsa_92)
+                .add(manylsa_93)
+                .add(manylsa_94)
+                .add(manylsa_95)
+                .add(manylsa_96)
+                .add(manylsa_97)
+                .add(manylsa_98)
+                .add(manylsa_99)
+                .add(manylsa_100)
+                .add(manylsa_101)
+                .add(manylsa_102)
+                .add(manylsa_103).strokeWidth(widthStoke);
+                //.fillColor(0x33FF0000).strokeColor(Color.RED).strokeWidth(3);
+        local48Loc = mMap.addPolygon(maylsa_Loc);
+        local48Loc.setClickable(true);
+        local48Loc.setTag("local48");
+        mMap.addPolygon(maylsa_Loc);
     }
 }
