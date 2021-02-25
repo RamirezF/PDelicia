@@ -37,7 +37,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 // implementar LocationListener // para la localización
 public class MapFragment extends Fragment implements OnMapReadyCallback, View.OnClickListener {
-    int color_Red = 0x33FF0000;
+    int color_Red = 0x33da0000;
     float widthStoke = 0;
     private static final int MY_PERMISSION_ACCESS_FINE_LOCATION = 1;
     private View rootView;
@@ -8704,6 +8704,10 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         final LatLng staclara_67 = new LatLng(-12.028207239571023, -76.88578690632738);
         final LatLng staclara_68 = new LatLng(-12.028044183009216, -76.88589748886206);
         final LatLng staclara_69 = new LatLng(-12.025542229554597, -76.8860735747924);
+        //---------------------------------------------------------------------------------------------------------------
+        final LatLng staclara_87 = new LatLng(-12.02648093959018, -76.89342649362654);
+        final LatLng staclara_88 = new LatLng(-12.017943614300027, -76.89527512897966);
+        //---------------------------------------------------------------------------------------------------------------
         final LatLng staclara_70 = new LatLng(-12.018586528610244, -76.89732276120287);
         final LatLng staclara_71 = new LatLng(-12.01816883980998, -76.89760355766356);
         final LatLng staclara_72 = new LatLng(-12.016349320857492, -76.8981826919711);
@@ -8792,6 +8796,10 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                 .add(staclara_67)
                 .add(staclara_68)
                 .add(staclara_69)
+                ///////////////////////
+                .add(staclara_87)
+                .add(staclara_88)
+                ///////////////////////
                 .add(staclara_70)
                 .add(staclara_71)
                 .add(staclara_72)
@@ -9410,23 +9418,23 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
         final LatLng cantg_51 = new LatLng(-11.964295443727764, -76.98126124750019);
         final LatLng cantg_52 = new LatLng(-11.963642329450995, -76.98221756245464);
         final LatLng cantg_53 = new LatLng(-11.962412294429548, -76.98137204788449);
-        final LatLng cantg_54 = new LatLng(-11.962622208406422, -76.98095357835932);
-        final LatLng cantg_55 = new LatLng(-11.962968570839019, -76.9811681550665);
-        final LatLng cantg_56 = new LatLng(-11.96552953990609, -76.97752035104455);
-        final LatLng cantg_57 = new LatLng(-11.965770941476944, -76.97689807859375);
-        final LatLng cantg_58 = new LatLng(-11.96593887287737, -76.97637236566118);
-        final LatLng cantg_59 = new LatLng(-11.965592514255523, -76.97463429416347);
-        final LatLng cantg_60 = new LatLng(-11.966075317069212, -76.97394764870052);
-        final LatLng cantg_61 = new LatLng(-11.966390188004908, -76.97174823745199);
-        final LatLng cantg_62 = new LatLng(-11.966218308882356, -76.97142551741267);
-        final LatLng cantg_63 = new LatLng(-11.965375340370468, -76.97083097881973);
-        final LatLng cantg_64 = new LatLng(-11.964963447317638, -76.97148805739796);
-        final LatLng cantg_65 = new LatLng(-11.965631213011525, -76.97195375386603);
-        final LatLng cantg_66 = new LatLng(-11.965437748352766, -76.97354222555832);
-        final LatLng cantg_67 = new LatLng(-11.965037884226351, -76.97425130934552);
-        final LatLng cantg_68 = new LatLng(-11.96512411923444, -76.97482988627446);
-        final LatLng cantg_69 = new LatLng(-11.965348788122885, -76.97627163160769);
-        final LatLng cantg_70 = new LatLng(-11.965042988765147, -76.97719026573648);
+        //final LatLng cantg_54 = new LatLng(-11.962622208406422, -76.98095357835932);
+        //final LatLng cantg_55 = new LatLng(-11.962968570839019, -76.9811681550665);
+        //final LatLng cantg_56 = new LatLng(-11.96552953990609, -76.97752035104455);
+        //final LatLng cantg_57 = new LatLng(-11.965770941476944, -76.97689807859375);
+        //final LatLng cantg_58 = new LatLng(-11.96593887287737, -76.97637236566118);
+        //final LatLng cantg_59 = new LatLng(-11.965592514255523, -76.97463429416347);
+        //final LatLng cantg_60 = new LatLng(-11.966075317069212, -76.97394764870052);
+        //final LatLng cantg_61 = new LatLng(-11.966390188004908, -76.97174823745199);
+        //final LatLng cantg_62 = new LatLng(-11.966218308882356, -76.97142551741267);
+        //final LatLng cantg_63 = new LatLng(-11.965375340370468, -76.97083097881973);
+        //final LatLng cantg_64 = new LatLng(-11.964963447317638, -76.97148805739796);
+        //final LatLng cantg_65 = new LatLng(-11.965631213011525, -76.97195375386603);
+        //final LatLng cantg_66 = new LatLng(-11.965437748352766, -76.97354222555832);
+        //final LatLng cantg_67 = new LatLng(-11.965037884226351, -76.97425130934552);
+        //final LatLng cantg_68 = new LatLng(-11.96512411923444, -76.97482988627446);
+        //final LatLng cantg_69 = new LatLng(-11.965348788122885, -76.97627163160769);
+        //final LatLng cantg_70 = new LatLng(-11.965042988765147, -76.97719026573648);
         final LatLng cantg_71 = new LatLng(-11.958596158430455, -76.98704644496546);
         final LatLng cantg_72 = new LatLng(-11.95590140790285, -76.9919255717829);
         final LatLng cantg_73 = new LatLng(-11.956509999977365, -76.99808575531395);
@@ -9532,23 +9540,23 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                 .add(cantg_51)
                 .add(cantg_52)
                 .add(cantg_53)
-                .add(cantg_54)
-                .add(cantg_55)
-                .add(cantg_56)
-                .add(cantg_57)
-                .add(cantg_58)
-                .add(cantg_59)
-                .add(cantg_60)
-                .add(cantg_61)
-                .add(cantg_62)
-                .add(cantg_63)
-                .add(cantg_64)
-                .add(cantg_65)
-                .add(cantg_66)
-                .add(cantg_67)
-                .add(cantg_68)
-                .add(cantg_69)
-                .add(cantg_70)
+                //.add(cantg_54)
+                //.add(cantg_55)
+                //.add(cantg_56)
+                //.add(cantg_57)
+                //.add(cantg_58)
+                //.add(cantg_59)
+                //.add(cantg_60)
+                //.add(cantg_61)
+                //.add(cantg_62)
+                //.add(cantg_63)
+                //.add(cantg_64)
+                //.add(cantg_65)
+                //.add(cantg_66)
+                //.add(cantg_67)
+                //.add(cantg_68)
+                //.add(cantg_69)
+                //.add(cantg_70)
                 .add(cantg_71)
                 .add(cantg_72)
                 .add(cantg_73)
