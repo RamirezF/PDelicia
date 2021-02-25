@@ -37,7 +37,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 // implementar LocationListener // para la localización
 public class MapFragment extends Fragment implements OnMapReadyCallback, View.OnClickListener {
-    int color_Red = 0x33FF0000;
+    int color_Red = 0x33da0000;
     float widthStoke = 0;
     private static final int MY_PERMISSION_ACCESS_FINE_LOCATION = 1;
     private View rootView;
