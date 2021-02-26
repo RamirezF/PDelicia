@@ -17,16 +17,25 @@
 
     <Button
         android:id="@+id/gotoLog"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/principal_txt"
         android:layout_marginTop="20dp"
         android:text="Go to Login"
-        android:paddingLeft="40dp"
-        android:paddingRight="40dp"
         android:layout_centerHorizontal="true"
         android:forceDarkAllowed="true"
         android:background="@drawable/btn_blue"
         android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/gotoPromo"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gotoLog"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="26dp"
+        android:text="Go to promo"
+        android:background="@drawable/btn_back"/>
 
 </RelativeLayout>

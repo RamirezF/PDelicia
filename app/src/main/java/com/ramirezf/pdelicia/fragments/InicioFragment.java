@@ -9,9 +9,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.ramirezf.pdelicia.R;
 import com.ramirezf.pdelicia.activities.LoginActivity;
+import com.ramirezf.pdelicia.activities.PromoActivity;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -67,13 +69,23 @@ public class InicioFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_inicio, container, false);
-        Button btnLogin = (Button) view.findViewById(R.id.gotoLog);
+        Button btnLogin = view.findViewById(R.id.gotoLog);
+        Button btnPromo = view.findViewById(R.id.gotoPromo);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), LoginActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        btnPromo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "Muy Pronto", Toast.LENGTH_SHORT).show();
+                //Intent intent = new Intent(getActivity(), PromoActivity.class);
+                //startActivity(intent);
             }
         });
 

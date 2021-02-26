@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tamaño">
+        <item>Pequeña</item>
+        <item>Mediana</item>
+        <item>Familiar</item>
+    </string-array>
+</resources>

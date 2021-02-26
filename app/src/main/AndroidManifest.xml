@@ -18,20 +18,30 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:usesCleartextTraffic="true"
-        android:theme="@style/Theme.AppCompat">
-        <!-- android:theme="@style/Theme.AppCompat.NoActionBar" -->
-
+        android:theme="@style/Theme.AppCompat"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activities.PromoActivity"></activity>
+        <activity android:name=".activities.MenuActivity" /> <!-- android:theme="@style/Theme.AppCompat.NoActionBar" -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity android:name="com.ramirezf.pdelicia.activities.MapsActivity" android:label="@string/title_activity_maps" />
-
-        <activity android:name="com.ramirezf.pdelicia.activities.RegisterActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
-        <activity android:name="com.ramirezf.pdelicia.activities.LoginActivity" android:screenOrientation="portrait"/>
-        <activity android:name="com.ramirezf.pdelicia.activities.PrincipalActivity" android:screenOrientation="portrait" />
-        <activity android:name="com.ramirezf.pdelicia.MainActivity" android:screenOrientation="portrait">
+        <activity
+            android:name=".activities.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.PrincipalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
