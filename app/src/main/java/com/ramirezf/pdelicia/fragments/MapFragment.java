@@ -999,7 +999,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     local48Loc.setStrokeColor(0x0000FF);
                     return true;
                 }else if(marker.equals(campoy_marker)){
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(color_Red);
@@ -1098,7 +1098,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     local48Loc.setStrokeColor(0x0000FF);
                     return true;
                 }else if(marker.equals(local01_marker)){
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -1198,7 +1198,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     return true;
                 }else if (marker.equals(local02_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -1298,7 +1298,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     return true;
                 }else if (marker.equals(local03_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -1398,7 +1398,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     return true;
                 }else if (marker.equals(local04_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -1498,7 +1498,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     return true;
                 }else if (marker.equals(local05_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -1598,7 +1598,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     return true;
                 }else if (marker.equals(local06_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -1698,7 +1698,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     return true;
                 }else if (marker.equals(local07_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -1798,7 +1798,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     return true;
                 }else if (marker.equals(local08_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -1898,7 +1898,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     return true;
                 }else if (marker.equals(local09_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -1998,7 +1998,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     return true;
                 }else if (marker.equals(local10_marker) || marker.equals(local11_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -2098,7 +2098,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     return true;
                 }else if (marker.equals(local11_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -2198,7 +2198,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     return true;
                 }else if (marker.equals(local12_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -2298,7 +2298,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     return true;
                 }else if (marker.equals(local13_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -2398,7 +2398,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     return true;
                 }else if (marker.equals(local14_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -2498,7 +2498,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     return true;
                 }else if (marker.equals(local15_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -2598,7 +2598,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     return true;
                 }else if (marker.equals(local16_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -2698,7 +2698,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     return true;
                 }else if (marker.equals(local17_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -2798,7 +2798,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     return true;
                 }else if (marker.equals(local18_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -2898,7 +2898,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     return true;
                 }else if (marker.equals(local19_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -2998,7 +2998,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     return true;
                 }else if (marker.equals(local20_marker) || marker.equals(local21_marker) || marker.equals(local41_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -3098,7 +3098,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     return true;
                 }else if (marker.equals(local21_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -3198,7 +3198,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     return true;
                 }else if (marker.equals(local22_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -3298,7 +3298,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     return true;
                 }else if (marker.equals(local25_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -3398,7 +3398,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     return true;
                 }else if (marker.equals(local26_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -3498,7 +3498,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     return true;
                 }else if (marker.equals(local27_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -3598,7 +3598,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     return true;
                 }else if (marker.equals(local28_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -3698,7 +3698,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     return true;
                 }else if (marker.equals(local29_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -3798,7 +3798,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     return true;
                 }else if (marker.equals(local30_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -3898,7 +3898,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     return true;
                 }else if (marker.equals(local31_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -3998,7 +3998,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     return true;
                 }else if (marker.equals(local32_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -4098,7 +4098,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     return true;
                 }else if (marker.equals(local33_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -4198,7 +4198,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     return true;
                 }else if (marker.equals(local34_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -4298,7 +4298,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     return true;
                 }else if (marker.equals(local35_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -4398,7 +4398,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     return true;
                 }else if (marker.equals(local36_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -4498,7 +4498,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     return true;
                 }else if (marker.equals(local37_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -4598,7 +4598,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     return true;
                 }else if (marker.equals(local38_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -4698,7 +4698,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     return true;
                 }else if (marker.equals(local39_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -4798,7 +4798,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     return true;
                 }else if (marker.equals(local40_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -4898,7 +4898,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     return true;
                 }else if (marker.equals(local42_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -4998,7 +4998,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     return true;
                 }else if (marker.equals(local43_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -5098,7 +5098,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     return true;
                 }else if (marker.equals(local44_marker) || marker.equals(local45_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -5198,7 +5198,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     return true;
                 }else if (marker.equals(local46_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -5298,7 +5298,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     return true;
                 }else if (marker.equals(local47_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
@@ -5398,7 +5398,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
                     return true;
                 }else if (marker.equals(local48_marker))
                 {
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     choLoc.setFillColor(0x0000FF);
                     choLoc.setStrokeColor(0x0000FF);
                     campoyLoc.setFillColor(0x0000FF);
