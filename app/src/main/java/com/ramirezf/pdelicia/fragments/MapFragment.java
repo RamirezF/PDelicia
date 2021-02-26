@@ -900,7 +900,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, View.On
             public boolean onMarkerClick(Marker marker) {
 
                 if(marker.equals(chosica_marker)){
-                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), marker.getTitle(), Toast.LENGTH_SHORT).show();
                     campoyLoc.setFillColor(0x0000FF);
                     campoyLoc.setStrokeColor(0x0000FF);
                     choLoc.setFillColor(color_Red);
