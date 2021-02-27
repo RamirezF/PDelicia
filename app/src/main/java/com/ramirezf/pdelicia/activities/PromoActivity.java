@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 import android.widget.Toast;
 
-import com.google.firebase.auth.internal.RecaptchaActivity;
+import com.ramirezf.pdelicia.CartaM;
 import com.ramirezf.pdelicia.MyAdapter;
 import com.ramirezf.pdelicia.R;
 
@@ -16,7 +16,7 @@ import java.util.List;
 
 public class PromoActivity extends AppCompatActivity {
 
-    private List<String> names;
+    private List<CartaM> cartaM;
 
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
@@ -27,30 +27,35 @@ public class PromoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_promo);
 
-        names = this.getAllNames();
+        cartaM = this.getAllCartaMs();
 
         mRecyclerView = findViewById(R.id.recyclerView);
         mLayoutManager = new LinearLayoutManager(this);
-        mAdapter = new MyAdapter(names, R.layout.recycler_view_item, new MyAdapter.OnItemClickListener() {
+        mAdapter = new MyAdapter(cartaM, R.layout.recycler_view_item, new MyAdapter.OnItemClickListener() {
             @Override
-            public void OnItemFriscoClick(String name, int position) {
-                Toast.makeText(PromoActivity.this, name + ": "+ position, Toast.LENGTH_SHORT).show();
+            public void OnItemFriscoClick(CartaM cartaM, int position) {
+                //Toast.makeText(PromoActivity.this, name + ": "+ position, Toast.LENGTH_SHORT).show();
             }
         });
-
+        mRecyclerView.setLayoutManager(mLayoutManager);
+        mRecyclerView.setAdapter(mAdapter);
 
     }
 
-    private List<String> getAllNames()
+    private ArrayList<CartaM> getAllCartaMs()
     {
-        return new ArrayList<String>() {
+        return new ArrayList<CartaM>() {
             {
-                add("Elmer Curio");
-                add("Elba Lazo");
-                add("Helen Chufe");
-                add("Elsa Pito");
-                add("Lali Cuadora");
-                add("Juan Perez");
+                add(new CartaM("Americana","Pizza con salsa de tomate, jamón y queso", R.drawable.menu01));
+                add(new CartaM("Peperoni","Pizza con salsa de tomate, pepperoni y queso", R.drawable.menu02));
+                add(new CartaM("Continental","Pizza con salsa de tomate, aceituna, champiñones y queso", R.drawable.menu03));
+                add(new CartaM("Hawaiana","Pizza con salsa de tomate, piña y queso",  R.drawable.menu04));
+                add(new CartaM("Vegetariana","Pizza con salsa de tomate, cebolla blanca, aceituna y queso", R.drawable.menu01));
+                add(new CartaM("Mozarella","Pizza con salsa de pizza especial y queso mozarella", R.drawable.menu02));
+                add(new CartaM("Americana","Pizza con salsa de tomate, jamón y queso", R.drawable.menu01));
+                add(new CartaM("Peperoni","Pizza con salsa de tomate, pepperoni y queso", R.drawable.menu02));
+                add(new CartaM("Continental","Pizza con salsa de tomate, aceituna, champiñones y queso", R.drawable.menu03));
+                add(new CartaM("Hawaiana","Pizza con salsa de tomate, piña y queso",  R.drawable.menu04));
             }
         };
     }

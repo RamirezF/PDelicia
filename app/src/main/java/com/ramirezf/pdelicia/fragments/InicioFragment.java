@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.ramirezf.pdelicia.R;
 import com.ramirezf.pdelicia.activities.LoginActivity;
+import com.ramirezf.pdelicia.activities.MenuActivity;
 import com.ramirezf.pdelicia.activities.PromoActivity;
 
 /**
@@ -71,6 +72,7 @@ public class InicioFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_inicio, container, false);
         Button btnLogin = view.findViewById(R.id.gotoLog);
         Button btnPromo = view.findViewById(R.id.gotoPromo);
+        Button btnMenu = view.findViewById(R.id.gotoMenu);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -83,9 +85,19 @@ public class InicioFragment extends Fragment {
         btnPromo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //Toast.makeText(getContext(), "Muy Pronto", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getActivity(), PromoActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 Toast.makeText(getContext(), "Muy Pronto", Toast.LENGTH_SHORT).show();
-                //Intent intent = new Intent(getActivity(), PromoActivity.class);
-                //startActivity(intent);
+                /*Intent intent = new Intent(getActivity(), MenuActivity.class);
+                startActivity(intent);
+                */
             }
         });
 
