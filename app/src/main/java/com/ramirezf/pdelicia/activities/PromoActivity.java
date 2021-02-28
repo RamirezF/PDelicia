@@ -17,7 +17,6 @@ import java.util.List;
 public class PromoActivity extends AppCompatActivity {
 
     private List<CartaM> cartaM;
-
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
@@ -31,7 +30,7 @@ public class PromoActivity extends AppCompatActivity {
 
         mRecyclerView = findViewById(R.id.recyclerView);
         mLayoutManager = new LinearLayoutManager(this);
-        mAdapter = new MyAdapter(cartaM, R.layout.recycler_view_item, new MyAdapter.OnItemClickListener() {
+        mAdapter = new MyAdapter(cartaM, R.layout.recycler_view_item, new MyAdapter.OnItemClickListener() {       //recycler_view_item
             @Override
             public void OnItemFriscoClick(CartaM cartaM, int position) {
                 //Toast.makeText(PromoActivity.this, name + ": "+ position, Toast.LENGTH_SHORT).show();

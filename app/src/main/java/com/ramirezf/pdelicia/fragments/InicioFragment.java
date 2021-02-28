@@ -94,10 +94,10 @@ public class InicioFragment extends Fragment {
         btnMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Muy Pronto", Toast.LENGTH_SHORT).show();
-                /*Intent intent = new Intent(getActivity(), MenuActivity.class);
+                //Toast.makeText(getContext(), "Muy Pronto", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getActivity(), MenuActivity.class);
                 startActivity(intent);
-                */
+
             }
         });
 

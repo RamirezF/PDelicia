@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginTop="1.5dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/imagePizza"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/menu01"
+                android:scaleType="centerCrop"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#BB000000"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent">
+                <LinearLayout
+                    android:layout_width="320dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/txt_pizza"
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:text="Título"
+                        android:textSize="20dp"
+                        android:textColor="@color/gold"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"/>
+                    <TextView
+                        android:id="@+id/txt_description"
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:text="Description"
+                        android:textSize="18dp"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="20dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="2.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/gold"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="25.00"
+                        android:textColor="@color/gold"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="20dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</LinearLayout>
