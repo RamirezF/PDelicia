@@ -39,6 +39,7 @@
                         android:text="Título"
                         android:textSize="20dp"
                         android:textColor="@color/gold"
+                        android:fontFamily="@font/bebasneue_regular"
                         android:layout_marginTop="5dp"
                         android:layout_marginLeft="20dp"/>
                     <TextView
@@ -48,6 +49,7 @@
                         android:text="Description"
                         android:textSize="18dp"
                         android:textColor="@color/white"
+                        android:fontFamily="@font/bebasneue_regular"
                         android:layout_marginLeft="20dp"/>
                 </LinearLayout>
                 <LinearLayout
@@ -65,6 +67,7 @@
                         android:layout_height="match_parent"
                         android:text="25.00"
                         android:textColor="@color/gold"
+                        android:fontFamily="@font/bebasneue_regular"
                         android:gravity="center"
                         android:textStyle="bold"
                         android:textSize="20dp"/>
