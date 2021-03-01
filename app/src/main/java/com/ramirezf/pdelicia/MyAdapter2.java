@@ -3,6 +3,7 @@ package com.ramirezf.pdelicia;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -11,11 +12,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 public class MyAdapter2 extends RecyclerView.Adapter<MyAdapter2.ViewHolder> {
-    private List<String> promoMs;
+    private List<PromoM> promoMs;
     private int layout;
     private OnItemClickListener itemClickListener;
 
-    public MyAdapter2(List<String> promoMs, int layout, OnItemClickListener listener)
+    public MyAdapter2(List<PromoM> promoMs, int layout, OnItemClickListener listener)
     {
         this.promoMs = promoMs;
         this.layout = layout;
@@ -42,14 +43,22 @@ public class MyAdapter2 extends RecyclerView.Adapter<MyAdapter2.ViewHolder> {
 
     public static class ViewHolder extends RecyclerView.ViewHolder{
         public TextView textViewName;
+        public TextView textViewDescription;
+        public ImageView imageViewPizza;
 
         public ViewHolder(View itemView){
             super(itemView);
-            this.textViewName = itemView.findViewById(R.id.txt_pizza);
+            textViewName = itemView.findViewById(R.id.txt_pizza);
+            textViewDescription = itemView.findViewById(R.id.txt_description);
+            imageViewPizza = itemView.findViewById(R.id.imagePizza);
         }
 
-        public void bind(final String promoMs, final OnItemClickListener listener){
-            this.textViewName.setText(promoMs);
+        public void bind(final PromoM promoMs, final OnItemClickListener listener)
+        {
+            textViewName.setText(promoMs.getNameP());
+            imageViewPizza.setImageResource(promoMs.getImgP());
+            textViewDescription.setText(promoMs.getDescription());
+
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -60,6 +69,6 @@ public class MyAdapter2 extends RecyclerView.Adapter<MyAdapter2.ViewHolder> {
     }
 
     public interface OnItemClickListener{
-        void OnItemClick(String name, int position);
+        void OnItemClick(PromoM promoM, int position);
     }
 }

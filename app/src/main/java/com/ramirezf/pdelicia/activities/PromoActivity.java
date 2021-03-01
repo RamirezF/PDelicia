@@ -4,7 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.ramirezf.pdelicia.CartaM;
@@ -34,6 +37,15 @@ public class PromoActivity extends AppCompatActivity {
             @Override
             public void OnItemFriscoClick(CartaM cartaM, int position) {
                 //Toast.makeText(PromoActivity.this, name + ": "+ position, Toast.LENGTH_SHORT).show();
+                String nombre = cartaM.getNameP();
+                String descripcion = cartaM.getDescription();
+                int pImage = cartaM.getImgP();
+                Toast.makeText(PromoActivity.this, nombre , Toast.LENGTH_SHORT).show();
+                Toast.makeText(PromoActivity.this, "Descripción: "+descripcion , Toast.LENGTH_SHORT).show();
+                Toast.makeText(PromoActivity.this, "posición: "+position , Toast.LENGTH_SHORT).show();
+//                Intent intent = new Intent(PromoActivity.this, CantidadActivity.class);
+//                intent.putExtra("PizzaName", nombre).putExtra("PizzaDescription", descripcion).putExtra("PizzaImage", pImage);
+//                startActivity(intent);
             }
         });
         mRecyclerView.setLayoutManager(mLayoutManager);

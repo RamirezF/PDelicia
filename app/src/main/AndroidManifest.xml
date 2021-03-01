@@ -20,7 +20,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat"
         android:usesCleartextTraffic="true">
-        <activity android:name=".activities.PromoActivity"></activity>
+        <activity android:name=".activities.CantidadActivity"></activity>
+        <activity android:name=".activities.PromoActivity" />
         <activity android:name=".activities.MenuActivity" /> <!-- android:theme="@style/Theme.AppCompat.NoActionBar" -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
